@@ -5,8 +5,8 @@
 
 ## Identificação
 
-**Título do projeto:** Tecnologias de Machine Learning para Detecção de Intrusões em Redes de Computadores: Uma Pesquisa Exploratória e Experimental
-**TCC/projeto de origem:** Não há 
+**Título do projeto:** Tecnologias de Machine Learning para Detecção de Intrusões em Redes de Computadores: Uma Pesquisa Exploratória e Experimental  
+**TCC/projeto de origem:** Não há  
 **Orientador(a):** Leonardo Anjoletto Ferreira  
 **Disciplina:** Interação Humano-Computador  
 **Instituição:** Centro Universitário da Fundação Educacional Inaciana Padre Sabóia de Medeiros  
