@@ -5,19 +5,19 @@
 
 ## Identificação
 
-**Título do projeto:** {{TÍTULO DO PROJETO}}  
-**TCC/projeto de origem:** {{TÍTULO ORIGINAL DO TCC, SE HOUVER}}  
-**Orientador(a):** {{NOME}}  
+**Título do projeto:** Tecnologias de Machine Learning para Detecção de Intrusões em Redes de Computadores: Uma Pesquisa Exploratória e Experimental
+**TCC/projeto de origem:** Não há 
+**Orientador(a):** Leonardo Anjoletto Ferreira  
 **Disciplina:** Interação Humano-Computador  
-**Instituição:** {{INSTITUIÇÃO}}  
-**Semestre:** {{ANO/SEMESTRE}}
+**Instituição:** Centro Universitário da Fundação Educacional Inaciana Padre Sabóia de Medeiros  
+**Semestre:** 2026/8°Semestre
 
 ### Equipe
 
 | Nome completo | Matrícula | GitHub | Responsabilidade principal no projeto |
 |---|---:|---|---|
-| {{Nome 1}} | {{matrícula}} | {{@usuario}} | {{...}} |
-| {{Nome 2}} | {{matrícula}} | {{@usuario}} | {{...}} |
+| Lucas Kerr do Amaral | 22.123.032-9 | {{@usuario}} | {{...}} |
+| Marcela Nalesso | 22.222.011-3 | {{@usuario}} | {{...}} |
 
 ## Resumo do produto
 
