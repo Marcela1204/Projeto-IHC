@@ -16,7 +16,7 @@
 
 | Nome completo | Matrícula | GitHub | Responsabilidade principal no projeto |
 |---|---:|---|---|
-| Lucas Kerr do Amaral | 22.123.032-9 | {{@usuario}} | {{...}} |
+| Lucas Kerr do Amaral | 22.123.032-9 | Adelgrin | {{...}} |
 | Marcela Nalesso | 22.222.011-3 | {{@usuario}} | {{...}} |
 
 ## Resumo do produto
