@@ -28,21 +28,21 @@ Leia obrigatoriamente o [Guia para definir o escopo de IHC a partir do tema do T
 
 | Nome completo | Matrícula | GitHub | Responsabilidade principal |
 |---|---:|---|---|
-| Lucas Kerr do Amaral | 22.123.032-9 | Adelgrin | {{...}} |
-| Marcela Nalesso | 22.222.011-3 | Marcela1204 | {{...}} |
+| Lucas Kerr do Amaral | 22.123.032-9 | Adelgrin | desenvolvedor |
+| Marcela Nalesso | 22.222.011-3 | Marcela1204 | desenvolvedor |
 
 ## Relação entre TCC e projeto de IHC
 
 | Item | Descrição |
 |---|---|
-| Tema central do TCC | {{...}} |
-| Resultado técnico esperado do TCC | {{algoritmo, estudo, sistema, modelo, análise, API...}} |
-| O TCC já previa interface? | sim / não / parcialmente |
-| Capacidade técnica que pode gerar valor para pessoas | {{...}} |
-| Usuário principal adotado em IHC | {{...}} |
-| Objetivo principal desse usuário | {{...}} |
-| Interface/recorte explorado na disciplina | {{...}} |
-| Relação com o escopo formal do TCC | parte prevista / extensão conceitual / protótipo demonstrativo / outra |
+| Tema central do TCC | segurança da informação |
+| Resultado técnico esperado do TCC | Sistema de detecção de intrusão em tempo real de uma rede de computadores. |
+| O TCC já previa interface? | sim  |
+| Capacidade técnica que pode gerar valor para pessoas | Gerenciamento e monitoração de redes de computadores. |
+| Usuário principal adotado em IHC | Analista de SOC |
+| Objetivo principal desse usuário | Gerenciar e monitorar redes de computadores. |
+| Interface/recorte explorado na disciplina | Dashboard de monitoramento |
+| Relação com o escopo formal do TCC | protótipo demonstrativo |
 
 > **Importante:** a tabela acima explica a relação entre os dois trabalhos. Ela não altera o compromisso formal do TCC.
 
