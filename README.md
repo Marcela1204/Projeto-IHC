@@ -29,7 +29,7 @@ Leia obrigatoriamente o [Guia para definir o escopo de IHC a partir do tema do T
 | Nome completo | Matrícula | GitHub | Responsabilidade principal |
 |---|---:|---|---|
 | Lucas Kerr do Amaral | 22.123.032-9 | Adelgrin | {{...}} |
-| Marcela Nalesso | 22.222.011-3 | {{@usuario}} | {{...}} |
+| Marcela Nalesso | 22.222.011-3 | Marcela1204 | {{...}} |
 
 ## Relação entre TCC e projeto de IHC
 
