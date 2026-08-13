@@ -1,8 +1,8 @@
 # Entrega 1 — Conhecendo o projeto, o usuário e o problema
 
 **Data:** 13/08/2026  
-**Status:** ⬜ não iniciada  
-**Responsabilidade:** Auxiliar equipes de SOC a gerenciar e monitorar tentativas de invasão em redes de computadores.
+**Status:** 🟨 em andamento  
+**Responsabilidade:** 1 solução consolidada por equipe
 
 ## Objetivo da atividade
 
