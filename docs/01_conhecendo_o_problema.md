@@ -1,8 +1,8 @@
 # Entrega 1 — Conhecendo o projeto, o usuário e o problema
 
-**Data:** {{dd/mm/aaaa}}  
+**Data:** 13/08/2026  
 **Status:** ⬜ não iniciada  
-**Responsabilidade:** 1 solução consolidada por equipe
+**Responsabilidade:** Auxiliar equipes de SOC a gerenciar e monitorar tentativas de invasão em redes de computadores.
 
 ## Objetivo da atividade
 
@@ -59,15 +59,17 @@ Uma hipótese explicitada é melhor do que uma suposição escondida.
 
 | Nome completo | Matrícula | GitHub |
 |---|---:|---|
-| {{...}} | {{...}} | {{...}} |
+| Lucas Kerr do Amaral | 221230329 | Adelgrin |
+| Marcela Nalesso | 222220113 | Marcela1204 |
 
 ## 0.2 Título atual do TCC
 
-{{...}}
+Tecnologias de Machine Learning para Detecção de Intrusões em Redes de Computadores: Uma Pesquisa Exploratória e Experimental
+
 
 ## 0.3 Orientador(a)
 
-{{...}}
+Leonardo Anjoletto Ferreira
 
 ## 0.4 Qual é o resultado principal atualmente previsto no TCC?
 
@@ -75,23 +77,27 @@ Marque e descreva:
 
 - [ ] sistema/aplicação interativa;
 - [ ] algoritmo;
-- [ ] modelo de IA/ML/LLM;
+- [X] modelo de IA/ML/LLM;
+    - Utilização de modelos de classificação supervisionada para análise dos dados da rede.
 - [ ] biblioteca/API/framework;
 - [ ] análise de dataset;
-- [ ] estudo/benchmark/avaliação experimental;
-- [ ] infraestrutura/backend;
-- [ ] componente embarcado/IoT;
-- [ ] outro: {{...}}.
+- [X] estudo/benchmark/avaliação experimental;
+    - Experimento para a implementação do sistema em regime de tempo real.
+- [X] infraestrutura/backend;
+    - Utilização de sistemas de virtualização.
+- [X] componente embarcado/IoT;
+    - Processamento e controle de uma plataforma embarcada, para coletar dados dos sensores e processar as informações em tempo real.
+- [X] outro: Indicadores.
+    - Avaliar através de tabelas, gráficos e evidências o nível de segurança da rede.
 
-**Descrição:** {{...}}
 
 ## 0.5 O TCC já previa desenvolvimento de interface com usuário?
 
-- [ ] Sim, a interface já faz parte do TCC.
+- [X] Sim, a interface já faz parte do TCC.
 - [ ] Parcialmente; existe alguma interação, mas ainda não está bem definida.
 - [ ] Não. O TCC é predominantemente técnico e não previa interface.
 
-**Explique o que está formalmente previsto no TCC:** {{...}}
+**Explique o que está formalmente previsto no TCC:** Desenvolvimento de um sistema de detecção de intrusão baseado em algorítimos de classificação supervisionados e apresenta-los em um dashboard para o gerenciamento e monitoramento da segurança da rede.
 
 > Esta resposta serve para separar o compromisso do TCC do projeto da disciplina. Mesmo quando a opção for **não**, a equipe irá definir uma interface para exercitar IHC.
 
@@ -101,7 +107,7 @@ Marque e descreva:
 
 ## 1.1 Explique o TCC em uma frase, sem citar linguagem de programação, framework ou banco de dados.
 
-{{...}}
+Propomos um sistema inteligente de segurança de redes que identifica e bloqueia invasões cibernéticas em tempo real, para garantir máxima precisão do tráfego de dados analisado.
 
 ## 1.2 Qual situação, atividade ou problema do mundo real motivou o TCC?
 
@@ -109,13 +115,10 @@ Marque e descreva:
 
 ## 1.3 Qual é a **capacidade/contribuição central** produzida pelo TCC?
 
-Complete, se ajudar:
-
-> “Nosso TCC produz, melhora, analisa ou permite `{{capacidade}}`.”
 
 Exemplos: otimizar consultas; classificar imagens; detectar anomalias; comparar modelos; identificar padrões; prever demanda; analisar desempenho; gerar resumos; recomendar configurações.
 
-{{...}}
+Detectar tentativas de invasão cibernética em uma rede de computadores.
 
 ## 1.4 O que se espera que esteja diferente **para pessoas, organizações ou processos** se essa contribuição for bem-sucedida?
 
