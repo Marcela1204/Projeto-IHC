@@ -28,31 +28,28 @@ Leia obrigatoriamente o [Guia para definir o escopo de IHC a partir do tema do T
 
 | Nome completo | Matrícula | GitHub | Responsabilidade principal |
 |---|---:|---|---|
-| Lucas Kerr do Amaral | 22.123.032-9 | Adelgrin | desenvolvedor |
-| Marcela Nalesso | 22.222.011-3 | Marcela1204 | desenvolvedor |
+| Lucas Kerr do Amaral | 22.123.032-9 | Adelgrin | Desenvolvedor |
+| Marcela Nalesso | 22.222.011-3 | Marcela1204 | Desenvolvedora |
 
 ## Relação entre TCC e projeto de IHC
 
 | Item | Descrição |
 |---|---|
-| Tema central do TCC | segurança da informação |
-| Resultado técnico esperado do TCC | Sistema de detecção de intrusão em tempo real de uma rede de computadores. |
-| O TCC já previa interface? | sim  |
-| Capacidade técnica que pode gerar valor para pessoas | Gerenciamento e monitoração de redes de computadores. |
+| Tema central do TCC | Segurança da informação |
+| Resultado técnico esperado do TCC | Sistema de detecção de intrusão em tempo real de uma rede de computadores |
+| O TCC já previa interface? | Sim |
+| Capacidade técnica que pode gerar valor para pessoas | Gerenciamento e monitoração de redes de computadores |
 | Usuário principal adotado em IHC | Analista de SOC |
-| Objetivo principal desse usuário | Gerenciar e monitorar redes de computadores. |
-| Interface/recorte explorado na disciplina | Dashboard de monitoramento |
-| Relação com o escopo formal do TCC | protótipo demonstrativo |
+| Objetivo principal desse usuário | Monitorar, detectar, investigar e responder a incidentes de segurança em redes e sistemas de uma empresa em tempo real |
+| Interface/recorte explorado na disciplina | Dashboard de gerenciamento e monitoramento da segurança de rede |
+| Relação com o escopo formal do TCC | Protótipo Demonstrativo |
 
 > **Importante:** a tabela acima explica a relação entre os dois trabalhos. Ela não altera o compromisso formal do TCC.
 
 ## Resumo do projeto pela perspectiva do usuário
 
-Escreva **um parágrafo curto e concreto** explicando: quem é o usuário escolhido, o que precisa alcançar, qual problema enfrenta ou qual atividade precisa executar, em qual contexto e como a contribuição do TCC se relaciona com essa situação.
-
-Evite começar pela tecnologia.
-
-> **Estrutura sugerida:** “`{{tipo de usuário}}` precisa `{{objetivo}}` em `{{contexto}}`. Atualmente enfrenta `{{problema/limitação}}` e utiliza `{{processo/alternativa atual}}`. O tema do TCC investiga `{{contribuição técnica}}`. Para fins da disciplina de IHC, será explorada uma interface que permita `{{forma de uso da contribuição}}`.”
+> <b>[F]</b> Analistas de segurança da informação precisam identificar e mitigar tentativas de invasão cibernética em tempo real no contexto de monitoramento continuo em Centros de Operações de Segurança (SOC). Atualmente, enfrentam a dificuldade de interpretar volumes massivos de dados brutos e o excesso de falsos positivos gerados por ferramentas tradicionais, utilizando análises manuais de logs ou sistemas baseados apenas em assinaturas rígidas. O tema do TCC investiga a aplicação de técnicas de Machine Learning com redução de atributos para a classificação rápida de tráfego de rede. Para fins da disciplina de IHC, será explorada uma interface que permita visualizar visualmente os alertas de ataque categorizados em tempo real e alternar os modelos de detecção em execução no sistema.
+Fonte: ???
 
 Se alguma afirmação ainda não estiver sustentada por evidência, registre-a como hipótese na [Entrega 1](docs/01_conhecendo_o_problema.md).
 
@@ -100,8 +97,8 @@ O protótipo de IHC pode, portanto, funcionar como uma demonstração do potenci
 
 | # | Entrega | Quantidade mínima / responsabilidade | Status |
 |---:|---|---|---|
-| 1 | [Conhecendo o projeto, o usuário e o problema](docs/01_conhecendo_o_problema.md) | 1 solução consolidada por equipe | ⬜ |
-| 2 | [Público-alvo e análise de concorrência](docs/02_analise_concorrencia.md) | no mínimo 1 concorrente/interface representativa por integrante + síntese | ⬜ |
+| 1 | [Conhecendo o projeto, o usuário e o problema](docs/01_conhecendo_o_problema.md) | 1 solução consolidada por equipe | 🟨 |
+| 2 | [Público-alvo e análise de concorrência](docs/02_analise_concorrencia.md) | no mínimo 1 concorrente/interface representativa por integrante + síntese | 🟨 |
 | 3 | [Personas, empatia, contexto e jornada](docs/03_personas_contexto_jornada.md) | 1 persona por integrante; demais artefatos consolidados | ⬜ |
 | 4 | [Cenários de análise/problema](docs/04_cenarios_problema.md) | 1 solução completa por integrante | ⬜ |
 | 5 | [Análise de tarefas: HTA, GOMS e CTT](docs/05_analise_tarefas.md) | cada integrante: pelo menos 1 HTA + 1 GOMS + 1 CTT | ⬜ |
