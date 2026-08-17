@@ -122,13 +122,13 @@ Detectar tentativas de invasão cibernética em uma rede de computadores.
 
 ## 1.4 O que se espera que esteja diferente **para pessoas, organizações ou processos** se essa contribuição for bem-sucedida?
 
-{{[F/H/?] ...}}
+[F] - Permite o gerenciamento de redes de computadores evitando vazamento de dados e uma resposta rápida a incidentes.
 
 ## 1.5 O que é mérito técnico/científico do TCC e o que seria uma possível aplicação prática?
 
 | Mérito/contribuição técnica | Possível aplicação/valor em uso |
 |---|---|
-| {{...}} | {{...}} |
+| Monitoramento em tempo real | Garantia de resposta mais rápida a incidentes comparada com sistemas semelhantes |
 
 ---
 
@@ -138,7 +138,7 @@ Detectar tentativas de invasão cibernética em uma rede de computadores.
 
 Se não houver interface prevista no TCC, escreva `NÃO SE APLICA AO ESCOPO ORIGINAL` e prossiga para 2.2.
 
-{{[F/H/?] ...}}
+[F] Analistas de SOC
 
 ## 2.2 Quem poderia **usar, configurar, administrar, operar, interpretar ou tomar decisões** a partir da contribuição técnica?
 
@@ -146,19 +146,21 @@ Considere perfis profissionais e stakeholders, não apenas consumidores finais.
 
 | Perfil | Relação com a contribuição | O que faria | Status/evidência |
 |---|---|---|---|
-| {{DBA / analista / gestor / técnico / pesquisador / usuário final...}} | {{...}} | {{...}} | F / H / ? |
+| Analista | Gerenciador | Interage diretamente com a interface | F |
+| Diretor | Contratante | Contrata o serviço e verifica a diminuição em casos de vazamento | F |
 
 ## 2.3 Existem pessoas afetadas que não usariam a interface diretamente?
 
 | Stakeholder | Como é afetado | Usa interface? | Status/evidência |
 |---|---|---|---|
-| {{...}} | {{...}} | sim/não | {{...}} |
+| Contribuintes | Garante a seguraça para o uso da rede | não | Usuário desta mesma rede |
 
 ## 2.4 Que características desses perfis podem influenciar a interação?
 
 Considere conhecimento do domínio, experiência tecnológica, frequência de uso, necessidades de acessibilidade, responsabilidade profissional, familiaridade com métricas, linguagem técnica, urgência etc.
 
 {{[F/H/?] ...}}
+[H01] Analistas de SOC estão acostumados a gerenciar redes com ferramentas similares, para estes casos o sistema implementado é uma melhoria do trabalho ja existente.
 
 ---
 
@@ -169,13 +171,14 @@ Considere conhecimento do domínio, experiência tecnológica, frequência de us
 Não responda “usar o algoritmo”, “clicar no sistema” ou “ver o dashboard”.
 
 {{[F/H/?] ...}}
+[F] Garantir um acesso mais seguro a uma rede de computadores, e evitar vazamento de dados permitindo uma resposta rápida a incidentes.
 
 ## 3.2 Quais são as atividades mais importantes?
 
 | ID | Atividade/objetivo | Quem realiza | Frequência/criticidade inicial | Status/evidência |
 |---|---|---|---|---|
-| A01 | {{...}} | {{...}} | {{...}} | {{...}} |
-| A02 | {{...}} | {{...}} | {{...}} | {{...}} |
+| A01 | Gerenciamento | Analista | Constante | Responsabilidades da carreira |
+| A02 | Governança | Diretor | Semanalmente | Analise de relatórios |
 | A03 | {{...}} | {{...}} | {{...}} | {{...}} |
 
 ## 3.3 Qual atividade parece mais frequente? Por quê?
