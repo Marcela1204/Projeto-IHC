@@ -217,27 +217,35 @@ Considere perfis profissionais e stakeholders, não apenas consumidores finais.
 
 ## 4.2 O que é difícil, demorado, confuso, repetitivo, arriscado ou pouco transparente?
 
-{{[F/H/?] ...}}
+- [F] Incapacidade de identificar ataques inéditos (Zero-Day) por falta de assinatura prévia.  
+- [F] Volume excessivo de dados trafegados e alta quantidade de falsos positivos gerados por sistemas legados de detecção de anomalias.  
+- [H] Dificuldade de correlacionar dezenas de métricas de rede brutas (como taxas de erro SYN ou contagem de portas) sem uma ferramenta de síntese visual
+(Fonte: ???)
 
 ## 4.3 Que informações o profissional precisa interpretar para tomar decisão?
 
-{{[F/H/?] ...}}
+- [F] Tipo e protocolo do tráfego (TCP, UDP, ICMP), serviço acessado, volume de bytes enviados/recebidos e duração da conexão.  
+- [F] Taxa de erros de conexão (ex: rerror_rate, serror_rate), frequência de acesso ao mesmo host/porta e flags de autenticação (logged_in).  
+- [F] Categoria prevista da anomalia (Normal, DoS, Probe, R2L, U2R) e nível de confiança do modelo.
+(Fonte: ???)
 
 ## 4.4 O que acontece quando a atividade falha ou quando o resultado é interpretado incorretamente?
 
-{{[F/H/?] ...}}
+- [F] Falso Negativo (Ataque ignorado): Invasores ganham controle da rede, elevam privilégios ou causam indisponibilidade de serviços essenciais.  
+- [F] Falso Positivo (Tráfego legítimo bloqueado): Serviços do negócio são interrompidos indevidamente, gerando sobrecarga nas equipes de TI para liberar acessos.
+(Fonte: ???)
 
 ## 4.5 Conte uma situação concreta.
 
-Escreva uma pequena narrativa com pessoa, objetivo, atividade, contexto, dificuldade e consequência. **Não descreva ainda a futura solução.**
-
-{{[F/H/?] narrativa...}}
+[H] Durante o plantão noturno, o analista Lucas observa uma lentidão pontual nos servidores Web. Ele abre o console tradicional e se depara com milhares de linhas de log cruas. Sem saber se é um pico legítimo de acessos ou um ataque de Probe/DoS, ele leva 40 minutos filtrando o tráfego manualmente. Nesse intervalo, a invasão se consolida, resultando na queda do serviço e no vazamento de credenciais.
 
 ## 4.6 Que evidência existe hoje?
 
 | Evidência/fonte | O que sustenta | Limitação |
 |---|---|---|
-| {{...}} | {{...}} | {{...}} |
+| Experimentos com dataset NSL-KDD no MVP 1 | Demonstra alta taxa de acurácia (99,7%) da Decision Tree e tempo de inferência rápido (0,003s) para 18 atributos | Avaliação realizada em dataset estático, pendente de validação com tráfego real dinâmico |
+| Revisão bibliográfica do artigo | Confirma que modelos tradicionais geram altos falsos positivos e que a redução de dimensionalidade é chave para tempo real | Foco primariamente acadêmico e conceitual. |
+(Fonte: ???)
 
 ---
 
@@ -245,31 +253,27 @@ Escreva uma pequena narrativa com pessoa, objetivo, atividade, contexto, dificul
 
 ## 5.1 Onde e em quais situações a interação poderia ocorrer?
 
-{{[F/H/?] ...}}
+[H] Em salas de centro de operações de segurança (SOC), ambientes de TI corporativos ou estações de trabalho de administradores de rede, sob operação normal ou em situações de crise/incidente crítico.
 
 ## 5.2 Em quais dispositivos/equipamentos?
 
-{{[F/H/?] ...}}
+[H] Monitores e workstations de trabalho (para visualização do dashboard) conectados a servidores centrais ou placas embarcadas de monitoramento em tempo real
 
 ## 5.3 Existem condições físicas relevantes?
 
-Considere iluminação, ruído, mobilidade, conexão, privacidade, uso compartilhado, interrupções, pressão de tempo etc.
-
-{{[F/H/?] ...}}
+[H] Uso contínuo em ambientes com múltiplos monitores, iluminação controlada (uso comum de modo escuro/Dark Mode) e pressão de tempo para tomadas de decisão sob incidentes.
 
 ## 5.4 Existem fatores sociais ou organizacionais?
 
-Considere papéis, chefias, equipes, permissões, aprovação, responsabilidade profissional, auditoria, turnos e colaboração.
-
-{{[F/H/?] ...}}
+[H] Hierarquia operacional onde o analista L1 monitora os alertas iniciais, o analista L2 investiga a fundo e o gestor avalia os relatórios consolidados de conformidade e segurança.
 
 ## 5.5 Existe necessidade de histórico, rastreabilidade ou auditoria?
 
-{{[F/H/?] ...}}
+[F] Sim, a retenção de históricos de tentativas de invasão e métricas de acerto do modelo é fundamental para auditorias de segurança e conformidade da infraestrutura
 
 ## 5.6 Um erro pode produzir consequência relevante? Qual?
 
-{{[F/H/?] ...}}
+[F] Sim. A não identificação de uma intrusão (falso negativo) pode acarretar perdas financeiras massivas e comprometimento de infraestruturas críticas.
 
 ---
 
@@ -281,11 +285,13 @@ Considere papéis, chefias, equipes, permissões, aprovação, responsabilidade 
 
 | Alternativa atual | Quem usa | Para quê | Status/evidência |
 |---|---|---|---|
-| {{...}} | {{...}} | {{...}} | {{...}} |
+| IDSs Tradicionais (ex: Snort, Suricata) | Analistas / Administradores de rede | Monitorar tráfego com base em regras e assinaturas estáticas | [F] |
+| Dashboards Genéricos (ex: Grafana, Metabase) | Equipes de TI / DevOps | Visualizar métricas de infraestrutura e logs agregados | [F] |
+| Scripts em Python / Notebooks | Pesquisadores / Cientistas de Dados |Treinar e validar modelos de ML offline | [F] |
 
 ## 6.2 Existem produtos que atuam na mesma área, mesmo sem serem equivalentes ao TCC?
 
-{{[F/H/?] ...}}
+[F] Sim. Ferramentas comerciais de SIEM (ex: Splunk, Elastic SIEM, Datadog) e soluções de NIDS com módulos de IA
 
 ## 6.3 Quais interfaces profissionais esse público já conhece?
 
