@@ -66,7 +66,6 @@ Uma hipótese explicitada é melhor do que uma suposição escondida.
 
 Tecnologias de Machine Learning para Detecção de Intrusões em Redes de Computadores: Uma Pesquisa Exploratória e Experimental
 
-
 ## 0.3 Orientador(a)
 
 Leonardo Anjoletto Ferreira
@@ -82,7 +81,7 @@ Marque e descreva:
 - [ ] biblioteca/API/framework;
 - [ ] análise de dataset;
 - [X] estudo/benchmark/avaliação experimental;
-    - Experimento para a implementação do sistema em regime de tempo real.
+    - Experimento de um sistema inteligente de redes em regime de tempo real.
 - [X] infraestrutura/backend;
     - Utilização de sistemas de virtualização.
 - [X] componente embarcado/IoT;
@@ -90,14 +89,13 @@ Marque e descreva:
 - [X] outro: Indicadores.
     - Avaliar através de tabelas, gráficos e evidências o nível de segurança da rede.
 
-
 ## 0.5 O TCC já previa desenvolvimento de interface com usuário?
 
 - [X] Sim, a interface já faz parte do TCC.
 - [ ] Parcialmente; existe alguma interação, mas ainda não está bem definida.
 - [ ] Não. O TCC é predominantemente técnico e não previa interface.
 
-**Explique o que está formalmente previsto no TCC:** Desenvolvimento de um sistema de detecção de intrusão baseado em algorítimos de classificação supervisionados e apresenta-los em um dashboard para o gerenciamento e monitoramento da segurança da rede.
+**Explique o que está formalmente previsto no TCC:** Desenvolvimento de um sistema de detecção de intrusão baseado em algoritmos de classificação supervisionada, com visualização em dashboard para gerenciamento e monitoramento da segurança de rede.
 
 > Esta resposta serve para separar o compromisso do TCC do projeto da disciplina. Mesmo quando a opção for **não**, a equipe irá definir uma interface para exercitar IHC.
 
@@ -107,29 +105,42 @@ Marque e descreva:
 
 ## 1.1 Explique o TCC em uma frase, sem citar linguagem de programação, framework ou banco de dados.
 
-Propomos um sistema inteligente de segurança de redes que identifica e bloqueia invasões cibernéticas em tempo real, para garantir máxima precisão do tráfego de dados analisado.
+Propomos um sistema inteligente de segurança de redes que identifica e alerta invasões cibernéticas em tempo real, para garantir máxima precisão do tráfego de dados analisado.
 
 ## 1.2 Qual situação, atividade ou problema do mundo real motivou o TCC?
 
-{{[F/H/?] ...}}
+> <b>[F]</b> O avanço das redes de computadores e a crescente digitalização de serviços têm ampliado significativamente a exposição de sistemas a ameaças cibernéticas. Esse crescimento é acompanhado por um aumento expressivo no volume de dados trafegados, que passou de aproximadamente 16 GB por usuário ao mês em 2017 para cerca de 50 GB mensais em 2022. Esse cenário contribui diretamente para a ampliação da superfície de ataque, refletindo no aumento da quantidade e da sofisticação de ameaças, como negações de serviço, varreduras de rede e acessos não autorizados.
+- Fonte: A. Thakkar e R. Lohiya, “A survey on intrusion detection system: feature selection, model, performance measures, application perspective, challenges, and future research directions,” Artificial Intelligence Review, vol. 54, pp. 4529–4593, 2021. doi: 10.1007/s10462-021-10037-9)
+
+> <b>[F]</b> Os impactos de falhas de segurança tornam-se cada vez mais críticos, sendo que mais de 14 bilhões de registros de dados foram vazados desde 2013, além de prejuízos financeiros significativos, como os 29,8 bilhões de dólares perdidos em golpes telefônicos apenas no ano de 2020.
+- Fonte: Z. Azam, M. M. Islam e M. N. Huda, “Comparative Analysis of Intrusion Detection Systems and Machine Learning-Based Model Analysis Through Decision Tree,” 2023. doi: 10.1109/2023.3296444
+
+> <b>[F]</b> Um dos maiores desafios atuais da segurança em redes está relacionado aos ataques de Zero−Day, que exploram vulnerabilidades ainda desconhecidas pelos sistemas de defesa. Por não possuírem assinaturas previamente registradas, esses ataques são difíceis de identificar por métodos tradicionais, funcionando como ameaças invisíveis até que sejam descobertas.
+- Fonte: W. S. Admass, Y. Y. Munaye e A. A. Diro, “Cyber security: State of the art, challenges and future directions,” 2023. doi: 10.1016/2023.10031
+
+> <b>[F]</b> Casos reais, como a Operação Aurora, demonstram o potencial destrutivo dessas ameaças, incluindo roubo
+de dados sensíveis e comprometimento de infraestruturas críticas.
+- Fonte: W. S. Admass, Y. Y. Munaye e A. A. Diro, “Cyber security: State of the art, challenges and future directions,” 2023. doi: 10.1016/2023.10031
 
 ## 1.3 Qual é a **capacidade/contribuição central** produzida pelo TCC?
 
-
-Exemplos: otimizar consultas; classificar imagens; detectar anomalias; comparar modelos; identificar padrões; prever demanda; analisar desempenho; gerar resumos; recomendar configurações.
-
-Detectar tentativas de invasão cibernética em uma rede de computadores.
+Detectar tentativas de invasão cibernética em uma rede de computadores em tempo real, reduzindo a dimensionalidade dos dados sem perder precisão.
 
 ## 1.4 O que se espera que esteja diferente **para pessoas, organizações ou processos** se essa contribuição for bem-sucedida?
 
-[F] - Permite o gerenciamento de redes de computadores evitando vazamento de dados e uma resposta rápida a incidentes.
+- [F] Eficiência no monitoramento em tempo real: Adoção de modelos de baixo tempo de inferência (como Decision Tree com tempo de teste de ~0,003s) viabiliza a detecção instantânea em redes de alto tráfego.  (Fonte: Texto dos Autores do TCC)
+- [H] Redução do tempo de resposta a incidentes (MTTR): A consolidação dos eventos em um painel modular e visual permitirá que equipes de cibersegurança identifiquem a origem e o tipo de ataque sem precisar analisar logs brutos.
+- [H] Viabilidade operacional em hardware limitado: A otimização para plataformas embarcadas reduz os custos de infraestrutura para monitoramento de redes e ambientes de IoT.
 
 ## 1.5 O que é mérito técnico/científico do TCC e o que seria uma possível aplicação prática?
 
 | Mérito/contribuição técnica | Possível aplicação/valor em uso |
 |---|---|
-| Monitoramento em tempo real | Garantia de resposta mais rápida a incidentes comparada com sistemas semelhantes |
-
+| [H] Monitoramento em tempo real | [H] Garantia de resposta mais rápida a incidentes comparada com sistemas semelhantes |
+| [F] Redução de atributos e otimização: Seleção de 16 a 18 features e uso de PCA mantendo acurácia superior a 95% | [H] Processamento leve para ajudar o processamento em tempo real |
+| [F] Pipeline modular de ML: Comparativo entre algoritmos (DT, RF, KNN, SVM, LR) para classificação de tráfego | [H] Painel de controle que permite ao analista trocar o algoritmo de detecção conforme o perfil da rede |
+| [F] Agrupamento e classificação de ataques: Agrupamento das ameaças nas macrocategorias DoS, Probe, R2L e U2R | [H] Dashboard de segurança com visualização de riscos categorizados e alertas em tempo real |
+(Fonte: Texto dos Autores do TCC)
 ---
 
 # 2. Entendendo as pessoas envolvidas
@@ -138,7 +149,7 @@ Detectar tentativas de invasão cibernética em uma rede de computadores.
 
 Se não houver interface prevista no TCC, escreva `NÃO SE APLICA AO ESCOPO ORIGINAL` e prossiga para 2.2.
 
-[F] Analistas de SOC
+[H] Analistas de segurança da informação (SOC), administradores de rede e pesquisadores/gestores de TI.
 
 ## 2.2 Quem poderia **usar, configurar, administrar, operar, interpretar ou tomar decisões** a partir da contribuição técnica?
 
@@ -146,48 +157,54 @@ Considere perfis profissionais e stakeholders, não apenas consumidores finais.
 
 | Perfil | Relação com a contribuição | O que faria | Status/evidência |
 |---|---|---|---|
-| Analista | Gerenciador | Interage diretamente com a interface | F |
-| Diretor | Contratante | Contrata o serviço e verifica a diminuição em casos de vazamento | F |
+| Analista | Gerenciador | Interage diretamente com a interface | [F] |
+| Diretor | Contratante | Contrata o serviço e verifica a diminuição em casos de vazamento | [F] |
+| Analista de Segurança | Operar e Interpretar | Monitorar o tráfego em tempo real no dashboard, avaliar alertas de invasão e conter ameaças | [H] |
+| Administrador de Rede | Configurar e Administrar | Ajustar parâmetros de captura de rede, selecionar algoritmos ativos e configurar a plataforma física/embarcada | [H] |
+| Gestor de Segurança | Tomar decisões | Visualizar relatórios consolidados, avaliar taxas de ataque e decidir sobre investimentos em infraestrutura | [H] |
+(Fonte: ???)
 
 ## 2.3 Existem pessoas afetadas que não usariam a interface diretamente?
 
 | Stakeholder | Como é afetado | Usa interface? | Status/evidência |
 |---|---|---|---|
-| Contribuintes | Garante a seguraça para o uso da rede | não | Usuário desta mesma rede |
+| Contribuintes | Garante a segurança para o uso da rede | Não | Usuário desta mesma rede |
+| Usuários finais da rede | Têm seus serviços mantidos (disponibilidade) e seus dados protegidos contra vazamentos | Não | [F] |
+| Diretoria / Clientes da empresa | Evitam prejuízos financeiros e danos de reputação decorrentes de sequestro ou vazamento de dados | Não | [F] |
+(Fonte: Texto dos Autores do TCC)
 
 ## 2.4 Que características desses perfis podem influenciar a interação?
 
-Considere conhecimento do domínio, experiência tecnológica, frequência de uso, necessidades de acessibilidade, responsabilidade profissional, familiaridade com métricas, linguagem técnica, urgência etc.
-
-{{[F/H/?] ...}}
-[H01] Analistas de SOC estão acostumados a gerenciar redes com ferramentas similares, para estes casos o sistema implementado é uma melhoria do trabalho ja existente.
-
+- [H] Analistas de SOC estão acostumados a gerenciar redes com ferramentas similares, para estes casos o sistema implementado é uma melhoria do trabalho já existente.
+- [F] Exigência de resposta rápida: O contexto de cibersegurança exige tomar decisões instantâneas para conter ataques em andamento.  
+- [H] Familiaridade com palavras técnicas: O usuário compreende conceitos de rede (portas, protocolos, pacotes, flags SYN), mas necessita que esses dados venham pré-processados e visualmente resumidos.
+- [H] Muita informação ao mesmo tempo: Sob ataque ativo, a interface deve evitar excesso de dados visuais desnecessários e priorizar alertas de alta severidade.
+(Fonte: Texto dos Autores do TCC)
 ---
 
 # 3. Entendendo objetivos e atividades
 
 ## 3.1 O que o usuário está tentando conseguir no mundo real?
 
-Não responda “usar o algoritmo”, “clicar no sistema” ou “ver o dashboard”.
+- [H] Garantir um acesso mais seguro a uma rede de computadores, e evitar vazamento de dados permitindo uma resposta rápida a incidentes.
 
-{{[F/H/?] ...}}
-[F] Garantir um acesso mais seguro a uma rede de computadores, e evitar vazamento de dados permitindo uma resposta rápida a incidentes.
+- [H] Manter a rede operacional e segura, identificando e mitigando ameaças antes que comprometam a disponibilidade, integridade ou confidencialidade dos dados.
 
 ## 3.2 Quais são as atividades mais importantes?
 
 | ID | Atividade/objetivo | Quem realiza | Frequência/criticidade inicial | Status/evidência |
 |---|---|---|---|---|
-| A01 | Gerenciamento | Analista | Constante | Responsabilidades da carreira |
-| A02 | Governança | Diretor | Semanalmente | Analise de relatórios |
-| A03 | {{...}} | {{...}} | {{...}} | {{...}} |
+| A01 | Monitoramento | Analista de Segurança | Constante | Análise do tráfego de rede em tempo real para identificar anomalias |
+| A02 | Gerenciamento | Analista de Segurança | Constante | Análise de detalhes de um alerta de ataque (origem, categoria DoS/Probe/R2L/U2R) |
+| A03 | Configuração | Administrador | Mensalmente | Alternância do modelo de Machine Learning ativo conforme exigência do ambiente |
 
 ## 3.3 Qual atividade parece mais frequente? Por quê?
 
-{{[F/H/?] ...}}
+[H] A01, pois os fluxos de pacotes chegam ininterruptamente na infraestrutura e exigem observação contínua de métricas agregadas de saúde da rede
 
 ## 3.4 Qual parece mais crítica? Que consequência existe se for mal executada?
 
-{{[F/H/?] ...}}
+[H] A02, Se for mal executada ou demorada, um ataque destrutivo (como exfiltração de dados R2L/U2R) pode se consolidar na rede, gerando vazamento de dados sensíveis ou indisponibilidade total dos serviços.
 
 ---
 
@@ -195,9 +212,8 @@ Não responda “usar o algoritmo”, “clicar no sistema” ou “ver o dashbo
 
 ## 4.1 Como essas atividades são realizadas hoje, antes da interface imaginada na disciplina?
 
-Pode existir software concorrente, linha de comando, planilha, notebook, script, painel técnico, processo manual, consulta a logs, análise visual, troca de mensagens, decisão por especialista etc.
-
-{{[F/H/?] ...}}
+[F] Análise manual/semi-automatizada por meio de logs de rede, ferramentas de captura de pacotes, consoles de linha de comando ou sistemas IDS tradicionais baseados exclusivamente em regras e assinaturas fixas (tais como Snort, Suricata, Cisco Secure, Zeek, Wazuh, ClamAV, Palo Alto, Sophos, Windows Defender, Security Onion e outros)
+(Fonte: ???)
 
 ## 4.2 O que é difícil, demorado, confuso, repetitivo, arriscado ou pouco transparente?
 
