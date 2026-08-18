@@ -135,12 +135,12 @@ Detectar tentativas de invasão cibernética em uma rede de computadores em temp
 
 ## 1.5 O que é mérito técnico/científico do TCC e o que seria uma possível aplicação prática?
 
-| Mérito/contribuição técnica | Possível aplicação/valor em uso |
-|---|---|
-| Monitoramento em tempo real | Garantia de resposta mais rápida a incidentes comparada com sistemas semelhantes |
-| Redução de atributos e otimização: Seleção de 16 a 18 features e uso de PCA mantendo acurácia superior a 95% | Processamento leve para ajudar o processamento em tempo real |
-| Pipeline modular de ML: Comparativo entre algoritmos (DT, RF, KNN, SVM, LR) para classificação de tráfego | Painel de controle que permite ao analista trocar o algoritmo de detecção conforme o perfil da rede |
-| Agrupamento e classificação de ataques: Agrupamento das ameaças nas macrocategorias DoS, Probe, R2L e U2R | Dashboard de segurança com visualização de riscos categorizados e alertas em tempo real |
+| Mérito/contribuição técnica                                                                                  | Possível aplicação/valor em uso                                                                     |
+| ------------------------------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------------------- |
+| Monitoramento em tempo real                                                                                  | Garantia de resposta mais rápida a incidentes comparada com sistemas semelhantes                    |
+| Redução de atributos e otimização: Seleção de 16 a 18 features e uso de PCA mantendo acurácia superior a 95% | Processamento leve para ajudar o processamento em tempo real                                        |
+| Pipeline modular de ML: Comparativo entre algoritmos (DT, RF, KNN, SVM, LR) para classificação de tráfego    | Painel de controle que permite ao analista trocar o algoritmo de detecção conforme o perfil da rede |
+| Agrupamento e classificação de ataques: Agrupamento das ameaças nas macrocategorias DoS, Probe, R2L e U2R    | Dashboard de segurança com visualização de riscos categorizados e alertas em tempo real             |
 
 ---
 
@@ -154,22 +154,19 @@ Detectar tentativas de invasão cibernética em uma rede de computadores em temp
 
 Considere perfis profissionais e stakeholders, não apenas consumidores finais.
 
-| Perfil | Relação com a contribuição | O que faria | Status/evidência |
-|---|---|---|---|
-| Analista | Gerenciador | Interage diretamente com a interface | [F] |
-| Diretor | Contratante | Contrata o serviço e verifica a diminuição em casos de vazamento | [F] |
-| Analista de Segurança | Operar e Interpretar | Monitorar o tráfego em tempo real no dashboard, avaliar alertas de invasão e conter ameaças | [H04] |
-| Administrador de Rede | Configurar e Administrar | Ajustar parâmetros de captura de rede, selecionar algoritmos ativos e configurar a plataforma física/embarcada | [H05] |
-| Gestor de Segurança | Tomar decisões | Visualizar relatórios consolidados, avaliar taxas de ataque e decidir sobre investimentos em infraestrutura | [H06] |
+| Perfil                | Relação com a contribuição | O que faria                                                                                                    | Status/evidência |
+| --------------------- | -------------------------- | -------------------------------------------------------------------------------------------------------------- | ---------------- |
+| Analista de Segurança | Operar e Interpretar       | Monitorar o tráfego em tempo real no dashboard, avaliar alertas de invasão e conter ameaças                    | [H04]            |
+| Administrador de Rede | Configurar e Administrar   | Ajustar parâmetros de captura de rede, selecionar algoritmos ativos e configurar a plataforma física/embarcada | [H05]            |
+| Gestor de Segurança   | Tomar decisões             | Visualizar relatórios consolidados, avaliar taxas de ataque e decidir sobre investimentos em infraestrutura    | [H06]            |
 <!-- (Fonte: ???) --> @Adelgrin e @Marcela1204
 
 ## 2.3 Existem pessoas afetadas que não usariam a interface diretamente?
 
-| Stakeholder | Como é afetado | Usa interface? | Status/evidência |
-|---|---|---|---|
-| Contribuintes | Garante a segurança para o uso da rede | Não | [F] |
-| Usuários finais da rede | Têm seus serviços mantidos (disponibilidade) e seus dados protegidos contra vazamentos | Não | [F] |
-| Diretoria / Clientes da empresa | Evitam prejuízos financeiros e danos de reputação decorrentes de sequestro ou vazamento de dados | Não | [F] |
+| Stakeholder                     | Como é afetado                                                                                   | Usa interface? | Status/evidência |
+| ------------------------------- | ------------------------------------------------------------------------------------------------ | -------------- | ---------------- |
+| Usuários finais da rede         | Têm seus serviços mantidos (disponibilidade) e seus dados protegidos contra vazamentos           | Não            | [F]              |
+| Diretoria / Clientes da empresa | Evitam prejuízos financeiros e danos de reputação decorrentes de sequestro ou vazamento de dados | Não            | [F]              |
 <!-- (Fonte: ???) --> @Adelgrin e @Marcela1204
 
 ## 2.4 Que características desses perfis podem influenciar a interação?
@@ -191,11 +188,11 @@ Considere perfis profissionais e stakeholders, não apenas consumidores finais.
 
 ## 3.2 Quais são as atividades mais importantes?
 
-| ID | Atividade/objetivo | Quem realiza | Frequência/criticidade inicial | Status/evidência |
-|---|---|---|---|---|
-| A01 | Monitoramento | Analista de Segurança | Constante | Análise do tráfego de rede em tempo real para identificar anomalias |
-| A02 | Gerenciamento | Analista de Segurança | Constante | Análise de detalhes de um alerta de ataque (origem, categoria DoS/Probe/R2L/U2R) |
-| A03 | Configuração | Administrador | Mensalmente | Alternância do modelo de Machine Learning ativo conforme exigência do ambiente |
+| ID  | Atividade/objetivo | Quem realiza          | Frequência/criticidade inicial | Status/evidência                                                                 |
+| --- | ------------------ | --------------------- | ------------------------------ | -------------------------------------------------------------------------------- |
+| A01 | Monitoramento      | Analista de Segurança | Constante                      | Análise do tráfego de rede em tempo real para identificar anomalias              |
+| A02 | Gerenciamento      | Analista de Segurança | Constante                      | Análise de detalhes de um alerta de ataque (origem, categoria DoS/Probe/R2L/U2R) |
+| A03 | Configuração       | Administrador         | Mensalmente                    | Alternância do modelo de Machine Learning ativo conforme exigência do ambiente   |
 <!-- Aqui em Status/Evidência precisa de [F], [H] e [?]? --> @Adelgrin e @Marcela1204
 
 ## 3.3 Qual atividade parece mais frequente? Por quê?
@@ -224,9 +221,8 @@ Considere perfis profissionais e stakeholders, não apenas consumidores finais.
 
 ## 4.3 Que informações o profissional precisa interpretar para tomar decisão?
 
-- [F] Tipo e protocolo do tráfego (TCP, UDP, ICMP), serviço acessado, volume de bytes enviados/recebidos e duração da conexão.  
-- [F] Taxa de erros de conexão (ex: rerror_rate, serror_rate), frequência de acesso ao mesmo host/porta e flags de autenticação (logged_in).  
 - [F] Categoria prevista da anomalia (Normal, DoS, Probe, R2L, U2R) e nível de confiança do modelo.
+- [F] Origem e destino de conexão, serviços utilizados, volume de bytes enviados/recebidos.
 <!-- (Fonte: ???) --> @Adelgrin e @Marcela1204
 
 ## 4.4 O que acontece quando a atividade falha ou quando o resultado é interpretado incorretamente?
@@ -241,10 +237,10 @@ Considere perfis profissionais e stakeholders, não apenas consumidores finais.
 
 ## 4.6 Que evidência existe hoje?
 
-| Evidência/fonte | O que sustenta | Limitação |
-|---|---|---|
-| Experimentos com dataset NSL-KDD no MVP 1 | Demonstra alta taxa de acurácia (99,7%) da Decision Tree e tempo de inferência rápido (0,003s) para 18 atributos | Avaliação realizada em dataset estático, pendente de validação com tráfego real dinâmico |
-| Revisão bibliográfica do artigo | Confirma que modelos tradicionais geram altos falsos positivos e que a redução de dimensionalidade é chave para tempo real | Foco primariamente acadêmico e conceitual. |
+| Evidência/fonte                           | O que sustenta                                                                                                             | Limitação                                                                                |
+| ----------------------------------------- | -------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------- |
+| Experimentos com dataset NSL-KDD no MVP 1 | Demonstra alta taxa de acurácia (99,7%) da Decision Tree e tempo de inferência rápido (0,003s) para 18 atributos           | Avaliação realizada em dataset estático, pendente de validação com tráfego real dinâmico |
+| Revisão bibliográfica do artigo           | Confirma que modelos tradicionais geram altos falsos positivos e que a redução de dimensionalidade é chave para tempo real | Foco primariamente acadêmico e conceitual.                                               |
 <!-- (Fonte: ???) --> @Adelgrin e @Marcela1204
 
 ---
@@ -285,16 +281,16 @@ Considere perfis profissionais e stakeholders, não apenas consumidores finais.
 
 ## 6.1 Como pessoas resolvem problemas semelhantes hoje?
 
-| Alternativa atual | Quem usa | Para quê | Status/evidência |
-|---|---|---|---|
-| IDSs Tradicionais | Analistas / Administradores de rede | Monitorar tráfego com base em regras e assinaturas estáticas | [F] |
-| Dashboards Genéricos (ex: Grafana, Metabase) | Equipes de TI / DevOps | Visualizar métricas de infraestrutura e logs agregados | [F] |
-| Scripts em Python / Notebooks | Pesquisadores / Cientistas de Dados |Treinar e validar modelos de ML offline | [F] |
+| Alternativa atual                   | Quem usa                            | Para quê                                                     | Status/evidência |
+| ----------------------------------- | ----------------------------------- | ------------------------------------------------------------ | ---------------- |
+| IDSs Tradicionais                   | Analistas / Administradores de rede | Monitorar tráfego com base em regras e assinaturas estáticas | [F]              |
+| Dashboards Genéricos (ex: Metabase) | Equipes de TI / DevOps              | Visualizar métricas de infraestrutura e logs agregados       | [F]              |
+| Scripts em Python / Notebooks       | Pesquisadores / Cientistas de Dados | Treinar e validar modelos de ML offline                      | [F]              |
 <!-- (Fonte: ???) --> @Adelgrin e @Marcela1204
 
 ## 6.2 Existem produtos que atuam na mesma área, mesmo sem serem equivalentes ao TCC?
 
-[F] Sim. Ferramentas comerciais como Splunk, Elastic SIEM, Datadog, Snort, Suricata, Cisco Secure, Zeek, Wazuh, ClamAV, Palo Alto, Sophos, Windows Defender, Security Onion e outros, além de soluções de NIDS com módulo de IA.
+[F] Sim. Ferramentas comerciais como Splunk, Elastic SIEM, Datadog, Snort, Suricata, Cisco Secure, Zeek, Wazuh, ClamAV, Palo Alto, Sophos, Windows Defender, Security Onion, FortiIDS e outros, além de soluções de NIDS com módulo de IA.
 <!-- (Fonte: ???) --> @Adelgrin e @Marcela1204
 
 ## 6.3 Quais interfaces profissionais esse público já conhece?
@@ -358,22 +354,22 @@ A equipe pode registrar possibilidades para investigação. **Não significa que
 
 Marque apenas as que parecem plausíveis e explique o objetivo correspondente.
 
-| Possibilidade | Pode fazer sentido? | Objetivo/tarefa que justificaria | Evidência atual |
-|---|---|---|---|
-| Dashboard/visão geral | Sim | Exibir saúde da rede, volume de tráfego e proporção entre tráfego normal e ataques | [F] |
-| Configuração/parametrização | Sim | Selecionar e alterar o algoritmo de ML ativo no pipeline em tempo real | [F] |
-| Entrada/upload/seleção de dados | Sim | Escolher fontes/interfaces de captura de rede ou importar conjuntos de dados para teste | [F] |
-| Acompanhamento de processamento | Sim | Monitorar métricas de hardware/sistema (CPU, RAM, latência e tempo de teste do modelo) | [F] |
-| Relatório/resultados | Sim | Exportar históricos de ataques e métricas consolidadas de acurácia/f1-score | [F] |
-| Histórico com busca/filtros | Sim | Filtrar conexões por protocolo, tipo de ataque (DoS, Probe, R2L, U2R) e horário | [F] |
-| Comparação de resultados | Sim | Comparar métricas de performance entre algoritmos (ex: Decision Tree vs. Random Forest) | [F] |
-| Explicabilidade/detalhamento | Sim | Exibir os atributos mais relevantes (ex: src_bytes, count, dst_host_srv_count) que levaram o modelo a classificar o ataque. | [F] |
-| Administração/configurações globais | Talvez | Definir limites de alerta ou limites de captura de pacotes | [H22] |
-| Usuários/perfis/permissões | Não | Não é prioridade central para o recorte do escopo de IHC | [H23] |
-| CRUD de entidade do domínio | Não | O domínio é voltado a fluxo contínuo de eventos/logs, não cadastro de dados estáticos | [H24] |
-| Auditoria/logs | Sim | Registrar ações efetuadas pelo analista mediante logs do sistema | [F] |
-| Alertas/ocorrências | Sim | Notificar visualmente quando ataques de alto risco (R2L/U2R) forem detectados | [F] |
-| Ajuda/documentação | Talvez | Oferecer guia com descrição das classes de ataque para analistas iniciantes | [H25] |
+| Possibilidade                       | Pode fazer sentido? | Objetivo/tarefa que justificaria                                                                                            | Evidência atual |
+| ----------------------------------- | ------------------- | --------------------------------------------------------------------------------------------------------------------------- | --------------- |
+| Dashboard/visão geral               | Sim                 | Exibir saúde da rede, volume de tráfego e proporção entre tráfego normal e ataques                                          | [F]             |
+| Configuração/parametrização         | Sim                 | Selecionar e alterar o algoritmo de ML ativo no pipeline em tempo real                                                      | [F]             |
+| Entrada/upload/seleção de dados     | Sim                 | Escolher fontes/interfaces de captura de rede ou importar conjuntos de dados para teste                                     | [F]             |
+| Acompanhamento de processamento     | Sim                 | Monitorar métricas de hardware/sistema (CPU, RAM, latência e tempo de teste do modelo)                                      | [F]             |
+| Relatório/resultados                | Sim                 | Exportar históricos de ataques e métricas consolidadas de acurácia/f1-score                                                 | [F]             |
+| Histórico com busca/filtros         | Sim                 | Filtrar conexões por protocolo, tipo de ataque (DoS, Probe, R2L, U2R) e horário                                             | [F]             |
+| Comparação de resultados            | Sim                 | Comparar métricas de performance entre algoritmos (ex: Decision Tree vs. Random Forest)                                     | [F]             |
+| Explicabilidade/detalhamento        | Sim                 | Exibir os atributos mais relevantes (ex: src_bytes, count, dst_host_srv_count) que levaram o modelo a classificar o ataque. | [F]             |
+| Administração/configurações globais | Talvez              | Definir limites de alerta ou limites de captura de pacotes                                                                  | [H22]           |
+| Usuários/perfis/permissões          | Não                 | Não é prioridade central para o recorte do escopo de IHC                                                                    | [H23]           |
+| CRUD de entidade do domínio         | Não                 | O domínio é voltado a fluxo contínuo de eventos/logs, não cadastro de dados estáticos                                       | [H24]           |
+| Auditoria/logs                      | Sim                 | Registrar ações efetuadas pelo analista mediante logs do sistema                                                            | [F]             |
+| Alertas/ocorrências                 | Sim                 | Notificar visualmente quando ataques de alto risco (R2L/U2R) forem detectados                                               | [F]             |
+| Ajuda/documentação                  | Talvez              | Oferecer guia com descrição das classes de ataque para analistas iniciantes                                                 | [H25]           |
 <!-- (Fonte: ???) --> @Adelgrin E @Marcela1204
 
 > **Atenção:** “login + dashboard + CRUD” não é uma solução universal. Cada padrão deve surgir de uma tarefa real.
@@ -384,61 +380,61 @@ Marque apenas as que parecem plausíveis e explique o objetivo correspondente.
 
 ## 9.1 Qual benefício concreto o projeto de IHC pretende oferecer?
 
-| Benefício esperado | Problema/necessidade | Usuário | Status/evidência |
-|---|---|---|---|
-| Redução no tempo de identificação de ataques | Dificuldade em analisar logs cruos de rede sob ataque ativo | Analista de Segurança | [H26] |
-| Clareza na troca de modelos e diagnósticos | Falta de visibilidade sobre qual modelo de ML performa melhor no tráfego atual | Administrador de Rede / Analista |[H27]|
+| Benefício esperado                           | Problema/necessidade                                                           | Usuário                          | Status/evidência |
+| -------------------------------------------- | ------------------------------------------------------------------------------ | -------------------------------- | ---------------- |
+| Redução no tempo de identificação de ataques | Dificuldade em analisar logs cruos de rede sob ataque ativo                    | Analista de Segurança            | [H26]            |
+| Clareza na troca de modelos e diagnósticos   | Falta de visibilidade sobre qual modelo de ML performa melhor no tráfego atual | Administrador de Rede / Analista | [H27]            |
 
 ## 9.2 Que ações o usuário deverá conseguir realizar?
 
-| ID | O usuário precisa conseguir... | Para alcançar... | Prioridade inicial |
-|---|---|---|---|
-| F01 | Visualizar a taxa de tráfego de rede e detecção de ataques em tempo real | Avaliar o estado atual de segurança da infraestrutura | Alta |
-| F02 | Inspecionar os atributos detalhados de uma conexão sinalizada como ataque | Confirmar a veracidade do incidente (evitar falso positivo) | Média |
-| F03 | Alternar o algoritmo de classificação (ex: Decision Tree, Random Forest) via interface | Otimizar a detecção de acordo com os recursos disponíveis | Média |
+| ID  | O usuário precisa conseguir...                                                         | Para alcançar...                                            | Prioridade inicial |
+| --- | -------------------------------------------------------------------------------------- | ----------------------------------------------------------- | ------------------ |
+| F01 | Visualizar a taxa de tráfego de rede e detecção de ataques em tempo real               | Avaliar o estado atual de segurança da infraestrutura       | Alta               |
+| F02 | Inspecionar os atributos detalhados de uma conexão sinalizada como ataque              | Confirmar a veracidade do incidente (evitar falso positivo) | Média              |
+| F03 | Alternar o algoritmo de classificação (ex: Decision Tree, Random Forest) via interface | Otimizar a detecção de acordo com os recursos disponíveis   | Média              |
 
 ## 9.3 Tecnologias/restrições já definidas no TCC
 
 A tecnologia aparece **agora**, depois do entendimento do uso.
 
-| Tecnologia/restrição | Por que existe | Possível impacto na interação |
-|---|---|---|
+| Tecnologia/restrição             | Por que existe                                                    | Possível impacto na interação                                                                         |
+| -------------------------------- | ----------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------- |
 | Modelos em Python / Scikit-Learn | Definido para treinamento e inferência dos classificadores no TCC | A interface precisa comunicar-se de forma eficiente com o backend para não introduzir latência visual |
-| Execução em Sistema Embarcado | Requisito do TCC para rodar a solução em tempo real na borda | Exige uma interface web leve e responsiva, sem consumo excessivo de recursos da máquina |
+| Execução em Sistema Embarcado    | Requisito do TCC para rodar a solução em tempo real na borda      | Exige uma interface web leve e responsiva, sem consumo excessivo de recursos da máquina               |
 
 ---
 
 # 10. Hipóteses e dúvidas prioritárias
 
-| ID | Hipótese/dúvida | Por que importa | Como poderá ser investigada |
-|---|---|---|---|
-| H01 | Redução do tempo de resposta a incidentes (MTTR) via painel modular. | Valida se a interface realmente agiliza o diagnóstico do analista. | Entrega 2 / 5 (Modelagem de tarefas) |
-| H02 | Viabilidade operacional do sistema em hardware limitado/embarcado. | Garante que a interface rode de forma leve na borda (edge). | Entrega 8 (Restrições de Usabilidade) |
-| H03 | Mapeamento de perfis diretos (SOC, SysAdmins, Pesquisadores/Gestores). | Define os atores centrais da solução interativa. | Entrega 3 (Detalhamento de Perfis) |
-| H04 | Analista de Segurança monitora o tráfego e avalia alertas em tempo real. | Identifica o papel operacional de nível 1/2 no SOC. | Entrega 3 / 5 |
-| H05 | Administrador de Rede ajusta parâmetros de captura e escolhe algoritmos. | Identifica o papel administrativo e de infraestrutura. | Entrega 3 / 5 |
-| H06 | Gestor de Segurança visualiza relatórios e decide sobre investimentos. | Identifica a necessidade de visões consolidadas e executivas. | Entrega 3 / 5 |
-| H07 | Analistas necessitam de dados pré-processados mesmo dominando termos técnicos. | Evita que a interface exponha dados brutos sem síntese. | Entrega 3 (Perfil de Usuário) |
-| H08 | Em momentos de ataque, a interface deve evitar excesso visual e destacar severidade. | Evita sobrecarga cognitiva (*dashboard clutter*) em situações críticas. | Entrega 6 / 8 |
-| H09 | Usuário busca acesso seguro e resposta rápida para evitar vazamento de dados. | Mapeia a motivação primária e de negócio do usuário. | Entrega 4 (Situações Problemáticas) |
-| H10 | Usuário precisa manter a rede operacional mitigando ameaças antes do impacto. | Mapeia o objetivo contínuo de proteção da infraestrutura. | Entrega 4 / 5 |
-| H11 | Monitoramento em tempo real (A01) é a atividade mais frequente da rotina. | Estabelece qual tela deve ser a visualização padrão. | Entrega 5 (Modelagem de Tarefas) |
-| H12 | Investigação de alertas (A02) é a atividade mais crítica para evitar vazamentos. | Define onde um erro do usuário traz maiores consequências. | Entrega 4 / 5 |
-| H13 | Dificuldade de correlacionar métricas brutas sem uma ferramenta visual. | Mapeia o gargalo de usabilidade das ferramentas atuais. | Entrega 2 / 4 |
-| H14 | Cenário de uso: Lucas leva 40 minutos filtrando logs cruos durante invasão. | Serve de cenário de referência para validar a solução proposta. | Entrega 4 (Cenários de Uso) |
-| H15 | A interação ocorre em salas de SOC ou estações sob pressão de crise. | Mapeia o contexto físico e ambiental de uso. | Entrega 3 (Contexto de Uso) |
-| H16 | O sistema será usado em workstations e monitores conectados a embarcados. | Define o porte dos dispositivos de visualização. | Entrega 3 / 8 |
-| H17 | O ambiente de uso exige uso contínuo com múltiplos monitores e Dark Mode. | Mapeia requisitos de conforto visual prolongado. | Entrega 3 / 6 |
-| H18 | Existe hierarquia operacional onde o L1 tria, L2 investiga e Gestor avalia. | Organiza os papéis de uso dentro da equipe. | Entrega 3 / 5 |
-| H19 | Soluções atuais fazem bem a exibição de gráficos de linha de tempo e filtros. | Identifica convenções de mercado que devem ser mantidas. | Entrega 2 (Análise Concorrencial) |
-| H20 | Soluções atuais pecam por alta complexidade e excesso de alertas irrelevantes. | Identifica os pontos fracos dos concorrentes a evitar. | Entrega 2 |
-| H21 | Usuários estão habituados com gráficos de rosca, KPIs e tabelas coloridas. | Define o vocabulário visual e os componentes familiares. | Entrega 2 / 6 |
-| H22 | Administração/configurações globais (limites de alerta) fazem sentido. | Avalia se a parametrização do sistema cabe no escopo. | Entrega 5 / 7 |
-| H23 | Gestão de Usuários/Permissões não é prioridade para o escopo de IHC. | Delimita o escopo pedagógico da disciplina. | Entrega 7 (Escopo de Interação) |
-| H24 | CRUD tradicional não se aplica ao domínio de tráfego contínuo. | Evita aplicação de padrões de interface inadequados ao domínio. | Entrega 5 |
-| H25 | Tela de Ajuda/Documentação com guia de ataques pode ajudar iniciantes. | Avalia necessidade de suporte instrucional na tela. | Entrega 5 / 6 |
-| H26 | A interface reduzirá o tempo de identificação de ataques pelo analista. | Define a proposta principal de valor da solução de IHC. | Entrega 12–14 (Avaliação de Usabilidade) |
-| H27 | A interface trará clareza e transparência na alternância dos modelos de ML. | Mede a eficiência do controle modular do pipeline. | Entrega 12–14 |
+| ID  | Hipótese/dúvida                                                                      | Por que importa                                                         | Como poderá ser investigada              |
+| --- | ------------------------------------------------------------------------------------ | ----------------------------------------------------------------------- | ---------------------------------------- |
+| H01 | Redução do tempo de resposta a incidentes (MTTR) via painel modular.                 | Valida se a interface realmente agiliza o diagnóstico do analista.      | Entrega 2 / 5 (Modelagem de tarefas)     |
+| H02 | Viabilidade operacional do sistema em hardware limitado/embarcado.                   | Garante que a interface rode de forma leve na borda (edge).             | Entrega 8 (Restrições de Usabilidade)    |
+| H03 | Mapeamento de perfis diretos (SOC, SysAdmins, Pesquisadores/Gestores).               | Define os atores centrais da solução interativa.                        | Entrega 3 (Detalhamento de Perfis)       |
+| H04 | Analista de Segurança monitora o tráfego e avalia alertas em tempo real.             | Identifica o papel operacional de nível 1/2 no SOC.                     | Entrega 3 / 5                            |
+| H05 | Administrador de Rede ajusta parâmetros de captura e escolhe algoritmos.             | Identifica o papel administrativo e de infraestrutura.                  | Entrega 3 / 5                            |
+| H06 | Gestor de Segurança visualiza relatórios e decide sobre investimentos.               | Identifica a necessidade de visões consolidadas e executivas.           | Entrega 3 / 5                            |
+| H07 | Analistas necessitam de dados pré-processados mesmo dominando termos técnicos.       | Evita que a interface exponha dados brutos sem síntese.                 | Entrega 3 (Perfil de Usuário)            |
+| H08 | Em momentos de ataque, a interface deve evitar excesso visual e destacar severidade. | Evita sobrecarga cognitiva (*dashboard clutter*) em situações críticas. | Entrega 6 / 8                            |
+| H09 | Usuário busca acesso seguro e resposta rápida para evitar vazamento de dados.        | Mapeia a motivação primária e de negócio do usuário.                    | Entrega 4 (Situações Problemáticas)      |
+| H10 | Usuário precisa manter a rede operacional mitigando ameaças antes do impacto.        | Mapeia o objetivo contínuo de proteção da infraestrutura.               | Entrega 4 / 5                            |
+| H11 | Monitoramento em tempo real (A01) é a atividade mais frequente da rotina.            | Estabelece qual tela deve ser a visualização padrão.                    | Entrega 5 (Modelagem de Tarefas)         |
+| H12 | Investigação de alertas (A02) é a atividade mais crítica para evitar vazamentos.     | Define onde um erro do usuário traz maiores consequências.              | Entrega 4 / 5                            |
+| H13 | Dificuldade de correlacionar métricas brutas sem uma ferramenta visual.              | Mapeia o gargalo de usabilidade das ferramentas atuais.                 | Entrega 2 / 4                            |
+| H14 | Cenário de uso: Lucas leva 40 minutos filtrando logs cruos durante invasão.          | Serve de cenário de referência para validar a solução proposta.         | Entrega 4 (Cenários de Uso)              |
+| H15 | A interação ocorre em salas de SOC ou estações sob pressão de crise.                 | Mapeia o contexto físico e ambiental de uso.                            | Entrega 3 (Contexto de Uso)              |
+| H16 | O sistema será usado em workstations e monitores conectados a embarcados.            | Define o porte dos dispositivos de visualização.                        | Entrega 3 / 8                            |
+| H17 | O ambiente de uso exige uso contínuo com múltiplos monitores e Dark Mode.            | Mapeia requisitos de conforto visual prolongado.                        | Entrega 3 / 6                            |
+| H18 | Existe hierarquia operacional onde o L1 tria, L2 investiga e Gestor avalia.          | Organiza os papéis de uso dentro da equipe.                             | Entrega 3 / 5                            |
+| H19 | Soluções atuais fazem bem a exibição de gráficos de linha de tempo e filtros.        | Identifica convenções de mercado que devem ser mantidas.                | Entrega 2 (Análise Concorrencial)        |
+| H20 | Soluções atuais pecam por alta complexidade e excesso de alertas irrelevantes.       | Identifica os pontos fracos dos concorrentes a evitar.                  | Entrega 2                                |
+| H21 | Usuários estão habituados com gráficos de rosca, KPIs e tabelas coloridas.           | Define o vocabulário visual e os componentes familiares.                | Entrega 2 / 6                            |
+| H22 | Administração/configurações globais (limites de alerta) fazem sentido.               | Avalia se a parametrização do sistema cabe no escopo.                   | Entrega 5 / 7                            |
+| H23 | Gestão de Usuários/Permissões não é prioridade para o escopo de IHC.                 | Delimita o escopo pedagógico da disciplina.                             | Entrega 7 (Escopo de Interação)          |
+| H24 | CRUD tradicional não se aplica ao domínio de tráfego contínuo.                       | Evita aplicação de padrões de interface inadequados ao domínio.         | Entrega 5                                |
+| H25 | Tela de Ajuda/Documentação com guia de ataques pode ajudar iniciantes.               | Avalia necessidade de suporte instrucional na tela.                     | Entrega 5 / 6                            |
+| H26 | A interface reduzirá o tempo de identificação de ataques pelo analista.              | Define a proposta principal de valor da solução de IHC.                 | Entrega 12–14 (Avaliação de Usabilidade) |
+| H27 | A interface trará clareza e transparência na alternância dos modelos de ML.          | Mede a eficiência do controle modular do pipeline.                      | Entrega 12–14                            |
 
 Registre em [`../RASTREABILIDADE.md`](../RASTREABILIDADE.md).
 
@@ -446,18 +442,18 @@ Registre em [`../RASTREABILIDADE.md`](../RASTREABILIDADE.md).
 
 # 11. Síntese da equipe
 
-| Pergunta | Síntese atual |
-|---|---|
-| Qual é a contribuição central do TCC? | Um sistema/modelo otimizado de ML capaz de detectar invasões em tráfego de rede em tempo real |
-| O TCC já previa interface? | Sim, previa um dashboard para gerenciamento e monitoramento da segurança da rede |
-| Quem é o usuário prioritário de IHC? | Analista de Segurança de Rede (SOC Analyst) |
-| O que ele precisa alcançar? | Detectar e validar ameaças à rede de forma rápida e precisa |
-| Qual problema/atividade será estudado? | O monitoramento de tráfego e a interpretação de alertas de anomalia |
-| Como isso acontece hoje? | Por análise manual de logs ou IDSs baseados em regras rígidas |
-| Qual é o contexto de uso? | Centros de Operações de Segurança (SOC) e ambientes corporativos de rede |
-| Que interface/recorte será explorado? | Dashboard de monitoramento de tráfego em tempo real e controle de algoritmos do IDS |
-| Como a interface se relaciona ao TCC? | Já fazia parte do escopo previsto no TCC |
-| Quais pontos ainda são hipóteses? | xxx |
+| Pergunta                               | Síntese atual                                                                                 |
+| -------------------------------------- | --------------------------------------------------------------------------------------------- |
+| Qual é a contribuição central do TCC?  | Um sistema/modelo otimizado de ML capaz de detectar invasões em tráfego de rede em tempo real |
+| O TCC já previa interface?             | Sim, previa um dashboard para gerenciamento e monitoramento da segurança da rede              |
+| Quem é o usuário prioritário de IHC?   | Analista de Segurança de Rede (SOC Analyst)                                                   |
+| O que ele precisa alcançar?            | Detectar e validar ameaças à rede de forma rápida e precisa                                   |
+| Qual problema/atividade será estudado? | O monitoramento de tráfego e a interpretação de alertas de anomalia                           |
+| Como isso acontece hoje?               | Por análise manual de logs ou IDSs baseados em regras rígidas                                 |
+| Qual é o contexto de uso?              | Centros de Operações de Segurança (SOC) e ambientes corporativos de rede                      |
+| Que interface/recorte será explorado?  | Dashboard de monitoramento de tráfego em tempo real e controle de algoritmos do IDS           |
+| Como a interface se relaciona ao TCC?  | Já fazia parte do escopo previsto no TCC                                                      |
+| Quais pontos ainda são hipóteses?      | xxx                                                                                           |
 <!-- Aqui precisa colocar [F], [H] ou [?]-->
 
 ### Delimitação
