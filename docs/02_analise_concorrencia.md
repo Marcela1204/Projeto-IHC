@@ -1,7 +1,7 @@
 # Entrega 2 — Público-alvo e análise de concorrência
 
-**Data:** {{dd/mm/aaaa}}  
-**Status:** ⬜ não iniciada  
+**Data:** 19/08/2026  
+**Status:** 🟨 em andamento      
 **Responsabilidade mínima:** cada integrante analisa pelo menos 1 concorrente/interface representativa; a equipe produz síntese comparativa.
 
 ## Objetivo da atividade
@@ -63,7 +63,44 @@ Use avaliações públicas, relatos, estudos, testes próprios ou outra fonte id
 
 #### Preço/modelo de negócio
 
+**(Professor comentou que não é necessário preenchimento)**
+
+#### Padrões e tendências percebidos
+
 {{...}}
+
+#### Pontos positivos, limitações e lições
+
+| Ponto | Evidência | Implicação para nosso projeto |
+|---|---|---|
+| {{...}} | {{...}} | {{...}} |
+
+---
+
+### Análise C02 — Wazuh Dashboard
+
+**Autor(a):** {{nome — matrícula}}  
+**Tipo:** indireto/análogo  
+**Link oficial:** [{{URL}}](https://wazuh.com/)  
+**Data de acesso:** 23/08/2026
+
+#### Contexto e proposta
+
+O Wazuh é um ecossistema open-source unificado para segurança de endpoints e redes (SIEM/XDR). Seu dashboard principal fornece visibilidade sobre eventos de segurança, detecção de ameaças, monitoramento de integridade de arquivos e conformidade. Ele foi escolhido por ser uma referência consolidada no mercado para analistas de SOC, fornecendo um parâmetro de como o público-alvo interage com alertas de intrusão em tempo real.
+
+#### Funcionalidades relevantes
+
+| Funcionalidade | Como é realizada | Evidência/print | Observação de IHC |
+|---|---|---|---|
+| {{...}} | {{...}} | `../assets/02_concorrencia/...` | {{...}} |
+
+#### Experiência do usuário e opiniões
+
+Use avaliações públicas, relatos, estudos, testes próprios ou outra fonte identificável. Não trate opinião isolada como verdade universal.
+
+#### Preço/modelo de negócio
+
+**(Professor comentou que não é necessário preenchimento)**
 
 #### Padrões e tendências percebidos
 
