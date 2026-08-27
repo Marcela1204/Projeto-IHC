@@ -1,7 +1,7 @@
 # Entrega 2 — Público-alvo e análise de concorrência
 
 **Data:** 19/08/2026  
-**Status:** 🟨 em andamento      
+**Status:** `🟨 em andamento`      
 **Responsabilidade mínima:** cada integrante analisa pelo menos 1 concorrente/interface representativa; a equipe produz síntese comparativa.
 
 ## Objetivo da atividade
@@ -79,7 +79,7 @@ Use avaliações públicas, relatos, estudos, testes próprios ou outra fonte id
 
 ### Análise C02 — Wazuh Dashboard
 
-**Autor(a):** {{nome — matrícula}}  
+**Autor(a):** Marcela Nalesso | RA: 22.222.011-3  
 **Tipo:** indireto/análogo  
 **Link oficial:** [{{URL}}](https://wazuh.com/)  
 **Data de acesso:** 23/08/2026
