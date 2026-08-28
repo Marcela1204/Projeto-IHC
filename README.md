@@ -49,7 +49,6 @@ Leia obrigatoriamente o [Guia para definir o escopo de IHC a partir do tema do T
 ## Resumo do projeto pela perspectiva do usuário
 
 > <b>[F]</b> Analistas de segurança da informação precisam identificar e mitigar tentativas de invasão cibernética em tempo real no contexto de monitoramento continuo em Centros de Operações de Segurança (SOC). Atualmente, enfrentam a dificuldade de interpretar volumes massivos de dados brutos e o excesso de falsos positivos gerados por ferramentas tradicionais, utilizando análises manuais de logs ou sistemas baseados apenas em assinaturas rígidas. O tema do TCC investiga a aplicação de técnicas de Machine Learning com redução de atributos para a classificação rápida de tráfego de rede. Para fins da disciplina de IHC, será explorada uma interface que permita visualizar visualmente os alertas de ataque categorizados em tempo real e alternar os modelos de detecção em execução no sistema.
-Fonte: ???
 
 Se alguma afirmação ainda não estiver sustentada por evidência, registre-a como hipótese na [Entrega 1](docs/01_conhecendo_o_problema.md).
 

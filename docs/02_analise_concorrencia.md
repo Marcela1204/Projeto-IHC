@@ -1,7 +1,7 @@
 # Entrega 2 — Público-alvo e análise de concorrência
 
 **Data:** 19/08/2026  
-**Status:** 🟨 em andamento      
+**Status:** `🟨 em andamento`      
 **Responsabilidade mínima:** cada integrante analisa pelo menos 1 concorrente/interface representativa; a equipe produz síntese comparativa.
 
 ## Objetivo da atividade
@@ -79,14 +79,14 @@ Use avaliações públicas, relatos, estudos, testes próprios ou outra fonte id
 
 ### Análise C02 — Wazuh Dashboard
 
-**Autor(a):** {{nome — matrícula}}  
+**Autor(a):** Marcela Nalesso | RA: 22.222.011-3  
 **Tipo:** indireto/análogo  
 **Link oficial:** [{{URL}}](https://wazuh.com/)  
 **Data de acesso:** 23/08/2026
 
 #### Contexto e proposta
 
-O Wazuh é um ecossistema open-source unificado para segurança de endpoints e redes (SIEM/XDR). Seu dashboard principal fornece visibilidade sobre eventos de segurança, detecção de ameaças, monitoramento de integridade de arquivos e conformidade. Ele foi escolhido por ser uma referência consolidada no mercado para analistas de SOC, fornecendo um parâmetro de como o público-alvo interage com alertas de intrusão em tempo real.
+O Wazuh é uma plataforma open-source voltada à segurança de endpoints e monitoramento de ambientes, disponibilizando recursos para análise e visualização de dados de segurança. O Wazuh Dashboard funciona como uma interface central para acompanhamento de eventos, alertas e informações relacionadas aos ativos monitorados. Além disso, é possível que o usuário consiga uma visão geral do ambiente e acessar informações mais específicas para investigação. A ferramenta foi selecionada como interface análoga ao projeto por apresentar uma abordagem consolidada para visualização e investigação de eventos de segurança.
 
 #### Funcionalidades relevantes
 

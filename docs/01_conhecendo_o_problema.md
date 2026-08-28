@@ -1,7 +1,7 @@
 # Entrega 1 — Conhecendo o projeto, o usuário e o problema
 
 **Data:** 13/08/2026  
-**Status:** 🟨 em andamento  
+**Status:** `🟩 concluída`  
 **Responsabilidade:** 1 solução consolidada por equipe
 
 ## Objetivo da atividade
@@ -131,7 +131,6 @@ Detectar tentativas de invasão cibernética em uma rede de computadores em temp
 - [F] Eficiência no monitoramento em tempo real: Adoção de modelos de baixo tempo de inferência (como Decision Tree com tempo de teste de ~0,003s) viabiliza a detecção instantânea em redes de alto tráfego.  
 - [H01] Redução do tempo de resposta a incidentes (MTTR): A consolidação dos eventos em um painel modular e visual permitirá que equipes de cibersegurança identifiquem a origem e o tipo de ataque sem precisar analisar logs brutos.
 - [H02] Viabilidade operacional em hardware limitado: A otimização para plataformas embarcadas reduz os custos de infraestrutura para monitoramento de redes e ambientes de IoT.
-<!-- (Fonte: ???) --> @Adelgrin e @Marcela1204
 
 ## 1.5 O que é mérito técnico/científico do TCC e o que seria uma possível aplicação prática?
 
@@ -159,7 +158,6 @@ Considere perfis profissionais e stakeholders, não apenas consumidores finais.
 | Analista de Segurança | Operar e Interpretar       | Monitorar o tráfego em tempo real no dashboard, avaliar alertas de invasão e conter ameaças                    | [H04]            |
 | Administrador de Rede | Configurar e Administrar   | Ajustar parâmetros de captura de rede, selecionar algoritmos ativos e configurar a plataforma física/embarcada | [H05]            |
 | Gestor de Segurança   | Tomar decisões             | Visualizar relatórios consolidados, avaliar taxas de ataque e decidir sobre investimentos em infraestrutura    | [H06]            |
-<!-- (Fonte: ???) --> @Adelgrin e @Marcela1204
 
 ## 2.3 Existem pessoas afetadas que não usariam a interface diretamente?
 
@@ -167,7 +165,6 @@ Considere perfis profissionais e stakeholders, não apenas consumidores finais.
 | ------------------------------- | ------------------------------------------------------------------------------------------------ | -------------- | ---------------- |
 | Usuários finais da rede         | Têm seus serviços mantidos (disponibilidade) e seus dados protegidos contra vazamentos           | Não            | [F]              |
 | Diretoria / Clientes da empresa | Evitam prejuízos financeiros e danos de reputação decorrentes de sequestro ou vazamento de dados | Não            | [F]              |
-<!-- (Fonte: ???) --> @Adelgrin e @Marcela1204
 
 ## 2.4 Que características desses perfis podem influenciar a interação?
 
@@ -175,7 +172,6 @@ Considere perfis profissionais e stakeholders, não apenas consumidores finais.
 - [F] Exigência de resposta rápida: O contexto de cibersegurança exige tomar decisões instantâneas para conter ataques em andamento.  
 - [H07] Familiaridade com palavras técnicas: O usuário compreende conceitos de rede (portas, protocolos, pacotes, flags SYN), mas necessita que esses dados venham pré-processados e visualmente resumidos.
 - [H08] Muita informação ao mesmo tempo: Sob ataque ativo, a interface deve evitar excesso de dados visuais desnecessários e priorizar alertas de alta severidade.
-<!-- (Fonte: ???) --> @Adelgrin e @Marcela1204
 ---
 
 # 3. Entendendo objetivos e atividades
@@ -193,7 +189,7 @@ Considere perfis profissionais e stakeholders, não apenas consumidores finais.
 | A01 | Monitoramento      | Analista de Segurança | Constante                      | Análise do tráfego de rede em tempo real para identificar anomalias              |
 | A02 | Gerenciamento      | Analista de Segurança | Constante                      | Análise de detalhes de um alerta de ataque (origem, categoria DoS/Probe/R2L/U2R) |
 | A03 | Configuração       | Administrador         | Mensalmente                    | Alternância do modelo de Machine Learning ativo conforme exigência do ambiente   |
-<!-- Aqui em Status/Evidência precisa de [F], [H] e [?]? --> @Adelgrin e @Marcela1204
+Fonte: [MVP1](assets\01_dados_mvps\mvp1.pdf)
 
 ## 3.3 Qual atividade parece mais frequente? Por quê?
 
@@ -210,26 +206,28 @@ Considere perfis profissionais e stakeholders, não apenas consumidores finais.
 ## 4.1 Como essas atividades são realizadas hoje, antes da interface imaginada na disciplina?
 
 [F] Análise manual/semi-automatizada por meio de logs de rede, ferramentas de captura de pacotes, consoles de linha de comando ou sistemas IDS tradicionais baseados exclusivamente em regras e assinaturas fixas (tais como Snort, Suricata, Cisco Secure, Zeek, Wazuh, ClamAV, Palo Alto, Sophos, Windows Defender, Security Onion e outros)
-<!-- (Fonte: ???) --> @Adelgrin e @Marcela1204
 
 ## 4.2 O que é difícil, demorado, confuso, repetitivo, arriscado ou pouco transparente?
 
 - [F] Incapacidade de identificar ataques inéditos (Zero-Day) por falta de assinatura prévia.  
 - [F] Volume excessivo de dados trafegados e alta quantidade de falsos positivos gerados por sistemas legados de detecção de anomalias.  
 - [H13] Dificuldade de correlacionar dezenas de métricas de rede brutas (como taxas de erro SYN ou contagem de portas) sem uma ferramenta de síntese visual
-<!-- (Fonte: ???) --> @Adelgrin e @Marcela1204
+<br>
+Fonte: [MVP1](assets\01_dados_mvps\mvp1.pdf)
 
 ## 4.3 Que informações o profissional precisa interpretar para tomar decisão?
 
 - [F] Categoria prevista da anomalia (Normal, DoS, Probe, R2L, U2R) e nível de confiança do modelo.
 - [F] Origem e destino de conexão, serviços utilizados, volume de bytes enviados/recebidos.
-<!-- (Fonte: ???) --> @Adelgrin e @Marcela1204
+<br>
+Fonte: [MVP1](assets\01_dados_mvps\mvp1.pdf)
 
 ## 4.4 O que acontece quando a atividade falha ou quando o resultado é interpretado incorretamente?
 
 - [F] Falso Negativo (Ataque ignorado): Invasores ganham controle da rede, elevam privilégios ou causam indisponibilidade de serviços essenciais.  
 - [F] Falso Positivo (Tráfego legítimo bloqueado): Serviços do negócio são interrompidos indevidamente, gerando sobrecarga nas equipes de TI para liberar acessos.
-<!-- (Fonte: ???) --> @Adelgrin e @Marcela1204
+<br>
+Fonte: [MVP1](assets\01_dados_mvps\mvp1.pdf)
 
 ## 4.5 Conte uma situação concreta.
 
@@ -241,7 +239,8 @@ Considere perfis profissionais e stakeholders, não apenas consumidores finais.
 | ----------------------------------------- | -------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------- |
 | Experimentos com dataset NSL-KDD no MVP 1 | Demonstra alta taxa de acurácia (99,7%) da Decision Tree e tempo de inferência rápido (0,003s) para 18 atributos           | Avaliação realizada em dataset estático, pendente de validação com tráfego real dinâmico |
 | Revisão bibliográfica do artigo           | Confirma que modelos tradicionais geram altos falsos positivos e que a redução de dimensionalidade é chave para tempo real | Foco primariamente acadêmico e conceitual.                                               |
-<!-- (Fonte: ???) --> @Adelgrin e @Marcela1204
+<br>
+Fonte: [MVP1](assets\01_dados_mvps\mvp1.pdf)
 
 ---
 
@@ -266,12 +265,12 @@ Considere perfis profissionais e stakeholders, não apenas consumidores finais.
 ## 5.5 Existe necessidade de histórico, rastreabilidade ou auditoria?
 
 [F] Sim, a retenção de históricos de tentativas de invasão e métricas de acerto do modelo é fundamental para auditorias de segurança e conformidade da infraestrutura
-<!-- (Fonte: ???) --> @Adelgrin e @Marcela1204
 
 ## 5.6 Um erro pode produzir consequência relevante? Qual?
 
 [F] Sim. A não identificação de uma intrusão (falso negativo) pode acarretar perdas financeiras massivas e comprometimento de infraestruturas críticas.
-<!-- (Fonte: ???) --> @Adelgrin e @Marcela1204
+<br>
+Fonte: [MVP1](assets\01_dados_mvps\mvp1.pdf)
 
 ---
 
@@ -286,17 +285,15 @@ Considere perfis profissionais e stakeholders, não apenas consumidores finais.
 | IDSs Tradicionais                   | Analistas / Administradores de rede | Monitorar tráfego com base em regras e assinaturas estáticas | [F]              |
 | Dashboards Genéricos (ex: Metabase) | Equipes de TI / DevOps              | Visualizar métricas de infraestrutura e logs agregados       | [F]              |
 | Scripts em Python / Notebooks       | Pesquisadores / Cientistas de Dados | Treinar e validar modelos de ML offline                      | [F]              |
-<!-- (Fonte: ???) --> @Adelgrin e @Marcela1204
+Fonte: [MVP1](assets\01_dados_mvps\mvp1.pdf)
 
 ## 6.2 Existem produtos que atuam na mesma área, mesmo sem serem equivalentes ao TCC?
 
 [F] Sim. Ferramentas comerciais como Splunk, Elastic SIEM, Datadog, Snort, Suricata, Cisco Secure, Zeek, Wazuh, ClamAV, Palo Alto, Sophos, Windows Defender, Security Onion, FortiIDS e outros, além de soluções de NIDS com módulo de IA.
-<!-- (Fonte: ???) --> @Adelgrin e @Marcela1204
 
 ## 6.3 Quais interfaces profissionais esse público já conhece?
 
 [F] Painéis de monitoramento como Grafana e Metabase, sistemas como CasaOS e ferramentas de gerenciamento de logs.
-<!-- (Fonte: ???) --> @Adelgrin e @Marcela1204
 
 ## 6.4 O que essas soluções parecem fazer bem?
 
@@ -370,7 +367,7 @@ Marque apenas as que parecem plausíveis e explique o objetivo correspondente.
 | Auditoria/logs                      | Sim                 | Registrar ações efetuadas pelo analista mediante logs do sistema                                                            | [F]             |
 | Alertas/ocorrências                 | Sim                 | Notificar visualmente quando ataques de alto risco (R2L/U2R) forem detectados                                               | [F]             |
 | Ajuda/documentação                  | Talvez              | Oferecer guia com descrição das classes de ataque para analistas iniciantes                                                 | [H25]           |
-<!-- (Fonte: ???) --> @Adelgrin E @Marcela1204
+Fonte: [MVP1](assets\01_dados_mvps\mvp1.pdf)
 
 > **Atenção:** “login + dashboard + CRUD” não é uma solução universal. Cada padrão deve surgir de uma tarefa real.
 
