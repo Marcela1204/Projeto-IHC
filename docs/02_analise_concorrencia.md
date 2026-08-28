@@ -40,22 +40,22 @@ Se uma hipótese da Entrega 1 for confirmada ou refutada durante esta análise, 
 
 ## 2. Concorrentes diretos/indiretos
 
-### Análise C01 — {{produto}}
+### Análise C01 — Fortinet IDS
 
-**Autor(a):** {{nome — matrícula}}  
-**Tipo:** direto / indireto / análogo  
-**Link oficial:** {{URL}}  
-**Data de acesso:** {{dd/mm/aaaa}}
+**Autor(a):** Lucas - 22.123.032-9  
+**Tipo:** direto  
+**Link oficial:** [Fortinet IDS](https://www.fortinet.com/br/resources/cyberglossary/intrusion-detection-system)  
+**Data de acesso:** 27/08/2026
 
 #### Contexto e proposta
 
-{{...}}
+O Fortinet IDS (Sistema de Detecção de Intrusões) tem como proposta monitorar continuamente o tráfego de rede para identificar e alertar sobre atividades suspeitas, maliciosas ou desvios de conformidade em tempo real. Integrado ao ecossistema da plataforma Fortinet — como parte dos recursos nativos do sistema FortiOS nos firewalls FortiGate —, ele atua na camada de segurança cibernética preventiva e analítica, fornecendo visibilidade profunda contra ameaças conhecidas e emergentes sem interromper o fluxo operacional, servindo de base essencial para que equipes de TI e SOC reajam rapidamente a potenciais invasões.
 
 #### Funcionalidades relevantes
 
-| Funcionalidade | Como é realizada | Evidência/print | Observação de IHC |
-|---|---|---|---|
-| {{...}} | {{...}} | `../assets/02_concorrencia/...` | {{...}} |
+| Funcionalidade | Como é realizada | Evidência/print                 | Observação de IHC |
+| -------------- | ---------------- | ------------------------------- | ----------------- |
+| {{...}}        | {{...}}          | `../assets/02_concorrencia/...` | {{...}}           |
 
 #### Experiência do usuário e opiniões
 
@@ -63,7 +63,7 @@ Use avaliações públicas, relatos, estudos, testes próprios ou outra fonte id
 
 #### Preço/modelo de negócio
 
-**(Professor comentou que não é necessário preenchimento)**
+> **(Professor comentou que não é necessário preenchimento)**
 
 #### Padrões e tendências percebidos
 
