@@ -68,7 +68,9 @@ O Fortinet IDS (Sistema de Detecção de Intrusões) tem como proposta monitorar
 
 | Funcionalidade | Como é realizada | Evidência/print                 | Observação de IHC |
 | -------------- | ---------------- | ------------------------------- | ----------------- |
-| {{...}}        | {{...}}          | `../assets/02_concorrencia/...` | {{...}}           |
+| Filtro de origem de conexão | Acesso do dashboard de origens de conexões | `../assets/02_concorrencia/Fortigate_sources.png` | a apresentação permite verificar a origem e destino de cada conexão de dentro da rede |
+| Filtro de destino de conexão | Acesso do dashboard de destino de conexões | `../assets/02_concorrencia/Fortigate_Destinations.png` | a apresentação permite verificar os destinos de cada conexão |
+| Filtro de sessões de conexão | Acesso do dashboard de sessões de conexões | `../assets/02_concorrencia/Fortigate_sessions.png` | a apresentação permite verificar as sessões de cada dispositivo (conexão iniciada e finalizada) |
 
 #### Experiência do usuário e opiniões
 
