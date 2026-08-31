@@ -289,7 +289,7 @@ Fonte: [MVP1](assets\01_dados_mvps\mvp1.pdf)
 
 ## 6.2 Existem produtos que atuam na mesma área, mesmo sem serem equivalentes ao TCC?
 
-[F] Sim. Ferramentas comerciais como Splunk, Elastic SIEM, Datadog, Snort, Suricata, Cisco Secure, Zeek, Wazuh, ClamAV, Palo Alto, Sophos, Windows Defender, Security Onion, FortiIDS e outros, além de soluções de NIDS com módulo de IA.
+[F] Sim. Ferramentas comerciais como Splunk, Elastic SIEM, Datadog, Snort, Suricata, Cisco Secure, Zeek, Wazuh, ClamAV, Palo Alto, Sophos, Windows Defender, Security Onion, Fortinet IDS e outros, além de soluções de NIDS com módulo de IA.
 
 ## 6.3 Quais interfaces profissionais esse público já conhece?
 

@@ -30,13 +30,26 @@ Retome o mapa inicial de alternativas e produtos citado na Entrega 1. Aqui a equ
 
 | Item citado na Entrega 1 | Tipo | Por que foi citado | Status inicial | Decisão nesta entrega |
 |---|---|---|---|---|
-| {{...}} | concorrente / análogo / ferramenta cotidiana / processo manual | {{...}} | F / H / ? | analisar / descartar com justificativa |
+| Splunk |Análogo|Referência de mercado em SIEM, agregação de logs e dashboards complexos para analistas|H|Analisar|
+| Elastic SIEM |Análogo|Padrão de mercado para visualização de logs; essencial para entender construção de dashboards|H|Analisar|
+| Datadog |Análogo|Referência moderna em observabilidade, monitoramento de infraestrutura e alertas em tempo real|H|Analisar|
+| Snort |Concorrente|O IDS de rede (NIDS) open-source mais tradicional e conhecido da área, baseado em assinaturas|H|Descartar, não possui interface gráfica nativa relevante para análise de IHC|
+| Suricata |Concorrente|Principal alternativa moderna ao Snort; alta performance em inspeção de pacotes|H|Descartar, não possui interface gráfica nativa relevante para análise de IHC|
+| Cisco Secure |Cconcorrente/Análogo|Solução corporativa robusta de segurança de rede e detecção de intrusão|H|Descartar, não possui interface gráfica nativa relevante para análise de IHC|
+| Zeek |Concorrente|Framework de análise de rede com foco comportamental|H|Descartar, não possui interface gráfica nativa relevante para análise de IHC|
+| Wazuh |Concorrente|Ecossistema open-source completo; referência consolidada para visualização de alertas|F|Analisar|
+| Clam AV |Análogo|Ferramenta clássica e open-source para detecção de malwares|H|Descartar, não possui interface gráfica nativa relevante para análise de IHC|
+| Palo Alto |Análogo|Firewall de Próxima Geração corporativo com IDS/IPS embutido|H|Descartar, não possui interface gráfica nativa relevante para análise de IHC|
+| Sophos |Concorrente/Análogo|Plataforma comercial abrangente de firewall e caça a ameaças|H|Descartar, não possui interface gráfica nativa relevante para análise de IHC|
+| Windows Defender |Ferramenta Cotidiana|Solução de segurança que quase 100% do público-alvo já utilizou ou conhece|H|Descartar, não possui interface gráfica nativa relevante para análise de IHC|
+| Security Onion |Concorrente|Distribuição Linux que agrupa Snort, Suricata, Zeek e Elastic para monitoramento de segurança|H|Descartar, não possui interface gráfica nativa relevante para análise de IHC|
+| Fortinet IDS |Concorrente|Solução de detecção de intrusão associada aos appliances líderes de mercado|H|Analisar|
 
 Se uma hipótese da Entrega 1 for confirmada ou refutada durante esta análise, atualize `H01`, `H02`... em [`../RASTREABILIDADE.md`](../RASTREABILIDADE.md).
 
 ## 1. Público-alvo desta análise
 
-{{descrever e ligar à Entrega 1}}
+Analistas de segurança da informação (SOC), administradores de rede e pesquisadores/gestores de TI.
 
 ## 2. Concorrentes diretos/indiretos
 
@@ -92,7 +105,13 @@ O Wazuh é uma plataforma open-source voltada à segurança de endpoints e monit
 
 | Funcionalidade | Como é realizada | Evidência/print | Observação de IHC |
 |---|---|---|---|
-| {{...}} | {{...}} | `../assets/02_concorrencia/...` | {{...}} |
+|Dashboard de segurança|O usuário acessa dashboards que agregam informações de segurança em diferentes visualizações, permitindo obter uma visão geral do ambiente monitorado|`assets\02_concorrencia\ex_dashboard.png`|A apresentação consolidada reduz a necessidade de consultar diferentes fontes individualmente e favorece a percepção inicial do estado do ambiente|
+|Visualização de alertas|Os eventos processados pelo Wazuh são apresentados como alertas, permitindo ao usuário visualizar informações relacionadas às ocorrências detectada|`assets\02_concorrencia\tela_alertas.png`|A organização dos eventos em uma interface específica facilita a identificação de ocorrências que necessitam de investigação|
+|Classificação por severidade|Os eventos podem receber níveis de severidade associados às regras que os identificam. O dashboard apresenta informações relacionadas à severidade dos alertas|`assets\02_concorrencia\nivel_severidade.png`|A utilização de níveis de severidade auxilia na priorização das ocorrências, permitindo direcionar a atenção para eventos potencialmente mais relevantes|
+|Filtros e consultas|O Wazuh disponibiliza mecanismos de filtragem e consulta, incluindo o Wazuh Query Language (WQL), permitindo restringir os dados apresentados segundo campos e condições específicas|`assets\02_concorrencia\wql1.png` e `assets\02_concorrencia\wql2.png`|A filtragem reduz a quantidade de informação apresentada simultaneamente e permite que o usuário concentre a análise em um subconjunto de eventos|
+|Visualização temporal|O dashboard permite representar eventos e informações em visualizações relacionadas ao tempo, incluindo timelines e outros gráficos|`assets\02_concorrencia\visualizacao_tempo.png`|A representação temporal facilita a identificação de concentração, evolução e recorrência de eventos|
+|Detalhamento de eventos|A partir das informações agregadas, o usuário pode explorar dados mais específicos dos eventos e alertas para realizar investigações|`assets\02_concorrencia\eventos.png`|A possibilidade de partir de uma visão resumida para informações detalhadas favorece uma abordagem de investigação progressiva|
+|Dashboards personalizados|O Wazuh permite criar dashboards e visualizações personalizadas de acordo com as necessidades de monitoramento|`assets\02_concorrencia\personalizacao1.png`, `assets\02_concorrencia\personalizacao2.png` e `assets\02_concorrencia\personalizacao3.png`|A personalização permite adaptar a apresentação das informações às tarefas e prioridades específicas do usuário|
 
 #### Experiência do usuário e opiniões
 
@@ -138,14 +157,14 @@ Registre somente padrões encontrados nas soluções analisadas e que possam ter
 
 ## 4. Síntese comparativa da equipe
 
-| Critério | C01 | C02 | C03 | Oportunidade para o projeto |
-|---|---|---|---|---|
-| Navegação |  |  |  |  |
-| Feedback/estado |  |  |  |  |
-| Prevenção/recuperação de erro |  |  |  |  |
-| Terminologia |  |  |  |  |
-| Acessibilidade |  |  |  |  |
-| Eficiência |  |  |  |  |
+| Critério | C01 | C02 | Oportunidade para o projeto |
+|---|---|---|---|
+| Navegação |  |  |  |   
+| Feedback/estado |  |  |  |  
+| Prevenção/recuperação de erro |  |  |  |  
+| Terminologia |  |  |  |  
+| Acessibilidade |  |  |  |  
+| Eficiência |  |  |  |  
 
 ## 5. Recomendações derivadas
 
@@ -156,7 +175,17 @@ Liste recomendações com origem explícita.
 
 ## Referências
 
-{{fontes dos produtos, avaliações e literatura}}
+- WAZUH. Wazuh dashboard – User manual. Documentação oficial. Disponível em: https://documentation.wazuh.com/current/user-manual/wazuh-dashboard/navigating-the-wazuh-dashboard.html. Acesso em: 27 ago. 2026 a 31 ago. 2026. 
+
+- WAZUH. Wazuh dashboard – User manual. Documentação oficial. Disponível em: https://documentation.wazuh.com/current/user-manual/wazuh-dashboard/. Acesso em: 27 ago. 2026 a 31 ago. 2026.
+
+- WAZUH. Wazuh dashboard – Components. Documentação oficial. Disponível em: https://documentation.wazuh.com/current/getting-started/components/wazuh-dashboard.html. Acesso em: 27 ago. 2026 a 31 ago. 2026.
+
+- WAZUH. Filtering data using Wazuh Query Language (WQL). Documentação oficial. Disponível em: https://documentation.wazuh.com/current/user-manual/wazuh-dashboard/queries.html. Acesso em: 27 ago. 2026 a 31 ago. 2026.
+
+- WAZUH. Creating custom dashboards. Documentação oficial. Disponível em: https://documentation.wazuh.com/current/user-manual/wazuh-dashboard/creating-custom-dashboards.html. Acesso em: 27 ago. 2026 a 31 ago. 2026.
+
+- WAZUH. Alert management. Documentação oficial. Disponível em: https://documentation.wazuh.com/current/user-manual/manager/alert-management.html. Acesso em: 27 ago. 2026 a 31 ago. 2026.
 
 ## Checklist
 
