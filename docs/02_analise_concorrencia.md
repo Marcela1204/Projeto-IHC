@@ -117,7 +117,30 @@ O Wazuh é uma plataforma open-source voltada à segurança de endpoints e monit
 
 #### Experiência do usuário e opiniões
 
-Use avaliações públicas, relatos, estudos, testes próprios ou outra fonte identificável. Não trate opinião isolada como verdade universal.
+- <b>G2: Avaliações de Softwares para Empresas
+    - Ferramenta avaliada em 4.5 de 5
+    - Avaliações Positivas
+    ![facilidade_uso](image-3.png)
+    ![acessivel](image-4.png)
+    ![ciberseguranca](image-5.png)
+    ![facilidade](image-6.png)
+    ![configuracao](image-7.png)
+    - Avaliações Negativas
+    ![interface](image-8.png)
+    ![amigavel](image-9.png)
+    ![complexo](image-10.png)
+    ![dificil](image-11.png)
+    ![dificil2](image-12.png)
+- Reddit: Opiniões Públicas sobre a ferramenta
+    - Avaliações Positivas
+    ![reddit](image-13.png)
+    ![reddit2](image-15.png)
+    ![reddit3](image-16.png)
+    - Avaliações Negativas
+    ![reddit4](image-14.png) 
+- Gartner: Reviews do Produto por Usuários
+    - Avaliação Positiva da Ferramenta</b>
+![Gartner Review](image-2.png)
 
 #### Preço/modelo de negócio
 
@@ -131,7 +154,8 @@ Use avaliações públicas, relatos, estudos, testes próprios ou outra fonte id
 
 | Ponto | Evidência | Implicação para nosso projeto |
 |---|---|---|
-| {{...}} | {{...}} | {{...}} |
+| Positivo: Navegação exploratória contínua | Interatividade dos componentes visuais: gráficos clicáveis que aplicam filtros automáticos no painel | Lição: Nosso IDS não deve exibir predições do modelo de ML como relatórios estáticos. É fundamental permitir que o usuário interaja com as visualizações (ex: clicar no gráfico de tráfego anômalo para filtrar a tabela de eventos) |
+| Positivo: Classificação por severidade | O Wazuh utiliza níveis de severidade para os alertas, permitindo estabelecer limites para geração e tratamento de alertas | Lição: O IDS pode utilizar níveis de prioridade ou severidade para auxiliar o usuário a identificar quais detecções devem ser analisadas primeiro |
 
 > Repita a subseção para C02, C03... até atender à quantidade da equipe.
 
@@ -176,6 +200,14 @@ Liste recomendações com origem explícita.
 - **RC02:** {{...}}
 
 ## Referências
+
+- Gartner Peer Insights. Wazuh - The Open Source Security Platform. Disponível em: https://www.reddit.com/r/cybersecurity/comments/1d1wzzl/wazuh_pros_and_cons/. Acesso em: 27 ago. 2026 a 31 ago. 2026.
+
+- G2: Avaliações de Software de Empresas. Wazuh. Disponível em: https://www.g2.com/pt/products/wazuh/reviews?qs=pros-and-cons. Acesso em: 27 ago. 2026 a 31 ago. 2026.
+
+- Reddit. Wazuh vale a pena pra minha empresa?. Disponível em: https://www.reddit.com/r/Wazuh/comments/16gkvhh/is_wazuh_worth_it_for_my_company/?tl=pt-br. Acesso em: 27 ago. 2026 a 31 ago. 2026.
+
+- Reddit. Wazuh vale a pena pra minha empresa?. Disponível em: https://www.reddit.com/r/cybersecurity/comments/1d1wzzl/wazuh_pros_and_cons/. Acesso em: 27 ago. 2026 a 31 ago. 2026.
 
 - WAZUH. Wazuh dashboard – User manual. Documentação oficial. Disponível em: https://documentation.wazuh.com/current/user-manual/wazuh-dashboard/navigating-the-wazuh-dashboard.html. Acesso em: 27 ago. 2026 a 31 ago. 2026. 
 
