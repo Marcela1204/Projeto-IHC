@@ -148,7 +148,24 @@ O Wazuh é uma plataforma open-source voltada à segurança de endpoints e monit
 
 #### Padrões e tendências percebidos
 
-{{...}}
+- **Visão Geral e Navegação**:
+    - Se baseia na combinação de visão geral, visualizações gráficas, tabelas, filtros e detalhamento progressivo.
+    - Permite ao usuário transitar do panorama geral do ambiente para a investigação de eventos específicos.
+
+- **Dashboards e Indicadores**:
+    - Utiliza dashboards para apresentar múltiplos indicadores simultaneamente.
+    - Oferece painéis específicos para diferentes atividades de segurança, além de permitir a criação de dashboards personalizados.
+
+- **Filtros e Consultas (WQL)**:
+    - Emprega a linguagem WQL (linguagem própria) para combinar condições e realizar buscas específicas.
+    - Reduz o volume de informações exibidas ao usuário, facilitando a análise em diferentes áreas da plataforma.
+
+- **Representação Temporal**:
+    - Permite a criação de visualizações baseadas em intervalos de tempo.
+    - Facilita o acompanhamento da ocorrência, evolução e tendências dos eventos de segurança.
+
+- **Fluxo de Investigação (Visão Geral → Filtragem → Detalhamento)**:
+    - Inicia com dados agregados para posterior restrição e aprofundamento de eventos específicos.
 
 #### Pontos positivos, limitações e lições
 
@@ -156,6 +173,10 @@ O Wazuh é uma plataforma open-source voltada à segurança de endpoints e monit
 |---|---|---|
 | Positivo: Navegação exploratória contínua | Interatividade dos componentes visuais: gráficos clicáveis que aplicam filtros automáticos no painel | Lição: Nosso IDS não deve exibir predições do modelo de ML como relatórios estáticos. É fundamental permitir que o usuário interaja com as visualizações (ex: clicar no gráfico de tráfego anômalo para filtrar a tabela de eventos) |
 | Positivo: Classificação por severidade | O Wazuh utiliza níveis de severidade para os alertas, permitindo estabelecer limites para geração e tratamento de alertas | Lição: O IDS pode utilizar níveis de prioridade ou severidade para auxiliar o usuário a identificar quais detecções devem ser analisadas primeiro |
+| Positivo: Análise de Eventos | O Wazuh disponibiliza visualizações temporais para análise de eventos | Lição: A interface pode apresentar a distribuição das detecções ao longo do tempo para facilitar a identificação de picos, recorrências e possíveis incidentes |
+| Positivo: Personalização | O usuário pode criar dashboards e visualizações personalizados | Lição: A personalização pode ser considerada caso o escopo do projeto permita diferentes perfis ou necessidades de análise |
+| Limitação: Grande quantidade de funcionalidades | A interface reúne uma série de recursos de monitoramento, investigação, configuração, conformidade e administração | Lição: O projeto deve evitar reproduzir a complexidade do Wazuh e priorizar as tarefas diretamente relacionadas ao objetivo do IDS |
+| Limitação: Dependência de conhecimento técnico | Recursos como WQL (linguaguem própria da plataforma) oferecem maior capacidade de consulta, mas exigem que o usuário conheça a sintaxe e os campos disponíveis | Lição: A interface do projeto deve priorizar mecanismos de filtragem simples e compreensão direta dos resultados, deixando consultas avançadas como recurso secundário, caso sejam necessárias |
 
 > Repita a subseção para C02, C03... até atender à quantidade da equipe.
 
