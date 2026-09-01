@@ -59,6 +59,33 @@ Antes de criar personas, retome os tipos de usuários, características relevant
 
 - {{...}}
 
+### Persona P02 — {{nome fictício}}
+
+**Autor(a):** Marcela Nalesso | RA: 22.222.011-3  
+**Tipo:** primária / secundária  
+**Base de evidências:** entrevista / questionário / literatura / observação / proto-persona a validar / combinação  
+**Hipóteses da Entrega 1 relacionadas:** {{H01, H02 ou —}}
+
+![Persona P01](../assets/03_personas/persona_p01.svg)
+
+| Campo | Descrição |
+|---|---|
+| Faixa etária / contexto relevante | {{somente o que impacta o uso}} |
+| Ocupação/papel | {{...}} |
+| Conhecimento do domínio | {{...}} |
+| Experiência tecnológica | {{...}} |
+| Objetivos | {{...}} |
+| Necessidades | {{...}} |
+| Dores/frustrações | {{...}} |
+| Motivadores | {{...}} |
+| Restrições/acessibilidade | {{...}} |
+| Ambiente típico de uso | {{...}} |
+| Comportamentos relevantes | {{...}} |
+
+**Decisões de design influenciadas por P02:**
+
+- {{...}}
+
 > Repita para P02, P03... Cada integrante deve produzir ao menos uma persona.
 
 ### Síntese das personas
