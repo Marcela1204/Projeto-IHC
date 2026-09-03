@@ -66,29 +66,32 @@ O Fortinet IDS (Sistema de Detecção de Intrusões) tem como proposta monitorar
 
 #### Funcionalidades relevantes
 
-| Funcionalidade | Como é realizada | Evidência/print                 | Observação de IHC |
-| -------------- | ---------------- | ------------------------------- | ----------------- |
-| Filtro de origem de conexão | Acesso do dashboard de origens de conexões | `../assets/02_concorrencia/Fortigate_sources.png` | a apresentação permite verificar a origem e destino de cada conexão de dentro da rede |
-| Filtro de destino de conexão | Acesso do dashboard de destino de conexões | `../assets/02_concorrencia/Fortigate_Destinations.png` | a apresentação permite verificar os destinos de cada conexão |
-| Filtro de sessões de conexão | Acesso do dashboard de sessões de conexões | `../assets/02_concorrencia/Fortigate_sessions.png` | a apresentação permite verificar as sessões de cada dispositivo (conexão iniciada e finalizada) |
+| Funcionalidade               | Como é realizada                           | Evidência/print                                        | Observação de IHC                                                                               |
+| ---------------------------- | ------------------------------------------ | ------------------------------------------------------ | ----------------------------------------------------------------------------------------------- |
+| Filtro de origem de conexão  | Acesso do dashboard de origens de conexões | `../assets/02_concorrencia/Fortigate_sources.png`      | a apresentação permite verificar a origem e destino de cada conexão de dentro da rede           |
+| Filtro de destino de conexão | Acesso do dashboard de destino de conexões | `../assets/02_concorrencia/Fortigate_Destinations.png` | a apresentação permite verificar os destinos de cada conexão                                    |
+| Filtro de sessões de conexão | Acesso do dashboard de sessões de conexões | `../assets/02_concorrencia/Fortigate_sessions.png`     | a apresentação permite verificar as sessões de cada dispositivo (conexão iniciada e finalizada) |
 
 #### Experiência do usuário e opiniões
 
-Use avaliações públicas, relatos, estudos, testes próprios ou outra fonte identificável. Não trate opinião isolada como verdade universal.
-
+**Your Pros/Cons with Fortinet**:[post](https://www.reddit.com/r/fortinet/comments/1bnjllk/your_proscons_with_fortinet/)
+**Cloud IDS vs Fortinet FortiGate comparison**:[post](https://www.peerspot.com/products/comparisons/cloud-ids_vs_fortinet-fortigate)
 #### Preço/modelo de negócio
 
 > **(Professor comentou que não é necessário preenchimento)**
 
 #### Padrões e tendências percebidos
 
-{{...}}
-
+- **Abordagem Dual signaure (Exploit-facing vs. Vulnerability-facing):** O padrão técnico do FortiGate separa a detecção em duas frentes para maximizar a eficácia. As assinaturas _exploit-facing_ bloqueiam o ataque específico conhecido, enquanto as _vulnerability-facing_ focam na falha subjacente do software, o que permite ao IPS mitigar variantes de ataques ou ameaças semelhantes antes mesmo que patches oficiais sejam aplicados (o conceito de _virtual patching_).
+- **Descarregamento de Hardware Dedicado (SPUs/NPAs):** Uma tendência crítica no IPS do FortiGate é a execução de parte do processamento pesado de inspeção em chips dedicados (como os Content Processors da Fortinet). Como o IPS exige varredura profunda de pacotes (DPI), o uso de hardware otimizado evita o afunilamento de CPU, permitindo que a varredura ocorra a taxas de multi-gigabits sem impactar a latência da rede.
+- **Inspeção Contextual de Tráfego Criptografado (SSL/TLS DPI):** Como a grande maioria dos ataques trafega encapsulada em HTTPS, o padrão operacional do IDS/IPS do FortiGate é atuar em conjunto com a engine de inspeção SSL. O sistema descriptografa o fluxo em tempo real, aplica as regras de IPS e recriptografa o pacote de forma transparente.
+- **Expansão para Ambientes IoT e OT/ICS:** A tendência moderna exige visibilidade além do perímetro corporativo tradicional. O IPS do FortiGate integra assinaturas específicas para protocolos industriais (como Modbus, DNP3, IEC 60870-5-104) e descoberta de dispositivos IoT, protegendo infraestruturas críticas e ambientes fabris que historicamente utilizavam sistemas legados sem suporte a atualizações de segurança.
+- **Correlação com Inteligência de Ameaças em Tempo Real:** Alimentado pelo **FortiGuard Labs**, o mecanismo de IPS recebe atualizações contínuas baseadas em telemetria global. Isso padroniza a resposta automatizada a ataques de dia zero, exploits de exploração remota (RCE) e tráfego de comando e controle (C2) de botnets.
 #### Pontos positivos, limitações e lições
 
-| Ponto | Evidência | Implicação para nosso projeto |
-|---|---|---|
-| {{...}} | {{...}} | {{...}} |
+| Ponto   | Evidência | Implicação para nosso projeto |
+| ------- | --------- | ----------------------------- |
+| {{...}} | {{...}}   | {{...}}                       |
 
 ---
 
@@ -105,15 +108,15 @@ O Wazuh é uma plataforma open-source voltada à segurança de endpoints e monit
 
 #### Funcionalidades relevantes
 
-| Funcionalidade | Como é realizada | Evidência/print | Observação de IHC |
-|---|---|---|---|
-|Dashboard de segurança|O usuário acessa dashboards que agregam informações de segurança em diferentes visualizações, permitindo obter uma visão geral do ambiente monitorado|`assets\02_concorrencia\ex_dashboard.png`|A apresentação consolidada reduz a necessidade de consultar diferentes fontes individualmente e favorece a percepção inicial do estado do ambiente|
-|Visualização de alertas|Os eventos processados pelo Wazuh são apresentados como alertas, permitindo ao usuário visualizar informações relacionadas às ocorrências detectada|`assets\02_concorrencia\tela_alertas.png`|A organização dos eventos em uma interface específica facilita a identificação de ocorrências que necessitam de investigação|
-|Classificação por severidade|Os eventos podem receber níveis de severidade associados às regras que os identificam. O dashboard apresenta informações relacionadas à severidade dos alertas|`assets\02_concorrencia\nivel_severidade.png`|A utilização de níveis de severidade auxilia na priorização das ocorrências, permitindo direcionar a atenção para eventos potencialmente mais relevantes|
-|Filtros e consultas|O Wazuh disponibiliza mecanismos de filtragem e consulta, incluindo o Wazuh Query Language (WQL), permitindo restringir os dados apresentados segundo campos e condições específicas|`assets\02_concorrencia\wql1.png` e `assets\02_concorrencia\wql2.png`|A filtragem reduz a quantidade de informação apresentada simultaneamente e permite que o usuário concentre a análise em um subconjunto de eventos|
-|Visualização temporal|O dashboard permite representar eventos e informações em visualizações relacionadas ao tempo, incluindo timelines e outros gráficos|`assets\02_concorrencia\visualizacao_tempo.png`|A representação temporal facilita a identificação de concentração, evolução e recorrência de eventos|
-|Detalhamento de eventos|A partir das informações agregadas, o usuário pode explorar dados mais específicos dos eventos e alertas para realizar investigações|`assets\02_concorrencia\eventos.png`|A possibilidade de partir de uma visão resumida para informações detalhadas favorece uma abordagem de investigação progressiva|
-|Dashboards personalizados|O Wazuh permite criar dashboards e visualizações personalizadas de acordo com as necessidades de monitoramento|`assets\02_concorrencia\personalizacao1.png`, `assets\02_concorrencia\personalizacao2.png` e `assets\02_concorrencia\personalizacao3.png`|A personalização permite adaptar a apresentação das informações às tarefas e prioridades específicas do usuário|
+| Funcionalidade               | Como é realizada                                                                                                                                                                     | Evidência/print                                                                                                                           | Observação de IHC                                                                                                                                        |
+| ---------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Dashboard de segurança       | O usuário acessa dashboards que agregam informações de segurança em diferentes visualizações, permitindo obter uma visão geral do ambiente monitorado                                | `assets\02_concorrencia\ex_dashboard.png`                                                                                                 | A apresentação consolidada reduz a necessidade de consultar diferentes fontes individualmente e favorece a percepção inicial do estado do ambiente       |
+| Visualização de alertas      | Os eventos processados pelo Wazuh são apresentados como alertas, permitindo ao usuário visualizar informações relacionadas às ocorrências detectada                                  | `assets\02_concorrencia\tela_alertas.png`                                                                                                 | A organização dos eventos em uma interface específica facilita a identificação de ocorrências que necessitam de investigação                             |
+| Classificação por severidade | Os eventos podem receber níveis de severidade associados às regras que os identificam. O dashboard apresenta informações relacionadas à severidade dos alertas                       | `assets\02_concorrencia\nivel_severidade.png`                                                                                             | A utilização de níveis de severidade auxilia na priorização das ocorrências, permitindo direcionar a atenção para eventos potencialmente mais relevantes |
+| Filtros e consultas          | O Wazuh disponibiliza mecanismos de filtragem e consulta, incluindo o Wazuh Query Language (WQL), permitindo restringir os dados apresentados segundo campos e condições específicas | `assets\02_concorrencia\wql1.png` e `assets\02_concorrencia\wql2.png`                                                                     | A filtragem reduz a quantidade de informação apresentada simultaneamente e permite que o usuário concentre a análise em um subconjunto de eventos        |
+| Visualização temporal        | O dashboard permite representar eventos e informações em visualizações relacionadas ao tempo, incluindo timelines e outros gráficos                                                  | `assets\02_concorrencia\visualizacao_tempo.png`                                                                                           | A representação temporal facilita a identificação de concentração, evolução e recorrência de eventos                                                     |
+| Detalhamento de eventos      | A partir das informações agregadas, o usuário pode explorar dados mais específicos dos eventos e alertas para realizar investigações                                                 | `assets\02_concorrencia\eventos.png`                                                                                                      | A possibilidade de partir de uma visão resumida para informações detalhadas favorece uma abordagem de investigação progressiva                           |
+| Dashboards personalizados    | O Wazuh permite criar dashboards e visualizações personalizadas de acordo com as necessidades de monitoramento                                                                       | `assets\02_concorrencia\personalizacao1.png`, `assets\02_concorrencia\personalizacao2.png` e `assets\02_concorrencia\personalizacao3.png` | A personalização permite adaptar a apresentação das informações às tarefas e prioridades específicas do usuário                                          |
 
 #### Experiência do usuário e opiniões
 
@@ -169,14 +172,14 @@ O Wazuh é uma plataforma open-source voltada à segurança de endpoints e monit
 
 #### Pontos positivos, limitações e lições
 
-| Ponto | Evidência | Implicação para nosso projeto |
-|---|---|---|
-| Positivo: Navegação exploratória contínua | Interatividade dos componentes visuais: gráficos clicáveis que aplicam filtros automáticos no painel | Lição: Nosso IDS não deve exibir predições do modelo de ML como relatórios estáticos. É fundamental permitir que o usuário interaja com as visualizações (ex: clicar no gráfico de tráfego anômalo para filtrar a tabela de eventos) |
-| Positivo: Classificação por severidade | O Wazuh utiliza níveis de severidade para os alertas, permitindo estabelecer limites para geração e tratamento de alertas | Lição: O IDS pode utilizar níveis de prioridade ou severidade para auxiliar o usuário a identificar quais detecções devem ser analisadas primeiro |
-| Positivo: Análise de Eventos | O Wazuh disponibiliza visualizações temporais para análise de eventos | Lição: A interface pode apresentar a distribuição das detecções ao longo do tempo para facilitar a identificação de picos, recorrências e possíveis incidentes |
-| Positivo: Personalização | O usuário pode criar dashboards e visualizações personalizados | Lição: A personalização pode ser considerada caso o escopo do projeto permita diferentes perfis ou necessidades de análise |
-| Limitação: Grande quantidade de funcionalidades | A interface reúne uma série de recursos de monitoramento, investigação, configuração, conformidade e administração | Lição: O projeto deve evitar reproduzir a complexidade do Wazuh e priorizar as tarefas diretamente relacionadas ao objetivo do IDS |
-| Limitação: Dependência de conhecimento técnico | Recursos como WQL (linguaguem própria da plataforma) oferecem maior capacidade de consulta, mas exigem que o usuário conheça a sintaxe e os campos disponíveis | Lição: A interface do projeto deve priorizar mecanismos de filtragem simples e compreensão direta dos resultados, deixando consultas avançadas como recurso secundário, caso sejam necessárias |
+| Ponto                                           | Evidência                                                                                                                                                      | Implicação para nosso projeto                                                                                                                                                                                                        |
+| ----------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Positivo: Navegação exploratória contínua       | Interatividade dos componentes visuais: gráficos clicáveis que aplicam filtros automáticos no painel                                                           | Lição: Nosso IDS não deve exibir predições do modelo de ML como relatórios estáticos. É fundamental permitir que o usuário interaja com as visualizações (ex: clicar no gráfico de tráfego anômalo para filtrar a tabela de eventos) |
+| Positivo: Classificação por severidade          | O Wazuh utiliza níveis de severidade para os alertas, permitindo estabelecer limites para geração e tratamento de alertas                                      | Lição: O IDS pode utilizar níveis de prioridade ou severidade para auxiliar o usuário a identificar quais detecções devem ser analisadas primeiro                                                                                    |
+| Positivo: Análise de Eventos                    | O Wazuh disponibiliza visualizações temporais para análise de eventos                                                                                          | Lição: A interface pode apresentar a distribuição das detecções ao longo do tempo para facilitar a identificação de picos, recorrências e possíveis incidentes                                                                       |
+| Positivo: Personalização                        | O usuário pode criar dashboards e visualizações personalizados                                                                                                 | Lição: A personalização pode ser considerada caso o escopo do projeto permita diferentes perfis ou necessidades de análise                                                                                                           |
+| Limitação: Grande quantidade de funcionalidades | A interface reúne uma série de recursos de monitoramento, investigação, configuração, conformidade e administração                                             | Lição: O projeto deve evitar reproduzir a complexidade do Wazuh e priorizar as tarefas diretamente relacionadas ao objetivo do IDS                                                                                                   |
+| Limitação: Dependência de conhecimento técnico  | Recursos como WQL (linguaguem própria da plataforma) oferecem maior capacidade de consulta, mas exigem que o usuário conheça a sintaxe e os campos disponíveis | Lição: A interface do projeto deve priorizar mecanismos de filtragem simples e compreensão direta dos resultados, deixando consultas avançadas como recurso secundário, caso sejam necessárias                                       |
 
 > Repita a subseção para C02, C03... até atender à quantidade da equipe.
 
@@ -184,9 +187,9 @@ O Wazuh é uma plataforma open-source voltada à segurança de endpoints e monit
 
 Analise interfaces que moldam a expectativa do público, mesmo que não sejam concorrentes.
 
-| Software | Por que o público usa | Padrões relevantes | Prints | O que aprender |
-|---|---|---|---|---|
-| {{...}} | {{...}} | {{...}} | {{link local}} | {{...}} |
+| Software | Por que o público usa | Padrões relevantes | Prints         | O que aprender |
+| -------- | --------------------- | ------------------ | -------------- | -------------- |
+| {{...}}  | {{...}}               | {{...}}            | {{link local}} | {{...}}        |
 
 ## 3.1 Padrões de interface relevantes ao escopo de IHC
 
