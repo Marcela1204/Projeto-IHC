@@ -129,27 +129,27 @@ O Wazuh é uma plataforma open-source voltada à segurança de endpoints e monit
 - <b>G2: Avaliações de Softwares para Empresas
     - Ferramenta avaliada em 4.5 de 5
     - Avaliações Positivas
-    ![facilidade_uso](image-3.png)
-    ![acessivel](image-4.png)
-    ![ciberseguranca](image-5.png)
-    ![facilidade](image-6.png)
-    ![configuracao](image-7.png)
+    ![facilidade_uso](../assets/02_concorrencia/image-3.png)
+    ![acessivel](../assets/02_concorrencia/image-4.png)
+    ![ciberseguranca](../assets/02_concorrencia/image-5.png)
+    ![facilidade](../assets/02_concorrencia/image-6.png)
+    ![configuracao](../assets/02_concorrencia/image-7.png)
     - Avaliações Negativas
-    ![interface](image-8.png)
-    ![amigavel](image-9.png)
-    ![complexo](image-10.png)
-    ![dificil](image-11.png)
-    ![dificil2](image-12.png)
+    ![interface](../assets/02_concorrencia/image-8.png)
+    ![amigavel](../assets/02_concorrencia/image-9.png)
+    ![complexo](../assets/02_concorrencia/image-10.png)
+    ![dificil](../assets/02_concorrencia/image-11.png)
+    ![dificil2](../assets/02_concorrencia/image-12.png)
 - Reddit: Opiniões Públicas sobre a ferramenta
     - Avaliações Positivas
-    ![reddit](image-13.png)
-    ![reddit2](image-15.png)
-    ![reddit3](image-16.png)
+    ![reddit](../assets/02_concorrencia/image-13.png)
+    ![reddit2](../assets/02_concorrencia/image-15.png)
+    ![reddit3](../assets/02_concorrencia/image-16.png)
     - Avaliações Negativas
-    ![reddit4](image-14.png) 
+    ![reddit4](../assets/02_concorrencia/image-14.png) 
 - Gartner: Reviews do Produto por Usuários
     - Avaliação Positiva da Ferramenta</b>
-![Gartner Review](image-2.png)
+![Gartner Review](../assets/02_concorrencia/image-2.png)
 
 #### Preço/modelo de negócio
 
@@ -193,20 +193,20 @@ O Wazuh é uma plataforma open-source voltada à segurança de endpoints e monit
 
 | Software | Por que o público usa | Padrões relevantes | Prints | O que aprender |
 | -------- | --------------------- | ------------------ | ------ | -------------- |
-| Splunk | É uma referência em SIEM para busca, correlação e análise de logs em ambientes corporativos de segurança | dashboards de visão geral, busca textual, filtros temporais, tabelas de eventos, correlação de alertas | [Link onde mostra essas ferramentas](https://www.splunk.com/en_us/blog/tips-and-tricks/dashboard-studio-tabbed-dashboards.html) ![imgSplunk](splunk.png)| O público espera que a investigação comece com uma visão geral e avance por filtros e busca, sem depender de leitura manual de logs brutos |
-| Elastic SIEM | Usado para monitoramento, investigação e alertas em cenários de segurança ofensiva e operacionais | painéis de monitoramento, timeline, filtros por tempo e campo, visualização de eventos, severidade | [Link onde mostra essas ferramentas](https://www.elastic.co/docs/solutions/security/dashboards/detection-rule-monitoring-dashboard) ![imgElastic](elastic.png) | A análise de incidentes é feita por hierarquia visual: panorama → filtros → detalhe; essa sequência deve estar clara na interface |
-| Datadog | Muito utilizado em operação de TI para monitoramento de infraestrutura, alertas e métricas em tempo real | gráficos temporais, alertas configuráveis, painel de saúde, indicadores de serviço e infraestrutura | [Link onde mostra essas ferramentas](https://www.datadoghq.com/product/platform/dashboards/) ![imgDataog](datadog.png) | O usuário percebe melhor o estado do ambiente quando há métricas resumidas, alertas e contexto temporal em um único lugar |
+| Splunk | É uma referência em SIEM para busca, correlação e análise de logs em ambientes corporativos de segurança | dashboards de visão geral, busca textual, filtros temporais, tabelas de eventos, correlação de alertas | [Link onde mostra essas ferramentas](https://www.splunk.com/en_us/blog/tips-and-tricks/dashboard-studio-tabbed-dashboards.html) ![imgSplunk](../assets/02_concorrencia/splunk.png)| O público espera que a investigação comece com uma visão geral e avance por filtros e busca, sem depender de leitura manual de logs brutos |
+| Elastic SIEM | Usado para monitoramento, investigação e alertas em cenários de segurança ofensiva e operacionais | painéis de monitoramento, timeline, filtros por tempo e campo, visualização de eventos, severidade | [Link onde mostra essas ferramentas](https://www.elastic.co/docs/solutions/security/dashboards/detection-rule-monitoring-dashboard) ![imgElastic](../assets/02_concorrencia/elastic.png) | A análise de incidentes é feita por hierarquia visual: panorama → filtros → detalhe; essa sequência deve estar clara na interface |
+| Datadog | Muito utilizado em operação de TI para monitoramento de infraestrutura, alertas e métricas em tempo real | gráficos temporais, alertas configuráveis, painel de saúde, indicadores de serviço e infraestrutura | [Link onde mostra essas ferramentas](https://www.datadoghq.com/product/platform/dashboards/) ![imgDataog](../assets/02_concorrencia/datadog.png) | O usuário percebe melhor o estado do ambiente quando há métricas resumidas, alertas e contexto temporal em um único lugar |
 | Snort | Referência em detecção por assinatura; conhecidamente usado por analistas de rede e pesquisadores de IDS | regras de detecção, alertas em log, listagem de eventos, base de assinaturas | [Link onde mostra essas ferramentas](https://www.datadoghq.com/product/platform/dashboards/) | Mesmo sem interface visual nativa (por isso, não há prints), o produto reforça a necessidade de uma camada de análise legível para eventos e severidade |
 | Suricata | Alternativa moderna e performática para IDS/IPS, presente em infraestrutura de rede e SOCs | regras, alertas em infraestrutura, inspeção de fluxo, detecção por assinatura e heurística | [Link onde mostra essas ferramentas](https://docs.suricata.io/en/latest/make-sense-alerts.html) - Não há prints também, dado que não é exatamente uma interface | A interface deve dar contexto ao evento, e não apenas listar um pacote ou um alerta isolado |
-| Cisco Secure | Plataforma comercial usada em ambientes corporativos com foco em segurança de rede e gestão de ameaças | painel de segurança, alertas de rede, visibilidade de dispositivos, políticas e priorização | [Link onde mostra essas ferramentas](https://www.cisco.com/c/en/us/td/docs/security/workload_security/secure_workload/user-guide/3_7/cisco-secure-workload-user-guide/vulnerability-dashboard.html) ![imgCisco](cisco.png) | O público já espera gerenciar ameaças em um console centralizado, com agrupamento e priorização de risco |
+| Cisco Secure | Plataforma comercial usada em ambientes corporativos com foco em segurança de rede e gestão de ameaças | painel de segurança, alertas de rede, visibilidade de dispositivos, políticas e priorização | [Link onde mostra essas ferramentas](https://www.cisco.com/c/en/us/td/docs/security/workload_security/secure_workload/user-guide/3_7/cisco-secure-workload-user-guide/vulnerability-dashboard.html) ![imgCisco](../assets/02_concorrencia/cisco.png) | O público já espera gerenciar ameaças em um console centralizado, com agrupamento e priorização de risco |
 | Zeek | Usado para análise comportamental de rede e geração de logs detalhados de tráfego | logs de fluxo, conexões, protocolos, análise contextual, exportação para SIEM | [Link onde mostra essas ferramentas](https://zeek.org/) - Não há prints também, dado que não é exatamente uma interface | O sistema precisa permitir reconstrução do contexto da conexão, não apenas um evento pontual |
-| Wazuh | Plataforma open-source muito utilizada para monitoramento de endpoints e alertas de segurança | visão geral, severidade, filtros WQL, timelines, detalhamento progressivo, dashboards personalizados | [Link onde mostra essas ferramentas](https://wazuh.com/) ![imgWazuh](wazuh.png) | A experiência do usuário é melhor quando o fluxo é: visão geral → filtros → detalhamento com explicação do alerta |
+| Wazuh | Plataforma open-source muito utilizada para monitoramento de endpoints e alertas de segurança | visão geral, severidade, filtros WQL, timelines, detalhamento progressivo, dashboards personalizados | [Link onde mostra essas ferramentas](https://wazuh.com/) ![imgWazuh](../assets/02_concorrencia/wazuh.png) | A experiência do usuário é melhor quando o fluxo é: visão geral → filtros → detalhamento com explicação do alerta |
 | ClamAV | Ferramenta amplamente conhecida para detecção de malwares e verificação de arquivos | resumo de varredura, report de infecção, lógica de escaneamento e logs | [Link onde mostra essas ferramentas](https://docs.clamav.net/faq/faq-scan-alerts.html) - Não há prints também, dado que não é exatamente uma interface | A comunicação de status precisa ser simples, direta e compreensível mesmo para usuários com pouca especialização |
-| Palo Alto | Solução corporativa de firewall e IDS/IPS muito usada em ambientes empresariais | visão de tráfego, políticas, alertas, painel de segurança, relatórios de incidentes | [Link onde mostra essas ferramentas](https://knowledgebase.paloaltonetworks.com/KCSArticleDetail?id=kA10g000000ClFNCA0) ![imgPA](paloalto.png) - É o mais próximo de uma interface | O usuário tem expectativa de filtros por origem e destino, visão de alto nível e destaque para eventos críticos |
-| Sophos | Já presente em ambientes de endpoint e segurança de rede, com foco em proteção e resposta | painel de console, severidade, alertas, visibilidade de endpoints, gestão de ameaça | [Link onde mostra essas ferramentas](https://www.sophos.com/en-us/blog/introducing-sophos-central-custom-dashboards) ![imgSophos](sophos.png) | As prioridades e a resposta operacional devem ser claras e expressas em linguagem acessível |
-| Windows Defender | Ferramenta cotidiana para proteção de endpoints; atende a um público muito amplo, inclusive fora do perfil técnico | status simples, histórico, proteção em tempo real, comunicação em linguagem cotidiana | Imagem da própria máquina ![imgWD](wd.png) | Status simplificado e suporte textual redundante à cor são padrões valiosos para manutenção da compreensão rápida |
-| Security Onion | Distribuição focada em monitorização de segurança, agregando vários motores de detecção | consolidação de múltiplas fontes, dashboards de rede, investigação por logs e eventos, correlacionamento | [Link onde mostra essas ferramentas](https://docs.securityonion.net/en/2.4/dashboards.html) ![imgSO](so.png) | O usuário valoriza consoles integrados, mas o projeto deve evitar sobrecarregar o usuário com excesso de módulos |
-| Fortinet IDS | Solução direta de detecção de intrusão integrada ao ecossistema Fortinet, muito usada em redes corporativas | recortes por origem, destino e sessões, dashboards segmentados, perfis de risco e alertas de rede | [Link onde mostra essas ferramentas](https://docs.fortinet.com/document/fortigate/8.0.0/administration-guide/308474/status-dashboard) ![imgFortinet](fortinet.png) | Os recortes por contexto de rede e a rastreabilidade do fluxo são convenções úteis para a análise de detecções |
+| Palo Alto | Solução corporativa de firewall e IDS/IPS muito usada em ambientes empresariais | visão de tráfego, políticas, alertas, painel de segurança, relatórios de incidentes | [Link onde mostra essas ferramentas](https://knowledgebase.paloaltonetworks.com/KCSArticleDetail?id=kA10g000000ClFNCA0) ![imgPA](../assets/02_concorrencia/paloalto.png) - É o mais próximo de uma interface | O usuário tem expectativa de filtros por origem e destino, visão de alto nível e destaque para eventos críticos |
+| Sophos | Já presente em ambientes de endpoint e segurança de rede, com foco em proteção e resposta | painel de console, severidade, alertas, visibilidade de endpoints, gestão de ameaça | [Link onde mostra essas ferramentas](https://www.sophos.com/en-us/blog/introducing-sophos-central-custom-dashboards) ![imgSophos](../assets/02_concorrencia/sophos.png) | As prioridades e a resposta operacional devem ser claras e expressas em linguagem acessível |
+| Windows Defender | Ferramenta cotidiana para proteção de endpoints; atende a um público muito amplo, inclusive fora do perfil técnico | status simples, histórico, proteção em tempo real, comunicação em linguagem cotidiana | Imagem da própria máquina ![imgWD](../assets/02_concorrencia/wd.png) | Status simplificado e suporte textual redundante à cor são padrões valiosos para manutenção da compreensão rápida |
+| Security Onion | Distribuição focada em monitorização de segurança, agregando vários motores de detecção | consolidação de múltiplas fontes, dashboards de rede, investigação por logs e eventos, correlacionamento | [Link onde mostra essas ferramentas](https://docs.securityonion.net/en/2.4/dashboards.html) ![imgSO](../assets/02_concorrencia/so.png) | O usuário valoriza consoles integrados, mas o projeto deve evitar sobrecarregar o usuário com excesso de módulos |
+| Fortinet IDS | Solução direta de detecção de intrusão integrada ao ecossistema Fortinet, muito usada em redes corporativas | recortes por origem, destino e sessões, dashboards segmentados, perfis de risco e alertas de rede | [Link onde mostra essas ferramentas](https://docs.fortinet.com/document/fortigate/8.0.0/administration-guide/308474/status-dashboard) ![imgFortinet](../assets/02_concorrencia/fortinet.png) | Os recortes por contexto de rede e a rastreabilidade do fluxo são convenções úteis para a análise de detecções |
 
 ## 3.1 Padrões de interface relevantes ao escopo de IHC
 
