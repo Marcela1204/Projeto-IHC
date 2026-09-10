@@ -72,19 +72,19 @@ Também considere papéis diferentes quando houver tarefas distintas, por exempl
 
 ![Persona P02](../assets/03_personas/persona_p02.svg)
 
-| Campo | Descrição |
-|---|---|
-| Faixa etária / contexto relevante | 30 a 45 anos, atua em empresas com infraestrutura de rede e ambiente digital crítico. |
-| Ocupação/papel | Administradora de Rede e Infraestrutura / responsável por configurar o pipeline de monitoramento e os algoritmos de classificação. |
-| Conhecimento do domínio | Conhecimento médio-alto em arquitetura de rede, servidores, políticas de segurança e operação de sistemas críticos. |
-| Experiência tecnológica | Experimentada em operação de servidores, ferramentas de monitoramento e manutenção de infraestrutura de segurança. |
-| Objetivos | Ajustar parâmetros de captura, validar o desempenho dos modelos e manter a plataforma operacional e segura. |
-| Necessidades | Configuração clara, visão de performance do sistema, parametrização sem excesso de complexidade e capacidade de comparar modelos. |
-| Dores/frustrações | Dificuldade em compreender o impacto de mudanças de configuração, excesso de opções técnicas e necessidade de configurar cenários em ambiente crítico. |
-| Motivadores | Garantir disponibilidade da rede, manter o sistema em operação e aumentar confiança no modelo de detecção. |
-| Restrições/acessibilidade | Requer operações seguras, atualização controlada e entendimento do impacto das decisões em ambiente produtivo. |
-| Ambiente típico de uso | Estação de trabalho do administrador, acesso a servidores ou plataforma embarcada, com necessidade de monitoramento contínuo. |
-| Comportamentos relevantes | Explora parâmetros do sistema, compara métricas de execução e prioriza estabilidade do ambiente sobre experimentação excessiva. |
+| Campo                             | Descrição                                                                                                                                              |
+| --------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Faixa etária / contexto relevante | 30 a 45 anos, atua em empresas com infraestrutura de rede e ambiente digital crítico.                                                                  |
+| Ocupação/papel                    | Administradora de SOC e Infraestrutura / responsável por configurar o pipeline de monitoramento e os algoritmos de classificação.                      |
+| Conhecimento do domínio           | Conhecimento alto em arquitetura de rede, servidores, políticas de segurança e operação de sistemas críticos.                                          |
+| Experiência tecnológica           | Experimentada em operação de servidores, ferramentas de monitoramento e manutenção de infraestrutura de segurança.                                     |
+| Objetivos                         | Ajustar parâmetros de captura, validar o desempenho dos modelos e manter a plataforma operacional e segura.                                            |
+| Necessidades                      | Configuração clara, visão de performance do sistema, parametrização sem excesso de complexidade e capacidade de comparar modelos.                      |
+| Dores/frustrações                 | Dificuldade em compreender o impacto de mudanças de configuração, excesso de opções técnicas e necessidade de configurar cenários em ambiente crítico. |
+| Motivadores                       | Garantir disponibilidade da rede, manter o sistema em operação e aumentar confiança no modelo de detecção.                                             |
+| Restrições/acessibilidade         | Requer operações seguras, atualização controlada e entendimento do impacto das decisões em ambiente produtivo.                                         |
+| Ambiente típico de uso            | Estação de trabalho do administrador, acesso a servidores ou plataforma embarcada, com necessidade de monitoramento contínuo.                          |
+| Comportamentos relevantes         | Explora parâmetros do sistema, compara métricas de execução e prioriza estabilidade do ambiente sobre experimentação excessiva.                        |
 
 **Decisões de design influenciadas por P02:**
 
