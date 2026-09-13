@@ -110,7 +110,7 @@ Propomos um sistema inteligente de segurança de redes que identifica e alerta i
 ## 1.2 Qual situação, atividade ou problema do mundo real motivou o TCC?
 
 > <b>[F]</b> O avanço das redes de computadores e a crescente digitalização de serviços têm ampliado significativamente a exposição de sistemas a ameaças cibernéticas. Esse crescimento é acompanhado por um aumento expressivo no volume de dados trafegados, que passou de aproximadamente 16 GB por usuário ao mês em 2017 para cerca de 50 GB mensais em 2022. Esse cenário contribui diretamente para a ampliação da superfície de ataque, refletindo no aumento da quantidade e da sofisticação de ameaças, como negações de serviço, varreduras de rede e acessos não autorizados.
-- Fonte: A. Thakkar e R. Lohiya, “A survey on intrusion detection system: feature selection, model, performance measures, application perspective, challenges, and future research directions,” Artificial Intelligence Review, vol. 54, pp. 4529–4593, 2021. doi: 10.1007/s10462-021-10037-9)
+- Fonte: A. Thakkar e R. Lohiya, “A survey on intrusion detection system: feature selection, model, performance measures, application perspective, challenges, and future research directions,” Artificial Intelligence Review, vol. 54, pp. 4529–4593, 2021. doi: 10.1007/s10462-021-10037-9
 
 > <b>[F]</b> Os impactos de falhas de segurança tornam-se cada vez mais críticos, sendo que mais de 14 bilhões de registros de dados foram vazados desde 2013, além de prejuízos financeiros significativos, como os 29,8 bilhões de dólares perdidos em golpes telefônicos apenas no ano de 2020.
 - Fonte: Z. Azam, M. M. Islam e M. N. Huda, “Comparative Analysis of Intrusion Detection Systems and Machine Learning-Based Model Analysis Through Decision Tree,” 2023. doi: 10.1109/2023.3296444
@@ -118,8 +118,7 @@ Propomos um sistema inteligente de segurança de redes que identifica e alerta i
 > <b>[F]</b> Um dos maiores desafios atuais da segurança em redes está relacionado aos ataques de Zero−Day, que exploram vulnerabilidades ainda desconhecidas pelos sistemas de defesa. Por não possuírem assinaturas previamente registradas, esses ataques são difíceis de identificar por métodos tradicionais, funcionando como ameaças invisíveis até que sejam descobertas.
 - Fonte: W. S. Admass, Y. Y. Munaye e A. A. Diro, “Cyber security: State of the art, challenges and future directions,” 2023. doi: 10.1016/2023.10031
 
-> <b>[F]</b> Casos reais, como a Operação Aurora, demonstram o potencial destrutivo dessas ameaças, incluindo roubo
-de dados sensíveis e comprometimento de infraestruturas críticas.
+> <b>[F]</b> Casos reais, como a Operação Aurora, demonstram o potencial destrutivo dessas ameaças, incluindo roubo de dados sensíveis e comprometimento de infraestruturas críticas.
 - Fonte: W. S. Admass, Y. Y. Munaye e A. A. Diro, “Cyber security: State of the art, challenges and future directions,” 2023. doi: 10.1016/2023.10031
 
 ## 1.3 Qual é a **capacidade/contribuição central** produzida pelo TCC?
