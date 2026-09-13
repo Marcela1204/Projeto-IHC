@@ -1,4 +1,4 @@
-# Entrega 3 — Personas, mapa de empatia, contexto de uso e jornada
+g# Entrega 3 — Personas, mapa de empatia, contexto de uso e jornada
 
 **Data:** 27/08/2026  
 **Status:** 🟨 em andamento  
@@ -24,44 +24,45 @@ Também considere papéis diferentes quando houver tarefas distintas, por exempl
 
 ## Entradas da Entrega 1
 
-| Item da Entrega 1 | Status inicial | Evidência disponível agora | Como será tratado nesta entrega |
-|---|---|---|---|
-| H03 — perfis diretos (SOC, SysAdmins, Gestores) | H | O projeto prevê analistas, administradores e gestores como atores relevantes do processo de segurança de rede | incorporado como base das personas P01 e P02 |
-| H04 — analista monitora tráfego e interpreta alertas em tempo real | H | A atividade de monitoramento é a mais frequente e crítica, conforme A01 e A02 | base para a persona primária P01 |
-| H05 — administrador ajusta parâmetros de captura e algoritmo | H | A configuração de pipeline e seleção de modelos é tarefa individual do ambiente de operação | base para a persona secundária P02 |
-| H06 — gestor avalia relatórios e decide investimentos | H | Existe necessidade de visão consolidada e relatórios executivos | mantido como stakeholder, mas não como foco principal do design |
-| H07 — usuários entendem termos técnicos, mas precisam de síntese visual | H | A análise concorrencial reforça a necessidade de dashboards e filtros por severidade | incorporado aos requisitos da interface |
-| H08 — em crise, o sistema deve reduzir ruído visual e priorizar severidade | H | Fortinet e Wazuh usam painéis com priorização visual e filtros hierárquicos | orienta o design da persona P01 |
-| H15–H18 — contexto operacional, hardware, Dark Mode e hierarquia de papéis | H | O uso ocorre em SOCs e estações de trabalho com pressão de tempo e múltiplos monitores | incorporado ao contexto de uso |
+| Item da Entrega 1                                                          | Status inicial | Evidência disponível agora                                                                                    | Como será tratado nesta entrega                                 |
+| -------------------------------------------------------------------------- | -------------- | ------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------- |
+| H03 — perfis diretos (SOC, SysAdmins, Gestores)                            | H              | O projeto prevê analistas, administradores e gestores como atores relevantes do processo de segurança de rede | incorporado como base das personas P01 e P02                    |
+| H04 — analista monitora tráfego e interpreta alertas em tempo real         | H              | A atividade de monitoramento é a mais frequente e crítica, conforme A01 e A02                                 | base para a persona primária P01                                |
+| H05 — administrador ajusta parâmetros de captura e algoritmo               | H              | A configuração de pipeline e seleção de modelos é tarefa individual do ambiente de operação                   | base para a persona secundária P02                              |
+| H06 — gestor avalia relatórios e decide investimentos                      | H              | Existe necessidade de visão consolidada e relatórios executivos                                               | mantido como stakeholder, mas não como foco principal do design |
+| H07 — usuários entendem termos técnicos, mas precisam de síntese visual    | H              | A análise concorrencial reforça a necessidade de dashboards e filtros por severidade                          | incorporado aos requisitos da interface                         |
+| H08 — em crise, o sistema deve reduzir ruído visual e priorizar severidade | H              | Fortinet e Wazuh usam painéis com priorização visual e filtros hierárquicos                                   | orienta o design da persona P01                                 |
+| H15–H18 — contexto operacional, hardware, Dark Mode e hierarquia de papéis | H              | O uso ocorre em SOCs e estações de trabalho com pressão de tempo e múltiplos monitores                        | incorporado ao contexto de uso                                  |
 
 ## 1. Personas
 
-### Persona P01 — {{nome fictício}}
+### Persona P01 — Thiago
 <!-- @Adelgrin = Analista SOC -->
-**Autor(a):** {{nome — matrícula}}  
-**Tipo:** primária / secundária  
-**Base de evidências:** entrevista / questionário / literatura / observação / proto-persona a validar / combinação  
-**Hipóteses da Entrega 1 relacionadas:** {{H01, H02 ou —}}
+**Autor(a):** Lucas 22.123.032-9
+**Tipo:** primária
+**Base de evidências:** observação / proto-persona a validar
+**Hipóteses da Entrega 1 relacionadas:** H03, H04, H07, H08, H15–H18
 
 ![Persona P01](../assets/03_personas/persona_p01.svg)
 
-| Campo | Descrição |
-|---|---|
-| Faixa etária / contexto relevante | {{somente o que impacta o uso}} |
-| Ocupação/papel | {{...}} |
-| Conhecimento do domínio | {{...}} |
-| Experiência tecnológica | {{...}} |
-| Objetivos | {{...}} |
-| Necessidades | {{...}} |
-| Dores/frustrações | {{...}} |
-| Motivadores | {{...}} |
-| Restrições/acessibilidade | {{...}} |
-| Ambiente típico de uso | {{...}} |
-| Comportamentos relevantes | {{...}} |
+| Campo                             | Descrição                                                                                                                                                                                                       |
+| --------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Faixa etária / contexto relevante | 24 a 35 anos. Atua sob forte pressão de tempo durante incidentes críticos, necessitando de foco absoluto e respostas rápidas.                                                                                   |
+| Ocupação/papel                    | Analista de SOC. É o perfil direto responsável por monitorar o tráfego de rede e interpretar os alertas do IDS em tempo real no dia a dia.                                                                      |
+| Conhecimento do domínio           | Alto. Compreende perfeitamente termos técnicos complexos, protocolos de rede e assinaturas de ataques                                                                                                           |
+| Experiência tecnológica           | Avançada. Acostumado a operar via linha de comando (CLI) e a criar scripts próprios, mas depende da interface gráfica do IDS para triagem inicial.                                                              |
+| Objetivos                         | Identificar e conter ameaças reais o mais rápido possível, separando incidentes críticos de anomalias benignas no tráfego da rede.                                                                              |
+| Necessidades                      | Síntese visual da massa de dados. Precisa de dashboards com filtros rápidos por nível de severidade para não perder tempo lendo logs puros na triagem, além de poder criar seus próprios dashboards e gráficos. |
+| Dores/frustrações                 | Excesso de ruído visual na tela durante crises. Interfaces poluídas ou com alertas de baixa prioridade disputando atenção com incidentes críticos                                                               |
+| Motivadores                       | Agilidade na resposta a incidentes e a garantia de que nenhum ataque grave passou despercebido no seu turno.                                                                                                    |
+| Restrições/acessibilidade         | Cansaço visual agudo devido à observação contínua de painéis luminosos por horas a fio.                                                                                                                         |
+| Ambiente típico de uso            | Sala de SOC (Security Operations Center) ou home office dedicado, utilizando estações de trabalho com múltiplos monitores simultâneos.                                                                          |
+| Comportamentos relevantes         | Varre a tela visualmente em busca de padrões (cores quentes vs. frias). Em momentos de pico, ignora qualquer informação que não esteja diretamente ligada ao alerta principal.                                  |
 
 **Decisões de design influenciadas por P01:**
 
-- {{...}}
+- A interface principal não exibirá linhas de log em texto puro logo de cara. O design será baseado em gráficos de fácil absorção e painéis de filtragem rápida por severidade.
+- O sistema terá o Dark Mode como padrão absoluto para reduzir a fadiga visual no ambiente do SOC.
 
 ### Persona P02 — Vanessa Nolasco
 
