@@ -22,13 +22,13 @@ A interface da disciplina aparecerá somente depois, nos cenários de interaçã
 
 Se o integrante escolher um novo problema/situação, explique por que ele passou a ser relevante e indique a evidência que motivou sua inclusão.
 
-## Cenário C01 — {{título}}
+## Cenário C01 — Alerta de tráfego anômalo durante operação
 
-**Autor(a):** {{nome — matrícula}}  
-**Persona(s) relacionada(s):** {{P01}}  
-**Necessidade relacionada:** {{R01}}  
-**Situação concreta da Entrega 1 relacionada:** {{seção 4.4 / H01 / outra ou “nova situação justificada”}}  
-**Hipóteses ainda presentes:** {{H01, H02 ou —}}
+**Autor(a):** Lucas Kerr - 22.123.032-9
+**Persona(s) relacionada(s):** P01
+**Necessidade relacionada:** R01
+**Situação concreta da Entrega 1 relacionada:** H14 H20 H26  
+**Hipóteses ainda presentes:** H14 H26
 
 ### 1. Cenário inicial
 
