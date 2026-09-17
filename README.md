@@ -17,14 +17,14 @@ Leia obrigatoriamente o [Guia para definir o escopo de IHC a partir do tema do T
 
 ## Identificação
 
-**Título do projeto:** Tecnologias de Machine Learning para Detecção de Intrusões em Redes de Computadores: Uma Pesquisa Exploratória e Experimental  
+**Título do projeto:** Equipe 21 Tecnologias de Machine Learning para Detecção de Intrusões em Redes de Computadores: Uma Pesquisa Exploratória e Experimental  
 **TCC/projeto de origem:** Não há  
 **Orientador(a):** Leonardo Anjoletto Ferreira  
 **Disciplina:** Interação Humano-Computador  
 **Instituição:** Centro Universitário da Fundação Educacional Inaciana Padre Sabóia de Medeiros  
 **Semestre:** 2026/8°Semestre
 
-### Equipe
+### Equipe 21
 
 | Nome completo | Matrícula | GitHub | Responsabilidade principal |
 |---|---:|---|---|
