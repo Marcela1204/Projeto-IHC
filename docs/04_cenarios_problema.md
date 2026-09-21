@@ -64,6 +64,48 @@ Reescreva o cenário incorporando as respostas. Marque o conteúdo novo de forma
 
 Quais tarefas merecem análise? Quais informações precisam ser coletadas? **Não desenhe a solução ainda.**
 
+## Cenário C02 — Configurar pipeline e validar desempenho
+
+**Autor(a):** Marcela Nalesso
+**Persona(s) relacionada(s):** P02
+**Necessidade relacionada:** R02
+**Situação concreta da Entrega 1 relacionada:**  
+**Hipóteses ainda presentes:** 
+
+### 1. Cenário inicial
+
+{{narrativa}}
+
+### 2. Questões de refinamento
+
+Use os tipos de questões/taxonomia definidos na aula. As perguntas devem revelar informações **ainda ausentes** do cenário, não repetir o que já foi respondido.
+
+| # | Questão | Por que precisa ser respondida | Fonte/forma de obter resposta |
+|---|---|---|---|
+| Q1 | {{...}} | {{...}} | {{...}} |
+
+### 3. Cenário refinado
+
+Reescreva o cenário incorporando as respostas. Marque o conteúdo novo de forma consistente (por exemplo, `**[NOVO: ...]**`).
+
+{{narrativa refinada}}
+
+### 4. Elementos extraídos
+
+| Elemento | Evidência no cenário |
+|---|---|
+| Ator(es) | {{...}} |
+| Objetivo(s) | {{...}} |
+| Contexto | {{...}} |
+| Recursos/informações | {{...}} |
+| Ações | {{...}} |
+| Problemas/rupturas | {{...}} |
+| Consequências | {{...}} |
+
+### 5. Implicações para as próximas entregas
+
+Quais tarefas merecem análise? Quais informações precisam ser coletadas? **Não desenhe a solução ainda.**
+
 > Repita para C02, C03... com autoria individual.
 
 ## Checklist
