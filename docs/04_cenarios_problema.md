@@ -69,20 +69,21 @@ Quais tarefas merecem análise? Quais informações precisam ser coletadas? **N�
 **Autor(a):** Marcela Nalesso
 **Persona(s) relacionada(s):** P02
 **Necessidade relacionada:** R02
-**Situação concreta da Entrega 1 relacionada:**  
-**Hipóteses ainda presentes:** 
+**Situação concreta da Entrega 1 relacionada:** H05, H10, 18   
+**Hipóteses ainda presentes:** H05 e H10
 
 ### 1. Cenário inicial
 
-{{narrativa}}
+Vanessa, administradora de rede e infraestrutura, recebe uma notificação de que a rede vem apresentando mais alertas do que o habitual e que a taxa de detecção do sistema pode ter se alterado após a atualização dos parâmetros de monitoramento. Ela precisa verificar se o algoritmo ativo ainda está adequado ao ambiente, se a quantidade de dados processada está equilibrada e se a plataforma continua estável em operação. O problema é que essa validação não é simples: a equipe depende de uma combinação de métricas de execução, desempenho do modelo e observação do fluxo real de dados. Para decidir se um ajuste é necessário, Vanessa precisa comparar a situação atual com o comportamento esperado e entender se a mudança do modelo ou dos limites de detecção está melhorando ou piorando a operação.
 
 ### 2. Questões de refinamento
 
-Use os tipos de questões/taxonomia definidos na aula. As perguntas devem revelar informações **ainda ausentes** do cenário, não repetir o que já foi respondido.
-
 | # | Questão | Por que precisa ser respondida | Fonte/forma de obter resposta |
 |---|---|---|---|
-| Q1 | {{...}} | {{...}} | {{...}} |
+| Q1 | Que tipo de mudança no pipeline exige a intervenção da administradora? | Ajuda a delimitar quando a pessoa não é apenas operadora, mas responsável por configurar o sistema. | Entrega 1 e Entrega 3: H05 e persona P02. |
+| Q2 | Como ela percebe que o sistema está fora do esperado sem depender de dados técnicos excessivos? | Revela a necessidade de indicadores claros e contexto de desempenho para tomada de decisão. | Entrega 3, persona P02, análise concorrencial. |
+| Q3 | Quais impactos uma configuração inadequada pode causar na rede? | Aponta para a consequência operacional e para a gravidade do erro. | Entrega 1: H10 e contexto de uso. |
+| Q4 | O que precisa ser comparado para que a escolha do algoritmo seja confiável? | Define a necessidade de dados de comparação e histórico de desempenho. | Entrega 1, Entrega 3 e cenário operacional do IDS. |
 
 ### 3. Cenário refinado
 
