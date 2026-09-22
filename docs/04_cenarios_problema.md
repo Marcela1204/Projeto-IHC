@@ -66,10 +66,10 @@ Quais tarefas merecem análise? Quais informações precisam ser coletadas? **N�
 
 ## Cenário C02 — Configurar pipeline e validar desempenho
 
-**Autor(a):** Marcela Nalesso
-**Persona(s) relacionada(s):** P02
-**Necessidade relacionada:** R02
-**Situação concreta da Entrega 1 relacionada:** H05, H10, 18   
+**Autor(a):** Marcela Nalesso   
+**Persona(s) relacionada(s):** P02   
+**Necessidade relacionada:** R02   
+**Situação concreta da Entrega 1 relacionada:** H05, H10, H18   
 **Hipóteses ainda presentes:** H05 e H10
 
 ### 1. Cenário inicial
@@ -87,25 +87,30 @@ Vanessa, administradora de rede e infraestrutura, recebe uma notificação de qu
 
 ### 3. Cenário refinado
 
-Reescreva o cenário incorporando as respostas. Marque o conteúdo novo de forma consistente (por exemplo, `**[NOVO: ...]**`).
+Vanessa é responsável por manter a plataforma de detecção funcionando com estabilidade. Em determinado momento, o ambiente começa a mostrar sinais de que a parametrização atual pode estar desbalanceada: há aumento de alertas, mudanças na percepção de anomalias e variação no tempo de resposta do sistema. **[NOVO: A administradora percebe que a configuração atual não está refletindo mais com precisão o comportamento esperado da rede.]**
 
-{{narrativa refinada}}
+Ela então precisa verificar a integridade do pipeline, avaliar se o algoritmo ativo está sendo executado com os parâmetros adequados e analisar se o aumento de alertas é um reflexo de uma mudança real no ambiente ou apenas um efeito do ajuste mal calibrado. **[NOVO: Esse processo exige comparação entre indicadores de desempenho, histórico operacional e dados de comportamento recente da rede, sem que a decisão dependa de suposições ou leitura isolada de logs.]**
+
+O desafio central não é apenas ajustar uma configuração, mas decidir com segurança se a plataforma continua confiável. **[NOVO: Caso a troca de modelo ou o ajuste de parâmetros seja feito sem contexto adequado, a rede pode sofrer queda de desempenho, aumentar falsos positivos ou falhar ao identificar um ataque real.]** Por isso, a atividade exige uma visão de operação e de estabilidade, com indicadores que apoiem a avaliação da qualidade do modelo e a confiança na mudança.
 
 ### 4. Elementos extraídos
 
 | Elemento | Evidência no cenário |
 |---|---|
-| Ator(es) | {{...}} |
-| Objetivo(s) | {{...}} |
-| Contexto | {{...}} |
-| Recursos/informações | {{...}} |
-| Ações | {{...}} |
-| Problemas/rupturas | {{...}} |
-| Consequências | {{...}} |
+| Ator(es) | Vanessa, administradora de rede e infraestrutura; pipeline de detecção; rede em operação. |
+| Objetivo(s) | Validar a configuração atual do IDS, verificar o desempenho do modelo e ajustar parâmetros sem comprometer a estabilidade operacional. |
+| Contexto | Ambiente corporativo com infraestrutura crítica, presença de monitoramento contínuo e necessidade de tomada de decisão técnica com impacto operacional. |
+| Recursos/informações | Métricas de desempenho do algoritmo, taxa de alertas, indicadores de estabilidade e histórico de operação do sistema. |
+| Ações | Verificar sinais de desbalanceamento, comparar desempenho atual e esperado, ajustar parâmetros e validar impacto da alteração. |
+| Problemas/rupturas | Configuração inadequada, aumento de falsos positivos, instabilidade operacional e dificuldade de avaliar a qualidade do ajuste em tempo real. |
+| Consequências | Perda de confiabilidade do sistema, aumento de custo operacional e risco de falha na detecção de ataques reais. |
 
 ### 5. Implicações para as próximas entregas
 
-Quais tarefas merecem análise? Quais informações precisam ser coletadas? **Não desenhe a solução ainda.**
+- A próxima análise deve focalizar a tarefa de ajuste e validação do pipeline do IDS.
+- É necessário mapear quais métricas de desempenho devem aparecer para uma decisão de configuração segura.
+- A interface futura não deve depender apenas de números técnicos isolados; é preciso mostrar o impacto dos ajustes no comportamento da rede.
+- A análise de tarefas deve priorizar a comparação entre estados do sistema antes e depois de uma alteração, para apoiar a validação sem risco.
 
 > Repita para C02, C03... com autoria individual.
 
