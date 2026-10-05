@@ -119,6 +119,7 @@ Use esta tabela quando o projeto incorporar padrões como dashboard, relatório,
 ## 5. Registro de mudanças de escopo
 
 > Registra **mudanças efetivas**: decisões de recorte, reclassificações de estado e correções de registro. A fotografia inicial da Entrega 01 é preservada na seção 2.
+
 | Data | O que mudou | Evidência/feedback que motivou | Artefatos afetados | Responsável |
 |---|---|---|---|---|
 | 03/10/2026 | **P02 (Vanessa) consolidada como persona primária** | Feedback E03, item 1: a Entrega 03 declarava P02 como secundária em uma seção e primária na ficha e na matriz | Entrega 03 (seções de entrada, 1.3, síntese), esta matriz (seções 1, 3 e 4) | Marcela |

@@ -1,7 +1,7 @@
 # Entrega 3 — Personas, mapa de empatia, contexto de uso e jornada
 
-**Data:** 27/08/2026
-**Status:** `🟩 concluída`
+**Data:** 27/08/2026   
+**Status:** `🟩 concluída`   
 **Responsabilidade:** 1 persona por integrante; 1 mapa de empatia, 1 contexto de uso consolidado e 1 jornada por equipe (salvo orientação diferente do docente).
 
 ## Objetivo da atividade
@@ -43,10 +43,10 @@ Também considere papéis diferentes quando houver tarefas distintas, por exempl
 
 ### Persona P01 — Thiago Albuquerque
 
-**Autor(a):** Lucas Kerr do Amaral — RA 22.123.032-9
-**Tipo:** **primária** — prioritária no fluxo de **investigação** (A01 e A02)
-**Base de conhecimento:** **proto-persona**. O conteúdo vem de **suposições da equipe** sobre o domínio e da leitura de interfaces concorrentes (Entrega 02). **Nenhum analista foi observado ou entrevistado.** A investigação das características comportamentais está prevista para a Entrega 07
-**Hipóteses da Entrega 1 relacionadas:** H03, H04, H07, H08, H15–H18, H28, H29
+**Autor(a):** Lucas Kerr do Amaral — RA 22.123.032-9   
+**Tipo:** **primária** — prioritária no fluxo de **investigação** (A01 e A02)   
+**Base de conhecimento:** **proto-persona**. O conteúdo vem de **suposições da equipe** sobre o domínio e da leitura de interfaces concorrentes (Entrega 02). **Nenhum analista foi observado ou entrevistado.** A investigação das características comportamentais está prevista para a Entrega 07   
+**Hipóteses da Entrega 1 relacionadas:** H03, H04, H07, H08, H15–H18, H28, H29   
 
 > **Correção desta revisão (feedback E03, item 3):** a base de evidências dizia “observação / proto-persona a validar”, o que deixava indefinido se houve observação. **Não houve.** A indicação “proto-persona” descreve a **base de conhecimento**, não um terceiro nível de prioridade: P01 é primária *e* suas características ainda precisam ser investigadas. As falas em primeira pessoa no mapa de empatia são **representativas e fictícias**, não transcrições.
 
@@ -90,10 +90,10 @@ Também considere papéis diferentes quando houver tarefas distintas, por exempl
 
 ### Persona P02 — Vanessa Toledo
 
-**Autor(a):** Marcela Nalesso — RA 22.222.011-3
-**Tipo:** **primária** — prioritária no fluxo de **configuração** (A03)
-**Base de conhecimento:** **proto-persona**. Construída a partir de hipóteses da Entrega 01 (H05, H16–H18), da análise de concorrentes e do contexto operacional suposto. **Nenhuma administradora foi observada ou entrevistada**
-**Hipóteses da Entrega 1 relacionadas:** H05, H16, H17, H18, H27
+**Autor(a):** Marcela Nalesso — RA 22.222.011-3   
+**Tipo:** **primária** — prioritária no fluxo de **configuração** (A03)   
+**Base de conhecimento:** **proto-persona**. Construída a partir de hipóteses da Entrega 01 (H05, H16–H18), da análise de concorrentes e do contexto operacional suposto. **Nenhuma administradora foi observada ou entrevistada**   
+**Hipóteses da Entrega 1 relacionadas:** H05, H16, H17, H18, H27   
 
 
 ![Persona P02](../assets/03_personas/persona_p02.svg)

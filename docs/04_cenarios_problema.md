@@ -24,11 +24,11 @@ Se o integrante escolher um novo problema/situação, explique por que ele passo
 
 ## Cenário C01 — Alerta de tráfego anômalo durante operação
 
-**Autor(a):** Lucas Kerr - 22.123.032-9
-**Persona(s) relacionada(s):** P01
-**Necessidade relacionada:** R01
-**Situação concreta da Entrega 1 relacionada:** H14 H20 H26  
-**Hipóteses ainda presentes:** H14 H26
+**Autor(a):** Lucas Kerr - 22.123.032-9   
+**Persona(s) relacionada(s):** P01   
+**Necessidade relacionada:** R01   
+**Situação concreta da Entrega 1 relacionada:** H14 H20 H26   
+**Hipóteses ainda presentes:** H14 H26   
 
 ### 1. Cenário inicial
 

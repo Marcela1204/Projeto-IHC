@@ -1,7 +1,7 @@
 # Entrega 2 — Público-alvo e análise de concorrência
 
-**Data:** 19/08/2026
-**Status:** `🟩 concluída`
+**Data:** 19/08/2026   
+**Status:** `🟩 concluída`   
 **Responsabilidade mínima:** cada integrante analisa pelo menos 1 concorrente/interface representativa; a equipe produz síntese comparativa.
 
 ## Objetivo da atividade
@@ -68,12 +68,12 @@ Se uma hipótese da Entrega 1 for confirmada ou refutada durante esta análise, 
 
 ### Análise C01 — Fortinet IDS
 
-**Autor(a):** Lucas Kerr do Amaral — RA 22.123.032-9
-**Produto/módulo observado:** FortiView, no FortiOS do FortiGate — **versão 7.4.12**, conforme a barra de status visível em `Fortigate_sessions.png`
-**Tipo:** concorrente direto
-**Origem das evidências:** capturas próprias de um FortiGate em operação (27/08/2026) + documentação oficial + relatos públicos de terceiros
-**Link oficial:** [Fortinet — Intrusion Detection System](https://www.fortinet.com/br/resources/cyberglossary/intrusion-detection-system)
-**Data de acesso:** 27/08/2026
+**Autor(a):** Lucas Kerr do Amaral — RA 22.123.032-9   
+**Produto/módulo observado:** FortiView, no FortiOS do FortiGate — **versão 7.4.12**, conforme a barra de status visível em `Fortigate_sessions.png`   
+**Tipo:** concorrente direto   
+**Origem das evidências:** capturas próprias de um FortiGate em operação (27/08/2026) + documentação oficial + relatos públicos de terceiros   
+**Link oficial:** [Fortinet — Intrusion Detection System](https://www.fortinet.com/br/resources/cyberglossary/intrusion-detection-system)   
+**Data de acesso:** 27/08/2026   
 
 > **Versão capturada × versão documentada (feedback E02, item 5):** as telas desta análise são da **7.4.12**. A referência de documentação citada em 3 aponta para o *Status dashboard* da **8.0.0**. Isso não invalida a análise, mas as duas coisas não devem ser lidas como a mesma fonte: o que afirmamos sobre layout vem das capturas; o que vem da documentação está marcado como tal.
 
@@ -154,12 +154,12 @@ Relatos de terceiros, lidos como **opiniões situadas** — não como medição 
 
 ### Análise C02 — Wazuh Dashboard
 
-**Autor(a):** Marcela Nalesso — RA 22.222.011-3
-**Produto/módulo observado:** Wazuh Dashboard — módulos *Security Events*, *Vulnerability Detection*, *Discover* e *Custom dashboards*
-**Tipo:** concorrente indireto/análogo
-**Origem das evidências:** capturas de ambiente de demonstração e documentação oficial (23 a 31/08/2026), além de relatos públicos de terceiros em G2, Reddit e Gartner Peer Insights
-**Link oficial:** [Wazuh](https://wazuh.com/) — [documentação do dashboard](https://documentation.wazuh.com/current/user-manual/wazuh-dashboard/)
-**Data de acesso:** 23/08/2026 a 31/08/2026
+**Autor(a):** Marcela Nalesso — RA 22.222.011-3   
+**Produto/módulo observado:** Wazuh Dashboard — módulos *Security Events*, *Vulnerability Detection*, *Discover* e *Custom dashboards*   
+**Tipo:** concorrente indireto/análogo   
+**Origem das evidências:** capturas de ambiente de demonstração e documentação oficial (23 a 31/08/2026), além de relatos públicos de terceiros em G2, Reddit e Gartner Peer Insights   
+**Link oficial:** [Wazuh](https://wazuh.com/) — [documentação do dashboard](https://documentation.wazuh.com/current/user-manual/wazuh-dashboard/)   
+**Data de acesso:** 23/08/2026 a 31/08/2026   
 
 
 #### Contexto e proposta
