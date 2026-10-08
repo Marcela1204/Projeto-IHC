@@ -66,7 +66,7 @@ Quais tarefas merecem análise? Quais informações precisam ser coletadas? **N�
 
 ## Cenário C02 — Configurar pipeline e validar desempenho
 
-**Autor(a):** Marcela Nalesso   
+**Autor(a):** Marcela Nalesso - 22.222.011-3   
 **Persona(s) relacionada(s):** P02   
 **Necessidade relacionada:** R02   
 **Situação concreta da Entrega 1 relacionada:** H05, H10, H18   
@@ -74,7 +74,7 @@ Quais tarefas merecem análise? Quais informações precisam ser coletadas? **N�
 
 ### 1. Cenário inicial
 
-Vanessa, administradora de rede e infraestrutura, recebe uma notificação de que a rede vem apresentando mais alertas do que o habitual e que a taxa de detecção do sistema pode ter se alterado após a atualização dos parâmetros de monitoramento. Ela precisa verificar se o algoritmo ativo ainda está adequado ao ambiente, se a quantidade de dados processada está equilibrada e se a plataforma continua estável em operação. O problema é que essa validação não é simples: a equipe depende de uma combinação de métricas de execução, desempenho do modelo e observação do fluxo real de dados. Para decidir se um ajuste é necessário, Vanessa precisa comparar a situação atual com o comportamento esperado e entender se a mudança do modelo ou dos limites de detecção está melhorando ou piorando a operação.
+Vanessa, administradora de infraestrutura e da plataforma de SOC, recebe uma notificação de que a rede vem apresentando mais alertas do que o habitual e que a qualidade das ocorrências detectadas mudou após a atualização dos parâmetros de monitoramento. Como responsável pelo pipeline de captura e pelo classificador ativo, ela precisa verificar se o algoritmo em uso continua adequado ao comportamento real da rede, se a carga de processamento está equilibrada e se a operação permanece estável. O problema é que essa validação não depende de um único dado: ela exige comparar indicativos de desempenho, histórico operacional e comportamento atual do tráfego para decidir se a alteração foi benéfica ou se o ambiente passou a produzir falso alarmes e ruído para a equipe. A decisão não é simplesmente técnica; ela impacta diretamente a confiabilidade da detecção e a qualidade do trabalho dos analistas que acompanham a rede.
 
 ### 2. Questões de refinamento
 
@@ -87,30 +87,30 @@ Vanessa, administradora de rede e infraestrutura, recebe uma notificação de qu
 
 ### 3. Cenário refinado
 
-Vanessa é responsável por manter a plataforma de detecção funcionando com estabilidade. Em determinado momento, o ambiente começa a mostrar sinais de que a parametrização atual pode estar desbalanceada: há aumento de alertas, mudanças na percepção de anomalias e variação no tempo de resposta do sistema. **[NOVO: A administradora percebe que a configuração atual não está refletindo mais com precisão o comportamento esperado da rede.]**
+Vanessa é responsável por manter a plataforma de detecção funcionando com estabilidade. Em determinado momento, o ambiente começa a mostrar sinais de que a parametrização atual pode estar desbalanceada: há aumento de alertas, mudança na identificação de anomalias e variação no tempo de resposta do sistema. **[NOVO: A administradora percebe que a configuração atual não está mais refletindo com precisão o comportamento esperado da rede e que a decisão de ajuste não pode ser tomada apenas por observação isolada.]**
 
-Ela então precisa verificar a integridade do pipeline, avaliar se o algoritmo ativo está sendo executado com os parâmetros adequados e analisar se o aumento de alertas é um reflexo de uma mudança real no ambiente ou apenas um efeito do ajuste mal calibrado. **[NOVO: Esse processo exige comparação entre indicadores de desempenho, histórico operacional e dados de comportamento recente da rede, sem que a decisão dependa de suposições ou leitura isolada de logs.]**
+Ela então precisa verificar a integridade do pipeline, avaliar se o algoritmo ativo está sendo executado com os parâmetros adequados e analisar se o aumento de alertas é um reflexo de uma mudança real no ambiente ou apenas um efeito de calibração inadequada. **[NOVO: Esse processo exige comparação entre indicadores de desempenho, histórico operacional, carga do equipamento e dados recentes do tráfego, de modo que a decisão tenha suporte e não dependa de suposições.]**
 
-O desafio central não é apenas ajustar uma configuração, mas decidir com segurança se a plataforma continua confiável. **[NOVO: Caso a troca de modelo ou o ajuste de parâmetros seja feito sem contexto adequado, a rede pode sofrer queda de desempenho, aumentar falsos positivos ou falhar ao identificar um ataque real.]** Por isso, a atividade exige uma visão de operação e de estabilidade, com indicadores que apoiem a avaliação da qualidade do modelo e a confiança na mudança.
+O desafio central não é apenas alterar uma configuração, mas decidir com segurança se a plataforma continua confiável e se a operação da rede não será prejudicada. **[NOVO: Caso a troca de modelo ou o ajuste de limites seja feito sem contexto adequado, a rede pode sofrer queda de desempenho, aumentar falsos positivos e falhar ao sinalizar uma ameaça real.]** Por isso, a atividade exige uma visão de operação e estabilidade, com indicadores que apoiem a avaliação da qualidade do modelo e a confiança na mudança.
 
 ### 4. Elementos extraídos
 
 | Elemento | Evidência no cenário |
 |---|---|
-| Ator(es) | Vanessa, administradora de rede e infraestrutura; pipeline de detecção; rede em operação. |
-| Objetivo(s) | Validar a configuração atual do IDS, verificar o desempenho do modelo e ajustar parâmetros sem comprometer a estabilidade operacional. |
-| Contexto | Ambiente corporativo com infraestrutura crítica, presença de monitoramento contínuo e necessidade de tomada de decisão técnica com impacto operacional. |
-| Recursos/informações | Métricas de desempenho do algoritmo, taxa de alertas, indicadores de estabilidade e histórico de operação do sistema. |
-| Ações | Verificar sinais de desbalanceamento, comparar desempenho atual e esperado, ajustar parâmetros e validar impacto da alteração. |
-| Problemas/rupturas | Configuração inadequada, aumento de falsos positivos, instabilidade operacional e dificuldade de avaliar a qualidade do ajuste em tempo real. |
-| Consequências | Perda de confiabilidade do sistema, aumento de custo operacional e risco de falha na detecção de ataques reais. |
+| Ator(es) | Vanessa, administradora de infraestrutura e da plataforma de SOC; pipeline de detecção; rede em operação; analistas de segurança afetados pelo comportamento do IDS. |
+| Objetivo(s) | Validar a configuração atual do IDS, verificar o desempenho do modelo, ajustar parâmetros e confirmar que a operação da rede continua estável. |
+| Contexto | Ambiente corporativo com infraestrutura crítica, monitoramento contínuo, operação em tempo real e necessidade de tomada de decisão técnica com impacto operacional. |
+| Recursos/informações | Métricas de desempenho do algoritmo, taxa de alertas, histórico de operação, carga do equipamento embarcado, comportamento recente do tráfego e retorno dos analistas sobre a qualidade dos alertas. |
+| Ações | Verificar sinais de desbalanceamento, comparar desempenho atual e esperado, ajustar parâmetros, validar a alteração e avaliar se o sistema permanece confiável. |
+| Problemas/rupturas | Configuração inadequada, aumento de falsos positivos, instabilidade operacional, dificuldade para avaliar a qualidade do ajuste em tempo real e perda de confiança no sistema. |
+| Consequências | Perda de confiabilidade da detecção, aumento do custo operacional, aumento de ruído para a equipe e risco de falha na identificação de ataques reais. |
 
 ### 5. Implicações para as próximas entregas
 
-- A próxima análise deve focalizar a tarefa de ajuste e validação do pipeline do IDS.
-- É necessário mapear quais métricas de desempenho devem aparecer para uma decisão de configuração segura.
-- A interface futura não deve depender apenas de números técnicos isolados; é preciso mostrar o impacto dos ajustes no comportamento da rede.
-- A análise de tarefas deve priorizar a comparação entre estados do sistema antes e depois de uma alteração, para apoiar a validação sem risco.
+- A próxima análise deve focar na tarefa de ajuste e validação do pipeline do IDS, com atenção especial ao papel de Vanessa como responsável pela configuração.
+- É necessário mapear quais métricas de desempenho devem aparecer para apoiar uma decisão segura de mudança de parâmetros ou de classificador.
+- A interface futura não pode depender apenas de valores técnicos isolados; é preciso mostrar o impacto da alteração no comportamento real da rede e no contexto operacional.
+- A análise de tarefas deve priorizar a comparação entre estados do sistema antes e depois de uma alteração, para permitir validação com menor risco e maior clareza de consequência.
 
 > Repita para C02, C03... com autoria individual.
 

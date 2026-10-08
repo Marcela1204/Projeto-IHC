@@ -210,10 +210,10 @@ Também considere papéis diferentes quando houver tarefas distintas, por exempl
 
 ## 4. Jornada do usuário — equipe
 
-**Persona:** P01 — Thiago Albuquerque
-**Objetivo da jornada:** decidir se uma conexão sinalizada corresponde a um incidente real e **encaminhar quem precisa agir**, antes que a ocorrência comprometa a operação.
-**Início:** antes de abrir o painel, quando um indício o faz interromper o que estava fazendo.
-**Fim:** depois de fechar o painel, quando ele consegue retomar o trabalho anterior ou transferir a investigação a outra pessoa.
+**Persona:** P01 — Thiago Albuquerque   
+**Objetivo da jornada:** decidir se uma conexão sinalizada corresponde a um incidente real e **encaminhar quem precisa agir**, antes que a ocorrência comprometa a operação.   
+**Início:** antes de abrir o painel, quando um indício o faz interromper o que estava fazendo.   
+**Fim:** depois de fechar o painel, quando ele consegue retomar o trabalho anterior ou transferir a investigação a outra pessoa.   
 
 > **Por que não há uma jornada de Vanessa nesta entrega:** a jornada consolidada é uma por equipe e concentra-se no fluxo de investigação. As necessidades de Vanessa estão representadas no quadro “Por que as duas personas são primárias”, na seção 3 (coordenação entre perfis) e nas etapas 4 e 7 abaixo, onde o trabalho dela cruza o de Thiago.
 
