@@ -30,39 +30,58 @@ Se o integrante escolher um novo problema/situação, explique por que ele passo
 **Situação concreta da Entrega 1 relacionada:** H14 H20 H26   
 **Hipóteses ainda presentes:** H14 H26   
 
+**Origem do cenário:** aprofunda a situação concreta da Entrega 1 (4.5, H14), em que Thiago percebe lentidão nos servidores Web durante o plantão noturno e não consegue decidir se é pico legítimo ou ataque. 
+
 ### 1. Cenário inicial
 
-{{narrativa}}
+Thiago, analista de SOC nível 2, está no plantão noturno escrevendo a análise de uma ocorrência anterior quando o IDS registra uma sequência de conexões classificadas como suspeitas a partir de um mesmo segmento de rede. Thiago abre o console e encontra milhares de linhas de log, misturando as classificações do modelo com o restante do tráfego. Ele não sabe se está diante de um pico legítimo de acessos ou de uma varredura/DoS. Para descobrir, alterna entre o console, consultas manuais e seus próprios scripts para reunir origem, destino, serviço e volume de cada conexão. Enquanto não consegue decidir, a lentidão continua e ele não sabe dizer à operação se alguém deve agir.
 
 ### 2. Questões de refinamento
 
 Use os tipos de questões/taxonomia definidos na aula. As perguntas devem revelar informações **ainda ausentes** do cenário, não repetir o que já foi respondido.
 
-| # | Questão | Por que precisa ser respondida | Fonte/forma de obter resposta |
-|---|---|---|---|
-| Q1 | {{...}} | {{...}} | {{...}} |
+| #   | Questão                                                                                              | Por que precisa ser respondida                                                                                                                                   | Fonte/forma de obter resposta                                                                                                           |
+| --- | ---------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
+| Q1  | O que Thiago estava fazendo e o que acontece com essa tarefa quando ele a interrompe?                | O cenário inicial começa no alerta e ignora o custo da interrupção e da retomada, que o contexto de uso aponta como frequente                                    | Entrega 03, seção 3 (ambiente físico do SOC: interrupções frequentes) e jornada, etapas 1 e 7. Verificação na Entrega 07                |
+| Q2  | O que exatamente Thiago precisa decidir — e o que fica fora da sua alçada?                           | Sem essa delimitação, o cenário sugere que ele “resolve” a lentidão, o que contradiz o recorte (ele interpreta e encaminha; não contém)                          | Entrega 01, quadro “limite entre detectar, interpretar e conter”; Entrega 03, quadro “Onde termina a análise e onde começa a contenção” |
+| Q3  | Que informação ele precisa reunir para julgar a classificação, e onde cada uma está hoje?            | Revela a dispersão do contexto entre ferramentas — o problema H13                                                                                                | Entrega 01 (4.3, H13, H30); Entrega 03, jornada etapa 3. Verificação na Entrega 07                                                      |
+| Q4  | O comportamento do IDS pode ter mudado por causa de uma alteração na configuração? Como ele saberia? | Liga o cenário ao trabalho de Vanessa (C02): se o classificador ativo mudou, o que Thiago vê mudou de origem — e ele não tem como atribuir a mudança a uma causa | Entrega 03, seção 3 (coordenação entre Thiago e Vanessa); H27                                                                           |
+| Q5  | Depois de decidir, como Thiago passa o caso a quem age e ao próximo turno?                           | O cenário inicial termina na indecisão e não mostra o que acontece com o registro — que é lido por outras pessoas                                                | Entrega 03, jornada etapas 5–7; H18 e H31                                                                                               |
+| Q6  | O que acontece se ele errar em cada direção?                                                         | Torna explícito que o erro custa nos dois sentidos, o que justifica tratar A02 como atividade crítica                                                            | Entrega 01, 4.4 (tabela de erros) e H12                                                                                                 |
 
 ### 3. Cenário refinado
 
 Reescreva o cenário incorporando as respostas. Marque o conteúdo novo de forma consistente (por exemplo, `**[NOVO: ...]**`).
 
-{{narrativa refinada}}
+Thiago, analista de SOC nível 2, está no plantão noturno escrevendo a análise de uma ocorrência anterior quando o IDS registra uma sequência de conexões classificadas como suspeitas a partir de um mesmo segmento de rede. **[NOVO: a análise está pela metade; o que ele já concluiu está anotado em parte no chamado e em parte só na própria memória. Antes de abrir o console, ele precisa decidir se o alerta vale largar o que estava fazendo.]**
+
+**[NOVO: o que Thiago precisa decidir não é como resolver o problema na rede, e sim se aquelas conexões correspondem a um incidente real. A decisão tem três saídas possíveis: descartar como falso positivo, confirmar como incidente e encaminhar, ou marcar como indefinido e continuar investigando. Bloquear ou isolar o segmento não é tarefa dele: cabe à equipe de infraestrutura, a pedido dele.]**
+
+Thiago abre o console e encontra milhares de linhas de log, misturando as classificações do modelo com o restante do tráfego. Ele não sabe se está diante de um pico legítimo de acessos ou de uma varredura/DoS. Para descobrir, alterna entre o console, consultas manuais e seus próprios scripts para reunir origem, destino, serviço e volume de cada conexão. **[NOVO: para julgar, ele precisa saber quem é a origem, se ela já se comunicou antes com aquele destino, se o volume destoa do habitual daquele ativo e se há outras conexões com o mesmo padrão. Cada resposta está num lugar diferente: o console, a captura de pacotes, um script próprio que extrai contagens do log e a memória de turnos anteriores. Ele monta cada consulta à mão e guarda de cabeça o que já viu enquanto passa de uma ferramenta para outra.]** 
+
+**[NOVO: Thiago também nota que, nos últimos dias, o IDS tem marcado como suspeitas conexões que antes passavam como normais. Não sabe se o tráfego mudou ou se alguém alterou a configuração do classificador, e nada do que ele consulta indica qual modelo está ativo nem desde quando. Se muitas ocorrências parecidas não se confirmarem, a suspeita passa a ser o próprio classificador, e o caminho é acionar Vanessa, que só está disponível em horário comercial.]** 
+
+Enquanto não consegue decidir, a lentidão continua e ele não sabe dizer à operação se alguém deve agir. **[NOVO: o segmento de onde partem as conexões atende o portal interno usado pelo atendimento, que já está lento. O erro custa nos dois sentidos: se descartar uma varredura real, a atividade pode evoluir sem resposta; se pedir um bloqueio indevido, a infraestrutura pode interromper o tráfego legítimo do portal e parar o atendimento.]** 
 
 ### 4. Elementos extraídos
 
-| Elemento | Evidência no cenário |
-|---|---|
-| Ator(es) | {{...}} |
-| Objetivo(s) | {{...}} |
-| Contexto | {{...}} |
-| Recursos/informações | {{...}} |
-| Ações | {{...}} |
-| Problemas/rupturas | {{...}} |
-| Consequências | {{...}} |
+| Elemento             | Evidência no cenário                                                                                                                                                                                                                                                                   |
+| -------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Ator(es)             | Thiago (P01, analista SOC L2, plantão noturno); equipe de infraestrutura, que executa a ação; operação, que aguarda a resposta; analista do próximo turno.                                                                                                                             |
+| objetivo(s)          | Decidir se as conexões sinalizadas correspondem a um incidente real e **encaminhar** a quem precisa agir; não interromper um serviço legítimo por engano; deixar o caso compreensível para quem vem depois                                                                             |
+| Contexto             | Plantão noturno no SOC, com uma tarefa em andamento interrompida pelo alerta; portal do atendimento lento enquanto a decisão não sai; pressão da operação por uma resposta.                                                                                                            |
+| Recursos/informações | Console com logs crus; classificações do modelo misturadas ao restante do tráfego; captura de pacotes; *scripts* próprios; memória de turnos anteriores. **Ausentes:** histórico do ativo, comportamento habitual da origem, indicação de qual classificador está ativo e desde quando |
+| Ações                | Interromper a tarefa anterior; abrir o console; montar consultas manuais por origem, destino, serviço e volume; comparar com o que conhece do ambiente; decidir; abrir chamado para a infraestrutura; avisar a operação; retomar a tarefa; escrever a passagem de plantão              |
+| Problemas/rupturas   | Contexto da conexão disperso em várias ferramentas e guardado de memória; impossibilidade de saber se a mudança de comportamento vem do tráfego ou da configuração; tarefa interrompida difícil de retomar; fundamento da decisão não fica registrado                                  |
+| Consequências        | Decisão demorada enquanto o portal segue lento; risco de descartar um ataque real ou de pedir um bloqueio que interrompe o atendimento; passagem de plantão incompleta, que torna Thiago um gargalo; suspeita sobre o classificador que não chega a Vanessa com informação suficiente  |
 
 ### 5. Implicações para as próximas entregas
 
-Quais tarefas merecem análise? Quais informações precisam ser coletadas? **Não desenhe a solução ainda.**
+- Decompor A02 (investigar uma conexão sinalizada) desde a chegada do alerta até o encaminhamento, com atenção ao ponto de decisão: o que Thiago confronta, com quais informações e quando consulta alguém. Considerar as três saídas da decisão (falso positivo, incidente, indefinido).
+- Tratar **interrupção e retomada** como parte da tarefa, não como exceção; e tratar **encaminhamento e passagem de plantão** como subtarefas cujo produto é lido por outra pessoa.
+- Verificar com analistas reais: (a) quais ferramentas usam hoje e em que ordem; (b) se reunir o contexto da conexão é de fato o ponto mais custoso; (c) se a saída do modelo basta para o julgamento ou se precisam de histórico e comportamento habitual; (d) como ficam sabendo hoje de uma mudança de configuração; (e) o que registram na passagem de plantão.
+- Este cenário é a origem do sinal que inicia o cenário de Vanessa. A análise de tarefas deve mapear **o que Thiago sabe e o que Vanessa precisa receber** quando a suspeita recai sobre o classificador.
+- **Fora desta análise:** a execução da contenção, que ocorre fora do recorte.
 
 ## Cenário C02 — Configurar pipeline e validar desempenho
 
