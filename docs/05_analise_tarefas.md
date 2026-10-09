@@ -104,7 +104,7 @@ Identifique, quando aplicável, tarefas de usuário, sistema, interação e tare
 
 ---
 
-## HTA — T01 {{nome da tarefa}}
+## HTA — T01 Decidir se a configuração atual do IDS deve ser mantida, ajustada ou revertida
 
 **Autor(a):** Marcela Nalesso - 22.222.011-3   
 
@@ -114,7 +114,7 @@ Identifique, quando aplicável, tarefas de usuário, sistema, interação e tare
 
 ### Diagrama
 
-![HTA T01](../assets/05_tarefas/hta_t01.svg)
+![HTA T01](../assets/05_tarefas/hta_t02.svg)
 
 ### Decomposição e planos
 
