@@ -43,7 +43,9 @@ Escolha apenas o que for coerente com tarefas e cenários. Para TCCs técnicos, 
 - Indique controles que mudam o estado.
 - Mostre pelo menos caminhos principais e estados de erro/retorno relevantes.
 
-![Protótipo](../assets/06_prototipos/prototipo_fluxo_01.svg)
+![Estagio1](../assets/06_prototipos/estagio1.png)
+![Estagio1](../assets/06_prototipos/estagio2.png)
+![Estagio1](../assets/06_prototipos/estagio_final.png)
 
 ## 4. Simulação / walkthrough
 
