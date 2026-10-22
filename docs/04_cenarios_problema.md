@@ -1,7 +1,7 @@
 # Entrega 4 — Cenários de análise/problema
 
 **Data:** 08/09/2026   
-**Status:** 🟨 em andamento  
+**Status:** `🟩 concluída`  
 **Responsabilidade:** 1 solução completa por integrante
 
 ## Objetivo da atividade
@@ -45,7 +45,7 @@ Use os tipos de questões/taxonomia definidos na aula. As perguntas devem revela
 | Q1  | O que Thiago estava fazendo e o que acontece com essa tarefa quando ele a interrompe?                | O cenário inicial começa no alerta e ignora o custo da interrupção e da retomada, que o contexto de uso aponta como frequente                                    | Entrega 03, seção 3 (ambiente físico do SOC: interrupções frequentes) e jornada, etapas 1 e 7. Verificação na Entrega 07                |
 | Q2  | O que exatamente Thiago precisa decidir — e o que fica fora da sua alçada?                           | Sem essa delimitação, o cenário sugere que ele “resolve” a lentidão, o que contradiz o recorte (ele interpreta e encaminha; não contém)                          | Entrega 01, quadro “limite entre detectar, interpretar e conter”; Entrega 03, quadro “Onde termina a análise e onde começa a contenção” |
 | Q3  | Que informação ele precisa reunir para julgar a classificação, e onde cada uma está hoje?            | Revela a dispersão do contexto entre ferramentas — o problema H13                                                                                                | Entrega 01 (4.3, H13, H30); Entrega 03, jornada etapa 3. Verificação na Entrega 07                                                      |
-| Q4  | O comportamento do IDS pode ter mudado por causa de uma alteração na configuração? Como ele saberia? | Liga o cenário ao trabalho de Vanessa (C02): se o classificador ativo mudou, o que Thiago vê mudou de origem — e ele não tem como atribuir a mudança a uma causa | Entrega 03, seção 3 (coordenação entre Thiago e Vanessa); H27                                                                           |
+| Q4  | O comportamento do IDS pode ter mudado por causa de uma alteração na configuração? Como ele saberia? | Liga o cenário ao trabalho: se o classificador ativo mudou, o que Thiago vê mudou de origem — e ele não tem como atribuir a mudança a uma causa | Entrega 03, seção 3; H27                                                                           |
 | Q5  | Depois de decidir, como Thiago passa o caso a quem age e ao próximo turno?                           | O cenário inicial termina na indecisão e não mostra o que acontece com o registro — que é lido por outras pessoas                                                | Entrega 03, jornada etapas 5–7; H18 e H31                                                                                               |
 | Q6  | O que acontece se ele errar em cada direção?                                                         | Torna explícito que o erro custa nos dois sentidos, o que justifica tratar A02 como atividade crítica                                                            | Entrega 01, 4.4 (tabela de erros) e H12                                                                                                 |
 
@@ -59,7 +59,7 @@ Thiago, analista de SOC nível 2, está no plantão noturno escrevendo a anális
 
 Thiago abre o console e encontra milhares de linhas de log, misturando as classificações do modelo com o restante do tráfego. Ele não sabe se está diante de um pico legítimo de acessos ou de uma varredura/DoS. Para descobrir, alterna entre o console, consultas manuais e seus próprios scripts para reunir origem, destino, serviço e volume de cada conexão. **[NOVO: para julgar, ele precisa saber quem é a origem, se ela já se comunicou antes com aquele destino, se o volume destoa do habitual daquele ativo e se há outras conexões com o mesmo padrão. Cada resposta está num lugar diferente: o console, a captura de pacotes, um script próprio que extrai contagens do log e a memória de turnos anteriores. Ele monta cada consulta à mão e guarda de cabeça o que já viu enquanto passa de uma ferramenta para outra.]** 
 
-**[NOVO: Thiago também nota que, nos últimos dias, o IDS tem marcado como suspeitas conexões que antes passavam como normais. Não sabe se o tráfego mudou ou se alguém alterou a configuração do classificador, e nada do que ele consulta indica qual modelo está ativo nem desde quando. Se muitas ocorrências parecidas não se confirmarem, a suspeita passa a ser o próprio classificador, e o caminho é acionar Vanessa, que só está disponível em horário comercial.]** 
+**[NOVO: Thiago também nota que, nos últimos dias, o IDS tem marcado como suspeitas conexões que antes passavam como normais. Não sabe se o tráfego mudou ou se alguém alterou a configuração do classificador, e nada do que ele consulta indica qual modelo está ativo nem desde quando. Se muitas ocorrências parecidas não se confirmarem, a suspeita passa a ser o próprio classificador.]** 
 
 Enquanto não consegue decidir, a lentidão continua e ele não sabe dizer à operação se alguém deve agir. **[NOVO: o segmento de onde partem as conexões atende o portal interno usado pelo atendimento, que já está lento. O erro custa nos dois sentidos: se descartar uma varredura real, a atividade pode evoluir sem resposta; se pedir um bloqueio indevido, a infraestrutura pode interromper o tráfego legítimo do portal e parar o atendimento.]** 
 
