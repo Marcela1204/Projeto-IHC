@@ -232,3 +232,13 @@ Inventário do que a equipe anotou ao revisar os painéis atuais tela a tela, fo
 | Promoção sem efeito previsto nem aviso                    | A troca é feita por CLI e os painéis não estimam o que ela muda para quem investiga                                                | Mostrar nos painéis, antes e depois da troca, o efeito sobre o volume que chega ao analista e o custo de processamento; registrar a promoção de forma visível à equipe                                                                  | P02: “ver a consequência antes de confirmar”; a execução continua na CLI       |
 | Dashboards sem ligação (I08)                              | Fluxo quebrado entre panorama e detalhe                                                                                            | Links de dashboard no topo (D01 ↔ D02 ↔ D03) e *data links* da tabela de D03 para o estágio que decidiu, mantendo origem e intervalo                                                                                                    | RC04                                                                           |
 | Sem registro de veredito (3.4)                            | A02 não se completa no protótipo                                                                                                   | Prototipar à parte, em baixa fidelidade, a tela de registro do veredito (incluindo **indefinido**) e de encaminhamento                                                                                                                  | C01: as três saídas da decisão                                                 |
+## Checklist
+
+- [ ] O protótipo cobre tarefas relevantes da Entrega 5.
+- [ ] Cada tela/estado pode ser justificado por uma tarefa, decisão ou informação necessária.
+- [ ] O projeto não criou dashboard/CRUD/login apenas para parecer “completo”.
+- [ ] Telas/estados estão numerados e navegáveis na documentação.
+- [ ] Há pelo menos uma simulação/walkthrough documentado.
+- [ ] Críticas não foram apenas listadas: geraram decisão de revisão.
+- [ ] O protótipo continua em baixa fidelidade; detalhes visuais não mascaram problemas de fluxo.
+
