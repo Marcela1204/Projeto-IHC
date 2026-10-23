@@ -114,7 +114,7 @@ Identifique, quando aplicável, tarefas de usuário, sistema, interação e tare
 
 ### Diagrama
 
-![HTA T01](../assets/05_tarefas/goms_ctt_t02.svg)
+![HTA T01](../assets/05_tarefas/hta_t02.svg)
 
 ### Decomposição e planos
 
@@ -189,7 +189,7 @@ Identifique, quando aplicável, tarefas de usuário, sistema, interação e tare
 
 ### Diagrama
 
-![CTT T03](../assets/05_tarefas/ctt_t03.svg)
+![CTT T03](../assets/05_tarefas/goms_ctt_t02)
 
 ### Legenda e relações temporais usadas
 
