@@ -29,7 +29,9 @@ Um CRUD pode gerar tarefas relevantes, mas “cadastrar usuário” só merece m
 
 | ID | Tarefa | Persona/cenário de origem | Frequência/criticidade | Autor responsável |
 |---|---|---|---|---|
-| T01 | {{...}} | {{P01/C01}} | {{...}} | {{...}} |
+| T01 | Decidir se a configuração atual do IDS deve ser mantida, ajustada ou revertida | Vanessa / Cenário 02 | Alta | Marcela Nalesso |
+
+
 
 > Priorize tarefas necessárias para que o usuário alcance objetivos centrais. Não desperdice a modelagem em ações triviais isoladas, como “clicar em login”, se o objetivo relevante é maior. Da mesma forma, não modele o funcionamento interno do algoritmo como se fosse uma tarefa humana.
 
@@ -110,7 +112,7 @@ Identifique, quando aplicável, tarefas de usuário, sistema, interação e tare
 
 ### Descrição da tarefa
 
-{{objetivo, ponto de início, conclusão esperada, contexto}}
+Vanessa, como administradora responsável pela operação do IDS e pela estabilidade da infraestrutura, inicia a tarefa quando observa aumento de alertas, ruído operacional e comportamento anômalo na rede. O objetivo é confirmar se o cenário exige manter a configuração atual, ajustar parâmetros do pipeline ou reverter uma alteração recente. A tarefa se conclui quando a decisão é tomada com base em diagnóstico, avaliação de impacto e validação do efeito sobre a operação da rede.
 
 ### Diagrama
 
@@ -120,14 +122,31 @@ Identifique, quando aplicável, tarefas de usuário, sistema, interação e tare
 
 | ID | Objetivo/operação | Plano/ordem | Problema ou decisão de design observada |
 |---|---|---|---|
-| 0 | {{objetivo principal}} | {{1 }} 2 > 3 / 1 ou 2 etc.> | {{...}} |
+| 0 | Decidir se a configuração atual do IDS deve ser mantida, ajustada ou revertida | 1 > 2 > 3 > 4 > 5 | Vanessa precisa diagnosticar, avaliar risco e validar a decisão antes de agir. |
+| 1 | Identificar que a operação do IDS está fora do comportamento esperado | 1.1 > 1.2 | O desvio deve ser confirmado antes de qualquer ajuste. |
+| 1.1 | Verificar aumento de alertas e ruído operacional | 1 | O sinal inicial é relevante, mas não é suficiente para justificar uma mudança. |
+| 1.2 | Comparar o comportamento atual com a linha de base da rede | 1 | A comparação evita decisões baseadas em anomalias isoladas ou temporárias. |
+| 2 | Revisar o estado atual do pipeline | 2.1 || 2.2 || 2.3 | A causa do problema pode estar no algoritmo, na infraestrutura ou no comportamento recente do ambiente. |
+| 2.1 | Verificar desempenho do algoritmo ativo | 2 | O algoritmo pode estar gerando falsos positivos ou classificações inadequadas. |
+| 2.2 | Verificar carga e estabilidade da infraestrutura | 2 | A infraestrutura pode estar degradada mesmo quando o algoritmo está funcional. |
+| 2.3 | Consultar o histórico recente do tráfego e dos alertas | 2 | O histórico ajuda a distinguir variação legítima de comportamento de falha operacional. |
+| 3 | Avaliar impacto de uma possível mudança | 3.1 || 3.2 || 3.3 | A decisão precisa considerar risco, reversibilidade e efeito sobre a operação. |
+| 3.1 | Comparar o modelo atual e o modelo candidato | 3 | A análise entre alternativas reduz a chance de ajustar o sistema pela causa errada. |
+| 3.2 | Avaliar o efeito da mudança sobre analistas e operação da rede | 3 | As mudanças impactam diretamente o trabalho de investigação e a estabilidade do trânsito. |
+| 4 | Decidir a ação de configuração | 4.1 [] 4.2 [] 4.3 [] 4.4 | A alternativa escolhida depende do diagnóstico e do risco estimado. |
+| 4.1 | Manter a configuração atual | 4 | Manter é apropriado quando o comportamento está estável e aceitável. |
+| 4.2 | Ajustar parâmetros do pipeline ou classificador ativo | 4 | O ajuste é adequado quando o problema é de calibração e não de falha estrutural. A troca é relevante quando a qualidade de detecção do modelo atual é insuficiente.  |
+| 4.3 | Reverter a alteração e reavaliar | 4 | A reversão é preferível quando a alteração piorou o ambiente ou aumentou ruído. |
+| 5 | Validar a decisão após a mudança | 5.1 > 5.2 > 5.3 > 5.4 | A validação confirma se a ação teve o efeito desejado e se a equipe foi informada. |
+| 5.1 | Registrar o que mudou, quando e por quê | 5 | O registro cria rastreabilidade e suporte para análise posterior. |
+| 5.2 | Monitorar o resultado após a alteração | 5 | A confirmação do efeito é essencial para saber se a decisão foi correta. |
 
 **Verificação do HTA:**
 
-- O objetivo 0 representa uma meta do usuário?
-- As subtarefas são necessárias e suficientes?
-- Os **planos** indicam ordem, alternativa, repetição ou condição?
-- A decomposição parou em nível útil para projeto de interação?
+- O objetivo 0 representa uma meta do usuário? Sim. Vanessa precisa decidir de forma fundamentada se deve manter, ajustar ou reverter a configuração do IDS.
+- As subtarefas são necessárias e suficientes? Sim. Elas cobrem diagnóstico, revisão do pipeline, avaliação de impacto, tomada de decisão e validação final.
+- Os **planos** indicam ordem, alternativa, repetição ou condição? Sim. Há sequência principal, paralelismo nas verificações e escolha explícita entre alternativas de ação.
+- A decomposição parou em nível útil para projeto de interação? Sim. A estrutura chega ao nível de decisão e validação operacional, que é útil para definir requisitos de interface e informação.
 
 ---
 
@@ -185,7 +204,7 @@ Identifique, quando aplicável, tarefas de usuário, sistema, interação e tare
 
 ### Descrição
 
-{{...}}
+Vanessa identifica um desvio no comportamento do IDS, revisa o estado do pipeline, compara alternativas de configuração e decide se a operação deve ser mantida, ajustada ou revertida. A tarefa termina quando a decisão é validada, registrada e comunicada para que a equipe entenda a alternativa adotada e monitorize os efeitos da mudança.
 
 ### Diagrama
 
@@ -195,9 +214,13 @@ Identifique, quando aplicável, tarefas de usuário, sistema, interação e tare
 
 | Operador/relação | Significado no diagrama | Exemplo no modelo |
 |---|---|---|
-| {{...}} | {{...}} | {{...}} |
+| `>>` | Sequência | `M1 >> M2 >> M3 >> M4 >> M5` |
+| `||` | Concorrência/paralelismo | `M2.1 || M2.2 || M2.3` |
+| `[]` | Escolha entre alternativas | `M4.1 [] M4.2 [] M4.3 [] M4.4` |
+| `>` | Habilitação | a etapa de validação é habilitada somente após a decisão de ação |
+| `*` | Repetição | pode ocorrer em ciclos de ajuste e reavaliação |
 
-Identifique, quando aplicável, tarefas de usuário, sistema, interação e tarefas abstratas. Verifique se concorrência, escolha, habilitação, desabilitação e repetição estão representadas corretamente segundo a notação adotada em aula.
+Os métodos M1 a M5 representam uma sequência principal de execução: primeiro Vanessa diagnostica a anomalia, depois revisa o pipeline, em seguida avalia a mudança, toma a decisão e, por fim, valida o efeito da decisão. O tipo de tarefa varia conforme a etapa: M1 é uma tarefa abstrata e de usuário, M2 envolve interação com o sistema e revisão de dados operacionais, M3 é de interação e avaliação, M4 combina abstração, decisão do usuário e interação com informações do ambiente, e M5 combina interação, usuário e sistema para registrar e monitorar a ação. A relação principal é sequencial, com paralelismo na revisão do pipeline e escolha explícita entre manter, ajustar, trocar ou reverter a configuração.
 
 ---
 
