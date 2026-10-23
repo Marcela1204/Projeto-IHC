@@ -1,7 +1,7 @@
 # Entrega 7 — Coleta de dados, necessidades e aspectos éticos
 
-**Data:** {{dd/mm/aaaa}}  
-**Status:** ⬜ não iniciada
+**Data:** 22/10/2026  
+**Status:** `🟨 em andamento`   
 
 ## Objetivo da atividade
 
