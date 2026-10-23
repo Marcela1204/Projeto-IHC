@@ -189,7 +189,7 @@ Identifique, quando aplicável, tarefas de usuário, sistema, interação e tare
 
 ### Diagrama
 
-![CTT T03](../assets/05_tarefas/goms_ctt_t02)
+![CTT T03](../assets/05_tarefas/goms_ctt_t02.svg)
 
 ### Legenda e relações temporais usadas
 
