@@ -104,7 +104,7 @@ Identifique, quando aplicável, tarefas de usuário, sistema, interação e tare
 
 ---
 
-## HTA — T01 Decidir se a configuração atual do IDS deve ser mantida, ajustada ou revertida
+## HTA — T01: Decidir se a configuração atual do IDS deve ser mantida, ajustada ou revertida
 
 **Autor(a):** Marcela Nalesso - 22.222.011-3   
 
@@ -114,7 +114,7 @@ Identifique, quando aplicável, tarefas de usuário, sistema, interação e tare
 
 ### Diagrama
 
-![HTA T01](../assets/05_tarefas/hta_t02.svg)
+![HTA T01](../assets/05_tarefas/goms_ctt_t02.svg)
 
 ### Decomposição e planos
 
@@ -131,27 +131,55 @@ Identifique, quando aplicável, tarefas de usuário, sistema, interação e tare
 
 ---
 
-## GOMS — T02 {{nome da tarefa}}
+## GOMS — T02: Decidir se a configuração atual do IDS deve ser mantida, ajustada ou revertida
 
 **Autor(a):** Marcela Nalesso - 22.222.011-3   
 
 ### Goal
 
-`G0: {{meta do usuário}}`
+`G0: decidir se a configuração atual do IDS deve ser mantida, ajustada ou revertida`
 
 ### Métodos, operadores e regras de seleção
 
-- **Method M1:** {{...}}
-  - Operators: {{perceber, apontar, clicar, digitar, decidir... conforme o nível adotado}}
-- **Method M2:** {{...}}
-  - Operators: {{...}}
-- **Selection Rule SR1:** usar M1 quando {{condição}}; usar M2 quando {{condição}}.
+- **Method M1:** Diagnosticar que a operação saiu do esperado
+  - **Selection Rule SR1:** usar M1 quando houver aumento de alertas, ruído operacional e sinais de que o sistema saiu do comportamento esperado
+  - Operators:
+    - M1.1: Verificar aumento de alertas e ruído operacional
+    - M1.2: Comparar o comportamento atual com o comportamento normal da rede
+    - M1.3: Verificar se a causa é do ambiente, do pipeline ou do classificador
+- **Method M2:** Revisar o estado atual do pipeline
+  - **Selection Rule SR2:** usar M2 quando a causa do desvio ainda não está clara e a pessoa precisa verificar a saúde do pipeline antes de agir
+  - Operators:
+    - M2.1: Revisar desempenho do algoritmo ativo
+    - M2.2: Revisar carga e estabilidade da infraestrutura
+    - M2.3: Comparar histórico recente do tráfego com o estado atual
+- **Method M3:** Avaliar impacto da mudança antes de agir
+  - **Selection Rule SR3:** usar M3 quando já existe uma possível mudança de parâmetro ou classificador e é necessário estimar impacto antes de aplicar alteração
+  - Operators:
+    - M3.1: Comparar modelo atual e modelo candidato
+    - M3.2: Avaliar efeito sobre analistas e operação da rede
+    - M3.3: Verificar se a troca ou ajuste pode ser revertida sem impacto grande
+- **Method M4:** Decidir a ação de configuração
+  - **Selection Rule SR4:** usar M4 quando o diagnóstico já foi concluído e a decisão de ação precisa ser tomada
+  - Operators:
+    - M4.1: Manter a configuração atual
+    - M4.2: Ajustar parâmetros do pipeline
+    - M4.3: Trocar o classificador ativo
+    - M4.4: Reverter a alteração e reavaliar
+- **Method M5:** Validar e documentar a decisão após a mudança
+  - **Selection Rule SR5:** usar M5 quando a alteração foi aplicada e é necessário registrar e acompanhar o efeito para confirmar se a decisão foi correta
+  - Operators:
+    - M5.1: Registrar a alteração no histórico de configuração
+    - M5.2: Registrar motivo, estado anterior e impacto esperado
+    - M5.3: Informar os analistas que o comportamento do IDS mudou
+    - M5.4: Monitorar o resultado após a alteração
+
 
 > Não chame qualquer passo de “método”. Em GOMS, métodos são sequências alternativas capazes de atingir uma meta; regras de seleção explicam quando escolher entre eles.
 
 ---
 
-## CTT — T03 {{nome da tarefa}}
+## CTT — T03: Decidir se a configuração atual do IDS deve ser mantida, ajustada ou revertida
 
 **Autor(a):** Marcela Nalesso - 22.222.011-3   
 
