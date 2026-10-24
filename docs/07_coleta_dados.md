@@ -76,17 +76,27 @@ Analise voluntariedade, consentimento, minimização de dados, privacidade, risc
 
 | Dado/informação | Hipótese/lacuna relacionada | Por que é necessário | Qual decisão de design pode afetar |
 |---|---|---|---|
-| {{...}} | {{H01/H02/...}} | {{...}} | {{...}} |
+| Como a troca de classificador ou ajuste de configuração é feita na prática | H05, H22, H27 | A rotina real pode não corresponder ao que a equipe imagina; a interface precisa respeitar o processo | Área de configuração, sinal de mudança de modelo, confirmação antes de aplicar |
+| Quais métricas o administrador observa antes de decidir | H05, H27 | A decisão de manter, ajustar ou reverter configurações depende de indicadores mais do que de uma única métrica | Comparação entre modelo atual e candidato, painel de validação e revisão de impacto |
+| Como ele interpreta “impacto”, “desempenho” e “segurança” no contexto operacional | H05, H27, H28 | O vocabulário do domínio pode exigir abstrações e tradução visual para reduzir erro | Termos e legendas do painel, etiquetas de ação e explicações sobre risco |
+| Frequência e criticidade de alterações na configuração do IDS | H22, H29 | Isso define se a ação deve ser tratada como tarefa rotineira ou de alerta prioritário | Prioridade visual, fluxo de confirmação e possibilidade de reversão |
+| Necessidade de histórico e rastreio de mudanças | H31, H27 | O administrador pode precisar saber quando um modelo mudou, por quem e por qual motivo | Indicador de “tempo desde promoção”, histórico de versões e trilha de decisão |
 
 #### De quem coletar?
 
 | Perfil/stakeholder | Critério de inclusão | Relação com persona/público |
 |---|---|---|
-| {{...}} | {{...}} | {{...}} |
+| Administrador de infraestrutura / segurança operacional | Atua na manutenção de IDS, regras, políticas e parametrização | P02 — Vanessa Toledo, fluxo de configuração e validação |
+| Analista de rede / SOC com rotina de parametrização | Já teve contato com ajustes de sensibilidade, tráfego e alertas | Papel complementar, importante para entender o ponto de contato entre configuração e investigação |
+| Gestor de TI ou responsável por estabilidade da rede | Acompanha impacto operacional e decisão de mudança | Stakeholder de contexto, principalmente para avaliar risco, mudança e continuidade |
 
 #### Aspectos éticos
 
-Analise voluntariedade, consentimento, minimização de dados, privacidade, riscos, gravação, anonimização, armazenamento e descarte. Não responda apenas “sim, por causa da LGPD”: explique **quais dados e riscos existem neste projeto**.
+A pesquisa com administradores envolve dados sobre configuração de rede, regras, taxa de alertas e impacto em infraestrutura crítica. Embora não sejam necessariamente dados pessoais, esses elementos podem revelar arquitetura de rede, design de firewall, políticas internas e vulnerabilidades operacionais, sendo sensíveis para a organização. Portanto, a coleta deve enfatizar o processo de decisão e não detalhes de infraestrutura que permitam mapear uma rede em produção.
+
+O consentimento deve informar que a pesquisa não exige exposição de dados confidenciais e que o participante pode omitir informações que considere sensíveis. O participante deve decidir se autoriza gravação de áudio, gravação de tela, ou apenas resposta em formulário. O registro de telas deve evitar mostrar nomes de hosts, sub-redes, senhas, endpoints internos ou dados de clientes.
+
+Para garantir minimização, os dados devem ser anonimizados por meio de códigos e substituição de nomes, endereços e identificadores. A análise deve considerar apenas os padrões de decisão, critérios de avaliação e linguagem necessária para o design, e não a arquitetura completa do ambiente. O armazenamento deve ser controlado, com acesso restrito ao grupo, e o descarte deve ocorrer após a conclusão da disciplina ou período acadêmico previsto.
 
 > Repita A02, A03...
 
@@ -94,32 +104,158 @@ Analise voluntariedade, consentimento, minimização de dados, privacidade, risc
 
 > Cada integrante deve preparar uma técnica/instrumento completo. As técnicas devem ser diferentes entre si e **questionário deve estar entre as técnicas escolhidas**, conforme o enunciado da disciplina.
 
-### Instrumento I01 — {{nome da técnica}}
+### Instrumento I01 — Questionário estruturado
 
-**Autor(a):** Marcela Nalesso — 22.222.011-3   
-**Técnica:** questionário / entrevista semiestruturada / observação / grupo focal / outra autorizada  
-**Objetivo:** {{...}}  
-**Público:** {{...}}
+**Autor(a):** Marcela Nalesso — 22.222.011-3  
+**Técnica:** questionário  
+**Objetivo:** mapear o perfil dos usuários, sua rotina de operação, seu vocabulário, a frequência de alertas e os critérios que usam para decidir sobre uma ocorrência ou uma alteração de configuração.  
+**Público:** analistas de SOC, administradores de rede/segurança e profissionais que realizam monitoramento ou triagem de incidentes.
 
 #### Procedimento padronizado de aplicação
 
-1. {{preparação}}
-2. {{apresentação/consentimento}}
-3. {{aplicação}}
-4. {{encerramento}}
-5. {{armazenamento/anonimização}}
+1. Preparação: definir público-alvo e versão final do questionário; garantir que as perguntas sejam neutras, curtas e adaptadas ao domínio de segurança de redes.
+2. Apresentação/consentimento: explicar objetivo da pesquisa, duração estimada, voluntariedade, uso acadêmico dos dados e garantia de anonimização.
+3. Aplicação: questionário autoaplicável, em formato digital ou impresso; tempo estimado de 8 a 12 minutos; evitar interferência do entrevistador.
+4. Encerramento: agradecer a participação, confirmar que o participante pode solicitar exclusão dos dados e informar como a síntese será devolvida.
+5. Armazenamento/anonimização: armazenar respostas em planilha ou formulário sem identificação direta; codificar respostas por participante e remover nomes, redes e dados sensíveis.
 
 #### Instrumento
 
-Cole aqui o questionário/roteiro completo ou forneça link **mais uma cópia textual no repositório**.
+1. Qual é o seu papel principal hoje?  
+   a) Analista de SOC  
+   b) Administrador de rede/segurança  
+   c) Gestor de TI  
+   d) Outro: _______
+
+2. Há quanto tempo você atua nessa função?  
+   a) Menos de 1 ano  
+   b) 1 a 3 anos  
+   c) 3 a 5 anos  
+   d) Mais de 5 anos
+
+3. Com que frequência você acompanha alertas ou logs de rede?  
+   a) Diariamente  
+   b) Algumas vezes por semana  
+   c) Em plantões ou situações de crise  
+   d) Raramente
+
+4. Em sua rotina, qual é a atividade mais frequente?  
+   a) Monitorar o estado geral da rede  
+   b) Investigar uma ocorrência sinalizada  
+   c) Ajustar regras, parâmetros ou modelos  
+   d) Registrar/encaminhar decisão  
+   e) Outra: _______
+
+5. O que você normalmente consulta para decidir se uma ocorrência é relevante?  
+   a) Volume de tráfego  
+   b) Origem/destino da conexão  
+   c) Severidade do alerta  
+   d) Histórico de ocorrências  
+   e) Comparação com comportamento anterior  
+   f) Outro: _______
+
+6. Qual dessas informações você considera indispensável para avaliar um alerta? (marque até 3)  
+   a) Origem  
+   b) Destino  
+   c) Protocolo/serviço  
+   d) Severidade  
+   e) Confiabilidade da classificação  
+   f) Histórico de alertas  
+   g) Contexto do fluxo  
+   h) Nenhuma das anteriores
+
+7. Em uma situação de rotina, como você avalia a urgência de uma ocorrência?  
+   a) Somente pela severidade do sistema  
+   b) Avalio origem, destino e impacto potencial  
+   c) Considero o histórico anterior  
+   d) Depende do contexto do momento  
+   e) Não tenho critério fixo
+
+8. Você costuma lidar com situações em que precisa decidir rapidamente sem muita análise detalhada?  
+   a) Sim, frequentemente  
+   b) Sim, ocasionalmente  
+   c) Raramente  
+   d) Nunca
+
+9. Quando uma decisão precisa ser tomada rapidamente, o que mais lhe falta?  
+   a) Resumo claro da situação  
+   b) Histórico do caso  
+   c) Comparação com comportamento normal  
+   d) Explicação do classificação do sistema  
+   e) Nenhuma das anteriores
+
+10. O que você acha mais útil em uma interface de monitoramento?  
+   a) Indicadores resumidos  
+   b) Filtros por origem/destino/protocolo  
+   c) Comparações temporais  
+   d) Detalhamento da ocorrência  
+   e) Registro da decisão
+
+11. O sistema precisa mostrar o que está “fora do padrão agora” sem exigir que você pesquise muito manualmente?  
+   a) Sim, muito importante  
+   b) Importante  
+   c) Pouco importante  
+   d) Não sei
+
+12. Em sua experiência, a mudança de modelo, regra ou configuração costuma ser uma tarefa simples, delicada ou arriscada?  
+   a) Simples  
+   b) Delicada  
+   c) Arriscada  
+   d) Depende da situação
+
+13. Você considera importante saber “quem mudou o classificador” e “há quanto tempo ele está em produção”?  
+   a) Sim, muito importante  
+   b) Importante  
+   c) Pouco importante  
+   d) Não sei
+
+14. Para você, qual informação deve aparecer junto de um alerta para reduzir erro humano?  
+   a) Categoria prevista  
+   b) Nível de confiança  
+   c) Critério de decisão  
+   d) Severidade  
+   e) Histórico do caso  
+   f) Outro: _______
+
+15. Você costuma registrar a decisão tomada sobre uma ocorrência?  
+   a) Sempre  
+   b) Frequentemente  
+   c) Às vezes  
+   d) Raramente  
+   e) Nunca
+
+16. O registro de decisão e de encaminhamento seria útil para o seu trabalho?  
+   a) Sim, muito útil  
+   b) Útil  
+   c) Pouco útil  
+   d) Não sei
+
+17. Qual tipo de informação torna a interface mais confiável para você?  
+   a) Explicação textual da classificação  
+   b) Contexto dos dados  
+   c) Detalhes do comportamento do fluxo  
+   d) Comparação com uma linha de base  
+   e) Nenhuma das anteriores
+
+18. Você usa algum dashboard ou ferramenta de monitoramento hoje? Qual?  
+   a) Sim: _______  
+   b) Não
+
+19. O que piora a experiência atual de monitoramento para você?  
+   a) excesso de alertas  
+   b) falta de contexto  
+   c) dificuldade de comparar tendências  
+   d) pouca visibilidade do histórico  
+   e) ausência de explicação da classificação  
+   f) outro: _______
 
 #### Como os dados serão analisados
 
-{{ex.: distribuição de respostas, codificação temática, agrupamento de problemas}}
+Os dados do questionário serão analisados por estatística descritiva, com distribuição de frequências por perfil e comparação entre respostas de analistas e administradores. Também serão identificados padrões recorrentes em relação a critérios de decisão, pressão operacional, necessidade de histórico e preferências de síntese. As respostas abertas serão codificadas em categorias temáticas, como “urgência”, “contexto”, “filtros”, “histórico”, “explicação”, “riscos de configuração” e “necessidade de rastreabilidade”.
 
 ## Síntese
 
-Explique quais lacunas de conhecimento sobre usuários o conjunto de técnicas pretende reduzir. Indique explicitamente quais hipóteses da Entrega 1 deverão ficar **sustentadas, refutadas ou refinadas** após a análise dos dados. Quando os dados forem coletados/analisados, atualize o histórico em `RASTREABILIDADE.md`.
+O questionário busca reduzir as lacunas sobre a rotina de operação, a linguagem do domínio, a urgência de decisão e os critérios que tornam uma ocorrência relevante. Ele tem como foco principal validar ou refinar as hipóteses H04, H05, H07, H11, H12, H28, H29, H30 e H31, além de confirmar se a interface precisa priorizar síntese visual, filtros, histórico, registro da decisão e clareza na mudança de algoritmo. Os dados coletados servirão para decidir se o design deve enfatizar observação de rede, investigação de ocorrência, configuração e comparação de modelos, e para orientar atualizações na rastreabilidade da Entrega 1.
 
 --- 
 
