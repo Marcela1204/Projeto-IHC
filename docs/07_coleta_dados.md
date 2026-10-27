@@ -1,7 +1,7 @@
 # Entrega 7 — Coleta de dados, necessidades e aspectos éticos
 
 **Data:** 22/10/2026  
-**Status:** `🟨 em andamento`   
+**Status:** `🟩 concluída`     
 
 ## Objetivo da atividade
 
@@ -48,23 +48,33 @@ Antes de decidir “que dados coletar”, retome os itens `[H]` e `[?]` da Entre
 
 ### A01 — Lucas Kerr do Amaral
 
-**Autor(a):** Lucas Kerr do Amaral — 22.123.032-9   
+*Autor(a):* Lucas Kerr do Amaral — 22.123.032-9
 
 #### Que dados coletar?
 
 | Dado/informação | Hipótese/lacuna relacionada | Por que é necessário | Qual decisão de design pode afetar |
 |---|---|---|---|
-| {{...}} | {{H01/H02/...}} | {{...}} | {{...}} |
+| Fluxo diário do analista de SOC ao identificar uma ocorrência suspeita | H04, H30 | Entender a sequência real de trabalho: como ele percebe o alerta, o que consulta e como decide | Estrutura do dashboard de entrada, ordem de leitura e agrupamento de informações |
+| Quais sinais ele considera decisivos para classificar um alerta | H07, H12, H28 | A informação relevante pode ser diferente de “dados técnicos crus”; a interface precisa refletir o critério humano | Níveis de resumo, prioridades de visualização, painel de contexto e explicação |
+| Tempo médio de resposta e pressão de operação | H29 | A decisão ocorre sob limitação temporal; a interface deve reduzir carga cognitiva | Hierarquia visual, destaque de severidade e simplificação do processo |
+| Como ele usa histórico, filtros e comparação de dados | H11, H31 | A auditoria e o retorno do plantão dependem de recuperar o que já foi avaliado | Histórico de ocorrências, filtros por origem/destino/severidade e registro de decisão |
+| O que distingue falso positivo, verdadeiro positivo e caso ambíguo | H07, H12 | A decisão humana depende da forma como a situação é interpretada | Linguagem de classificação, critérios visuais e explicações do sistema |
 
 #### De quem coletar?
 
 | Perfil/stakeholder | Critério de inclusão | Relação com persona/público |
 |---|---|---|
-| {{...}} | {{...}} | {{...}} |
+| Analista de SOC (nível 1 ou 2) | Atuar em monitoramento de rede/segurança e lidar com alertas em plantão ou rotina | P01 — Thiago Albuquerque, fluxo de investigação |
+| Especialista em operação de segurança | Experiência em triagem de alertas, incidentes ou redes | Papel próximo ao analista, útil para validar linguagem e critério |
+| Operador de infraestrutura / plantão de TI | Trabalha com resposta a incidentes e continuidade da operação | Stakeholder secundário, mas útil para entender urgência operacional |
 
 #### Aspectos éticos
 
-Analise voluntariedade, consentimento, minimização de dados, privacidade, riscos, gravação, anonimização, armazenamento e descarte. Não responda apenas “sim, por causa da LGPD”: explique **quais dados e riscos existem neste projeto**.
+A coleta com analistas envolve informações sobre rotina, tempo de resposta, priorização de incidentes e percepções sobre falhas operacionais. O risco principal não é a presença de dados pessoais sensíveis em si, mas a possibilidade de expor padrões de desempenho, falhas de processo ou indicadores de pressão de trabalho em contextos organizacionais. Por isso, a coleta deve ser voluntária e explicitar que a participação pode ser interrompida a qualquer momento.
+
+O consentimento informado deve explicar: objetivo da pesquisa, duração estimada, itens que serão perguntados, uso do material para fins acadêmicos e que a identidade do participante será protegida. Caso haja gravação de áudio ou tela, o participante deve aprovar explicitamente antes de qualquer registro. Dados de rede, endereços IP, nomes de ambientes e detalhes que permitam identificar a organização devem ser minimizados ou omitidos.
+
+A anonimização deve remover nomes, identificadores, nomes de clientes, patchs, topologias e estruturas internas relevantes. A gravação deve ser armazenada em repositório seguro, acessível apenas ao grupo e descartada após o uso acadêmico previsto. Para os dados textuais, recomenda-se vincular respostas a códigos (e.g., A01–A10) e nunca revelar a origem em apresentações públicas. O risco maior é a exposição de conhecimento operacional crítico sobre a infraestrutura de uma empresa; por isso, a coleta deve priorizar perguntas sobre o trabalho de investigação e não sobre detalhes técnicos sensíveis da rede.
 
 ---
 
