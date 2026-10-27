@@ -30,6 +30,7 @@ Um CRUD pode gerar tarefas relevantes, mas “cadastrar usuário” só merece m
 | ID | Tarefa | Persona/cenário de origem | Frequência/criticidade | Autor responsável |
 |---|---|---|---|---|
 | T01 | Decidir se a configuração atual do IDS deve ser mantida, ajustada ou revertida | Vanessa / Cenário 02 | Alta | Marcela Nalesso |
+| T02 | Reconhecer a anomalia como um ataque ou falso positivo | Thiago / Cenário 01 | Alta frequência e alta criticidade | Lucas Kerr do Amaral |
 
 
 
@@ -37,72 +38,125 @@ Um CRUD pode gerar tarefas relevantes, mas “cadastrar usuário” só merece m
 
 ---
 
-## HTA — T01 {{nome da tarefa}}
+## HTA — T02: Reconhecer a anomalia como um ataque ou falso positivo
 
-**Autor(a):** {{nome — matrícula}}
+**Autor(a):** Lucas Kerr do Amaral — 22.123.032-9
 
 ### Descrição da tarefa
 
-{{objetivo, ponto de início, conclusão esperada, contexto}}
+Thiago, analista de SOC nível 2 em plantão noturno, inicia a tarefa quando o IDS sinaliza uma sequência de conexões suspeitas a partir de um mesmo segmento de rede (cenário C01). O objetivo é julgar se aquelas conexões correspondem a um ataque real ou a um falso positivo do classificador. Para isso, ele localiza o momento em que a anomalia ocorreu, refina a janela de tempo, interpreta a classificação do estágio 2 e consulta os hosts envolvidos. A tarefa se conclui quando Thiago decide a ação sobre o incidente: encaminhar o bloqueio do host reportado ou reportar o alerta como falso positivo.
 
 ### Diagrama
 
-![HTA T01](../assets/05_tarefas/hta_t01.svg)
+![HTA T02](../assets/05_tarefas/hta_thiago.svg)
 
 ### Decomposição e planos
 
 | ID | Objetivo/operação | Plano/ordem | Problema ou decisão de design observada |
 |---|---|---|---|
-| 0 | {{objetivo principal}} | {{1 }} 2 > 3 / 1 ou 2 etc.> | {{...}} |
+| 0 | Reconhecer a anomalia como um ataque ou falso positivo | 1 > 2 > 3 | A decisão final depende de contexto temporal e da classificação do modelo; nenhuma etapa pode ser pulada sem prejudicar o julgamento. |
+| 1 | Verificar o momento em que a anomalia ocorreu | 1.1 + 1.2 | Thiago precisa situar a anomalia no tempo antes de interpretá-la; a interface deve destacar picos e permitir ir direto ao período relevante. |
+| 1.1 | Verificar a ocorrência de alertas | 1 | O volume bruto de alertas é o primeiro sinal, mas misturado ao restante do tráfego não indica onde olhar (C01). |
+| 1.2 | Selecionar as janelas de tempo para aumentar a resolução da análise | 1 | O refinamento da janela reduz o ruído; o filtro de período deve ser direto e manter o contexto do pico selecionado. |
+| 2 | Observar o resultado do estágio 2 para a classificação da anomalia | 2.1 + 2.2 | A classificação só é útil se Thiago entender o critério; termos de ML precisam de explicação na própria tela (RC03). |
+| 2.1 | Observar a classificação da janela selecionada | 2 | A classificação deve ser apresentada já filtrada pela janela escolhida em 1.2, sem que Thiago precise refazer o filtro. |
+| 2.2 | Consultar os hosts reportados | 2 | Saber quais origens/destinos foram alertados permite confrontar o modelo com o que Thiago conhece do ambiente. |
+| 3 | Avaliar qual deve ser a ação sobre o incidente | 3.1 / 3.2 | Ponto de decisão: as saídas são alternativas exclusivas e precisam ser registradas com sua justificativa. |
+| 3.1 | Bloquear o host reportado | 3 | O bloqueio é executado pela equipe de infraestrutura; na interface, a ação corresponde a confirmar o incidente e encaminhar a solicitação. |
+| 3.2 | Reportar o alerta como falso positivo | 3 | O registro de falsos positivos é o sinal que alimenta a reavaliação do classificador por Vanessa (coordenação C01 ↔ C02). |
+
+**Legenda dos planos:** `>` sequência; `+` ambas as subtarefas são executadas; `/` escolha entre alternativas.
 
 **Verificação do HTA:**
 
-- O objetivo 0 representa uma meta do usuário?
-- As subtarefas são necessárias e suficientes?
-- Os **planos** indicam ordem, alternativa, repetição ou condição?
-- A decomposição parou em nível útil para projeto de interação?
+- O objetivo 0 representa uma meta do usuário? Sim. Thiago precisa julgar se a anomalia sinalizada é um ataque real ou um falso positivo, que é o recorte do fluxo de investigação.
+- As subtarefas são necessárias e suficientes? Em grande parte. Elas cobrem localização temporal, interpretação da classificação e decisão. A terceira saída prevista no cenário C01 — marcar como indefinido e seguir investigando — e o registro da decisão para o próximo turno ainda não aparecem no diagrama.
+- Os **planos** indicam ordem, alternativa, repetição ou condição? Sim. Há sequência no nível principal (1 > 2 > 3), execução conjunta em 1 e 2 e escolha explícita em 3.
+- A decomposição parou em nível útil para projeto de interação? Sim. As folhas correspondem a ações sobre a interface (filtrar janela, consultar hosts, reportar alerta) sem descer ao nível de cliques.
 
 ---
 
-## GOMS — T02 {{nome da tarefa}}
+## GOMS — T02: Reconhecer a natureza do alerta
 
-**Autor(a):** {{nome — matrícula}}
+**Autor(a):** Lucas Kerr do Amaral — 22.123.032-9
 
 ### Goal
 
-`G0: {{meta do usuário}}`
+`G0: reconhecer a natureza do alerta (ataque ou falso positivo)`
+
+A meta principal se divide nas mesmas três submetas do CTT T02, executadas em sequência (`G1 >> G2 >> G3`). G1 e G2 têm um único método; a escolha entre métodos aparece em G3, que é o ponto de decisão de Thiago.
 
 ### Métodos, operadores e regras de seleção
 
-- **Method M1:** {{...}}
-  - Operators: {{perceber, apontar, clicar, digitar, decidir... conforme o nível adotado}}
-- **Method M2:** {{...}}
-  - Operators: {{...}}
-- **Selection Rule SR1:** usar M1 quando {{condição}}; usar M2 quando {{condição}}.
+**G1: verificar a janela da ocorrência da anomalia**
+
+- **Method M1.1:** localizar e refinar a janela da anomalia
+  - Operators:
+    - Perceber o volume de alertas reportados no painel
+    - Identificar o pico na série temporal
+    - Selecionar a janela de tempo do pico
+    - Aumentar a resolução da janela de análise
+
+**G2: verificar resultados da classificação do estágio 2**
+
+- **Method M2.1:** interpretar a classificação da janela refinada
+  - Operators:
+    - Revisar a classificação da janela refinada
+    - Ler a categoria prevista e a confiança atribuídas pelo modelo
+    - Consultar quais hosts foram alertados
+    - Confrontar os hosts alertados com o que conhece do ambiente
+    - Decidir se a classificação corresponde a um ataque
+
+**G3: avaliar ação sobre o incidente**
+
+- **Method M3.1:** bloquear o host reportado
+  - Operators:
+    - Selecionar o host reportado
+    - Confirmar o alerta como incidente
+    - Encaminhar a solicitação de bloqueio à equipe de infraestrutura
+    - Registrar a decisão e o que a fundamentou
+- **Method M3.2:** reportar o alerta como falso positivo
+  - Operators:
+    - Selecionar o alerta
+    - Marcar o alerta como falso positivo
+    - Registrar a justificativa do descarte
+- **Selection Rule SR1:** usar M3.1 quando a classificação do estágio 2 e o contexto dos hosts confirmam um ataque; usar M3.2 quando o tráfego alertado corresponde a um comportamento legítimo conhecido do ambiente (por exemplo, um pico de acessos ao portal).
+
+M3.1 e M3.2 são alternativas exclusivas para a mesma submeta, equivalentes à escolha entre “Bloquear o host reportado” e “Reportar o alerta como falso positivo” no CTT e ao plano `3.1 / 3.2` no HTA. O bloqueio em si é executado pela equipe de infraestrutura, fora da interface; o operador de Thiago é o encaminhamento. Os falsos positivos registrados por M3.2 são o sinal que leva Vanessa a reavaliar o classificador (coordenação C01 ↔ C02).
 
 > Não chame qualquer passo de “método”. Em GOMS, métodos são sequências alternativas capazes de atingir uma meta; regras de seleção explicam quando escolher entre eles.
 
 ---
 
-## CTT — T03 {{nome da tarefa}}
+## CTT — T02: Reconhecer a natureza do alerta
 
-**Autor(a):** {{nome — matrícula}}
+**Autor(a):** Lucas Kerr do Amaral — 22.123.032-9
 
 ### Descrição
 
-{{...}}
+Modelagem da mesma tarefa do HTA T02 sob a perspectiva das relações temporais. A tarefa abstrata raiz, “Reconhecer a natureza do alerta”, se divide em três subtarefas abstratas executadas em sequência: verificar a janela da ocorrência da anomalia, verificar os resultados da classificação do estágio 2 e avaliar a ação sobre o incidente. Cada uma é decomposta em tarefas folha de usuário ou de interação, terminando em uma escolha entre bloquear o host reportado ou reportá-lo como falso positivo.
 
 ### Diagrama
 
-![CTT T03](../assets/05_tarefas/ctt_t03.svg)
+![CTT T02](../assets/05_tarefas/ctt_thiago.svg)
 
 ### Legenda e relações temporais usadas
 
 | Operador/relação | Significado no diagrama | Exemplo no modelo |
 |---|---|---|
-| {{...}} | {{...}} | {{...}} |
+| `>>` | Habilitação (sequência): a tarefa da direita só começa quando a da esquerda termina | Verificar a janela da ocorrência da anomalia `>>` Verificar resultados da classificação do estágio 2 `>>` Avaliar ação sobre o incidente |
+| `>>` | Habilitação entre folhas | Verificar os alertas reportados `>>` Aumentar a resolução da janela de análise; Revisar a classificação da janela refinada `>>` Consultar quais hosts foram alertados |
+| `\|\|` | Alternativa entre as duas ações finais (no HTA, plano `3.1 / 3.2`) | Bloquear o host reportado `\|\|` Reportar o alerta como falso positivo |
 
-Identifique, quando aplicável, tarefas de usuário, sistema, interação e tarefas abstratas. Verifique se concorrência, escolha, habilitação, desabilitação e repetição estão representadas corretamente segundo a notação adotada em aula.
+**Tipos de tarefa:**
+
+| Tipo | Ícone | Tarefas |
+|---|---|---|
+| Abstrata | nuvem | Reconhecer a natureza do alerta; Verificar a janela da ocorrência da anomalia; Verificar resultados da classificação do estágio 2; Avaliar ação sobre o incidente |
+| Usuário | pessoa | Verificar os alertas reportados |
+| Interação | monitor + pessoa | Aumentar a resolução da janela de análise; Revisar a classificação da janela refinada; Consultar quais hosts foram alertados; Bloquear o host reportado; Reportar o alerta como falso positivo |
+
+A relação predominante é de habilitação: Thiago só consegue interpretar a classificação depois de refinar a janela de tempo, e só decide a ação depois de saber quais hosts foram alertados. A primeira folha é uma tarefa de usuário porque consiste em perceber o volume de alertas no painel, sem operar a interface; as demais exigem manipulação (filtrar, consultar, registrar) e são de interação. A decisão final é uma escolha exclusiva entre confirmar o incidente — encaminhando o bloqueio à infraestrutura — e reportar falso positivo.
 
 ---
 
