@@ -271,10 +271,10 @@ O questionário busca reduzir as lacunas sobre a rotina de operação, a linguag
 
 ### Instrumento I02 — Entrevista semiestruturada
 
-*Autor(a):* Lucas Kerr do Amaral — 22.123.032-9  
-*Técnica:* entrevista semiestruturada  
-*Objetivo:* compreender a rotina real de investigação de incidentes, os critérios de decisão, os problemas de contexto e as necessidades de informação, além do vocabulário usado por profissionais que operam com alertas de rede.  
-*Público:* analistas de SOC, especialistas em segurança de rede e profissionais com experiência em triagem de ocorrências ou monitoramento.
+**Autor(a):** Lucas Kerr do Amaral — 22.123.032-9  
+**Técnica**: entrevista semiestruturada  
+**Objetivo**: compreender a rotina real de investigação de incidentes, os critérios de decisão, os problemas de contexto e as necessidades de informação, além do vocabulário usado por profissionais que operam com alertas de rede.  
+**Público**: analistas de SOC, especialistas em segurança de rede e profissionais com experiência em triagem de ocorrências ou monitoramento.
 
 #### Procedimento padronizado de aplicação
 
