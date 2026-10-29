@@ -269,43 +269,65 @@ O questionário busca reduzir as lacunas sobre a rotina de operação, a linguag
 
 --- 
 
-### Instrumento I02 — {{nome da técnica}}
+### Instrumento I02 — Entrevista semiestruturada
 
-**Autor(a):** Lucas Kerr do Amaral — 22.123.032-9     
-**Técnica:** questionário / entrevista semiestruturada / observação / grupo focal / outra autorizada  
-**Objetivo:** {{...}}  
-**Público:** {{...}}
+*Autor(a):* Lucas Kerr do Amaral — 22.123.032-9  
+*Técnica:* entrevista semiestruturada  
+*Objetivo:* compreender a rotina real de investigação de incidentes, os critérios de decisão, os problemas de contexto e as necessidades de informação, além do vocabulário usado por profissionais que operam com alertas de rede.  
+*Público:* analistas de SOC, especialistas em segurança de rede e profissionais com experiência em triagem de ocorrências ou monitoramento.
 
 #### Procedimento padronizado de aplicação
 
-1. {{preparação}}
-2. {{apresentação/consentimento}}
-3. {{aplicação}}
-4. {{encerramento}}
-5. {{armazenamento/anonimização}}
+1. Preparação: definir roteiro, objetivos e consentimento; escolher ambiente tranquilo e sem interrupções; garantir que as perguntas permitam aprofundamento sem induzir respostas.
+2. Apresentação/consentimento: explicar objetivo da entrevista, duração estimada, uso acadêmico dos dados, voluntariedade e autorização ou não para gravação.
+3. Aplicação: conduzir a entrevista em 20 a 30 minutos, alternando perguntas abertas e sondas de aprofundamento; registrar apenas o necessário para respeitar a minimização.
+4. Encerramento: resumir os pontos principais e confirmar se o participante deseja retirar ou revisar alguma resposta.
+5. Armazenamento/anonimização: armazenar gravações e notas em pasta segura, com codificação por participante; remover dados identificadores e substituir nomes por códigos.
 
 #### Instrumento
 
-Cole aqui o questionário/roteiro completo ou forneça link **mais uma cópia textual no repositório**.
+Roteiro de entrevista:
+
+1. Conte-me sobre sua rotina de trabalho quando há um alerta de rede ou atividade suspeita.
+2. Como você identifica se uma ocorrência merece atenção imediata ou pode ser tratada mais tarde?
+3. Quais informações você usa para decidir se uma conexão é suspeita ou não?
+4. Hoje, em que ferramentas você reúne esse contexto? O processo é fragmentado ou integrado?
+5. Como você percebe a diferença entre um alerta técnico e um alerta operacionalmente relevante?
+6. O que te ajuda a decidir “há um problema real” versus “é ruído ou falso positivo”?
+7. Você costuma validar o impacto de uma mudança de regra, algoritmo ou parâmetro antes de aplicá-la? Como isso costuma acontecer?
+8. O que você mais sente falta em uma ferramenta de monitoramento: síntese, contexto, histórico ou explicação?
+9. Quando há pressão de tempo, como você prioriza o que precisa ser inspecionado primeiro?
+10. Como funciona a passagem de plantão ou a retomada de um caso que ficou em aberto?
+11. O que seria suficiente para você confiar em uma decisão gerada por uma interface de segurança?
+12. Quais indicadores, termos ou elementos visuais facilitam a sua leitura de um painel?
+13. Há alguma informação que você prefere não ver em painel aberto, por risco de ruído ou excesso de detalhe?
+14. Em sua opinião, a interface deve priorizar síntese visual, detalhamento técnico ou equilíbrio entre os dois?
+
+Sondas possíveis:
+- “Você poderia me dar um exemplo concreto?”
+- “O que torna isso crítico ou não crítico?”
+- “Você costuma olhar para histórico? Quando?”
+- “O que muda quando há pressão de tempo?”
+- “Existe alguma etapa em que você sente que a interface atrapalha?”
 
 #### Como os dados serão analisados
 
-{{ex.: distribuição de respostas, codificação temática, agrupamento de problemas}}
+A entrevista será analisada por codificação temática, agrupando respostas em categorias como “rotina operacional”, “critérios de decisão”, “falta de contexto”, “priorização sob pressão”, “uso de histórico”, “necessidade de explicação” e “avaliação de risco da configuração”. A análise também comparará padrões recorrentes entre entrevistados para verificar se a interface deve priorizar síntese visual, maior detalhamento ou visibilidade de impacto. As falas serão interpretadas em conjunto com o questionário, e não isoladamente, a fim de reduzir interpretabilidade individual e reforçar a validade do design.
 
 ## Síntese
 
-Explique quais lacunas de conhecimento sobre usuários o conjunto de técnicas pretende reduzir. Indique explicitamente quais hipóteses da Entrega 1 deverão ficar **sustentadas, refutadas ou refinadas** após a análise dos dados. Quando os dados forem coletados/analisados, atualize o histórico em `RASTREABILIDADE.md`.
+A combinação de questionário e entrevista semiestruturada busca reduzir as lacunas sobre a rotina real do uso, os critérios de decisão, os processos de investigação, a urgência operacional e as necessidades de histórico e explicação. As técnicas procuram verificar, de forma complementar, as hipóteses H04, H05, H07, H11, H12, H28, H29, H30 e H31, especialmente no que diz respeito ao papel de P01 e P02, ao contexto de uso em plantão e à necessidade de visualização clara sem excesso de ruído. Com base nos dados, a equipe poderá confirmar se a interface deve enfatizar a observação do estado da rede, a investigação de ocorrências, a comparação de modelos e a rastreabilidade do processo.
 
 ## Checklist
 
-- [ ] Hipóteses/lacunas prioritárias da Entrega 1 foram revisitadas.
-- [ ] Se o escopo de IHC foi derivado de TCC técnico, a coleta investiga a plausibilidade do usuário, tarefa e contexto adotados.
-- [ ] Perguntas não pressupõem que dashboard, CRUD, filtros ou relatórios sejam necessários; investigam a necessidade.
-- [ ] Cada dado a coletar responde uma dúvida concreta do projeto ou justifica outra necessidade de informação.
-- [ ] Parte A identifica dados e perfis de coleta de forma específica.
-- [ ] Aspectos éticos são contextualizados para o projeto.
-- [ ] Há uma técnica completa por integrante e técnicas distintas.
-- [ ] Questionário está incluído entre as técnicas.
-- [ ] Cada instrumento possui objetivo, público, procedimento e conteúdo integral.
-- [ ] Perguntas evitam indução e coletam apenas dados necessários.
-- [ ] Está claro como os dados serão analisados e usados no design.
+- [x] Hipóteses/lacunas prioritárias da Entrega 1 foram revisitadas.
+- [x] Se o escopo de IHC foi derivado de TCC técnico, a coleta investiga a plausibilidade do usuário, tarefa e contexto adotados.
+- [x] Perguntas não pressupõem que dashboard, CRUD, filtros ou relatórios sejam necessários; investigam a necessidade.
+- [x] Cada dado a coletar responde uma dúvida concreta do projeto ou justifica outra necessidade de informação.
+- [x] Parte A identifica dados e perfis de coleta de forma específica.
+- [x] Aspectos éticos são contextualizados para o projeto.
+- [x] Há uma técnica completa por integrante e técnicas distintas.
+- [x] Questionário está incluído entre as técnicas.
+- [x] Cada instrumento possui objetivo, público, procedimento e conteúdo integral.
+- [x] Perguntas evitam indução e coletam apenas dados necessários.
+- [x] Está claro como os dados serão analisados e usados no design.
