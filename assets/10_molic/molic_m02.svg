@@ -1,0 +1,214 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1240" height="2168.0" viewBox="0 0 1240 2168.0" font-family="Arial, Helvetica, sans-serif">
+<defs><marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#374151"/></marker></defs>
+<rect width="1240" height="2168.0" fill="#ffffff"/>
+<path d="M620.0 93 L620.0 160" fill="none" stroke="#374151" stroke-width="1.5" marker-end="url(#ah)"/>
+<path d="M450 260 L102 260" fill="none" stroke="#374151" stroke-width="1.5" marker-end="url(#ah)"/>
+<path d="M620.0 288 L620.0 332.0" fill="none" stroke="#374151" stroke-width="1.5" marker-end="url(#ah)"/>
+<path d="M609.0 343 L280 343 L280 378" fill="none" stroke="#374151" stroke-width="1.5" marker-end="url(#ah)"/>
+<path d="M90 378 L90 272" fill="none" stroke="#374151" stroke-width="1.5" marker-end="url(#ah)"/>
+<path d="M620.0 354.0 L620.0 424.0" fill="none" stroke="#374151" stroke-width="1.5" marker-end="url(#ah)"/>
+<path d="M620.0 507.0 L620.0 577.0" fill="none" stroke="#374151" stroke-width="1.5" marker-end="url(#ah)"/>
+<path d="M620.0 675.0 L620.0 745.0" fill="none" stroke="#374151" stroke-width="1.5" marker-end="url(#ah)"/>
+<path d="M580.0 903.0 L580.0 973.0" fill="none" stroke="#374151" stroke-width="1.5" marker-end="url(#ah)"/>
+<path d="M660.0 973.0 L660.0 903.0" fill="none" stroke="#374151" stroke-width="1.5" marker-end="url(#ah)"/>
+<path d="M450 1022.0 L102 1022.0" fill="none" stroke="#374151" stroke-width="1.5" marker-end="url(#ah)"/>
+<path d="M620.0 1071.0 L620.0 1115.0" fill="none" stroke="#374151" stroke-width="1.5" marker-end="url(#ah)"/>
+<path d="M631.0 1126.0 L830 1126.0 L830 785.0 L790 785.0" fill="none" stroke="#374151" stroke-width="1.5" stroke-dasharray="6 4" marker-end="url(#ah)"/>
+<path d="M620.0 1137.0 L620.0 1257.0" fill="none" stroke="#374151" stroke-width="1.5" marker-end="url(#ah)"/>
+<path d="M609.0 1126.0 L230 1126.0 L230 1257.0" fill="none" stroke="#374151" stroke-width="1.5" marker-end="url(#ah)"/>
+<path d="M300 1297.0 L450 1297.0" fill="none" stroke="#374151" stroke-width="1.5" marker-end="url(#ah)"/>
+<path d="M90 1257.0 L90 1055.0 L450 1055.0" fill="none" stroke="#374151" stroke-width="1.5" stroke-dasharray="6 4" marker-end="url(#ah)"/>
+<path d="M620.0 1400.0 L620.0 1449.0" fill="none" stroke="#374151" stroke-width="1.5" marker-end="url(#ah)"/>
+<path d="M790 1287.0 L800 1287.0 L800 1055.0 L790 1055.0" fill="none" stroke="#374151" stroke-width="1.5" stroke-dasharray="6 4" marker-end="url(#ah)"/>
+<path d="M631.0 1460.0 L815 1460.0 L815 1380.0 L790 1380.0" fill="none" stroke="#374151" stroke-width="1.5" stroke-dasharray="6 4" marker-end="url(#ah)"/>
+<path d="M620.0 1471.0 L620.0 1561.0" fill="none" stroke="#374151" stroke-width="1.5" marker-end="url(#ah)"/>
+<path d="M450 1601.0 L410 1601.0 L410 190 L450 190" fill="none" stroke="#374151" stroke-width="1.5" marker-end="url(#ah)"/>
+<path d="M450 1645.0 L102 1645.0" fill="none" stroke="#374151" stroke-width="1.5" marker-end="url(#ah)"/>
+<path d="M620.0 1659.0 L620.0 1739.0" fill="none" stroke="#374151" stroke-width="1.5" stroke-dasharray="6 4" marker-end="url(#ah)"/>
+<path d="M620.0 1852.0 L620.0 1896.0" fill="none" stroke="#374151" stroke-width="1.5" marker-end="url(#ah)"/>
+<path d="M631.0 1907.0 L880 1907.0 L880 1611.0 L790 1611.0" fill="none" stroke="#374151" stroke-width="1.5" marker-end="url(#ah)"/>
+<path d="M790 1769.0 L805 1769.0 L805 1645.0 L790 1645.0" fill="none" stroke="#374151" stroke-width="1.5" stroke-dasharray="6 4" marker-end="url(#ah)"/>
+<path d="M960 110 L960 607.0 L790 607.0" fill="none" stroke="#374151" stroke-width="1.5" marker-end="url(#ah)"/>
+<path d="M1130 90.0 L1215 90.0 L1215 1577.0 L790 1577.0" fill="none" stroke="#374151" stroke-width="1.5" marker-end="url(#ah)"/>
+<text x="620.0" y="28" text-anchor="middle" font-size="18" font-weight="bold" fill="#111827">M02 — Avaliar e trocar o modelo ativo (CI02, P02 Vanessa)</text>
+<text x="620.0" y="48" text-anchor="middle" font-size="12.5" fill="#4b5563">Autora: Marcela Nalesso — 22.222.011-3 · objetivos O04, O08–O13 da Entrega 09 · telas-alvo: D01, D02, D05, D06</text>
+<circle cx="620.0" cy="82" r="11" fill="#111827"/>
+<rect x="450" y="160" width="340" height="128" rx="12" fill="#ffffff" stroke="#111827" stroke-width="1.6"/>
+<line x1="450" y1="186" x2="790" y2="186" stroke="#111827" stroke-width="1.2"/>
+<text x="620.0" y="178" text-anchor="middle" font-size="13" font-weight="bold" fill="#111827">Perceber que o modelo pode estar inadequado (O08)</text>
+<text x="460" y="204" font-size="12" fill="#111827">ver o retorno dos analistas {</text>
+<text x="472" y="219" font-size="12" fill="#111827">d: alertas não confirmados (última semana ×</text>
+<text x="496" y="234" font-size="12" fill="#111827">antes da última troca), janela de tempo,</text>
+<text x="496" y="249" font-size="12" fill="#111827">troca de modelo (a mais recente)</text>
+<text x="472" y="264" font-size="12" fill="#111827">(precond: nenhum veredito no período)</text>
+<text x="472" y="279" font-size="12" fill="#111827">d: “sem decisões no período” [PP] }</text>
+<text x="632.0" y="108" text-anchor="start" font-size="11.5" fill="#111827" stroke="#ffffff" stroke-width="4" paint-order="stroke">u: abrir a avaliação do modelo</text>
+<text x="632.0" y="122" text-anchor="start" font-size="11.5" fill="#111827" stroke="#ffffff" stroke-width="4" paint-order="stroke">gco: Manter o IDS adequado ao ambiente</text>
+<circle cx="90" cy="260" r="12" fill="#ffffff" stroke="#111827" stroke-width="2"/>
+<circle cx="90" cy="260" r="7" fill="#111827"/>
+<text x="114" y="220" text-anchor="start" font-size="11.5" fill="#111827" stroke="#ffffff" stroke-width="4" paint-order="stroke">u: proporção dentro do esperado</text>
+<text x="114" y="234" text-anchor="start" font-size="11.5" fill="#111827" stroke="#ffffff" stroke-width="4" paint-order="stroke">gcc: Manter o IDS adequado</text>
+<text x="114" y="248" text-anchor="start" font-size="11.5" fill="#111827" stroke="#ffffff" stroke-width="4" paint-order="stroke">     ao ambiente</text>
+<rect x="609.0" y="332.0" width="22" height="22" fill="#111827"/>
+<text x="632.0" y="314" text-anchor="start" font-size="11.5" fill="#111827" stroke="#ffffff" stroke-width="4" paint-order="stroke">u: o problema pode ser na coleta</text>
+<text x="632.0" y="328" text-anchor="start" font-size="11.5" fill="#111827" stroke="#ffffff" stroke-width="4" paint-order="stroke">     ou no equipamento?</text>
+<rect x="30" y="378" width="340" height="98" rx="12" fill="#ffffff" stroke="#111827" stroke-width="1.6" stroke-dasharray="7 5"/>
+<line x1="30" y1="404" x2="370" y2="404" stroke="#111827" stroke-width="1.2" stroke-dasharray="7 5"/>
+<text x="200.0" y="396" text-anchor="middle" font-size="13" font-weight="bold" fill="#111827">Problema fora do modelo [CE]</text>
+<text x="40" y="422" font-size="12" fill="#111827">d: estado da coleta (parada / atrasada),</text>
+<text x="64" y="437" font-size="12" fill="#111827">atraso, carga do equipamento</text>
+<text x="40" y="452" font-size="12" font-style="italic" fill="#374151">tratar no coletor ou no equipamento</text>
+<text x="40" y="467" font-size="12" font-style="italic" fill="#374151">antes de avaliar o modelo</text>
+<text x="425" y="313" text-anchor="start" font-size="11.5" fill="#111827" stroke="#ffffff" stroke-width="4" paint-order="stroke">[CE] d: coleta parada, ou</text>
+<text x="425" y="327" text-anchor="start" font-size="11.5" fill="#111827" stroke="#ffffff" stroke-width="4" paint-order="stroke">    atraso/carga acima do limite</text>
+<text x="102" y="332" text-anchor="start" font-size="11.5" fill="#111827" stroke="#ffffff" stroke-width="4" paint-order="stroke">u: tratar fora do sistema</text>
+<text x="102" y="346" text-anchor="start" font-size="11.5" fill="#111827" stroke="#ffffff" stroke-width="4" paint-order="stroke">gcc: Manter o IDS adequado</text>
+<text x="102" y="360" text-anchor="start" font-size="11.5" fill="#111827" stroke="#ffffff" stroke-width="4" paint-order="stroke">     ao ambiente</text>
+<rect x="450" y="424.0" width="340" height="83" rx="12" fill="#ffffff" stroke="#111827" stroke-width="1.6"/>
+<line x1="450" y1="450.0" x2="790" y2="450.0" stroke="#111827" stroke-width="1.2"/>
+<text x="620.0" y="442.0" text-anchor="middle" font-size="13" font-weight="bold" fill="#111827">Verificar a saúde do pipeline (O09)</text>
+<text x="460" y="468.0" font-size="12" fill="#111827">ver estado do pipeline {</text>
+<text x="472" y="483.0" font-size="12" fill="#111827">d: estado da coleta (ativa), atraso (≈ 40 s),</text>
+<text x="496" y="498.0" font-size="12" fill="#111827">carga do equipamento (62%) }</text>
+<text x="632.0" y="388.0" text-anchor="start" font-size="11.5" fill="#111827" stroke="#ffffff" stroke-width="4" paint-order="stroke">d: coleta ativa; atraso e carga</text>
+<text x="632.0" y="402.0" text-anchor="start" font-size="11.5" fill="#111827" stroke="#ffffff" stroke-width="4" paint-order="stroke">    dentro do limite</text>
+<rect x="450" y="577.0" width="340" height="98" rx="12" fill="#ffffff" stroke="#111827" stroke-width="1.6"/>
+<line x1="450" y1="603.0" x2="790" y2="603.0" stroke="#111827" stroke-width="1.2"/>
+<text x="620.0" y="595.0" text-anchor="middle" font-size="13" font-weight="bold" fill="#111827">Consultar o histórico de trocas (O13)</text>
+<text x="460" y="621.0" font-size="12" fill="#111827">ver trocas {</text>
+<text x="472" y="636.0" font-size="12" fill="#111827">d: lista(troca de modelo: data/hora, modelo</text>
+<text x="496" y="651.0" font-size="12" fill="#111827">anterior, modelo novo, tipo de troca, autor,</text>
+<text x="496" y="666.0" font-size="12" fill="#111827">motivo da troca) }</text>
+<text x="632.0" y="541.0" text-anchor="start" font-size="11.5" fill="#111827" stroke="#ffffff" stroke-width="4" paint-order="stroke">u: o que mudou em 27/10?</text>
+<rect x="450" y="745.0" width="340" height="158" rx="12" fill="#ffffff" stroke="#111827" stroke-width="1.6"/>
+<line x1="450" y1="771.0" x2="790" y2="771.0" stroke="#111827" stroke-width="1.2"/>
+<text x="620.0" y="763.0" text-anchor="middle" font-size="13" font-weight="bold" fill="#111827">Comparar candidato e modelo em produção (O10)</text>
+<text x="460" y="789.0" font-size="12" fill="#111827">ver a comparação {</text>
+<text x="472" y="804.0" font-size="12" fill="#111827">d: modelo candidato, modelo em produção,</text>
+<text x="496" y="819.0" font-size="12" fill="#111827">por cenário: recall, precisão, fpr,</text>
+<text x="508" y="834.0" font-size="12" fill="#111827">mínimo exigido, diferença;</text>
+<text x="496" y="849.0" font-size="12" fill="#111827">resultado da comparação, cenário decisivo }</text>
+<text x="460" y="864.0" font-size="12" fill="#111827">entender uma métrica {</text>
+<text x="472" y="879.0" font-size="12" fill="#111827">d: significado da métrica e efeito para os</text>
+<text x="496" y="894.0" font-size="12" fill="#111827">analistas [PP] }</text>
+<text x="632.0" y="709.0" text-anchor="start" font-size="11.5" fill="#111827" stroke="#ffffff" stroke-width="4" paint-order="stroke">u: comparar com o candidato</text>
+<rect x="450" y="973.0" width="340" height="98" rx="12" fill="#ffffff" stroke="#111827" stroke-width="1.6"/>
+<line x1="450" y1="999.0" x2="790" y2="999.0" stroke="#111827" stroke-width="1.2"/>
+<text x="620.0" y="991.0" text-anchor="middle" font-size="13" font-weight="bold" fill="#111827">Prever o efeito da troca (O11)</text>
+<text x="460" y="1017.0" font-size="12" fill="#111827">ver o efeito para quem investiga {</text>
+<text x="472" y="1032.0" font-size="12" fill="#111827">d: efeito previsto para os analistas (alertas</text>
+<text x="496" y="1047.0" font-size="12" fill="#111827">por dia, ataques do teste não sinalizados),</text>
+<text x="496" y="1062.0" font-size="12" fill="#111827">carga prevista }</text>
+<text x="568.0" y="929.0" text-anchor="end" font-size="11.5" fill="#111827" stroke="#ffffff" stroke-width="4" paint-order="stroke">u: o que muda para</text>
+<text x="568.0" y="943.0" text-anchor="end" font-size="11.5" fill="#111827" stroke="#ffffff" stroke-width="4" paint-order="stroke">     quem investiga?</text>
+<text x="672.0" y="937.0" text-anchor="start" font-size="11.5" fill="#111827" stroke="#ffffff" stroke-width="4" paint-order="stroke">u: voltar à comparação</text>
+<circle cx="90" cy="1022.0" r="12" fill="#ffffff" stroke="#111827" stroke-width="2"/>
+<circle cx="90" cy="1022.0" r="7" fill="#111827"/>
+<text x="114" y="988.0" text-anchor="start" font-size="11.5" fill="#111827" stroke="#ffffff" stroke-width="4" paint-order="stroke">u: manter o modelo atual</text>
+<text x="114" y="1002.0" text-anchor="start" font-size="11.5" fill="#111827" stroke="#ffffff" stroke-width="4" paint-order="stroke">gcc: Manter o IDS adequado</text>
+<text x="114" y="1016.0" text-anchor="start" font-size="11.5" fill="#111827" stroke="#ffffff" stroke-width="4" paint-order="stroke">     ao ambiente</text>
+<rect x="609.0" y="1115.0" width="22" height="22" fill="#111827"/>
+<text x="632.0" y="1101.0" text-anchor="start" font-size="11.5" fill="#111827" stroke="#ffffff" stroke-width="4" paint-order="stroke">u: promover o candidato</text>
+<text x="845" y="1146.0" text-anchor="start" font-size="11.5" fill="#111827" stroke="#ffffff" stroke-width="4" paint-order="stroke">[PA] d: candidato reprovado no cenário</text>
+<text x="845" y="1160.0" text-anchor="start" font-size="11.5" fill="#111827" stroke="#ffffff" stroke-width="4" paint-order="stroke">    benigno (fpr 0,215; máximo 0,05);</text>
+<text x="845" y="1174.0" text-anchor="start" font-size="11.5" fill="#111827" stroke="#ffffff" stroke-width="4" paint-order="stroke">    não pode ir para produção</text>
+<rect x="450" y="1257.0" width="340" height="143" rx="12" fill="#ffffff" stroke="#111827" stroke-width="1.6"/>
+<line x1="450" y1="1283.0" x2="790" y2="1283.0" stroke="#111827" stroke-width="1.2"/>
+<text x="620.0" y="1275.0" text-anchor="middle" font-size="13" font-weight="bold" fill="#111827">Confirmar a troca (O12)</text>
+<text x="460" y="1301.0" font-size="12" fill="#111827">ver resumo {</text>
+<text x="472" y="1316.0" font-size="12" fill="#111827">d: modelo anterior, modelo novo, efeito previsto</text>
+<text x="496" y="1331.0" font-size="12" fill="#111827">para os analistas, “os analistas serão avisados” }</text>
+<text x="460" y="1346.0" font-size="12" fill="#111827">justificar {</text>
+<text x="472" y="1361.0" font-size="12" fill="#111827">u: motivo da troca [PP] }</text>
+<text x="460" y="1376.0" font-size="12" fill="#111827">confirmar {</text>
+<text x="472" y="1391.0" font-size="12" fill="#111827">u: confirmação da troca [AL] }</text>
+<text x="632.0" y="1197.0" text-anchor="start" font-size="11.5" fill="#111827" stroke="#ffffff" stroke-width="4" paint-order="stroke">d: candidato aprovado; carga</text>
+<text x="632.0" y="1211.0" text-anchor="start" font-size="11.5" fill="#111827" stroke="#ffffff" stroke-width="4" paint-order="stroke">    prevista dentro do limite</text>
+<rect x="30" y="1257.0" width="270" height="83" rx="12" fill="#ffffff" stroke="#111827" stroke-width="1.6" stroke-dasharray="7 5"/>
+<line x1="30" y1="1283.0" x2="300" y2="1283.0" stroke="#111827" stroke-width="1.2" stroke-dasharray="7 5"/>
+<text x="165.0" y="1275.0" text-anchor="middle" font-size="13" font-weight="bold" fill="#111827">Carga acima do limite [AL]</text>
+<text x="40" y="1301.0" font-size="12" fill="#111827">d: carga prevista (91%),</text>
+<text x="64" y="1316.0" font-size="12" fill="#111827">limite de operação,</text>
+<text x="64" y="1331.0" font-size="12" fill="#111827">“a classificação pode atrasar”</text>
+<text x="242" y="1146.0" text-anchor="start" font-size="11.5" fill="#111827" stroke="#ffffff" stroke-width="4" paint-order="stroke">precond: carga prevista</text>
+<text x="242" y="1160.0" text-anchor="start" font-size="11.5" fill="#111827" stroke="#ffffff" stroke-width="4" paint-order="stroke">    acima do limite</text>
+<text x="242" y="1174.0" text-anchor="start" font-size="11.5" fill="#111827" stroke="#ffffff" stroke-width="4" paint-order="stroke">[AL] d: quer continuar</text>
+<text x="242" y="1188.0" text-anchor="start" font-size="11.5" fill="#111827" stroke="#ffffff" stroke-width="4" paint-order="stroke">    mesmo assim?</text>
+<text x="308" y="1287.0" text-anchor="start" font-size="11.5" fill="#111827" stroke="#ffffff" stroke-width="4" paint-order="stroke">u: continuar</text>
+<text x="308" y="1315.0" text-anchor="start" font-size="11.5" fill="#111827" stroke="#ffffff" stroke-width="4" paint-order="stroke">mesmo assim</text>
+<text x="102" y="1079.0" text-anchor="start" font-size="11.5" fill="#111827" stroke="#ffffff" stroke-width="4" paint-order="stroke">u: desistir</text>
+<rect x="609.0" y="1449.0" width="22" height="22" fill="#111827"/>
+<text x="632.0" y="1430.0" text-anchor="start" font-size="11.5" fill="#111827" stroke="#ffffff" stroke-width="4" paint-order="stroke">u: confirmar</text>
+<text x="806" y="1307.0" text-anchor="start" font-size="11.5" fill="#111827" stroke="#ffffff" stroke-width="4" paint-order="stroke">u: cancelar</text>
+<text x="826" y="1464.0" text-anchor="start" font-size="11.5" fill="#111827" stroke="#ffffff" stroke-width="4" paint-order="stroke">[PA] d: informe o motivo da troca</text>
+<rect x="450" y="1561.0" width="340" height="98" rx="12" fill="#ffffff" stroke="#111827" stroke-width="1.6"/>
+<line x1="450" y1="1587.0" x2="790" y2="1587.0" stroke="#111827" stroke-width="1.2"/>
+<text x="620.0" y="1579.0" text-anchor="middle" font-size="13" font-weight="bold" fill="#111827">Saber qual modelo está ativo e desde quando (O04)</text>
+<text x="460" y="1605.0" font-size="12" fill="#111827">ver modelo ativo {</text>
+<text x="472" y="1620.0" font-size="12" fill="#111827">d: modelo ativo, ativo desde, autor, tipo de troca</text>
+<text x="472" y="1635.0" font-size="12" font-style="italic" fill="#374151">aviso à equipe: “o modelo ativo mudou”</text>
+<text x="472" y="1650.0" font-size="12" font-style="italic" fill="#374151">(chega a M01, cena O04) }</text>
+<text x="632.0" y="1501.0" text-anchor="start" font-size="11.5" fill="#111827" stroke="#ffffff" stroke-width="4" paint-order="stroke">d: SVM v8 em produção desde 14h10, por</text>
+<text x="632.0" y="1515.0" text-anchor="start" font-size="11.5" fill="#111827" stroke="#ffffff" stroke-width="4" paint-order="stroke">    Vanessa; é possível voltar ao v7</text>
+<text x="400" y="1587.0" text-anchor="end" font-size="11.5" fill="#111827" stroke="#ffffff" stroke-width="4" paint-order="stroke">u: a troca funcionou?</text>
+<text x="400" y="1601.0" text-anchor="end" font-size="11.5" fill="#111827" stroke="#ffffff" stroke-width="4" paint-order="stroke">(janela a partir da troca)</text>
+<circle cx="90" cy="1645.0" r="12" fill="#ffffff" stroke="#111827" stroke-width="2"/>
+<circle cx="90" cy="1645.0" r="7" fill="#111827"/>
+<text x="114" y="1665.0" text-anchor="start" font-size="11.5" fill="#111827" stroke="#ffffff" stroke-width="4" paint-order="stroke">u: encerrar</text>
+<text x="114" y="1679.0" text-anchor="start" font-size="11.5" fill="#111827" stroke="#ffffff" stroke-width="4" paint-order="stroke">gcc: Manter o IDS adequado</text>
+<text x="114" y="1693.0" text-anchor="start" font-size="11.5" fill="#111827" stroke="#ffffff" stroke-width="4" paint-order="stroke">     ao ambiente</text>
+<rect x="450" y="1739.0" width="340" height="113" rx="12" fill="#ffffff" stroke="#111827" stroke-width="1.6"/>
+<line x1="450" y1="1765.0" x2="790" y2="1765.0" stroke="#111827" stroke-width="1.2"/>
+<text x="620.0" y="1757.0" text-anchor="middle" font-size="13" font-weight="bold" fill="#111827">Reverter o modelo (O12)</text>
+<text x="460" y="1783.0" font-size="12" fill="#111827">ver resumo {</text>
+<text x="472" y="1798.0" font-size="12" fill="#111827">d: modelo que volta (v7), modelo que sai (v8),</text>
+<text x="496" y="1813.0" font-size="12" fill="#111827">“os analistas serão avisados” }</text>
+<text x="460" y="1828.0" font-size="12" fill="#111827">justificar e confirmar {</text>
+<text x="472" y="1843.0" font-size="12" fill="#111827">u: motivo da troca, confirmação da troca [AL] }</text>
+<text x="632.0" y="1693.0" text-anchor="start" font-size="11.5" fill="#111827" stroke="#ffffff" stroke-width="4" paint-order="stroke">[RA] u: voltar ao modelo anterior</text>
+<rect x="609.0" y="1896.0" width="22" height="22" fill="#111827"/>
+<text x="632.0" y="1882.0" text-anchor="start" font-size="11.5" fill="#111827" stroke="#ffffff" stroke-width="4" paint-order="stroke">u: confirmar</text>
+<text x="643.0" y="1927.0" text-anchor="start" font-size="11.5" fill="#111827" stroke="#ffffff" stroke-width="4" paint-order="stroke">d: SVM v7 voltou à produção às 9h30</text>
+<text x="643.0" y="1941.0" text-anchor="start" font-size="11.5" fill="#111827" stroke="#ffffff" stroke-width="4" paint-order="stroke">    de 31/10, por Vanessa; analistas avisados</text>
+<text x="812" y="1789.0" text-anchor="start" font-size="11.5" fill="#111827" stroke="#ffffff" stroke-width="4" paint-order="stroke">u: cancelar</text>
+<rect x="910" y="70" width="220" height="40" rx="20.0" fill="#c4c4c4" stroke="#4b5563" stroke-width="1.6"/>
+<text x="950" y="150" text-anchor="end" font-size="11.5" fill="#111827" stroke="#ffffff" stroke-width="4" paint-order="stroke">u: histórico de trocas</text>
+<text x="950" y="164" text-anchor="end" font-size="11.5" fill="#111827" stroke="#ffffff" stroke-width="4" paint-order="stroke">gco: Consultar o histórico</text>
+<text x="950" y="178" text-anchor="end" font-size="11.5" fill="#111827" stroke="#ffffff" stroke-width="4" paint-order="stroke">     de trocas</text>
+<text x="1205" y="150" text-anchor="end" font-size="11.5" fill="#111827" stroke="#ffffff" stroke-width="4" paint-order="stroke">u: modelo ativo</text>
+<text x="1205" y="164" text-anchor="end" font-size="11.5" fill="#111827" stroke="#ffffff" stroke-width="4" paint-order="stroke">gco: Saber qual modelo</text>
+<text x="1205" y="178" text-anchor="end" font-size="11.5" fill="#111827" stroke="#ffffff" stroke-width="4" paint-order="stroke">está ativo</text>
+<rect x="30" y="1988.0" width="870" height="150" rx="6" fill="#f9fafb" stroke="#9ca3af"/>
+<text x="40" y="2006.0" text-anchor="start" font-size="11.5" fill="#111827" font-weight="bold" stroke="#ffffff" stroke-width="4" paint-order="stroke">Legenda (notação MoLIC — Barbosa e Silva, 2010)</text>
+<circle cx="52" cy="2028.0" r="11" fill="#111827"/>
+<text x="70" y="2032.0" text-anchor="start" font-size="11.5" fill="#111827" stroke="#ffffff" stroke-width="4" paint-order="stroke">ponto de abertura</text>
+<circle cx="52" cy="2058.0" r="12" fill="#ffffff" stroke="#111827" stroke-width="2"/>
+<circle cx="52" cy="2058.0" r="7" fill="#111827"/>
+<text x="70" y="2062.0" text-anchor="start" font-size="11.5" fill="#111827" stroke="#ffffff" stroke-width="4" paint-order="stroke">ponto de encerramento</text>
+<rect x="44.0" y="2080.0" width="16" height="16" fill="#111827"/>
+<text x="70" y="2092.0" text-anchor="start" font-size="11.5" fill="#111827" stroke="#ffffff" stroke-width="4" paint-order="stroke">processo do sistema</text>
+<rect x="42" y="2106.0" width="22" height="16" rx="8.0" fill="#c4c4c4" stroke="#4b5563" stroke-width="1.6"/>
+<text x="70" y="2118.0" text-anchor="start" font-size="11.5" fill="#111827" stroke="#ffffff" stroke-width="4" paint-order="stroke">acesso ubíquo</text>
+<rect x="220" y="2018.0" width="26" height="18" rx="5" fill="#fff" stroke="#111827"/>
+<text x="254" y="2032.0" text-anchor="start" font-size="11.5" fill="#111827" stroke="#ffffff" stroke-width="4" paint-order="stroke">cena (tópico + diálogos)</text>
+<rect x="220" y="2048.0" width="26" height="18" rx="5" fill="#fff" stroke="#111827" stroke-dasharray="5 3"/>
+<text x="254" y="2062.0" text-anchor="start" font-size="11.5" fill="#111827" stroke="#ffffff" stroke-width="4" paint-order="stroke">cena de alerta / ruptura</text>
+<path d="M220 2088.0 L246 2088.0" fill="none" stroke="#374151" stroke-width="1.5" marker-end="url(#ah)"/>
+<text x="254" y="2092.0" text-anchor="start" font-size="11.5" fill="#111827" stroke="#ffffff" stroke-width="4" paint-order="stroke">fala de transição</text>
+<path d="M220 2114.0 L246 2114.0" fill="none" stroke="#374151" stroke-width="1.5" stroke-dasharray="6 4" marker-end="url(#ah)"/>
+<text x="254" y="2118.0" text-anchor="start" font-size="11.5" fill="#111827" stroke="#ffffff" stroke-width="4" paint-order="stroke">fala de recuperação de ruptura</text>
+<text x="460" y="2032.0" text-anchor="start" font-size="11.5" fill="#111827" stroke="#ffffff" stroke-width="4" paint-order="stroke">u: fala do usuário · d: fala do preposto</text>
+<text x="460" y="2046.0" text-anchor="start" font-size="11.5" fill="#111827" stroke="#ffffff" stroke-width="4" paint-order="stroke">d+u: signo proposto pelo preposto e ajustado</text>
+<text x="460" y="2060.0" text-anchor="start" font-size="11.5" fill="#111827" stroke="#ffffff" stroke-width="4" paint-order="stroke">gco/gcc: abertura/fechamento da conversa</text>
+<text x="460" y="2074.0" text-anchor="start" font-size="11.5" fill="#111827" stroke="#ffffff" stroke-width="4" paint-order="stroke">sobre o objetivo · precond: pré-condição</text>
+<text x="460" y="2088.0" text-anchor="start" font-size="11.5" fill="#111827" stroke="#ffffff" stroke-width="4" paint-order="stroke">PP/PA/AL/RA/CE: mecanismos da Entrega 09</text>
+<text x="460" y="2102.0" text-anchor="start" font-size="11.5" fill="#111827" stroke="#ffffff" stroke-width="4" paint-order="stroke">(AL = [SP] e RA = [SR] nos slides)</text>
+<text x="920" y="2006.0" text-anchor="start" font-size="11.5" fill="#111827" font-weight="bold" stroke="#ffffff" stroke-width="4" paint-order="stroke">Observações</text>
+<text x="920" y="2020.0" text-anchor="start" font-size="11.5" fill="#111827" stroke="#ffffff" stroke-width="4" paint-order="stroke">· O histórico (O13) e o modelo</text>
+<text x="920" y="2034.0" text-anchor="start" font-size="11.5" fill="#111827" stroke="#ffffff" stroke-width="4" paint-order="stroke">  ativo (O04) são acessos ubíquos,</text>
+<text x="920" y="2048.0" text-anchor="start" font-size="11.5" fill="#111827" stroke="#ffffff" stroke-width="4" paint-order="stroke">  também usados por P01 (M01).</text>
+<text x="920" y="2062.0" text-anchor="start" font-size="11.5" fill="#111827" stroke="#ffffff" stroke-width="4" paint-order="stroke">· Números são os ilustrativos de CI02.</text>
+<text x="920" y="2076.0" text-anchor="start" font-size="11.5" fill="#111827" stroke="#ffffff" stroke-width="4" paint-order="stroke">· No protótipo, a troca é simulada;</text>
+<text x="920" y="2090.0" text-anchor="start" font-size="11.5" fill="#111827" stroke="#ffffff" stroke-width="4" paint-order="stroke">  a execução real segue pela CLI.</text>
+</svg>
+

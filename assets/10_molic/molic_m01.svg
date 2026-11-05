@@ -1,5 +1,235 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="960" height="360" viewBox="0 0 960 360">
-<rect width="100%" height="100%" fill="#f6f8fa" stroke="#8c959f" stroke-width="4"/>
-<text x="480" y="165" text-anchor="middle" font-family="Arial, sans-serif" font-size="28" fill="#24292f">PLACEHOLDER DE ARTEFATO</text>
-<text x="480" y="210" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" fill="#57606a">Substitua este arquivo pela evidência real da equipe.</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="1240" height="2256.0" viewBox="0 0 1240 2256.0" font-family="Arial, Helvetica, sans-serif">
+<defs><marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#374151"/></marker></defs>
+<rect width="1240" height="2256.0" fill="#ffffff"/>
+<path d="M620.0 93 L620.0 167.0" fill="none" stroke="#374151" stroke-width="1.5" marker-end="url(#ah)"/>
+<path d="M609.0 172 L370 172" fill="none" stroke="#374151" stroke-width="1.5" marker-end="url(#ah)"/>
+<path d="M370 196 L590.0 196 L590.0 183 L609.0 183" fill="none" stroke="#374151" stroke-width="1.5" stroke-dasharray="6 4" marker-end="url(#ah)"/>
+<path d="M90 208 L90 308" fill="none" stroke="#374151" stroke-width="1.5" marker-end="url(#ah)"/>
+<path d="M620.0 189.0 L620.0 250" fill="none" stroke="#374151" stroke-width="1.5" marker-end="url(#ah)"/>
+<path d="M450 362 L90 362 L90 332" fill="none" stroke="#374151" stroke-width="1.5" marker-end="url(#ah)"/>
+<path d="M620.0 393 L620.0 470" fill="none" stroke="#374151" stroke-width="1.5" marker-end="url(#ah)"/>
+<path d="M620.0 598 L620.0 637.0" fill="none" stroke="#374151" stroke-width="1.5" marker-end="url(#ah)"/>
+<path d="M631.0 648 L820 648 L820 520 L790 520" fill="none" stroke="#374151" stroke-width="1.5" stroke-dasharray="6 4" marker-end="url(#ah)"/>
+<path d="M620.0 659.0 L620.0 719.0" fill="none" stroke="#374151" stroke-width="1.5" marker-end="url(#ah)"/>
+<path d="M580.0 832.0 L580.0 902.0" fill="none" stroke="#374151" stroke-width="1.5" marker-end="url(#ah)"/>
+<path d="M660.0 902.0 L660.0 832.0" fill="none" stroke="#374151" stroke-width="1.5" marker-end="url(#ah)"/>
+<path d="M620.0 1060.0 L620.0 1130.0" fill="none" stroke="#374151" stroke-width="1.5" marker-end="url(#ah)"/>
+<path d="M790 814.0 L840 814.0 L840 1150.0 L790 1150.0" fill="none" stroke="#374151" stroke-width="1.5" marker-end="url(#ah)"/>
+<path d="M620.0 1243.0 L620.0 1282.0" fill="none" stroke="#374151" stroke-width="1.5" marker-end="url(#ah)"/>
+<path d="M631.0 1293.0 L815 1293.0 L815 1223.0 L790 1223.0" fill="none" stroke="#374151" stroke-width="1.5" stroke-dasharray="6 4" marker-end="url(#ah)"/>
+<path d="M620.0 1304.0 L620.0 1424.0" fill="none" stroke="#374151" stroke-width="1.5" marker-end="url(#ah)"/>
+<path d="M609.0 1293.0 L230 1293.0 L230 1414.0" fill="none" stroke="#374151" stroke-width="1.5" marker-end="url(#ah)"/>
+<path d="M90 1414.0 L90 1223.0 L450 1223.0" fill="none" stroke="#374151" stroke-width="1.5" stroke-dasharray="6 4" marker-end="url(#ah)"/>
+<path d="M300 1446.0 L450 1446.0" fill="none" stroke="#374151" stroke-width="1.5" marker-end="url(#ah)"/>
+<path d="M260 1512.0 L260 1521.0 L480 1521.0 L480 1507.0" fill="none" stroke="#374151" stroke-width="1.5" marker-end="url(#ah)"/>
+<path d="M620.0 1507.0 L620.0 1566.0" fill="none" stroke="#374151" stroke-width="1.5" marker-end="url(#ah)"/>
+<path d="M790 1454.0 L800 1454.0 L800 1235.0 L790 1235.0" fill="none" stroke="#374151" stroke-width="1.5" stroke-dasharray="6 4" marker-end="url(#ah)"/>
+<path d="M609.0 1577.0 L410 1577.0 L410 749.0 L450 749.0" fill="none" stroke="#374151" stroke-width="1.5" marker-end="url(#ah)"/>
+<path d="M631.0 1577.0 L1040 1577.0 L1040 1617.0" fill="none" stroke="#374151" stroke-width="1.5" marker-end="url(#ah)"/>
+<path d="M930 1617.0 L930 1190.0 L790 1190.0" fill="none" stroke="#374151" stroke-width="1.5" stroke-dasharray="6 4" marker-end="url(#ah)"/>
+<path d="M1040 1745.0 L1040 1784.0" fill="none" stroke="#374151" stroke-width="1.5" marker-end="url(#ah)"/>
+<path d="M1040 1806.0 L1040 1876.0" fill="none" stroke="#374151" stroke-width="1.5" marker-end="url(#ah)"/>
+<path d="M1040 1974.0 L1040 2022.0" fill="none" stroke="#374151" stroke-width="1.5" marker-end="url(#ah)"/>
+<path d="M980 110 L980 200" fill="none" stroke="#374151" stroke-width="1.5" marker-end="url(#ah)"/>
+<path d="M1150 90.0 L1225 90.0 L1225 490 L1210 490" fill="none" stroke="#374151" stroke-width="1.5" marker-end="url(#ah)"/>
+<path d="M980 283 L980 470" fill="none" stroke="#374151" stroke-width="1.5" marker-end="url(#ah)"/>
+<path d="M1040 553 L1040 749.0 L790 749.0" fill="none" stroke="#374151" stroke-width="1.5" marker-end="url(#ah)"/>
+<text x="620.0" y="28" text-anchor="middle" font-size="18" font-weight="bold" fill="#111827">M01 — Investigar um pico de alertas e registrar o veredito (CI01, P01 Thiago)</text>
+<text x="620.0" y="48" text-anchor="middle" font-size="12.5" fill="#4b5563">Autor: Lucas Kerr do Amaral — 22.123.032-9 · objetivos O01–O07 da Entrega 09 · telas-alvo: D03, D04</text>
+<circle cx="620.0" cy="82" r="11" fill="#111827"/>
+<rect x="609.0" y="167.0" width="22" height="22" fill="#111827"/>
+<text x="632.0" y="114" text-anchor="start" font-size="11.5" fill="#111827" stroke="#ffffff" stroke-width="4" paint-order="stroke">u: abrir o monitoramento (aviso de volume</text>
+<text x="632.0" y="128" text-anchor="start" font-size="11.5" fill="#111827" stroke="#ffffff" stroke-width="4" paint-order="stroke">     acima do período anterior)</text>
+<text x="632.0" y="142" text-anchor="start" font-size="11.5" fill="#111827" stroke="#ffffff" stroke-width="4" paint-order="stroke">gco: Decidir se o pico é um incidente</text>
+<rect x="30" y="110" width="340" height="98" rx="12" fill="#ffffff" stroke="#111827" stroke-width="1.6" stroke-dasharray="7 5"/>
+<line x1="30" y1="136" x2="370" y2="136" stroke="#111827" stroke-width="1.2" stroke-dasharray="7 5"/>
+<text x="200.0" y="128" text-anchor="middle" font-size="13" font-weight="bold" fill="#111827">Entender a ausência de dados</text>
+<text x="40" y="154" font-size="12" fill="#111827">d: estado da coleta (parada / atrasada),</text>
+<text x="64" y="169" font-size="12" fill="#111827">último dado</text>
+<text x="40" y="184" font-size="12" font-style="italic" fill="#374151">“sem dados” não significa “sem alertas”;</text>
+<text x="40" y="199" font-size="12" font-style="italic" fill="#374151">a correção está fora do sistema</text>
+<text x="380" y="146" text-anchor="start" font-size="11.5" fill="#111827" stroke="#ffffff" stroke-width="4" paint-order="stroke">[CE] d: não recebo dados desde hh:mm;</text>
+<text x="380" y="160" text-anchor="start" font-size="11.5" fill="#111827" stroke="#ffffff" stroke-width="4" paint-order="stroke">verifique o coletor ou acione o responsável</text>
+<text x="380" y="214" text-anchor="start" font-size="11.5" fill="#111827" stroke="#ffffff" stroke-width="4" paint-order="stroke">u: verificar de novo</text>
+<circle cx="90" cy="320" r="12" fill="#ffffff" stroke="#111827" stroke-width="2"/>
+<circle cx="90" cy="320" r="7" fill="#111827"/>
+<text x="102" y="236" text-anchor="start" font-size="11.5" fill="#111827" stroke="#ffffff" stroke-width="4" paint-order="stroke">u: acionar o responsável</text>
+<text x="102" y="250" text-anchor="start" font-size="11.5" fill="#111827" stroke="#ffffff" stroke-width="4" paint-order="stroke">     (fora do sistema)</text>
+<rect x="450" y="250" width="340" height="143" rx="12" fill="#ffffff" stroke="#111827" stroke-width="1.6"/>
+<line x1="450" y1="276" x2="790" y2="276" stroke="#111827" stroke-width="1.2"/>
+<text x="620.0" y="268" text-anchor="middle" font-size="13" font-weight="bold" fill="#111827">Perceber se há algo fora do padrão (O01)</text>
+<text x="460" y="294" font-size="12" fill="#111827">ver panorama {</text>
+<text x="472" y="309" font-size="12" fill="#111827">d: janela de tempo, volume de alertas por</text>
+<text x="496" y="324" font-size="12" fill="#111827">classificação, variação em relação ao</text>
+<text x="496" y="339" font-size="12" fill="#111827">período anterior, origens mais alertadas,</text>
+<text x="496" y="354" font-size="12" fill="#111827">último dado, estado da coleta }</text>
+<text x="460" y="369" font-size="12" fill="#111827">localizar quando começou {</text>
+<text x="472" y="384" font-size="12" fill="#111827">d+u: janela de tempo }</text>
+<text x="632.0" y="222" text-anchor="start" font-size="11.5" fill="#111827" stroke="#ffffff" stroke-width="4" paint-order="stroke">d: dados atualizados</text>
+
+<text x="102" y="384" text-anchor="start" font-size="11.5" fill="#111827" stroke="#ffffff" stroke-width="4" paint-order="stroke">u: nada fora do padrão; voltar ao que fazia</text>
+<text x="102" y="398" text-anchor="start" font-size="11.5" fill="#111827" stroke="#ffffff" stroke-width="4" paint-order="stroke">gcc: Decidir se o pico é um incidente</text>
+<rect x="450" y="470" width="340" height="128" rx="12" fill="#ffffff" stroke="#111827" stroke-width="1.6"/>
+<line x1="450" y1="496" x2="790" y2="496" stroke="#111827" stroke-width="1.2"/>
+<text x="620.0" y="488" text-anchor="middle" font-size="13" font-weight="bold" fill="#111827">Restringir a investigação (O02)</text>
+<text x="460" y="514" font-size="12" fill="#111827">restringir {</text>
+<text x="472" y="529" font-size="12" fill="#111827">d+u: janela de tempo, critérios de restrição</text>
+<text x="508" y="544" font-size="12" fill="#111827">[PA: só valores presentes na janela] }</text>
+<text x="460" y="559" font-size="12" fill="#111827">congelar os dados {</text>
+<text x="472" y="574" font-size="12" fill="#111827">u: estado da atualização (congelado)</text>
+<text x="472" y="589" font-size="12" fill="#111827">d: “congelado desde hh:mm” [PP] }</text>
+<text x="632.0" y="430" text-anchor="start" font-size="11.5" fill="#111827" stroke="#ffffff" stroke-width="4" paint-order="stroke">u: restringir ao período do pico</text>
+<text x="632.0" y="444" text-anchor="start" font-size="11.5" fill="#111827" stroke="#ffffff" stroke-width="4" paint-order="stroke">     e à origem</text>
+<rect x="609.0" y="637.0" width="22" height="22" fill="#111827"/>
+<text x="632.0" y="628" text-anchor="start" font-size="11.5" fill="#111827" stroke="#ffffff" stroke-width="4" paint-order="stroke">u: aplicar a restrição</text>
+<text x="645.0" y="668" text-anchor="start" font-size="11.5" fill="#111827" stroke="#ffffff" stroke-width="4" paint-order="stroke">[RA] d: nenhum alerta restante;</text>
+<text x="645.0" y="682" text-anchor="start" font-size="11.5" fill="#111827" stroke="#ffffff" stroke-width="4" paint-order="stroke">    sugere remover um critério</text>
+<rect x="450" y="719.0" width="340" height="113" rx="12" fill="#ffffff" stroke="#111827" stroke-width="1.6"/>
+<line x1="450" y1="745.0" x2="790" y2="745.0" stroke="#111827" stroke-width="1.2"/>
+<text x="620.0" y="737.0" text-anchor="middle" font-size="13" font-weight="bold" fill="#111827">Examinar o conjunto restringido (O02 → O03)</text>
+<text x="460" y="763.0" font-size="12" fill="#111827">ver conjunto {</text>
+<text x="472" y="778.0" font-size="12" fill="#111827">d: contagem da restrição (N de M alertas),</text>
+<text x="496" y="793.0" font-size="12" fill="#111827">critérios de restrição, estado da atualização,</text>
+<text x="496" y="808.0" font-size="12" fill="#111827">lista(data/hora, origem, destino, classificação,</text>
+<text x="508" y="823.0" font-size="12" fill="#111827">incerteza da classificação, alerta examinado) }</text>
+<text x="608.0" y="693.0" text-anchor="end" font-size="11.5" fill="#111827" stroke="#ffffff" stroke-width="4" paint-order="stroke">d: restaram 312 de 4.350 alertas</text>
+<rect x="450" y="902.0" width="340" height="158" rx="12" fill="#ffffff" stroke="#111827" stroke-width="1.6"/>
+<line x1="450" y1="928.0" x2="790" y2="928.0" stroke="#111827" stroke-width="1.2"/>
+<text x="620.0" y="920.0" text-anchor="middle" font-size="13" font-weight="bold" fill="#111827">Interpretar o alerta (O03)</text>
+<text x="460" y="946.0" font-size="12" fill="#111827">ver contexto da conexão {</text>
+<text x="472" y="961.0" font-size="12" fill="#111827">d: origem, destino, serviço, histórico</text>
+<text x="496" y="976.0" font-size="12" fill="#111827">origem–destino, quão incomum é o volume }</text>
+<text x="460" y="991.0" font-size="12" fill="#111827">entender por que foi sinalizado {</text>
+<text x="472" y="1006.0" font-size="12" fill="#111827">d: motivo do sinal (regra completa sob demanda) }</text>
+<text x="460" y="1021.0" font-size="12" fill="#111827">avaliar a confiança na classificação {</text>
+<text x="472" y="1036.0" font-size="12" fill="#111827">d: classificação, quem decidiu, incerteza da</text>
+<text x="496" y="1051.0" font-size="12" fill="#111827">classificação, modelo ativo }</text>
+<text x="568.0" y="862.0" text-anchor="end" font-size="11.5" fill="#111827" stroke="#ffffff" stroke-width="4" paint-order="stroke">u: examinar o alerta X</text>
+<text x="672.0" y="862.0" text-anchor="start" font-size="11.5" fill="#111827" stroke="#ffffff" stroke-width="4" paint-order="stroke">u: voltar ao conjunto</text>
+<rect x="450" y="1130.0" width="340" height="113" rx="12" fill="#ffffff" stroke="#111827" stroke-width="1.6"/>
+<line x1="450" y1="1156.0" x2="790" y2="1156.0" stroke="#111827" stroke-width="1.2"/>
+<text x="620.0" y="1148.0" text-anchor="middle" font-size="13" font-weight="bold" fill="#111827">Registrar o veredito (O05)</text>
+<text x="460" y="1174.0" font-size="12" fill="#111827">informar a decisão {</text>
+<text x="472" y="1189.0" font-size="12" fill="#111827">d+u: alertas abrangidos (padrão: alerta em exame</text>
+<text x="520" y="1204.0" font-size="12" fill="#111827">ou conjunto restringido),</text>
+<text x="508" y="1219.0" font-size="12" fill="#111827">decisão {ataque, benigno, indefinido},</text>
+<text x="508" y="1234.0" font-size="12" fill="#111827">justificativa (padrão: dados consultados) [PP] }</text>
+<text x="632.0" y="1090.0" text-anchor="start" font-size="11.5" fill="#111827" stroke="#ffffff" stroke-width="4" paint-order="stroke">u: registrar decisão sobre este alerta</text>
+<text x="850" y="802.0" text-anchor="start" font-size="11.5" fill="#111827" stroke="#ffffff" stroke-width="4" paint-order="stroke">u: registrar decisão</text>
+<text x="850" y="816.0" text-anchor="start" font-size="11.5" fill="#111827" stroke="#ffffff" stroke-width="4" paint-order="stroke">     sobre o conjunto</text>
+<rect x="609.0" y="1282.0" width="22" height="22" fill="#111827"/>
+<text x="632.0" y="1273.0" text-anchor="start" font-size="11.5" fill="#111827" stroke="#ffffff" stroke-width="4" paint-order="stroke">u: registrar</text>
+<text x="826" y="1267.0" text-anchor="start" font-size="11.5" fill="#111827" stroke="#ffffff" stroke-width="4" paint-order="stroke">[PP+PA] d: falta a justificativa;</text>
+<text x="826" y="1281.0" text-anchor="start" font-size="11.5" fill="#111827" stroke="#ffffff" stroke-width="4" paint-order="stroke">o próximo turno vai lê-la</text>
+<rect x="450" y="1424.0" width="340" height="83" rx="12" fill="#ffffff" stroke="#111827" stroke-width="1.6"/>
+<line x1="450" y1="1450.0" x2="790" y2="1450.0" stroke="#111827" stroke-width="1.2"/>
+<text x="620.0" y="1442.0" text-anchor="middle" font-size="13" font-weight="bold" fill="#111827">Conferir o registro [AL]</text>
+<text x="460" y="1468.0" font-size="12" fill="#111827">ver resumo {</text>
+<text x="472" y="1483.0" font-size="12" fill="#111827">d: alertas abrangidos (quantos), decisão, origem,</text>
+<text x="496" y="1498.0" font-size="12" fill="#111827">destino, janela de tempo, justificativa }</text>
+<text x="632.0" y="1338.0" text-anchor="start" font-size="11.5" fill="#111827" stroke="#ffffff" stroke-width="4" paint-order="stroke">d: decisão e justificativa</text>
+<text x="632.0" y="1352.0" text-anchor="start" font-size="11.5" fill="#111827" stroke="#ffffff" stroke-width="4" paint-order="stroke">    preenchidas</text>
+<rect x="30" y="1414.0" width="270" height="98" rx="12" fill="#ffffff" stroke="#111827" stroke-width="1.6" stroke-dasharray="7 5"/>
+<line x1="30" y1="1440.0" x2="300" y2="1440.0" stroke="#111827" stroke-width="1.2" stroke-dasharray="7 5"/>
+<text x="165.0" y="1432.0" text-anchor="middle" font-size="13" font-weight="bold" fill="#111827">Alertas incertos [AL]</text>
+<text x="40" y="1458.0" font-size="12" fill="#111827">d: alertas abrangidos com</text>
+<text x="64" y="1473.0" font-size="12" fill="#111827">incerteza alta (“a classificação</text>
+<text x="64" y="1488.0" font-size="12" fill="#111827">está perto de mudar”),</text>
+<text x="64" y="1503.0" font-size="12" fill="#111827">incerteza da classificação</text>
+<text x="242" y="1313.0" text-anchor="start" font-size="11.5" fill="#111827" stroke="#ffffff" stroke-width="4" paint-order="stroke">precond: há alertas</text>
+<text x="242" y="1327.0" text-anchor="start" font-size="11.5" fill="#111827" stroke="#ffffff" stroke-width="4" paint-order="stroke">    de incerteza alta</text>
+<text x="242" y="1341.0" text-anchor="start" font-size="11.5" fill="#111827" stroke="#ffffff" stroke-width="4" paint-order="stroke">[AL] d: 2 destes alertas</text>
+<text x="242" y="1355.0" text-anchor="start" font-size="11.5" fill="#111827" stroke="#ffffff" stroke-width="4" paint-order="stroke">    têm incerteza alta</text>
+<text x="102" y="1211.0" text-anchor="start" font-size="11.5" fill="#111827" stroke="#ffffff" stroke-width="4" paint-order="stroke">u: rever alertas abrangidos</text>
+<text x="308" y="1436.0" text-anchor="start" font-size="11.5" fill="#111827" stroke="#ffffff" stroke-width="4" paint-order="stroke">u: marcar incertos</text>
+<text x="308" y="1464.0" text-anchor="start" font-size="11.5" fill="#111827" stroke="#ffffff" stroke-width="4" paint-order="stroke">como indefinidos</text>
+<text x="270" y="1539.0" text-anchor="start" font-size="11.5" fill="#111827" stroke="#ffffff" stroke-width="4" paint-order="stroke">u: manter a decisão</text>
+<text x="270" y="1553.0" text-anchor="start" font-size="11.5" fill="#111827" stroke="#ffffff" stroke-width="4" paint-order="stroke">    para todos</text>
+<rect x="609.0" y="1566.0" width="22" height="22" fill="#111827"/>
+<text x="608.0" y="1547.0" text-anchor="end" font-size="11.5" fill="#111827" stroke="#ffffff" stroke-width="4" paint-order="stroke">u: confirmar</text>
+<text x="806" y="1474.0" text-anchor="start" font-size="11.5" fill="#111827" stroke="#ffffff" stroke-width="4" paint-order="stroke">u: corrigir</text>
+<text x="598" y="1599.0" text-anchor="end" font-size="11.5" fill="#111827" stroke="#ffffff" stroke-width="4" paint-order="stroke">precond: decisão = benigno</text>
+<text x="598" y="1613.0" text-anchor="end" font-size="11.5" fill="#111827" stroke="#ffffff" stroke-width="4" paint-order="stroke">d: registrado por &lt;analista&gt; às hh:mm</text>
+<text x="598" y="1627.0" text-anchor="end" font-size="11.5" fill="#111827" stroke="#ffffff" stroke-width="4" paint-order="stroke">(alimenta “alertas não confirmados”, M02)</text>
+<rect x="870" y="1617.0" width="340" height="128" rx="12" fill="#ffffff" stroke="#111827" stroke-width="1.6"/>
+<line x1="870" y1="1643.0" x2="1210" y2="1643.0" stroke="#111827" stroke-width="1.2"/>
+<text x="1040.0" y="1635.0" text-anchor="middle" font-size="13" font-weight="bold" fill="#111827">Encaminhar o caso (O06)</text>
+<text x="880" y="1661.0" font-size="12" fill="#111827">ver veredito registrado {</text>
+<text x="892" y="1676.0" font-size="12" fill="#111827">d: decisão, autor, data/hora do registro }</text>
+<text x="880" y="1691.0" font-size="12" fill="#111827">preparar o encaminhamento {</text>
+<text x="892" y="1706.0" font-size="12" fill="#111827">d+u: destinatário (padrão: Infraestrutura),</text>
+<text x="928" y="1721.0" font-size="12" fill="#111827">conteúdo do encaminhamento (gerado</text>
+<text x="928" y="1736.0" font-size="12" fill="#111827">do veredito) [AL: revisar antes de enviar] }</text>
+<text x="643.0" y="1599.0" text-anchor="start" font-size="11.5" fill="#111827" stroke="#ffffff" stroke-width="4" paint-order="stroke">precond: decisão = ataque ou indefinido</text>
+<text x="643.0" y="1613.0" text-anchor="start" font-size="11.5" fill="#111827" stroke="#ffffff" stroke-width="4" paint-order="stroke">d: registrado por &lt;analista&gt; às hh:mm;</text>
+<text x="643.0" y="1627.0" text-anchor="start" font-size="11.5" fill="#111827" stroke="#ffffff" stroke-width="4" paint-order="stroke">    é possível desfazer</text>
+<text x="940" y="1240.0" text-anchor="start" font-size="11.5" fill="#111827" stroke="#ffffff" stroke-width="4" paint-order="stroke">[RA] u: desfazer o registro</text>
+<rect x="1029.0" y="1784.0" width="22" height="22" fill="#111827"/>
+<text x="1052" y="1775.0" text-anchor="start" font-size="11.5" fill="#111827" stroke="#ffffff" stroke-width="4" paint-order="stroke">u: enviar</text>
+<rect x="870" y="1876.0" width="340" height="98" rx="12" fill="#ffffff" stroke="#111827" stroke-width="1.6"/>
+<line x1="870" y1="1902.0" x2="1210" y2="1902.0" stroke="#111827" stroke-width="1.2"/>
+<text x="1040.0" y="1894.0" text-anchor="middle" font-size="13" font-weight="bold" fill="#111827">Passar o plantão (O06)</text>
+<text x="880" y="1920.0" font-size="12" fill="#111827">ver o turno {</text>
+<text x="892" y="1935.0" font-size="12" fill="#111827">d: casos do turno }</text>
+<text x="880" y="1950.0" font-size="12" fill="#111827">informar pendências {</text>
+<text x="892" y="1965.0" font-size="12" fill="#111827">d+u: itens em aberto (padrão: alertas indefinidos) }</text>
+<text x="1052" y="1824.0" text-anchor="start" font-size="11.5" fill="#111827" stroke="#ffffff" stroke-width="4" paint-order="stroke">d: encaminhado à Infraestrutura</text>
+<text x="1052" y="1838.0" text-anchor="start" font-size="11.5" fill="#111827" stroke="#ffffff" stroke-width="4" paint-order="stroke">    às hh:mm; a contenção fica</text>
+<text x="1052" y="1852.0" text-anchor="start" font-size="11.5" fill="#111827" stroke="#ffffff" stroke-width="4" paint-order="stroke">    com a equipe</text>
+<circle cx="1040" cy="2034.0" r="12" fill="#ffffff" stroke="#111827" stroke-width="2"/>
+<circle cx="1040" cy="2034.0" r="7" fill="#111827"/>
+<text x="1028" y="2000.0" text-anchor="end" font-size="11.5" fill="#111827" stroke="#ffffff" stroke-width="4" paint-order="stroke">u: encerrar o turno</text>
+<text x="1028" y="2014.0" text-anchor="end" font-size="11.5" fill="#111827" stroke="#ffffff" stroke-width="4" paint-order="stroke">gcc: Decidir se o pico é um incidente</text>
+<rect x="930" y="70" width="220" height="40" rx="20.0" fill="#c4c4c4" stroke="#4b5563" stroke-width="1.6"/>
+<rect x="870" y="200" width="340" height="83" rx="12" fill="#ffffff" stroke="#111827" stroke-width="1.6"/>
+<line x1="870" y1="226" x2="1210" y2="226" stroke="#111827" stroke-width="1.2"/>
+<text x="1040.0" y="218" text-anchor="middle" font-size="13" font-weight="bold" fill="#111827">Saber qual modelo produziu o resultado (O04)</text>
+<text x="880" y="244" font-size="12" fill="#111827">d: modelo ativo, ativo desde,</text>
+<text x="904" y="259" font-size="12" fill="#111827">troca de modelo (modelo anterior)</text>
+<text x="880" y="274" font-size="12" font-style="italic" fill="#374151">recebe o aviso de troca feito em M02 (O12)</text>
+<text x="990" y="132" text-anchor="start" font-size="11.5" fill="#111827" stroke="#ffffff" stroke-width="4" paint-order="stroke">u: qual modelo está ativo?</text>
+<text x="990" y="146" text-anchor="start" font-size="11.5" fill="#111827" stroke="#ffffff" stroke-width="4" paint-order="stroke">gco: Saber qual modelo está ativo</text>
+<rect x="870" y="470" width="340" height="83" rx="12" fill="#ffffff" stroke="#111827" stroke-width="1.6"/>
+<line x1="870" y1="496" x2="1210" y2="496" stroke="#111827" stroke-width="1.2"/>
+<text x="1040.0" y="488" text-anchor="middle" font-size="13" font-weight="bold" fill="#111827">Retomar a investigação (O07)</text>
+<text x="880" y="514" font-size="12" fill="#111827">d: janela de tempo, critérios de restrição,</text>
+<text x="904" y="529" font-size="12" fill="#111827">estado da atualização (congelado desde hh:mm),</text>
+<text x="904" y="544" font-size="12" fill="#111827">alerta examinado (6 de 312)</text>
+<text x="1215" y="360" text-anchor="end" font-size="11.5" fill="#111827" stroke="#ffffff" stroke-width="4" paint-order="stroke">u: onde eu estava?</text>
+<text x="1215" y="374" text-anchor="end" font-size="11.5" fill="#111827" stroke="#ffffff" stroke-width="4" paint-order="stroke">gco: Retomar a</text>
+<text x="1215" y="388" text-anchor="end" font-size="11.5" fill="#111827" stroke="#ffffff" stroke-width="4" paint-order="stroke">investigação</text>
+<text x="990" y="313" text-anchor="start" font-size="11.5" fill="#111827" stroke="#ffffff" stroke-width="4" paint-order="stroke">u: voltar à investigação</text>
+<text x="1052" y="583" text-anchor="start" font-size="11.5" fill="#111827" stroke="#ffffff" stroke-width="4" paint-order="stroke">u: continuar de onde parou</text>
+<rect x="30" y="2076.0" width="870" height="150" rx="6" fill="#f9fafb" stroke="#9ca3af"/>
+<text x="40" y="2094.0" text-anchor="start" font-size="11.5" fill="#111827" font-weight="bold" stroke="#ffffff" stroke-width="4" paint-order="stroke">Legenda (notação MoLIC — Barbosa e Silva, 2010)</text>
+<circle cx="52" cy="2116.0" r="11" fill="#111827"/>
+<text x="70" y="2120.0" text-anchor="start" font-size="11.5" fill="#111827" stroke="#ffffff" stroke-width="4" paint-order="stroke">ponto de abertura</text>
+<circle cx="52" cy="2146.0" r="12" fill="#ffffff" stroke="#111827" stroke-width="2"/>
+<circle cx="52" cy="2146.0" r="7" fill="#111827"/>
+<text x="70" y="2150.0" text-anchor="start" font-size="11.5" fill="#111827" stroke="#ffffff" stroke-width="4" paint-order="stroke">ponto de encerramento</text>
+<rect x="44.0" y="2168.0" width="16" height="16" fill="#111827"/>
+<text x="70" y="2180.0" text-anchor="start" font-size="11.5" fill="#111827" stroke="#ffffff" stroke-width="4" paint-order="stroke">processo do sistema</text>
+<rect x="42" y="2194.0" width="22" height="16" rx="8.0" fill="#c4c4c4" stroke="#4b5563" stroke-width="1.6"/>
+<text x="70" y="2206.0" text-anchor="start" font-size="11.5" fill="#111827" stroke="#ffffff" stroke-width="4" paint-order="stroke">acesso ubíquo</text>
+<rect x="220" y="2106.0" width="26" height="18" rx="5" fill="#fff" stroke="#111827"/>
+<text x="254" y="2120.0" text-anchor="start" font-size="11.5" fill="#111827" stroke="#ffffff" stroke-width="4" paint-order="stroke">cena (tópico + diálogos)</text>
+<rect x="220" y="2136.0" width="26" height="18" rx="5" fill="#fff" stroke="#111827" stroke-dasharray="5 3"/>
+<text x="254" y="2150.0" text-anchor="start" font-size="11.5" fill="#111827" stroke="#ffffff" stroke-width="4" paint-order="stroke">cena de alerta / ruptura</text>
+<path d="M220 2176.0 L246 2176.0" fill="none" stroke="#374151" stroke-width="1.5" marker-end="url(#ah)"/>
+<text x="254" y="2180.0" text-anchor="start" font-size="11.5" fill="#111827" stroke="#ffffff" stroke-width="4" paint-order="stroke">fala de transição</text>
+<path d="M220 2202.0 L246 2202.0" fill="none" stroke="#374151" stroke-width="1.5" stroke-dasharray="6 4" marker-end="url(#ah)"/>
+<text x="254" y="2206.0" text-anchor="start" font-size="11.5" fill="#111827" stroke="#ffffff" stroke-width="4" paint-order="stroke">fala de recuperação de ruptura</text>
+<text x="460" y="2120.0" text-anchor="start" font-size="11.5" fill="#111827" stroke="#ffffff" stroke-width="4" paint-order="stroke">u: fala do usuário · d: fala do preposto</text>
+<text x="460" y="2134.0" text-anchor="start" font-size="11.5" fill="#111827" stroke="#ffffff" stroke-width="4" paint-order="stroke">d+u: signo proposto pelo preposto e ajustado</text>
+<text x="460" y="2148.0" text-anchor="start" font-size="11.5" fill="#111827" stroke="#ffffff" stroke-width="4" paint-order="stroke">gco/gcc: abertura/fechamento da conversa</text>
+<text x="460" y="2162.0" text-anchor="start" font-size="11.5" fill="#111827" stroke="#ffffff" stroke-width="4" paint-order="stroke">sobre o objetivo · precond: pré-condição</text>
+<text x="460" y="2176.0" text-anchor="start" font-size="11.5" fill="#111827" stroke="#ffffff" stroke-width="4" paint-order="stroke">PP/PA/AL/RA/CE: mecanismos da Entrega 09</text>
+<text x="460" y="2190.0" text-anchor="start" font-size="11.5" fill="#111827" stroke="#ffffff" stroke-width="4" paint-order="stroke">(AL = [SP] e RA = [SR] nos slides)</text>
+<text x="920" y="2094.0" text-anchor="start" font-size="11.5" fill="#111827" font-weight="bold" stroke="#ffffff" stroke-width="4" paint-order="stroke">Observações</text>
+<text x="920" y="2108.0" text-anchor="start" font-size="11.5" fill="#111827" stroke="#ffffff" stroke-width="4" paint-order="stroke">· O04 e O07 são acessos ubíquos: podem</text>
+<text x="920" y="2122.0" text-anchor="start" font-size="11.5" fill="#111827" stroke="#ffffff" stroke-width="4" paint-order="stroke">  ser abertos a partir de qualquer cena.</text>
+<text x="920" y="2136.0" text-anchor="start" font-size="11.5" fill="#111827" stroke="#ffffff" stroke-width="4" paint-order="stroke">· Números são os ilustrativos de CI01.</text>
+<text x="920" y="2150.0" text-anchor="start" font-size="11.5" fill="#111827" stroke="#ffffff" stroke-width="4" paint-order="stroke">· A contenção (bloqueio) ocorre fora</text>
+<text x="920" y="2164.0" text-anchor="start" font-size="11.5" fill="#111827" stroke="#ffffff" stroke-width="4" paint-order="stroke">  do sistema.</text>
 </svg>
+
