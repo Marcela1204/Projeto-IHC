@@ -68,18 +68,75 @@ Em qualquer cena, dois **acessos ubíquos** mudam o tópico: `u: qual modelo est
 
 ### Checklist específico de modelagem
 
-- [ ] Existe **ponto de abertura** coerente com o início do objetivo.
-- [ ] As **cenas de conversa** representam tópicos/assuntos, não nomes de páginas apenas.
-- [ ] As transições/falas deixam claro o que o usuário ou o sistema comunica.
-- [ ] Há **ponto(s) de encerramento** para objetivos concluídos/abandonados quando aplicável.
-- [ ] Processamentos do sistema estão representados conforme a notação adotada em aula, sem “inventar” fala do usuário.
-- [ ] Rupturas (breakdowns) relevantes têm feedback e caminho de recuperação, não becos sem saída.
-- [ ] Acessos ubíquos/atalhos só aparecem quando semanticamente justificáveis.
-- [ ] O diagrama cobre caminhos alternativos importantes, e não apenas o “happy path”.
-- [ ] Nomes de objetivos, tópicos e signos são coerentes com a Entrega 9.
-- [ ] O diagrama é legível em tamanho normal no GitHub.
-- [ ] O MoLIC representa a conversa usuário–sistema, não o fluxo interno do algoritmo.
-- [ ] Processamento, filtros, administração, relatórios e históricos incluem retornos/rupturas quando relevantes.
+- [x] Existe **ponto de abertura** coerente com o início do objetivo.
+- [x] As **cenas de conversa** representam tópicos/assuntos, não nomes de páginas apenas.
+- [x] As transições/falas deixam claro o que o usuário ou o sistema comunica.
+- [x] Há **ponto(s) de encerramento** para objetivos concluídos/abandonados quando aplicável.
+- [x] Processamentos do sistema estão representados conforme a notação adotada em aula, sem “inventar” fala do usuário.
+- [x] Rupturas (breakdowns) relevantes têm feedback e caminho de recuperação, não becos sem saída.
+- [x] Acessos ubíquos/atalhos só aparecem quando semanticamente justificáveis.
+- [x] O diagrama cobre caminhos alternativos importantes, e não apenas o “happy path”.
+- [x] Nomes de objetivos, tópicos e signos são coerentes com a Entrega 9.
+- [x] O diagrama é legível em tamanho normal no GitHub.
+- [x] O MoLIC representa a conversa usuário–sistema, não o fluxo interno do algoritmo.
+- [x] Processamento, filtros, administração, relatórios e históricos incluem retornos/rupturas quando relevantes.
+
+---
+
+## M02 — Avaliar e trocar o modelo ativo
+
+**Autor(a):** Marcela Nalesso — 22.222.011-3  
+**Cenário de interação de origem:** CI02 — Avaliação e troca do modelo ativo (P02 Vanessa)  
+**Objetivo(s):** O08, O09, O13, O10, O11, O12 (caminho principal); O04 e O13 (acessos ubíquos)  
+**Tarefa(s) relacionada(s):** T01 (fluxos PF02 e PF03); metas MQ04–MQ07, MU06–MU08  
+**Signos relevantes:** *alertas não confirmados*, *janela de tempo*, *troca de modelo*, *estado da coleta*, *atraso*, *carga do equipamento*, *modelo anterior*, *modelo novo*, *tipo de troca*, *autor*, *motivo da troca*, *modelo candidato*, *modelo em produção*, *cenário*, *recall*, *precisão*, *fpr*, *mínimo exigido*, *diferença*, *resultado da comparação*, *cenário decisivo*, *efeito previsto para os analistas*, *carga prevista*, *confirmação da troca*, *modelo ativo*, *ativo desde*
+
+### Diagrama
+
+![MoLIC M02](../assets/10_molic/molic_m02.svg)
+
+### Leitura do diagrama
+
+#### Caminho principal
+
+1. **Ponto de abertura** → `u: abrir a avaliação do modelo`, com `gco: Manter o IDS adequado ao ambiente` → **Perceber que o modelo pode estar inadequado (O08)**: `d: na última semana, 41% dos alertas avaliados pelos analistas não foram confirmados como ataque; antes da troca de 27/10, eram 12%`. O número é formado pelos vereditos registrados em M01.
+2. `u: o problema pode ser na coleta ou no equipamento?` → **processo do sistema** → com coleta e carga normais, `d: coleta ativa; atraso e carga dentro do limite` → **Verificar a saúde do pipeline (O09)**: coleta ativa, atraso de cerca de 40 s, equipamento com 62% da capacidade em uso.
+3. `u: o que mudou em 27/10?` → **Consultar o histórico de trocas (O13)**: em 27/10, às 14h02, Vanessa substituiu o SVM v6 pelo v7; motivo registrado: retreino com o tráfego de setembro; nenhuma outra troca no período.
+4. `u: comparar com o candidato` → **Comparar candidato e modelo em produção (O10)**: para cada *cenário*, as métricas dos dois modelos, o *mínimo exigido* e a *diferença*; o *cenário decisivo* foi o benigno (fpr de 0,21 para 0,04, abaixo do máximo de 0,05) e o *resultado da comparação* é “aprovado”. O diálogo *entender uma métrica* explica, em uma frase, o que a métrica significa para os analistas (PP).
+5. `u: o que muda para quem investiga?` → **Prever o efeito da troca (O11)**: cerca de 35% menos alertas por dia e, em contrapartida, dois ataques de força bruta do conjunto de teste que deixariam de ser sinalizados; carga prevista de 58%. `u: voltar à comparação` permite reler O10.
+6. `u: promover o candidato` → **processo do sistema** (portão) → `d: candidato aprovado; carga prevista dentro do limite` → **Confirmar a troca (O12)**: resumo do que muda, efeito previsto e “os analistas serão avisados”; Vanessa informa o *motivo da troca* (redução de alertas falsos; janela autorizada pelo coordenador) e confirma (AL).
+7. `u: confirmar` → processo → `d: SVM v8 em produção desde 14h10, por Vanessa; é possível voltar ao v7` → **Saber qual modelo está ativo e desde quando (O04)**. Nesta cena o preposto também envia aos analistas o aviso “o modelo ativo mudou”, que aparece na cena O04 de M01 (PF03).
+8. No dia seguinte, `u: a troca funcionou?` volta a **O08** com a janela contada a partir da troca (`d: desde a troca de 30/10, 15% dos alertas avaliados não foram confirmados`). Com o efeito confirmado, `u: proporção dentro do esperado` → `gcc: Manter o IDS adequado ao ambiente` → **ponto de encerramento**. Também é possível encerrar a partir de O04 (`u: encerrar`).
+
+Em qualquer cena, dois **acessos ubíquos** mudam o tópico: `u: histórico de trocas` abre **O13** e `u: modelo ativo` abre **O04**. Os dois também servem a Thiago (M01), que pode precisar saber o que mudou sem passar pelo fluxo de Vanessa.
+
+#### Alternativas e rupturas
+
+| Situação                                       | Onde ocorre                                                                                   | Como o usuário percebe                                                                                                                                            | Caminho de recuperação/saída                                                                                                                                                                                       |
+| ---------------------------------------------- | --------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Coleta parada, atraso ou carga acima do limite | Processo após O08                                                                             | Cena de alerta **Problema fora do modelo**: `[CE] d: coleta parada, ou atraso/carga acima do limite` com *estado da coleta*, *atraso* e *carga do equipamento*    | `u: tratar fora do sistema` → `gcc` → encerramento: o problema não é do modelo e deve ser resolvido no coletor ou no equipamento antes de qualquer troca (CE; MQ05)                                                |
+| Nenhum veredito no período                     | **Perceber que o modelo pode estar inadequado (O08)** (`precond: nenhum veredito no período`) | `d: sem decisões no período` em vez de 0% (PP)                                                                                                                    | Vanessa amplia a *janela de tempo* ou encerra; ausência de retorno não aparece como erro (I04)                                                                                                                     |
+| Decidir não trocar                             | **Prever o efeito da troca (O11)**                                                            | Efeito previsto ou perda de detecção considerados inaceitáveis                                                                                                    | `u: manter o modelo atual` → `gcc` → encerramento (T01 inclui “manter”)                                                                                                                                            |
+| Promover candidato reprovado                   | Processo após `u: promover o candidato`                                                       | `[PA] d: candidato reprovado no cenário benigno (fpr 0,215; máximo 0,05); não pode ir para produção`                                                              | Volta a **Comparar candidato e modelo em produção (O10)**, que mostra o cenário e a métrica que reprovaram (RA; MU07)                                                                                              |
+| Carga prevista acima do limite                 | Processo após `u: promover o candidato` (`precond: carga prevista acima do limite`)           | Cena de alerta **Carga acima do limite**: `[AL] d: carga prevista de 91%, acima do limite de operação; a classificação pode atrasar. Quer continuar mesmo assim?` | `u: continuar mesmo assim` → **Confirmar a troca** ou `u: desistir` → O11                                                                                                                                          |
+| Motivo da troca não informado                  | Processo após **Confirmar a troca (O12)**                                                     | `[PA] d: informe o motivo da troca`                                                                                                                               | Volta a **Confirmar a troca** (PP + PA da Entrega 09)                                                                                                                                                              |
+| Desistir na confirmação                        | **Confirmar a troca (O12)**                                                                   | Resumo do que vai mudar                                                                                                                                           | `u: cancelar` → O11; nada é alterado                                                                                                                                                                               |
+| Troca com efeito indesejado                    | **O04**, após a troca, ou ao verificar O08 no dia seguinte                                    | `d: … é possível voltar ao v7`; proporção de não confirmados não cai, ou analistas registram ataques que o novo modelo deixou passar                              | `[RA] u: voltar ao modelo anterior` → **Reverter o modelo (O12)** → `u: confirmar` → `d: SVM v7 voltou à produção às 9h30 de 31/10, por Vanessa; analistas avisados` → O04; `u: cancelar` → O04 sem mudança (MQ07) |
+
+### Checklist específico de modelagem
+
+- [x] Existe **ponto de abertura** coerente com o início do objetivo.
+- [x] As **cenas de conversa** representam tópicos/assuntos, não nomes de páginas apenas.
+- [x] As transições/falas deixam claro o que o usuário ou o sistema comunica.
+- [x] Há **ponto(s) de encerramento** para objetivos concluídos/abandonados quando aplicável.
+- [x] Processamentos do sistema estão representados conforme a notação adotada em aula, sem “inventar” fala do usuário.
+- [x] Rupturas (breakdowns) relevantes têm feedback e caminho de recuperação, não becos sem saída.
+- [x] Acessos ubíquos/atalhos só aparecem quando semanticamente justificáveis.
+- [x] O diagrama cobre caminhos alternativos importantes, e não apenas o “happy path”.
+- [x] Nomes de objetivos, tópicos e signos são coerentes com a Entrega 9.
+- [x] O diagrama é legível em tamanho normal no GitHub.
+- [x] O MoLIC representa a conversa usuário–sistema, não o fluxo interno do algoritmo.
+- [x] Processamento, filtros, administração, relatórios e históricos incluem retornos/rupturas quando relevantes.
 
 ## Consolidação da equipe
 
