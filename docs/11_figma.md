@@ -61,13 +61,11 @@ Quando aplicável, considere: vazio/sem dados; carregamento/processamento; suces
 
 ## Link do Figma
 
-**Protótipo:** {{link do Figma — a equipe deve criar o arquivo a partir destas especificações}}  
-**Arquivo editável:** {{link do Figma — a equipe deve criar o arquivo a partir destas especificações}}  
-**Última verificação de permissão:** {{dd/mm/aaaa — preencher após testar o link em janela anônima}}
+**Protótipo:** [Link do Protótipo](https://www.figma.com/proto/SACmJtybT3PVGyJNpHuoY5/netanomaly-%E2%80%94-Prot%C3%B3tipo-IHC--Entrega-11-?node-id=0-1&t=2nwcwVOph2wJkgR2-1)  
+**Arquivo editável:** [Link do Arquivo Completo](https://www.figma.com/design/SACmJtybT3PVGyJNpHuoY5/netanomaly-%E2%80%94-Prot%C3%B3tipo-IHC--Entrega-11-?node-id=0-1&t=2nwcwVOph2wJkgR2-1)  
+**Última verificação de permissão:** 05/11/2026
 
 > Teste o link em janela anônima. O avaliador deve conseguir abrir o protótipo sem solicitar permissão.
-
-> **Situação:** o arquivo do Figma **ainda não existe**. Esta entrega traz as especificações de tela (wireframes em [`../assets/11_figma/`](../assets/11_figma/)) e a especificação de navegação abaixo, para que a equipe monte o protótipo clicável com um *frame* por tela/estado, usando os mesmos IDs.
 
 ### Especificação de navegação para o protótipo clicável
 
@@ -238,15 +236,15 @@ Verificação **de projeto** (cálculo sobre as cores definidas nos wireframes, 
 ## Checklist
 
 - [ ] Link do Figma está acessível.
-- [x] Há screenshots representativos no repositório.
+- [ ] Há screenshots representativos no repositório.
 - [ ] Todos os MoLIC relevantes estão cobertos.
-- [x] Estados de erro, feedback e recuperação foram prototipados.
-- [x] Terminologia/signos são consistentes com Entrega 9.
-- [x] Componentes equivalentes se comportam de forma consistente.
+- [ ] Estados de erro, feedback e recuperação foram prototipados.
+- [ ] Terminologia/signos são consistentes com Entrega 9.
+- [ ] Componentes equivalentes se comportam de forma consistente.
 - [ ] Fluxos críticos são clicáveis do início ao fim.
 - [ ] O protótipo está pronto para inspeção e testes, sem “links mortos” nas tarefas avaliadas.
-- [x] Dashboards, relatórios, históricos, filtros, administração e CRUDs presentes possuem justificativa rastreável.
-- [x] Estados de vazio, processamento, erro e recuperação foram considerados quando pertinentes.
-- [x] Resultados técnicos são apresentados de forma interpretável para o perfil de usuário.
-- [x] A equipe distingue no protótipo o que é interação simulada e o que é funcionalidade técnica realmente integrada, quando necessário.
+- [ ] Dashboards, relatórios, históricos, filtros, administração e CRUDs presentes possuem justificativa rastreável.
+- [ ] Estados de vazio, processamento, erro e recuperação foram considerados quando pertinentes.
+- [ ] Resultados técnicos são apresentados de forma interpretável para o perfil de usuário.
+- [ ] A equipe distingue no protótipo o que é interação simulada e o que é funcionalidade técnica realmente integrada, quando necessário.
 

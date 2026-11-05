@@ -3,7 +3,7 @@
 # Entrega 9 — Modelo conceitual e design centrado na comunicação
 
 **Data:** 30/10/2026  
-**Status:** `🟨 em andamento`  
+**Status:** `🟩 concluída`  
 **Responsabilidade:** soluções individuais, com consolidação da equipe para mapa de objetivos e esquema de signos.
 
 ## Objetivo da atividade
@@ -372,12 +372,12 @@ Consolide as informações em **uma tabela única**.
 
 ## Checklist
 
-- [] Cenários de interação mostram alterações em relação aos cenários de problema.  
-- [] Tópicos/falas/signos são coerentes com objetivos do usuário.  
-- [] Mapas individuais foram consolidados.  
-- [] O esquema de signos está em uma tabela única e sem duplicações conceituais.  
-- [] Cada solução individual identifica autor e cenário de origem.  
-- [] Nomes de objetivos/signos serão reutilizados na Entrega 10\.  
-- [] Em TCC técnico, signos representam conceitos do domínio compreensíveis ao usuário, não apenas variáveis/estruturas internas.  
-- [] Padrões como dashboard, relatório, filtros, administração e CRUD possuem objetivos e signos correspondentes.  
-- [] A interface comunica não só o resultado técnico, mas também seu significado para a tarefa.
+- [ ] Cenários de interação mostram alterações em relação aos cenários de problema.  
+- [ ] Tópicos/falas/signos são coerentes com objetivos do usuário.  
+- [ ] Mapas individuais foram consolidados.  
+- [ ] O esquema de signos está em uma tabela única e sem duplicações conceituais.  
+- [ ] Cada solução individual identifica autor e cenário de origem.  
+- [ ] Nomes de objetivos/signos serão reutilizados na Entrega 10\.  
+- [ ] Em TCC técnico, signos representam conceitos do domínio compreensíveis ao usuário, não apenas variáveis/estruturas internas.  
+- [ ] Padrões como dashboard, relatório, filtros, administração e CRUD possuem objetivos e signos correspondentes.  
+- [ ] A interface comunica não só o resultado técnico, mas também seu significado para a tarefa.
