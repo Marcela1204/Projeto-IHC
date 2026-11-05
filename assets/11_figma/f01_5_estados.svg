@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="700" viewBox="0 0 1200 700" font-family="Arial, Helvetica, sans-serif" role="img" aria-label="F01.5 — Estados de D03: coleta parada, restrição vazia, carregamento">
+<title>F01.5 — Estados de D03: coleta parada, restrição vazia, carregamento</title>
+<rect width="1200" height="700" fill="#ffffff"/>
+<text x="20" y="28" font-size="17" fill="#1f2328" font-weight="bold">F01.5 — Estados de D03 — coleta parada, restrição sem resultado, carregamento</text>
+<text x="1180" y="28" font-size="13" fill="#57606a" text-anchor="end">Fluxo de Thiago (P01/T02) · responsável: Lucas Kerr do Amaral</text>
+<text x="20" y="64" font-size="14" fill="#1f2328" font-weight="bold">F01.1E — Coleta parada (dados não chegam)</text>
+<rect x="20" y="74" width="1160" height="58" rx="4" fill="#ffebe9" stroke="#c62828" stroke-width="2"/>
+<text x="36" y="98" font-size="14" fill="#8f1a1a" font-weight="bold">✕ Não recebo dados desde 20:31. A coleta pode ter parado — isso não significa que não há alertas.</text>
+<text x="36" y="120" font-size="13" fill="#8f1a1a">Verifique o coletor ou acione o responsável pela plataforma.</text>
+<circle cx="1180" cy="74" r="11" fill="#6f42c1" stroke="#ffffff" stroke-width="2"/>
+<text x="1180" y="78.5" font-size="12" fill="#ffffff" font-weight="bold" text-anchor="middle">1</text>
+<rect x="20" y="144" width="281" height="84" rx="4" fill="#f6f8fa" stroke="#8c959f" stroke-width="1" stroke-dasharray="5 4"/>
+<text x="32" y="166" font-size="13" fill="#57606a">Ataques · 19:00–21:00</text>
+<text x="32" y="200" font-size="18" fill="#32383f" font-weight="bold">sem dados desde 20:31</text>
+<text x="32" y="220" font-size="12" fill="#57606a">não é o mesmo que zero</text>
+<rect x="313" y="144" width="281" height="84" rx="4" fill="#f6f8fa" stroke="#8c959f" stroke-width="1" stroke-dasharray="5 4"/>
+<text x="325" y="166" font-size="13" fill="#57606a">Benignos · 19:00–21:00</text>
+<text x="325" y="200" font-size="18" fill="#32383f" font-weight="bold">sem dados desde 20:31</text>
+<text x="325" y="220" font-size="12" fill="#57606a">não é o mesmo que zero</text>
+<rect x="606" y="144" width="281" height="84" rx="4" fill="#f6f8fa" stroke="#8c959f" stroke-width="1" stroke-dasharray="5 4"/>
+<text x="618" y="166" font-size="13" fill="#57606a">Pendentes · 19:00–21:00</text>
+<text x="618" y="200" font-size="18" fill="#32383f" font-weight="bold">sem dados desde 20:31</text>
+<text x="618" y="220" font-size="12" fill="#57606a">não é o mesmo que zero</text>
+<rect x="899" y="144" width="281" height="84" rx="4" fill="#f6f8fa" stroke="#8c959f" stroke-width="1" stroke-dasharray="5 4"/>
+<text x="911" y="166" font-size="13" fill="#57606a">Alertas do período</text>
+<text x="911" y="200" font-size="18" fill="#32383f" font-weight="bold">sem dados desde 20:31</text>
+<text x="911" y="220" font-size="12" fill="#57606a">não é o mesmo que zero</text>
+<text x="20" y="250" font-size="12" fill="#57606a">Indicadores em cor neutra e tracejados: ausência de dado não usa o vermelho reservado a “ataque”.</text>
+<text x="20" y="304" font-size="14" fill="#1f2328" font-weight="bold">F01.1V — Restrição que não deixa nenhum alerta</text>
+<rect x="20" y="314" width="1160" height="44" rx="4" fill="#f6f8fa" stroke="#c4cad1" stroke-width="1"/>
+<text x="32" y="341" font-size="13" fill="#1f2328" font-weight="bold">Restrição:</text>
+<rect x="110" y="323" width="185" height="26" rx="13" fill="#ffffff" stroke="#1f60c4" stroke-width="1"/>
+<text x="120" y="341" font-size="13" fill="#1f2328">Período: 19:00–21:00  ×</text>
+<rect x="303" y="323" width="178" height="26" rx="13" fill="#ffffff" stroke="#1f60c4" stroke-width="1"/>
+<text x="313" y="341" font-size="13" fill="#1f2328">Origem: 10.0.4.0/24  ×</text>
+<rect x="489" y="323" width="192" height="26" rx="13" fill="#ffffff" stroke="#1f60c4" stroke-width="1"/>
+<text x="499" y="341" font-size="13" fill="#1f2328">Serviço: dns · UDP/53  ×</text>
+<text x="1166" y="342" font-size="16" fill="#1f2328" font-weight="bold" text-anchor="end">0 de 4.350 alertas</text>
+<rect x="20" y="366" width="1160" height="92" rx="4" fill="#ffffff" stroke="#c4cad1" stroke-width="1"/>
+<text x="600" y="398" font-size="15" fill="#1f2328" font-weight="bold" text-anchor="middle">Nenhum alerta com estes critérios no período.</text>
+<text x="600" y="420" font-size="13" fill="#57606a" text-anchor="middle">Sem o critério “Serviço: dns · UDP/53” restam 312 alertas.</text>
+<rect x="470" y="428" width="260" height="26" rx="4" fill="#1f60c4" stroke="#1f60c4" stroke-width="1"/>
+<text x="600.0" y="446.0" font-size="12" fill="#ffffff" font-weight="bold" text-anchor="middle">Remover “Serviço: dns · UDP/53”</text>
+<circle cx="1180" cy="314" r="11" fill="#6f42c1" stroke="#ffffff" stroke-width="2"/>
+<text x="1180" y="318.5" font-size="12" fill="#ffffff" font-weight="bold" text-anchor="middle">2</text>
+<text x="20" y="480" font-size="12" fill="#57606a">A lista de valores de cada critério só oferece valores presentes nos alertas da janela (prevenção ativa).</text>
+<text x="20" y="514" font-size="14" fill="#1f2328" font-weight="bold">F01.1C — Carregamento de consulta longa (ex.: janela de 7 dias)</text>
+<rect x="20" y="524" width="560" height="130" rx="4" fill="#ffffff" stroke="#c4cad1" stroke-width="1"/>
+<text x="32" y="546" font-size="13" fill="#1f2328" font-weight="bold">Classificação ao longo do tempo · últimos 7 dias</text>
+<rect x="32" y="560" width="536" height="6" rx="3" fill="#eaeef2" stroke="#eaeef2" stroke-width="1"/>
+<rect x="32" y="560" width="200" height="6" rx="3" fill="#1f60c4" stroke="#1f60c4" stroke-width="1"/>
+<text x="300" y="604" font-size="13" fill="#57606a" text-anchor="middle">Carregando… (a consulta pode levar alguns segundos)</text>
+<rect x="600" y="524" width="580" height="130" rx="4" fill="#ffffff" stroke="#c4cad1" stroke-width="1"/>
+<text x="612" y="546" font-size="13" fill="#1f2328" font-weight="bold">Alertas da restrição</text>
+<rect x="612" y="562" width="556" height="18" rx="2" fill="#eaeef2" stroke="#eaeef2" stroke-width="1"/>
+<rect x="612" y="590" width="556" height="18" rx="2" fill="#eaeef2" stroke="#eaeef2" stroke-width="1"/>
+<text x="612" y="646" font-size="12" fill="#57606a">Linhas-esqueleto enquanto carrega: o painel nunca aparece vazio como se não houvesse alertas.</text>
+<circle cx="1180" cy="524" r="11" fill="#6f42c1" stroke="#ffffff" stroke-width="2"/>
+<text x="1180" y="528.5" font-size="12" fill="#ffffff" font-weight="bold" text-anchor="middle">3</text>
+<text x="20" y="688" font-size="12" fill="#57606a">Wireframe de média fidelidade · valores ilustrativos dos cenários CI01/CI02 (Entrega 09), não medidos · ● n = marcador de anotação, explicado em docs/11_figma.md</text>
+</svg>

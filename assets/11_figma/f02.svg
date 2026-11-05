@@ -1,0 +1,120 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="930" viewBox="0 0 1200 930" font-family="Arial, Helvetica, sans-serif" role="img" aria-label="F02.1 — D05 Comparação de modelos e troca">
+<title>F02.1 — D05 Comparação de modelos e troca</title>
+<rect width="1200" height="930" fill="#ffffff"/>
+<text x="20" y="28" font-size="17" fill="#1f2328" font-weight="bold">F02.1 — D05 Comparação de modelos e troca — candidato aprovado</text>
+<text x="1180" y="28" font-size="13" fill="#57606a" text-anchor="end">Fluxo de Vanessa (P02/T01) · responsável: Marcela Nalesso</text>
+<rect x="10" y="44" width="1180" height="40" rx="0" fill="#eaeef2" stroke="#c4cad1" stroke-width="1"/>
+<text x="24" y="69" font-size="14" fill="#1f2328">Dashboards › netanomaly › D05 Comparação de modelos e troca</text>
+<rect x="1022" y="49" width="150" height="30" rx="4" fill="#ffffff" stroke="#8c959f" stroke-width="1"/>
+<text x="1097.0" y="69.0" font-size="13" fill="#1f2328" text-anchor="middle">Últimos 7 dias ▾</text>
+<rect x="824" y="49" width="190" height="30" rx="4" fill="#ffffff" stroke="#8c959f" stroke-width="1"/>
+<text x="919.0" y="69.0" font-size="13" fill="#1f2328" text-anchor="middle">D06 Histórico de trocas</text>
+<rect x="20" y="96" width="520" height="34" rx="4" fill="#f6f8fa" stroke="#8c959f" stroke-width="1.5"/>
+<text x="34" y="118" font-size="13" fill="#1f2328">Modelo ativo: SVM v7 · em produção desde 27/10 14:02 (há 3 dias)</text>
+<rect x="552" y="96" width="628" height="34" rx="4" fill="#dcf3e0" stroke="#2e7d32" stroke-width="1.5"/>
+<text x="566" y="118" font-size="13" fill="#1b5e20" font-weight="bold">● Coleta ativa · último dado 09:12 · atualização automática a cada 1 min</text>
+<rect x="20" y="142" width="380" height="200" rx="4" fill="#ffffff" stroke="#c4cad1" stroke-width="1"/>
+<text x="32" y="164" font-size="13" fill="#1f2328" font-weight="bold">Alertas não confirmados pelos analistas ⓘ</text>
+<text x="32" y="208" font-size="36" fill="#1f2328" font-weight="bold">41%</text>
+<text x="120" y="192" font-size="13" fill="#57606a">dos alertas avaliados na última semana</text>
+<text x="120" y="210" font-size="13" fill="#1f2328" font-weight="bold">antes da troca de 27/10: 12%</text>
+<line x1="40" y1="312" x2="384" y2="312" stroke="#8c959f" stroke-width="1"/>
+<polyline fill="none" stroke="#1f60c4" stroke-width="2" points="40,306 80,304 120,307 160,305 200,303 240,266 280,258 320,254 360,256"/>
+<line x1="222" y1="238" x2="222" y2="312" stroke="#6f42c1" stroke-width="1.5" stroke-dasharray="5 3"/>
+<text x="228" y="250" font-size="12" fill="#4b2a8a">troca 27/10 (v6 → v7)</text>
+<text x="32" y="332" font-size="12" fill="#57606a">Vereditos “benigno” ÷ alertas com veredito</text>
+<circle cx="400" cy="142" r="11" fill="#6f42c1" stroke="#ffffff" stroke-width="2"/>
+<text x="400" y="146.5" font-size="12" fill="#ffffff" font-weight="bold" text-anchor="middle">1</text>
+<rect x="412" y="142" width="380" height="200" rx="4" fill="#ffffff" stroke="#c4cad1" stroke-width="1"/>
+<text x="424" y="164" font-size="13" fill="#1f2328" font-weight="bold">Saúde do pipeline</text>
+<text x="424" y="194" font-size="13" fill="#57606a">Coleta</text>
+<rect x="540" y="179" width="64" height="22" rx="3" fill="#dcf3e0" stroke="#2e7d32" stroke-width="1"/>
+<text x="572.0" y="194.5" font-size="13" fill="#1b5e20" font-weight="bold" text-anchor="middle">ativa</text>
+<text x="424" y="228" font-size="13" fill="#57606a">Atraso</text>
+<text x="540" y="228" font-size="13" fill="#1f2328" font-weight="bold">≈ 40 s (normal)</text>
+<text x="424" y="262" font-size="13" fill="#57606a">Carga do equipamento</text>
+<text x="600" y="262" font-size="13" fill="#1f2328" font-weight="bold">62%</text>
+<rect x="424" y="274" width="340" height="16" rx="2" fill="#eaeef2" stroke="#8c959f" stroke-width="1"/>
+<rect x="424" y="274" width="210.8" height="16" rx="2" fill="#8fb3e8" stroke="#1f60c4" stroke-width="1"/>
+<line x1="713.0" y1="268" x2="713.0" y2="296" stroke="#b26a00" stroke-width="2"/>
+<text x="713.0" y="312" font-size="12" fill="#6e3f00" text-anchor="middle">limite de operação</text>
+<text x="424" y="332" font-size="12" fill="#57606a">Coleta e capacidade normais: o problema não é de infraestrutura.</text>
+<circle cx="792" cy="142" r="11" fill="#6f42c1" stroke="#ffffff" stroke-width="2"/>
+<text x="792" y="146.5" font-size="12" fill="#ffffff" font-weight="bold" text-anchor="middle">2</text>
+<rect x="804" y="142" width="376" height="200" rx="4" fill="#ffffff" stroke="#c4cad1" stroke-width="1"/>
+<text x="816" y="164" font-size="13" fill="#1f2328" font-weight="bold">O que mudou recentemente</text>
+<text x="816" y="192" font-size="13" fill="#1f2328">27/10 14:02 · promoção</text>
+<text x="816" y="212" font-size="13" fill="#1f2328">SVM v6 → SVM v7 · por Vanessa</text>
+<text x="816" y="232" font-size="13" fill="#1f2328">Motivo: retreino com o tráfego de setembro</text>
+<text x="816" y="266" font-size="13" fill="#1f2328" font-weight="bold">Não houve outra troca no período.</text>
+<text x="816" y="298" font-size="13" fill="#1f60c4">Ver histórico completo (D06) ›</text>
+<circle cx="1180" cy="142" r="11" fill="#6f42c1" stroke="#ffffff" stroke-width="2"/>
+<text x="1180" y="146.5" font-size="12" fill="#ffffff" font-weight="bold" text-anchor="middle">3</text>
+<rect x="20" y="356" width="1160" height="330" rx="4" fill="#ffffff" stroke="#57606a" stroke-width="1.5"/>
+<text x="32" y="382" font-size="16" fill="#1f2328" font-weight="bold">Comparação: candidato SVM v8 × em produção SVM v7</text>
+<text x="32" y="402" font-size="12" fill="#57606a">Resultado do portão de promoção de ‹data/hora da avaliação› · conjunto de teste do laboratório</text>
+<rect x="860" y="368" width="130" height="22" rx="3" fill="#dcf3e0" stroke="#2e7d32" stroke-width="1"/>
+<text x="925.0" y="383.5" font-size="14" fill="#1b5e20" font-weight="bold" text-anchor="middle">✓ APROVADO</text>
+<circle cx="1180" cy="356" r="11" fill="#6f42c1" stroke="#ffffff" stroke-width="2"/>
+<text x="1180" y="360.5" font-size="12" fill="#ffffff" font-weight="bold" text-anchor="middle">4</text>
+<rect x="32" y="414" width="1136" height="34" rx="4" fill="#dcf3e0" stroke="#2e7d32" stroke-width="1.5"/>
+<text x="44" y="436" font-size="13" fill="#1b5e20" font-weight="bold">Cenário decisivo: benigno — a fração do tráfego benigno marcada como ataque (fpr) cai de 0,21 para 0,04; o máximo exigido é 0,05.</text>
+<rect x="33" y="460" width="1134" height="28" rx="0" fill="#f6f8fa" stroke="#f6f8fa" stroke-width="1"/>
+<text x="44" y="479" font-size="13" fill="#1f2328" font-weight="bold">Cenário</text>
+<text x="170" y="479" font-size="13" fill="#1f2328" font-weight="bold">Métrica (o que significa para os analistas)</text>
+<text x="560" y="479" font-size="13" fill="#1f2328" font-weight="bold">Em produção v7</text>
+<text x="680" y="479" font-size="13" fill="#1f2328" font-weight="bold">Candidato v8</text>
+<text x="800" y="479" font-size="13" fill="#1f2328" font-weight="bold">Exigido</text>
+<text x="880" y="479" font-size="13" fill="#1f2328" font-weight="bold">Diferença</text>
+<text x="1030" y="479" font-size="13" fill="#1f2328" font-weight="bold">Situação</text>
+<rect x="33" y="490" width="1134" height="44" rx="0" fill="#f0fbf2" stroke="#2e7d32" stroke-width="1"/>
+<text x="44" y="508" font-size="13" fill="#1f2328" font-weight="bold">benigno</text>
+<text x="170" y="508" font-size="13" fill="#1f2328" font-weight="bold">fpr ⓘ</text>
+<text x="170" y="526" font-size="12" fill="#57606a">fração do benigno marcada como ataque; menor = menos alertas falsos</text>
+<text x="560" y="508" font-size="13" fill="#1f2328">0,21</text>
+<text x="680" y="508" font-size="13" fill="#1f2328" font-weight="bold">0,04</text>
+<text x="800" y="508" font-size="13" fill="#1f2328">máx. 0,05</text>
+<text x="880" y="508" font-size="13" fill="#1f2328">−0,17 (melhor)</text>
+<text x="1030" y="508" font-size="13" fill="#1b5e20" font-weight="bold">✓ atende · decisivo</text>
+<line x1="33" y1="534" x2="1167" y2="534" stroke="#eaeef2" stroke-width="1"/>
+<text x="44" y="554" font-size="13" fill="#1f2328">brute_force</text>
+<text x="170" y="554" font-size="13" fill="#1f2328" font-weight="bold">recall ⓘ</text>
+<text x="170" y="572" font-size="12" fill="#57606a">fração dos ataques capturados; menor = ataques passam</text>
+<text x="560" y="554" font-size="13" fill="#57606a">‹v›</text>
+<text x="680" y="554" font-size="13" fill="#57606a">‹v›</text>
+<text x="800" y="554" font-size="13" fill="#1f2328">mín. ‹v›</text>
+<text x="880" y="554" font-size="13" fill="#6e3f00">pior: 2 ataques do teste</text>
+<text x="1030" y="554" font-size="13" fill="#1b5e20">✓ atende</text>
+<line x1="33" y1="580" x2="1167" y2="580" stroke="#eaeef2" stroke-width="1"/>
+<text x="44" y="600" font-size="13" fill="#1f2328">agregado</text>
+<text x="170" y="600" font-size="13" fill="#1f2328" font-weight="bold">precisão ⓘ</text>
+<text x="170" y="618" font-size="12" fill="#57606a">dos alertas emitidos, quantos são ataque de fato</text>
+<text x="560" y="600" font-size="13" fill="#57606a">‹v›</text>
+<text x="680" y="600" font-size="13" fill="#57606a">‹v›</text>
+<text x="800" y="600" font-size="13" fill="#1f2328">mín. ‹v›</text>
+<text x="880" y="600" font-size="13" fill="#1f2328">‹v›</text>
+<text x="1030" y="600" font-size="13" fill="#1b5e20">✓ atende</text>
+<line x1="33" y1="626" x2="1167" y2="626" stroke="#eaeef2" stroke-width="1"/>
+<text x="44" y="646" font-size="12" fill="#57606a">‹v› = valor lido do portão de promoção do pipeline; o wireframe só fixa os números citados em CI02.</text>
+<text x="44" y="664" font-size="12" fill="#57606a">ⓘ em cada métrica abre a explicação de uma frase; a mesma explicação aparece em D01/D02.</text>
+<circle cx="152" cy="474" r="11" fill="#6f42c1" stroke="#ffffff" stroke-width="2"/>
+<text x="152" y="478.5" font-size="12" fill="#ffffff" font-weight="bold" text-anchor="middle">5</text>
+<rect x="20" y="700" width="760" height="170" rx="4" fill="#f6f8fa" stroke="#57606a" stroke-width="1.5"/>
+<text x="32" y="726" font-size="15" fill="#1f2328" font-weight="bold">O que muda para quem investiga se o v8 for promovido (estimativa)</text>
+<text x="32" y="756" font-size="13" fill="#1f2328">• ≈ 35% menos alertas por dia chegando aos analistas</text>
+<text x="32" y="780" font-size="13" fill="#1f2328">• Em contrapartida: 2 ataques de força bruta do conjunto de teste deixariam de ser sinalizados</text>
+<text x="32" y="804" font-size="13" fill="#1f2328">• Carga prevista do equipamento: 58% (hoje 62%) — abaixo do limite de operação</text>
+<text x="32" y="828" font-size="13" fill="#1f2328">• Os analistas serão avisados de que o modelo ativo mudou e desde quando</text>
+<circle cx="780" cy="700" r="11" fill="#6f42c1" stroke="#ffffff" stroke-width="2"/>
+<text x="780" y="704.5" font-size="12" fill="#ffffff" font-weight="bold" text-anchor="middle">6</text>
+<rect x="792" y="700" width="388" height="170" rx="4" fill="#ffffff" stroke="#c4cad1" stroke-width="1"/>
+<rect x="808" y="720" width="356" height="40" rx="4" fill="#1f60c4" stroke="#1f60c4" stroke-width="1"/>
+<text x="986.0" y="745.0" font-size="14" fill="#ffffff" font-weight="bold" text-anchor="middle">Promover SVM v8 para produção…</text>
+<text x="808" y="790" font-size="12" fill="#57606a">Pede resumo, motivo e confirmação;</text>
+<text x="808" y="807" font-size="12" fill="#57606a">a troca pode ser revertida em D05 ou D06.</text>
+<text x="808" y="824" font-size="12" fill="#57606a">No protótipo a troca é simulada: a execução</text>
+<text x="808" y="841" font-size="12" fill="#57606a">real continua na ferramenta de linha de comando.</text>
+<circle cx="1180" cy="700" r="11" fill="#6f42c1" stroke="#ffffff" stroke-width="2"/>
+<text x="1180" y="704.5" font-size="12" fill="#ffffff" font-weight="bold" text-anchor="middle">7</text>
+<text x="20" y="918" font-size="12" fill="#57606a">Wireframe de média fidelidade · valores ilustrativos dos cenários CI01/CI02 (Entrega 09), não medidos · ● n = marcador de anotação, explicado em docs/11_figma.md</text>
+</svg>

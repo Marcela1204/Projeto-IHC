@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="790" viewBox="0 0 1200 790" font-family="Arial, Helvetica, sans-serif" role="img" aria-label="F01.3 — D04 Registro do veredito">
+<title>F01.3 — D04 Registro do veredito</title>
+<rect width="1200" height="790" fill="#ffffff"/>
+<text x="20" y="28" font-size="17" fill="#1f2328" font-weight="bold">F01.3 — D04 Registro do veredito (com estados F01.3A e F01.3E)</text>
+<text x="1180" y="28" font-size="13" fill="#57606a" text-anchor="end">Fluxo de Thiago (P01/T02) · responsável: Lucas Kerr do Amaral</text>
+<rect x="10" y="44" width="1180" height="40" rx="0" fill="#eaeef2" stroke="#c4cad1" stroke-width="1"/>
+<text x="24" y="69" font-size="14" fill="#1f2328">netanomaly › D03 Resultado final › D04 Registrar veredito</text>
+<rect x="982" y="49" width="190" height="30" rx="4" fill="#ffffff" stroke="#8c959f" stroke-width="1"/>
+<text x="1077.0" y="69.0" font-size="13" fill="#1f2328" text-anchor="middle">Cancelar e voltar a D03</text>
+<text x="24" y="118" font-size="13" fill="#57606a">Passo 1 de 2 · Veredito   →   Passo 2 de 2 · Encaminhamento</text>
+<rect x="20" y="132" width="720" height="100" rx="4" fill="#ffffff" stroke="#c4cad1" stroke-width="1"/>
+<text x="36" y="156" font-size="14" fill="#1f2328" font-weight="bold">Alertas abrangidos</text>
+<text x="36" y="180" font-size="13" fill="#1f2328">312 alertas · origem 10.0.4.0/24 → portal interno do atendimento</text>
+<text x="36" y="200" font-size="13" fill="#1f2328">período 19:00–21:00 · dados congelados desde 20:47</text>
+<text x="36" y="222" font-size="13" fill="#1f60c4">Alterar o conjunto (volta à restrição em D03)</text>
+<circle cx="740" cy="132" r="11" fill="#6f42c1" stroke="#ffffff" stroke-width="2"/>
+<text x="740" y="136.5" font-size="12" fill="#ffffff" font-weight="bold" text-anchor="middle">1</text>
+<rect x="20" y="240" width="720" height="98" rx="4" fill="#ffffff" stroke="#c4cad1" stroke-width="1"/>
+<text x="36" y="264" font-size="14" fill="#1f2328" font-weight="bold">Decisão (obrigatória)</text>
+<circle cx="45" cy="290" r="8" fill="#ffffff" stroke="#57606a" stroke-width="1.5"/>
+<circle cx="45" cy="290" r="4.5" fill="#1f60c4"/>
+<rect x="60" y="279" width="100" height="22" rx="3" fill="#ffe1e0" stroke="#c62828" stroke-width="1"/>
+<text x="110.0" y="294.5" font-size="13" fill="#8f1a1a" font-weight="bold" text-anchor="middle">ataque</text>
+<circle cx="205" cy="290" r="8" fill="#ffffff" stroke="#57606a" stroke-width="1.5"/>
+<rect x="220" y="279" width="100" height="22" rx="3" fill="#dcf3e0" stroke="#2e7d32" stroke-width="1"/>
+<text x="270.0" y="294.5" font-size="13" fill="#1b5e20" font-weight="bold" text-anchor="middle">benigno</text>
+<circle cx="365" cy="290" r="8" fill="#ffffff" stroke="#57606a" stroke-width="1.5"/>
+<rect x="380" y="279" width="100" height="22" rx="3" fill="#eceff3" stroke="#6e7781" stroke-width="1"/>
+<text x="430.0" y="294.5" font-size="13" fill="#32383f" font-weight="bold" text-anchor="middle">indefinido</text>
+<text x="36" y="326" font-size="12" fill="#57606a">Nenhuma opção vem marcada por padrão (aqui Thiago já escolheu “ataque”). Mesmos nomes da classificação.</text>
+<circle cx="740" cy="240" r="11" fill="#6f42c1" stroke="#ffffff" stroke-width="2"/>
+<text x="740" y="244.5" font-size="12" fill="#ffffff" font-weight="bold" text-anchor="middle">2</text>
+<rect x="20" y="350" width="720" height="108" rx="4" fill="#fff8e1" stroke="#b26a00" stroke-width="2"/>
+<text x="36" y="374" font-size="13" fill="#6e3f00" font-weight="bold">⚠ 2 destes 312 alertas têm incerteza alta (a classificação está perto de mudar).</text>
+<text x="36" y="396" font-size="13" fill="#6e3f00">Quer incluí-los como ataque mesmo assim ou marcá-los como indefinidos?</text>
+<rect x="36" y="410" width="250" height="32" rx="4" fill="#1f60c4" stroke="#1f60c4" stroke-width="1"/>
+<text x="161.0" y="431.0" font-size="13" fill="#ffffff" font-weight="bold" text-anchor="middle">Marcar os 2 como indefinidos</text>
+<rect x="296" y="410" width="236" height="32" rx="4" fill="#ffffff" stroke="#8c959f" stroke-width="1"/>
+<text x="414.0" y="431.0" font-size="13" fill="#1f2328" text-anchor="middle">Incluir como ataque mesmo assim</text>
+<text x="548" y="432" font-size="13" fill="#1f60c4">Ver os 2 alertas ›</text>
+<circle cx="740" cy="350" r="11" fill="#6f42c1" stroke="#ffffff" stroke-width="2"/>
+<text x="740" y="354.5" font-size="12" fill="#ffffff" font-weight="bold" text-anchor="middle">3</text>
+<rect x="20" y="470" width="720" height="150" rx="4" fill="#ffffff" stroke="#c4cad1" stroke-width="1"/>
+<text x="36" y="494" font-size="14" fill="#1f2328" font-weight="bold">Justificativa (obrigatória) — é o que o próximo turno e a infraestrutura vão ler</text>
+<rect x="36" y="506" width="688" height="98" rx="4" fill="#ffffff" stroke="#57606a" stroke-width="1"/>
+<text x="46" y="526" font-size="13" fill="#1f2328">Dados consultados: 10.0.4.0/24 → portal interno, web TCP/443, 19:00–21:00;</text>
+<text x="46" y="545" font-size="13" fill="#1f2328">origem sem histórico com o destino em 7 dias; volume &gt; 99% do habitual.</text>
+<text x="46" y="564" font-size="13" fill="#1f2328">Base da decisão: varredura seguida de volume anormal contra o portal, origem</text>
+<text x="46" y="583" font-size="13" fill="#1f2328">sem histórico com esse destino.|</text>
+<circle cx="740" cy="470" r="11" fill="#6f42c1" stroke="#ffffff" stroke-width="2"/>
+<text x="740" y="474.5" font-size="12" fill="#ffffff" font-weight="bold" text-anchor="middle">4</text>
+<text x="20" y="646" font-size="13" fill="#57606a" font-weight="bold">Estado F01.3E — tentativa de registrar sem justificativa:</text>
+<rect x="20" y="654" width="720" height="64" rx="4" fill="#ffebe9" stroke="#c62828" stroke-width="2"/>
+<text x="36" y="678" font-size="13" fill="#8f1a1a" font-weight="bold">✕ Diga em uma frase com base em quê decidiu.</text>
+<text x="36" y="700" font-size="13" fill="#8f1a1a">A justificativa é o que o próximo turno vai ler. O que você escreveu nos outros campos foi mantido.</text>
+<circle cx="740" cy="654" r="11" fill="#6f42c1" stroke="#ffffff" stroke-width="2"/>
+<text x="740" y="658.5" font-size="12" fill="#ffffff" font-weight="bold" text-anchor="middle">5</text>
+<rect x="760" y="132" width="420" height="426" rx="4" fill="#f6f8fa" stroke="#57606a" stroke-width="1.5"/>
+<text x="776" y="158" font-size="15" fill="#1f2328" font-weight="bold">Resumo do que será registrado</text>
+<text x="776" y="176" font-size="12" fill="#57606a">(atualizado após “Marcar os 2 como indefinidos”)</text>
+<text x="776" y="202" font-size="13" fill="#1f2328">• 310 alertas como ataque</text>
+<text x="776" y="226" font-size="13" fill="#1f2328">• 2 alertas como indefinido (incerteza alta)</text>
+<text x="776" y="250" font-size="13" fill="#1f2328">• origem 10.0.4.0/24</text>
+<text x="776" y="274" font-size="13" fill="#1f2328">• destino portal interno do atendimento</text>
+<text x="776" y="298" font-size="13" fill="#1f2328">• período 19:00–21:00</text>
+<text x="776" y="322" font-size="13" fill="#1f2328">• autor: Thiago (sessão atual)</text>
+<text x="776" y="346" font-size="13" fill="#1f2328">• horário: ao confirmar</text>
+<text x="776" y="384" font-size="12" fill="#57606a">Os vereditos “benigno” passam a compor o</text>
+<text x="776" y="400" font-size="12" fill="#57606a">indicador “alertas não confirmados” visto pela</text>
+<text x="776" y="416" font-size="12" fill="#57606a">administração do modelo (D05).</text>
+<rect x="776" y="438" width="388" height="38" rx="4" fill="#1f60c4" stroke="#1f60c4" stroke-width="1"/>
+<text x="970.0" y="462.0" font-size="13" fill="#ffffff" font-weight="bold" text-anchor="middle">Registrar veredito (310 ataque · 2 indefinido)</text>
+<rect x="776" y="486" width="388" height="34" rx="4" fill="#ffffff" stroke="#8c959f" stroke-width="1"/>
+<text x="970.0" y="508.0" font-size="13" fill="#1f2328" text-anchor="middle">Cancelar</text>
+<text x="776" y="542" font-size="12" fill="#57606a">Depois de registrar, ainda é possível desfazer.</text>
+<circle cx="1180" cy="132" r="11" fill="#6f42c1" stroke="#ffffff" stroke-width="2"/>
+<text x="1180" y="136.5" font-size="12" fill="#ffffff" font-weight="bold" text-anchor="middle">6</text>
+<text x="20" y="778" font-size="12" fill="#57606a">Wireframe de média fidelidade · valores ilustrativos dos cenários CI01/CI02 (Entrega 09), não medidos · ● n = marcador de anotação, explicado em docs/11_figma.md</text>
+</svg>

@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="730" viewBox="0 0 1200 730" font-family="Arial, Helvetica, sans-serif" role="img" aria-label="F02.2 — Confirmação da troca de modelo">
+<title>F02.2 — Confirmação da troca de modelo</title>
+<rect width="1200" height="730" fill="#ffffff"/>
+<text x="20" y="28" font-size="17" fill="#1f2328" font-weight="bold">F02.2 — D05 Confirmação da troca — caminho principal (F02.2) e carga acima do limite (F02.2A)</text>
+<text x="1180" y="28" font-size="13" fill="#57606a" text-anchor="end">Fluxo de Vanessa (P02/T01) · responsável: Marcela Nalesso</text>
+<rect x="10" y="44" width="1180" height="650" rx="0" fill="#d5d9de" stroke="#d5d9de" stroke-width="1"/>
+<text x="24" y="66" font-size="12" fill="#32383f" font-style="italic">(D05 escurecido ao fundo: a confirmação é modal e não pode ser ignorada)</text>
+<rect x="30" y="80" width="560" height="600" rx="6" fill="#ffffff" stroke="#57606a" stroke-width="1.5"/>
+<text x="50" y="112" font-size="17" fill="#1f2328" font-weight="bold">Promover SVM v8 para produção?</text>
+<text x="570" y="112" font-size="16" fill="#57606a" text-anchor="end">✕</text>
+<text x="50" y="146" font-size="14" fill="#1f2328" font-weight="bold">O que vai mudar</text>
+<text x="50" y="170" font-size="13" fill="#1f2328">• O SVM v8 vai substituir o SVM v7 em produção.</text>
+<text x="50" y="192" font-size="13" fill="#1f2328">• ≈ 35% menos alertas por dia para os analistas.</text>
+<text x="50" y="214" font-size="13" fill="#1f2328">• Pequena perda de detecção: 2 ataques de força bruta</text>
+<text x="50" y="236" font-size="13" fill="#1f2328">   do conjunto de teste deixariam de ser sinalizados.</text>
+<text x="50" y="258" font-size="13" fill="#1f2328">• Os analistas serão avisados da troca e do horário.</text>
+<text x="50" y="280" font-size="13" fill="#1f2328">• Você poderá voltar ao v7 depois (D05 ou D06).</text>
+<text x="50" y="322" font-size="13" fill="#1f2328">Carga prevista do equipamento: 58% (hoje 62%).</text>
+<text x="50" y="356" font-size="14" fill="#1f2328" font-weight="bold">Motivo da troca (obrigatório)</text>
+<rect x="50" y="366" width="520" height="66" rx="4" fill="#ffffff" stroke="#57606a" stroke-width="1"/>
+<text x="60" y="388" font-size="13" fill="#1f2328">Reduzir alertas falsos no tráfego benigno; janela</text>
+<text x="60" y="408" font-size="13" fill="#1f2328">autorizada pelo coordenador.|</text>
+<text x="50" y="450" font-size="12" fill="#57606a">Fica registrado no histórico (D06) com seu nome e o horário.</text>
+<rect x="50" y="468" width="200" height="38" rx="4" fill="#ffffff" stroke="#8c959f" stroke-width="1"/>
+<text x="150.0" y="492.0" font-size="13" fill="#1f2328" text-anchor="middle">Cancelar</text>
+<rect x="370" y="468" width="200" height="38" rx="4" fill="#1f60c4" stroke="#1f60c4" stroke-width="1"/>
+<text x="470.0" y="492.0" font-size="13" fill="#ffffff" font-weight="bold" text-anchor="middle">Confirmar troca</text>
+<circle cx="590" cy="80" r="11" fill="#6f42c1" stroke="#ffffff" stroke-width="2"/>
+<text x="590" y="84.5" font-size="12" fill="#ffffff" font-weight="bold" text-anchor="middle">1</text>
+<text x="50" y="528" font-size="12" fill="#57606a">Com o motivo vazio, “Confirmar troca” fica indisponível</text>
+<text x="50" y="544" font-size="12" fill="#57606a">e o campo mostra: “Informe o motivo para confirmar.”</text>
+<rect x="610" y="80" width="560" height="600" rx="6" fill="#ffffff" stroke="#57606a" stroke-width="1.5"/>
+<text x="630" y="112" font-size="17" fill="#1f2328" font-weight="bold">Promover SVM v8 para produção?  (F02.2A)</text>
+<text x="1150" y="112" font-size="16" fill="#57606a" text-anchor="end">✕</text>
+<text x="630" y="146" font-size="14" fill="#1f2328" font-weight="bold">O que vai mudar</text>
+<text x="630" y="170" font-size="13" fill="#1f2328">• O SVM v8 vai substituir o SVM v7 em produção.</text>
+<text x="630" y="192" font-size="13" fill="#1f2328">• ≈ 35% menos alertas por dia para os analistas.</text>
+<text x="630" y="214" font-size="13" fill="#1f2328">• Pequena perda de detecção: 2 ataques de força bruta</text>
+<text x="630" y="236" font-size="13" fill="#1f2328">   do conjunto de teste deixariam de ser sinalizados.</text>
+<text x="630" y="258" font-size="13" fill="#1f2328">• Os analistas serão avisados da troca e do horário.</text>
+<text x="630" y="280" font-size="13" fill="#1f2328">• Você poderá voltar ao v7 depois (D05 ou D06).</text>
+<rect x="630" y="308" width="520" height="120" rx="4" fill="#fff8e1" stroke="#b26a00" stroke-width="2"/>
+<text x="644" y="332" font-size="14" fill="#6e3f00" font-weight="bold">⚠ Carga prevista do equipamento: 91%,</text>
+<text x="644" y="352" font-size="14" fill="#6e3f00" font-weight="bold">acima do limite de operação.</text>
+<text x="644" y="376" font-size="13" fill="#6e3f00">A classificação pode atrasar e os painéis dos analistas</text>
+<text x="644" y="394" font-size="13" fill="#6e3f00">podem mostrar dados com atraso maior.</text>
+<text x="644" y="412" font-size="13" fill="#6e3f00" font-weight="bold">Quer continuar mesmo assim?</text>
+<text x="630" y="458" font-size="14" fill="#1f2328" font-weight="bold">Motivo da troca (obrigatório)</text>
+<rect x="630" y="468" width="520" height="66" rx="4" fill="#ffffff" stroke="#57606a" stroke-width="1"/>
+<text x="640" y="490" font-size="13" fill="#1f2328">Reduzir alertas falsos no tráfego benigno; janela</text>
+<text x="640" y="510" font-size="13" fill="#1f2328">autorizada pelo coordenador.|</text>
+<text x="630" y="552" font-size="12" fill="#57606a">Fica registrado no histórico (D06) com seu nome e o horário.</text>
+<rect x="630" y="570" width="200" height="38" rx="4" fill="#1f60c4" stroke="#1f60c4" stroke-width="1"/>
+<text x="730.0" y="594.0" font-size="13" fill="#ffffff" font-weight="bold" text-anchor="middle">Cancelar</text>
+<rect x="910" y="570" width="240" height="38" rx="4" fill="#ffffff" stroke="#8c959f" stroke-width="1"/>
+<text x="1030.0" y="594.0" font-size="13" fill="#1f2328" text-anchor="middle">Continuar mesmo assim</text>
+<circle cx="1170" cy="80" r="11" fill="#6f42c1" stroke="#ffffff" stroke-width="2"/>
+<text x="1170" y="84.5" font-size="12" fill="#ffffff" font-weight="bold" text-anchor="middle">2</text>
+<text x="630" y="630" font-size="12" fill="#57606a">Variante hipotética (CI02 [10]): a mesma troca com carga acima do limite.</text>
+<text x="630" y="646" font-size="12" fill="#57606a">A opção segura (Cancelar) fica em destaque.</text>
+<text x="20" y="718" font-size="12" fill="#57606a">Wireframe de média fidelidade · valores ilustrativos dos cenários CI01/CI02 (Entrega 09), não medidos · ● n = marcador de anotação, explicado em docs/11_figma.md</text>
+</svg>

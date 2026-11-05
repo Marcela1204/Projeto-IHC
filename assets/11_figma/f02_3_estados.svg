@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="890" viewBox="0 0 1200 890" font-family="Arial, Helvetica, sans-serif" role="img" aria-label="F02.3 — Troca concluída, aviso aos analistas, candidato reprovado e reversão">
+<title>F02.3 — Troca concluída, aviso aos analistas, candidato reprovado e reversão</title>
+<rect width="1200" height="890" fill="#ffffff"/>
+<text x="20" y="28" font-size="17" fill="#1f2328" font-weight="bold">F02.3 — Estados da troca — concluída, aviso no D03, candidato reprovado, reversão</text>
+<text x="1180" y="28" font-size="13" fill="#57606a" text-anchor="end">Fluxo de Vanessa (P02/T01) · responsável: Marcela Nalesso</text>
+<text x="20" y="64" font-size="14" fill="#1f2328" font-weight="bold">F02.3 — Troca concluída (fechamento do diálogo em D05)</text>
+<rect x="20" y="74" width="1160" height="44" rx="4" fill="#dcf3e0" stroke="#2e7d32" stroke-width="2"/>
+<text x="36" y="102" font-size="14" fill="#1b5e20" font-weight="bold">✓ O SVM v8 está em produção desde 14:10, colocado por Vanessa. Os analistas foram avisados.</text>
+<rect x="1010" y="80" width="160" height="32" rx="4" fill="#ffffff" stroke="#8c959f" stroke-width="1"/>
+<text x="1090.0" y="101.0" font-size="13" fill="#1f2328" text-anchor="middle">Voltar ao v7…</text>
+<rect x="20" y="128" width="560" height="34" rx="4" fill="#f6f8fa" stroke="#8c959f" stroke-width="1.5"/>
+<text x="34" y="150" font-size="13" fill="#1f2328">Modelo ativo: SVM v8 · em produção desde 30/10 14:10 (há minutos)</text>
+<text x="600" y="150" font-size="12" fill="#57606a">Próximo passo sugerido: rever “alertas não confirmados” a partir da troca (amanhã).</text>
+<circle cx="1180" cy="74" r="11" fill="#6f42c1" stroke="#ffffff" stroke-width="2"/>
+<text x="1180" y="78.5" font-size="12" fill="#ffffff" font-weight="bold" text-anchor="middle">1</text>
+<text x="20" y="194" font-size="14" fill="#1f2328" font-weight="bold">F02.3T — O que Thiago vê em D03 depois da troca (ponto de contato PF03)</text>
+<rect x="20" y="204" width="1160" height="40" rx="4" fill="#ddf4ff" stroke="#1f60c4" stroke-width="2"/>
+<text x="36" y="229" font-size="13" fill="#0b3d91" font-weight="bold">ⓘ O modelo ativo mudou: agora é o SVM v8, em produção desde 14:10 (antes: SVM v7). Classificações a partir de 14:10 vêm do novo modelo.</text>
+<rect x="20" y="252" width="1160" height="100" rx="4" fill="#ffffff" stroke="#c4cad1" stroke-width="1"/>
+<text x="32" y="272" font-size="13" fill="#1f2328" font-weight="bold">Classificação ao longo do tempo (D03)</text>
+<line x1="40" y1="340" x2="1160" y2="340" stroke="#8c959f" stroke-width="1"/>
+<rect x="44" y="320" width="20" height="20" rx="0" fill="#e3e7ec" stroke="#8c959f" stroke-width="1"/>
+<rect x="72" y="313" width="20" height="27" rx="0" fill="#e3e7ec" stroke="#8c959f" stroke-width="1"/>
+<rect x="100" y="306" width="20" height="34" rx="0" fill="#e3e7ec" stroke="#8c959f" stroke-width="1"/>
+<rect x="128" y="299" width="20" height="41" rx="0" fill="#e3e7ec" stroke="#8c959f" stroke-width="1"/>
+<rect x="156" y="292" width="20" height="48" rx="0" fill="#e3e7ec" stroke="#8c959f" stroke-width="1"/>
+<rect x="184" y="315" width="20" height="25" rx="0" fill="#e3e7ec" stroke="#8c959f" stroke-width="1"/>
+<rect x="212" y="308" width="20" height="32" rx="0" fill="#e3e7ec" stroke="#8c959f" stroke-width="1"/>
+<rect x="240" y="301" width="20" height="39" rx="0" fill="#e3e7ec" stroke="#8c959f" stroke-width="1"/>
+<rect x="268" y="294" width="20" height="46" rx="0" fill="#e3e7ec" stroke="#8c959f" stroke-width="1"/>
+<rect x="296" y="317" width="20" height="23" rx="0" fill="#e3e7ec" stroke="#8c959f" stroke-width="1"/>
+<rect x="324" y="310" width="20" height="30" rx="0" fill="#e3e7ec" stroke="#8c959f" stroke-width="1"/>
+<rect x="352" y="303" width="20" height="37" rx="0" fill="#e3e7ec" stroke="#8c959f" stroke-width="1"/>
+<rect x="380" y="296" width="20" height="44" rx="0" fill="#e3e7ec" stroke="#8c959f" stroke-width="1"/>
+<rect x="408" y="319" width="20" height="21" rx="0" fill="#e3e7ec" stroke="#8c959f" stroke-width="1"/>
+<rect x="436" y="312" width="20" height="28" rx="0" fill="#e3e7ec" stroke="#8c959f" stroke-width="1"/>
+<rect x="464" y="305" width="20" height="35" rx="0" fill="#e3e7ec" stroke="#8c959f" stroke-width="1"/>
+<rect x="492" y="298" width="20" height="42" rx="0" fill="#e3e7ec" stroke="#8c959f" stroke-width="1"/>
+<rect x="520" y="291" width="20" height="49" rx="0" fill="#e3e7ec" stroke="#8c959f" stroke-width="1"/>
+<rect x="548" y="314" width="20" height="26" rx="0" fill="#e3e7ec" stroke="#8c959f" stroke-width="1"/>
+<rect x="576" y="307" width="20" height="33" rx="0" fill="#e3e7ec" stroke="#8c959f" stroke-width="1"/>
+<rect x="604" y="300" width="20" height="40" rx="0" fill="#e3e7ec" stroke="#8c959f" stroke-width="1"/>
+<rect x="632" y="293" width="20" height="47" rx="0" fill="#e3e7ec" stroke="#8c959f" stroke-width="1"/>
+<rect x="660" y="316" width="20" height="24" rx="0" fill="#e3e7ec" stroke="#8c959f" stroke-width="1"/>
+<rect x="688" y="309" width="20" height="31" rx="0" fill="#e3e7ec" stroke="#8c959f" stroke-width="1"/>
+<rect x="716" y="302" width="20" height="38" rx="0" fill="#e3e7ec" stroke="#8c959f" stroke-width="1"/>
+<rect x="744" y="295" width="20" height="45" rx="0" fill="#e3e7ec" stroke="#8c959f" stroke-width="1"/>
+<rect x="772" y="318" width="20" height="22" rx="0" fill="#e3e7ec" stroke="#8c959f" stroke-width="1"/>
+<rect x="800" y="311" width="20" height="29" rx="0" fill="#e3e7ec" stroke="#8c959f" stroke-width="1"/>
+<rect x="828" y="304" width="20" height="36" rx="0" fill="#e3e7ec" stroke="#8c959f" stroke-width="1"/>
+<rect x="856" y="297" width="20" height="43" rx="0" fill="#e3e7ec" stroke="#8c959f" stroke-width="1"/>
+<rect x="884" y="320" width="20" height="20" rx="0" fill="#e3e7ec" stroke="#8c959f" stroke-width="1"/>
+<rect x="912" y="313" width="20" height="27" rx="0" fill="#e3e7ec" stroke="#8c959f" stroke-width="1"/>
+<rect x="940" y="306" width="20" height="34" rx="0" fill="#e3e7ec" stroke="#8c959f" stroke-width="1"/>
+<rect x="968" y="299" width="20" height="41" rx="0" fill="#e3e7ec" stroke="#8c959f" stroke-width="1"/>
+<rect x="996" y="292" width="20" height="48" rx="0" fill="#e3e7ec" stroke="#8c959f" stroke-width="1"/>
+<rect x="1024" y="315" width="20" height="25" rx="0" fill="#e3e7ec" stroke="#8c959f" stroke-width="1"/>
+<rect x="1052" y="308" width="20" height="32" rx="0" fill="#e3e7ec" stroke="#8c959f" stroke-width="1"/>
+<rect x="1080" y="301" width="20" height="39" rx="0" fill="#e3e7ec" stroke="#8c959f" stroke-width="1"/>
+<rect x="1108" y="294" width="20" height="46" rx="0" fill="#e3e7ec" stroke="#8c959f" stroke-width="1"/>
+<rect x="1136" y="317" width="20" height="23" rx="0" fill="#e3e7ec" stroke="#8c959f" stroke-width="1"/>
+<line x1="660" y1="278" x2="660" y2="340" stroke="#6f42c1" stroke-width="2" stroke-dasharray="5 3"/>
+<text x="668" y="292" font-size="12" fill="#4b2a8a" font-weight="bold">14:10 troca de modelo: v7 → v8 (Vanessa)</text>
+<circle cx="1180" cy="204" r="11" fill="#6f42c1" stroke="#ffffff" stroke-width="2"/>
+<text x="1180" y="208.5" font-size="12" fill="#ffffff" font-weight="bold" text-anchor="middle">2</text>
+<text x="20" y="394" font-size="14" fill="#1f2328" font-weight="bold">F02.1E — Candidato reprovado: promoção indisponível</text>
+<rect x="20" y="404" width="1160" height="200" rx="4" fill="#ffffff" stroke="#57606a" stroke-width="1.5"/>
+<text x="32" y="430" font-size="15" fill="#1f2328" font-weight="bold">Comparação: candidato ‹reprovado› × em produção SVM v7</text>
+<rect x="860" y="414" width="130" height="22" rx="3" fill="#fff8e1" stroke="#b26a00" stroke-width="1"/>
+<text x="925.0" y="429.5" font-size="14" fill="#6e3f00" font-weight="bold" text-anchor="middle">✕ REPROVADO</text>
+<rect x="32" y="444" width="1136" height="54" rx="4" fill="#fff8e1" stroke="#b26a00" stroke-width="1.5"/>
+<text x="44" y="466" font-size="13" fill="#6e3f00" font-weight="bold">Reprovado no cenário benigno: marcou 21,5% do tráfego benigno como ataque (fpr 0,215); o máximo é 5% (0,05).</text>
+<text x="44" y="486" font-size="13" fill="#6e3f00">Este candidato não pode ser colocado em produção. Os demais cenários estão abaixo, para diagnóstico.</text>
+<text x="44" y="524" font-size="13" fill="#1f2328" font-weight="bold">benigno · fpr</text>
+<text x="220" y="524" font-size="13" fill="#1f2328">produção ‹v›  ·  candidato 0,215  ·  exigido máx. 0,05  ·  diferença: pior</text>
+<text x="940" y="524" font-size="13" fill="#6e3f00" font-weight="bold">✕ não atende · decisivo</text>
+<rect x="44" y="544" width="400" height="36" rx="4" fill="#eaeef2" stroke="#c4cad1" stroke-width="1" stroke-dasharray="4 3"/>
+<text x="244.0" y="567.0" font-size="13" fill="#57606a" text-anchor="middle">Promover para produção — indisponível: candidato reprovado</text>
+<text x="460" y="567" font-size="12" fill="#57606a">Para revisar: treinar novo candidato pela ferramenta de linha de comando do pipeline.</text>
+<circle cx="1180" cy="404" r="11" fill="#6f42c1" stroke="#ffffff" stroke-width="2"/>
+<text x="1180" y="408.5" font-size="12" fill="#ffffff" font-weight="bold" text-anchor="middle">3</text>
+<text x="20" y="634" font-size="14" fill="#1f2328" font-weight="bold">F02.4R — Reversão (a partir de F02.3 ou de D06)</text>
+<rect x="20" y="644" width="560" height="210" rx="6" fill="#ffffff" stroke="#57606a" stroke-width="1.5"/>
+<text x="36" y="672" font-size="16" fill="#1f2328" font-weight="bold">Voltar ao SVM v7?</text>
+<text x="36" y="698" font-size="13" fill="#1f2328">As classificações passarão a vir do v7.</text>
+<text x="36" y="718" font-size="13" fill="#1f2328">Os analistas serão avisados da troca e do horário.</text>
+<text x="36" y="752" font-size="13" fill="#1f2328" font-weight="bold">Motivo (obrigatório)</text>
+<rect x="36" y="760" width="528" height="34" rx="4" fill="#ffffff" stroke="#57606a" stroke-width="1"/>
+<text x="46" y="782" font-size="13" fill="#57606a" font-style="italic">‹motivo da reversão›</text>
+<rect x="36" y="806" width="160" height="34" rx="4" fill="#ffffff" stroke="#8c959f" stroke-width="1"/>
+<text x="116.0" y="828.0" font-size="13" fill="#1f2328" text-anchor="middle">Cancelar</text>
+<rect x="404" y="806" width="160" height="34" rx="4" fill="#1f60c4" stroke="#1f60c4" stroke-width="1"/>
+<text x="484.0" y="828.0" font-size="13" fill="#ffffff" font-weight="bold" text-anchor="middle">Confirmar reversão</text>
+<rect x="600" y="644" width="580" height="64" rx="4" fill="#dcf3e0" stroke="#2e7d32" stroke-width="2"/>
+<text x="616" y="670" font-size="13" fill="#1b5e20" font-weight="bold">✓ O SVM v7 voltou à produção às 09:30 de 31/10, por Vanessa.</text>
+<text x="616" y="692" font-size="13" fill="#1b5e20">Registrado em D06 como reversão; analistas avisados.</text>
+<text x="600" y="730" font-size="12" fill="#57606a">Reversão usa o mesmo diálogo da promoção (resumo, motivo,</text>
+<text x="600" y="746" font-size="12" fill="#57606a">confirmação, aviso): ações semelhantes funcionam igual.</text>
+<circle cx="1180" cy="644" r="11" fill="#6f42c1" stroke="#ffffff" stroke-width="2"/>
+<text x="1180" y="648.5" font-size="12" fill="#ffffff" font-weight="bold" text-anchor="middle">4</text>
+<text x="20" y="878" font-size="12" fill="#57606a">Wireframe de média fidelidade · valores ilustrativos dos cenários CI01/CI02 (Entrega 09), não medidos · ● n = marcador de anotação, explicado em docs/11_figma.md</text>
+</svg>

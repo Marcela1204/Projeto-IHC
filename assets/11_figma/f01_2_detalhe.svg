@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800" font-family="Arial, Helvetica, sans-serif" role="img" aria-label="F01.2 — Detalhe do alerta">
+<title>F01.2 — Detalhe do alerta</title>
+<rect width="1200" height="800" fill="#ffffff"/>
+<text x="20" y="28" font-size="17" fill="#1f2328" font-weight="bold">F01.2 — Detalhe do alerta (painel lateral sobre D03)</text>
+<text x="1180" y="28" font-size="13" fill="#57606a" text-anchor="end">Fluxo de Thiago (P01/T02) · responsável: Lucas Kerr do Amaral</text>
+<rect x="10" y="44" width="1180" height="40" rx="0" fill="#eaeef2" stroke="#c4cad1" stroke-width="1"/>
+<text x="24" y="69" font-size="14" fill="#1f2328">Dashboards › netanomaly › D03 Resultado final</text>
+<rect x="982" y="49" width="190" height="30" rx="4" fill="#ffffff" stroke="#8c959f" stroke-width="1"/>
+<text x="1077.0" y="69.0" font-size="13" fill="#1f2328" text-anchor="middle">Hoje 19:00 – 21:00 ▾</text>
+<rect x="20" y="96" width="600" height="650" rx="4" fill="#f3f4f6" stroke="#c4cad1" stroke-width="1"/>
+<text x="40" y="130" font-size="13" fill="#57606a" font-style="italic">(D03 permanece visível atrás do painel:</text>
+<text x="40" y="150" font-size="13" fill="#57606a" font-style="italic">restrição e posição na lista são preservadas)</text>
+<rect x="40" y="180" width="560" height="26" rx="2" fill="#e5e8ec" stroke="#e5e8ec" stroke-width="1"/>
+<rect x="40" y="220" width="560" height="26" rx="2" fill="#e5e8ec" stroke="#e5e8ec" stroke-width="1"/>
+<rect x="40" y="260" width="560" height="26" rx="2" fill="#e5e8ec" stroke="#e5e8ec" stroke-width="1"/>
+<rect x="40" y="300" width="560" height="26" rx="2" fill="#e5e8ec" stroke="#e5e8ec" stroke-width="1"/>
+<rect x="40" y="340" width="560" height="26" rx="2" fill="#e5e8ec" stroke="#e5e8ec" stroke-width="1"/>
+<rect x="40" y="380" width="560" height="26" rx="2" fill="#e5e8ec" stroke="#e5e8ec" stroke-width="1"/>
+<rect x="40" y="420" width="560" height="26" rx="2" fill="#e5e8ec" stroke="#e5e8ec" stroke-width="1"/>
+<rect x="40" y="460" width="560" height="26" rx="2" fill="#e5e8ec" stroke="#e5e8ec" stroke-width="1"/>
+<rect x="40" y="500" width="560" height="26" rx="2" fill="#e5e8ec" stroke="#e5e8ec" stroke-width="1"/>
+<rect x="40" y="540" width="560" height="26" rx="2" fill="#e5e8ec" stroke="#e5e8ec" stroke-width="1"/>
+<rect x="40" y="580" width="560" height="26" rx="2" fill="#e5e8ec" stroke="#e5e8ec" stroke-width="1"/>
+<rect x="40" y="620" width="560" height="26" rx="2" fill="#e5e8ec" stroke="#e5e8ec" stroke-width="1"/>
+<rect x="40" y="260" width="560" height="26" rx="2" fill="#dbeafe" stroke="#1f60c4" stroke-width="1"/>
+<rect x="630" y="96" width="550" height="650" rx="4" fill="#ffffff" stroke="#57606a" stroke-width="1.5"/>
+<text x="646" y="124" font-size="16" fill="#1f2328" font-weight="bold">Alerta de 20:40:31 · 3 de 312</text>
+<text x="1164" y="124" font-size="13" fill="#1f60c4" text-anchor="end">✕ Fechar</text>
+<rect x="646" y="136" width="90" height="22" rx="3" fill="#ffe1e0" stroke="#c62828" stroke-width="1"/>
+<text x="691.0" y="151.5" font-size="13" fill="#8f1a1a" font-weight="bold" text-anchor="middle">ataque</text>
+<text x="746" y="152" font-size="13" fill="#1f2328">quem decidiu: modelo supervisionado (SVM v7)</text>
+<circle cx="1176" cy="146" r="11" fill="#6f42c1" stroke="#ffffff" stroke-width="2"/>
+<text x="1176" y="150.5" font-size="12" fill="#ffffff" font-weight="bold" text-anchor="middle">1</text>
+<text x="646" y="190" font-size="14" fill="#1f2328" font-weight="bold">A conexão</text>
+<text x="646" y="212" font-size="13" fill="#57606a">Origem</text>
+<text x="820" y="212" font-size="13" fill="#1f2328">10.0.4.17</text>
+<text x="646" y="234" font-size="13" fill="#57606a">Destino</text>
+<text x="820" y="234" font-size="13" fill="#1f2328" font-weight="bold">portal interno do atendimento</text>
+<text x="646" y="256" font-size="13" fill="#57606a">Serviço</text>
+<text x="820" y="256" font-size="13" fill="#1f2328">web · TCP/443</text>
+<text x="646" y="278" font-size="13" fill="#57606a">Volume</text>
+<text x="820" y="278" font-size="13" fill="#1f2328">‹bytes da janela›</text>
+<circle cx="1176" cy="206" r="11" fill="#6f42c1" stroke="#ffffff" stroke-width="2"/>
+<text x="1176" y="210.5" font-size="12" fill="#ffffff" font-weight="bold" text-anchor="middle">2</text>
+<line x1="646" y1="294" x2="1164" y2="294" stroke="#c4cad1" stroke-width="1"/>
+<text x="646" y="318" font-size="14" fill="#1f2328" font-weight="bold">Por que virou alerta</text>
+<text x="646" y="342" font-size="13" fill="#1f2328">Histórico origem–destino: esta origem não tinha se comunicado</text>
+<text x="646" y="362" font-size="13" fill="#1f2328">com este destino nos últimos 7 dias.</text>
+<text x="646" y="382" font-size="13" fill="#1f2328">Quão incomum: o volume é mais incomum que 99% do tráfego</text>
+<text x="646" y="402" font-size="13" fill="#1f2328">habitual deste destino.</text>
+<text x="646" y="422" font-size="13" fill="#1f2328">Motivo do sinal: volume de bytes muito acima do habitual</text>
+<text x="646" y="442" font-size="13" fill="#1f2328">para este destino.</text>
+<text x="646" y="470" font-size="13" fill="#1f60c4">▸ Ver regra completa do detector</text>
+<rect x="646" y="478" width="518" height="26" rx="4" fill="#f6f8fa" stroke="#c4cad1" stroke-width="1" stroke-dasharray="4 3"/>
+<text x="654" y="496" font-size="12" fill="#57606a">n_bytes&lt;=1418821.0 &amp; bytes_per_sec&lt;=495656.0</text>
+<circle cx="1176" cy="330" r="11" fill="#6f42c1" stroke="#ffffff" stroke-width="2"/>
+<text x="1176" y="334.5" font-size="12" fill="#ffffff" font-weight="bold" text-anchor="middle">3</text>
+<line x1="646" y1="518" x2="1164" y2="518" stroke="#c4cad1" stroke-width="1"/>
+<text x="646" y="542" font-size="14" fill="#1f2328" font-weight="bold">Confiança na classificação</text>
+<text x="646" y="566" font-size="13" fill="#57606a">Incerteza:</text>
+<rect x="730" y="552" width="70" height="22" rx="3" fill="#f6f8fa" stroke="#8c959f" stroke-width="1"/>
+<text x="765.0" y="567.5" font-size="13" fill="#32383f" font-weight="bold" text-anchor="middle">baixa</text>
+<text x="810" y="568" font-size="13" fill="#57606a">ⓘ alta = a classificação está perto de mudar</text>
+<text x="646" y="590" font-size="12" fill="#57606a">valor técnico (margem do SVM): ‹valor›</text>
+<circle cx="1176" cy="556" r="11" fill="#6f42c1" stroke="#ffffff" stroke-width="2"/>
+<text x="1176" y="560.5" font-size="12" fill="#ffffff" font-weight="bold" text-anchor="middle">4</text>
+<line x1="646" y1="606" x2="1164" y2="606" stroke="#c4cad1" stroke-width="1"/>
+<text x="646" y="628" font-size="13" fill="#1f2328">Modelo: SVM v7 · em produção desde 27/10 (há 3 dias)</text>
+<rect x="646" y="650" width="240" height="32" rx="4" fill="#1f60c4" stroke="#1f60c4" stroke-width="1"/>
+<text x="766.0" y="671.0" font-size="13" fill="#ffffff" font-weight="bold" text-anchor="middle">Registrar veredito deste alerta</text>
+<rect x="896" y="650" width="130" height="32" rx="4" fill="#ffffff" stroke="#8c959f" stroke-width="1"/>
+<text x="961.0" y="671.0" font-size="13" fill="#1f2328" text-anchor="middle">‹ Anterior</text>
+<rect x="1034" y="650" width="130" height="32" rx="4" fill="#ffffff" stroke="#8c959f" stroke-width="1"/>
+<text x="1099.0" y="671.0" font-size="13" fill="#1f2328" text-anchor="middle">Próximo ›</text>
+<text x="646" y="708" font-size="12" fill="#57606a">Ao abrir, o alerta passa a constar como examinado (✓) na lista.</text>
+<text x="646" y="726" font-size="12" fill="#57606a">Para o veredito do conjunto, use “Registrar veredito dos 312” em D03.</text>
+<circle cx="1176" cy="666" r="11" fill="#6f42c1" stroke="#ffffff" stroke-width="2"/>
+<text x="1176" y="670.5" font-size="12" fill="#ffffff" font-weight="bold" text-anchor="middle">5</text>
+<text x="20" y="788" font-size="12" fill="#57606a">Wireframe de média fidelidade · valores ilustrativos dos cenários CI01/CI02 (Entrega 09), não medidos · ● n = marcador de anotação, explicado em docs/11_figma.md</text>
+</svg>
