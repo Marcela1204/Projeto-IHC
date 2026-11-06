@@ -320,14 +320,14 @@ A combinação de questionário e entrevista semiestruturada busca reduzir as la
 
 ## Checklist
 
-- [x] Hipóteses/lacunas prioritárias da Entrega 1 foram revisitadas.
-- [x] Se o escopo de IHC foi derivado de TCC técnico, a coleta investiga a plausibilidade do usuário, tarefa e contexto adotados.
-- [x] Perguntas não pressupõem que dashboard, CRUD, filtros ou relatórios sejam necessários; investigam a necessidade.
-- [x] Cada dado a coletar responde uma dúvida concreta do projeto ou justifica outra necessidade de informação.
-- [x] Parte A identifica dados e perfis de coleta de forma específica.
-- [x] Aspectos éticos são contextualizados para o projeto.
-- [x] Há uma técnica completa por integrante e técnicas distintas.
-- [x] Questionário está incluído entre as técnicas.
-- [x] Cada instrumento possui objetivo, público, procedimento e conteúdo integral.
-- [x] Perguntas evitam indução e coletam apenas dados necessários.
-- [x] Está claro como os dados serão analisados e usados no design.
+- [ ] Hipóteses/lacunas prioritárias da Entrega 1 foram revisitadas.
+- [ ] Se o escopo de IHC foi derivado de TCC técnico, a coleta investiga a plausibilidade do usuário, tarefa e contexto adotados.
+- [ ] Perguntas não pressupõem que dashboard, CRUD, filtros ou relatórios sejam necessários; investigam a necessidade.
+- [ ] Cada dado a coletar responde uma dúvida concreta do projeto ou justifica outra necessidade de informação.
+- [ ] Parte A identifica dados e perfis de coleta de forma específica.
+- [ ] Aspectos éticos são contextualizados para o projeto.
+- [ ] Há uma técnica completa por integrante e técnicas distintas.
+- [ ] Questionário está incluído entre as técnicas.
+- [ ] Cada instrumento possui objetivo, público, procedimento e conteúdo integral.
+- [ ] Perguntas evitam indução e coletam apenas dados necessários.
+- [ ] Está claro como os dados serão analisados e usados no design.

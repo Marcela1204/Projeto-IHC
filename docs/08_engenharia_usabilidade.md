@@ -59,15 +59,6 @@ Inclua apenas normas, leis, padrões e princípios realmente relevantes, explica
 
 Usabilidade deve ser discutida **no contexto de uso**. Metas quantitativas devem dizer o que será medido, em qual tarefa, com qual população e qual limite será considerado aceitável.
 
-**Tarefas de referência (Entrega 05):**
-
-- **T01** — Decidir se a configuração atual do IDS deve ser mantida, ajustada ou revertida (P02 — Vanessa, cenário C02).
-- **T02** — Reconhecer a anomalia como ataque ou falso positivo (P01 — Thiago, cenário C01). Inclui, como primeira etapa, **perceber se há algo fora do padrão** (A01) e, como última, **registrar o veredito** (A02).
-
-**População dos testes:** profissionais ou estudantes avançados com experiência em monitoramento de rede/segurança (perfil P01) e em administração de sistemas ou ML aplicado (perfil P02). Se o recrutamento de profissionais não for possível, serão usados **participantes *proxy*** e essa limitação será declarada na Entrega 14 (Entrega 07). Amostra: **1 participante por integrante do grupo** — como a equipe tem 2 integrantes, são **2 participantes**, um do perfil P01 e um do perfil P02. Por isso as metas de taxa são verificadas sobre as tentativas desse participante (ex.: vereditos sobre 3 alertas) ou como atingidas/não atingidas por ele, e os resultados devem ser lidos como indicação, não como estimativa estatística.
-
-**Origem dos limites:** não existe linha de base medida para este público (o tempo do cenário H14 era ficção e foi retirado — Entrega 01). Os valores abaixo são **metas iniciais da equipe**, apoiadas em referências de mercado quando existem (SUS, SEQ) e no contexto de uso; serão **recalibrados após o teste piloto** (Entrega 12), sem alterar o que cada meta mede.
-
 ### 3.1 Metas qualitativas
 
 Correspondem às **exigências qualitativas** de Mayhew: características da interface que precisam existir para servir a esses usuários, nessas tarefas, nessa plataforma.

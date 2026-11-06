@@ -27,20 +27,6 @@ O protótipo deve materializar os fluxos definidos nas entregas anteriores. Depe
 12. **Alertas/ocorrências:** severidade, impacto, ação, responsável e resolução.
 13. **Ajuda/documentação:** apoio contextual a tarefas complexas.
 
-**Uso neste protótipo** (cada família só entra se houver objetivo da Entrega 09 que a justifique):
-
-| Família                 | Onde                                                                 | Objetivo/signo que justifica                                                                                                                                |
-| ----------------------- | -------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 1. Dashboard            | F01.1 (D03 revisado), topo de F02.1                                  | O01 (*variação em relação ao período anterior*, *estado da coleta*); O08, O09                                                                               |
-| 6. Histórico            | F02.4 (D06)                                                          | O13 (*troca de modelo*, *motivo da troca*, *autor*)                                                                                                         |
-| 7. Comparação           | F02.1 (D05)                                                          | O10 (*mínimo exigido*, *diferença*, *cenário decisivo*)                                                                                                     |
-| 8. Explicabilidade      | F01.2 (detalhe do alerta), métricas de F02.1                         | O03 (*motivo do sinal*, *incerteza da classificação*, *quem decidiu*); O10 (explicação de cada métrica)                                                     |
-| 11. Auditoria           | D06 em modo somente leitura; autoria e horário em vereditos e trocas | O05, O12, O13 (*autor*, *data/hora do registro*)                                                                                                            |
-| 12. Alertas/ocorrências | F01.1–F01.4 (veredito, encaminhamento, passagem de plantão)          | O02, O05, O06                                                                                                                                               |
-| 13. Ajuda contextual    | ⓘ de incerteza e de cada métrica                                     | RC03, I03; MQ02, MQ06                                                                                                                                       |
-| 2. Configuração         | **parcial**: só a troca de modelo (F02.2), sem parâmetros            | O12; limites e parâmetros ficam fora do recorte (Entrega 09, 3.3)                                                                                           |
-| 3, 4, 9, 10             | **não usadas**                                                       | Não há envio de dados, nem execução que o usuário acompanhe (o treino é *offline*, Entrega 08), nem gestão de usuários (H23), nem CRUD que seja tarefa real |
-
 ### Estados que não podem ser esquecidos
 
 Quando aplicável, considere: vazio/sem dados; carregamento/processamento; sucesso; erro de entrada; erro de processamento; filtro sem resultados; permissão insuficiente; confirmação de ação destrutiva; cancelamento/desfazer/recuperação; dados desatualizados/conflito.
@@ -96,8 +82,6 @@ Estados alcançados por condição de dados, e não por clique (F01.1E, F01.1C, 
 
 ## Cobertura MoLIC → Figma
 
-> Cenas e falas conforme os diagramas M01 e M02 da [Entrega 10](10_molic.md) e sua tabela “Preparação para o Figma”. Todos os estados listados naquela tabela têm tela correspondente aqui, exceto o vazio “sem decisões no período” de O08, que fica como pendência (ver fim do documento). Fluxos fora dos MoLIC — contenção, treino de candidatos, gestão de usuários — não aparecem no protótipo.
-
 | MoLIC | Objetivo                                        | Fluxo/telas no Figma                                           | Estados de erro/recuperação                                                     | Responsável          |
 | ----- | ----------------------------------------------- | -------------------------------------------------------------- | ------------------------------------------------------------------------------- | -------------------- |
 | M01   | O01 Perceber se há algo fora do padrão          | `F01.1` (faixa de estado, indicadores, série)                  | `F01.1E` (coleta parada — CE), `F01.1C`                                         | Lucas Kerr do Amaral |
@@ -115,10 +99,6 @@ Estados alcançados por condição de dados, e não por clique (F01.1E, F01.1C, 
 | M02   | O12 Promover ou reverter o modelo               | `F02.1 → F02.2 → F02.3`; `F02.3 / F02.4 → F02.4R`              | Motivo obrigatório (PA), “Cancelar”, reversão (RA)                              | Marcela Nalesso      |
 
 ## Catálogo de telas/estados
-
-**Numeração.** `F01.n` = telas do fluxo de Thiago; `F02.n` = telas do fluxo de Vanessa. Sufixos de estado: `E` erro, `A` alerta/prevenção apoiada, `V` vazio, `C` carregamento, `R` retomada/reversão, `T` ponto de contato com o outro fluxo, `P` permissão. Os números roxos (●) nos wireframes são **marcadores de anotação**, não elementos da interface; cada um é explicado no item “Signos principais”. As siglas PP, PA, AL, RA e CE são as da Entrega 09, seção 4.
-
-**Telas novas e existentes.** F01.1 e F01.2 são **D03 revisado** com as alterações candidatas da Entrega 06 (seção 5) — devem ser feitas no próprio Grafana. **D04 — Registro do veredito e encaminhamento**, **D05 — Comparação de modelos e troca** e **D06 — Histórico de trocas de modelo** são telas fora do Grafana (restrições R1 e R2 da Entrega 08), desenhadas imitando suas convenções (barra superior com trilha, controles à direita, painéis com título).
 
 ### F01 — Fluxo de investigação (Thiago) · responsável: Lucas Kerr do Amaral — 22.123.032-9
 
