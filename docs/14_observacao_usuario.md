@@ -1,6 +1,6 @@
 # Entrega 14 — Avaliação de usabilidade por observação de usuários
 
-**Data:** 30/10/2026  
+**Data:** 10/11/2026  
 **Status:** `🟨 em andamento`  
 **Responsabilidade:** solução consolidada por equipe. O número de participantes finais observados deve ser igual ao número de integrantes, conforme o modelo da disciplina; recomenda-se que cada integrante seja responsável por conduzir/analisar ao menos um participante.
 
@@ -20,39 +20,11 @@ Tarefas podem envolver, por exemplo, interpretar um dashboard, configurar uma an
 
 ## A. Fluxograma do processo — equipe
 
-![Fluxograma](../assets/14_testes/fluxograma_avaliacao.svg)
+![Fluxograma do processo de avaliação por observação — preparação, coleta de dados, interpretação e consolidação, relato e recomendações](../assets/14_testes/fluxograma_avaliacao.svg)
 
 O fluxograma deve representar, no mínimo: planejamento → recrutamento → consentimento → preparação → execução das tarefas/observação → pós-teste → consolidação/análise → recomendações.
 
-> O arquivo SVG acima ainda é o *placeholder* do modelo e será substituído pela versão desenhada do fluxo abaixo. Enquanto isso, o processo planejado é:
-
-```text
-PREPARAÇÃO
- 1. Planejamento ── metas da Entrega 08 (MU01–MU08, MU10–MU12, MQ01–MQ08)
- │                  perguntas QA01–QA14 da Entrega 12
- │                  tarefas UT01–UT07 + gabarito + critérios de sucesso (seção B, passo 5)
- ├─ 2. Recrutamento ── triagem de 2 participantes (1 por perfil) pelos critérios do passo 2
- │                     proxy? → registrar a condição e a limitação
- ├─ 3. Preparação do material ── protótipo F01/F02 com recorte congelado (checagem de prontidão)
- │                               TCLE, pré-teste, cartões de tarefa, planilha, SEQ, SUS, roteiro pós-teste
- └─ 4. Teste piloto ── 1 sessão por roteiro (P01 e P02), fora da amostra
-       └─ ajustes? ── sim → revisar instruções/tempos-limite/protótipo → volta a 3
-                   └─ não → segue
-COLETA DE DADOS (U01 antes de U02; ~50 min cada, sala virtual)
- 5. Abertura padronizada → 6. Consentimento (TCLE) ── não aceita → encerra, nada é registrado
- │                                                 └─ aceita → liga gravação (se autorizada)
- 7. Pré-teste (perfil mínimo)
- 8. Tarefas com observação (sem think aloud contínuo) ── por tarefa: cartão → execução → planilha → SEQ
- │     └─ em UT02: interrupção provocada (protocolo MU10)
- 9. SUS → 10. Entrevista pós-teste → 11. Encerramento
-INTERPRETAÇÃO E CONSOLIDAÇÃO
- 12. Revisão das gravações e das duas planilhas (moderador + observador) → codificação de erros e falas
- 13. Consolidação por participante (seção C) e por tarefa (seção D) → comparação indicativa com as metas
-RELATO E RECOMENDAÇÕES
- 14. Problemas PU01, PU02… → achados AU01… com severidade → recomendações (seção E)
- 15. Comparação com a avaliação heurística (seção F) → conclusão (seção G)
- 16. Atualização da rastreabilidade (Entregas 01, 05, 06, 08–11 e RASTREABILIDADE.md)
-```
+O fluxograma tem quatro fases, e cada etapa numerada corresponde a um passo da seção B ou a uma seção de resultados (C–G). Os desvios são o laço de ajustes depois do piloto (volta à etapa 3), a saída quando o participante não aceita o termo (etapa 6), o laço por tarefa (etapa 8) e a repetição da coleta para a segunda sessão (U02).
 
 ## B. Procedimento de preparação e execução — equipe
 
@@ -116,7 +88,7 @@ RELATO E RECOMENDAÇÕES
 
 ### Passo 3 — Consentimento e privacidade
 
-- Termo/registro de consentimento: modelo da disciplina em [`../instrumentos/termo_consentimento_modelo.md`](../instrumentos/termo_consentimento_modelo.md), preenchido para este teste conforme o quadro abaixo (estrutura dos TCLE de exemplo em `../aulas/`: procedimento, riscos, benefícios e custos, confidencialidade, voluntariedade, declaração). O aceite é registrado por formulário eletrônico com cópia ao participante, **antes** de qualquer gravação. Registros de aceite: {{link para pasta restrita — a preencher}}.
+- Termo/registro de consentimento: modelo da disciplina em [`../instrumentos/termo_consentimento_modelo.md`](../instrumentos/termo_consentimento_modelo.md), preenchido para este teste conforme o quadro abaixo (estrutura dos TCLE de exemplo definido em aula: procedimento, riscos, benefícios e custos, confidencialidade, voluntariedade, declaração). O aceite é registrado por formulário eletrônico com cópia ao participante, **antes** de qualquer gravação. Registros de aceite: {{link para pasta restrita — a preencher}}.
 - Gravação de tela/áudio/vídeo: **tela e áudio, sim, somente se autorizado** em campo próprio do termo; **vídeo da câmera, não**. Finalidade: conferir tempos, erros e falas na consolidação. Sem autorização, a sessão ocorre apenas com as anotações da planilha.
 - Forma de anonimização: IDs `U01` e `U02` atribuídos na triagem; a relação ID–nome fica só com os integrantes, fora do repositório. No repositório entram apenas planilhas e trechos de fala transcritos sob o ID, sem empresa, cargo exato ou instituição de trabalho. Os dados do protótipo são de laboratório, sem IPs de pessoas reais (Entrega 08, LGPD). O registro de U01 lido por U02 em UT07 é o que U01 escreveu no protótipo, sem identificação de U01.
 - Local e período de armazenamento: gravações e termos em pasta de nuvem institucional com acesso restrito aos dois integrantes; **descarte das gravações ao fim da disciplina** (critério da Entrega 07); planilhas anonimizadas permanecem no repositório.
@@ -238,24 +210,54 @@ As tarefas derivam de T01/T02 (Entrega 05), dos cenários CI01/CI02 e dos objeti
 
 ## C. Resultados — por participante
 
-> **A preencher após as sessões.** Nenhuma sessão foi realizada até 30/10/2026. A estrutura abaixo é o registro que será usado.
+> Sessão de **U01** registrada a partir dos comentários da participante (transcritos abaixo). Sessão de **U02** ainda não realizada.
 
-### U01 — {{perfil resumido: P01, experiência, proxy sim/não}}
+### U01 — designer de interfaces (participante *proxy*)
 
-**Moderador:** Lucas Kerr do Amaral · **Observadora:** Marcela Nalesso · **Data:** {{dd/mm/aaaa}}
+**Perfil:** designer, externa à equipe, sem prática em SOC nem em administração de modelos de detecção. É **proxy** dos perfis P01 e P02 (passo 2): avalia bem a leitura das telas, a hierarquia da informação e a representação do protótipo, mas não substitui um analista no plantão. Não participou da construção dos protótipos, do *walkthrough* da Entrega 06 nem da inspeção da Entrega 13.  
+**Moderador:** Lucas Kerr do Amaral · **Observadora:** Marcela Nalesso · **Data:** {{dd/mm/aaaa}}  
+**Telas vistas:** fluxo **F01** (D03 — panorama e restrição; detalhe do alerta; D04 — registro do veredito) e fluxo **F02** (D05 — comparação de modelos).  
+**Forma de coleta:** comentários verbalizados durante e depois da exploração do protótipo, transcritos sob o ID U01 com o mínimo de edição (só os trechos que identificavam pessoas foram retirados).
+
+**Desvio do plano.** O passo 2 previa um participante com o perfil P01 para U01. A participante tem perfil de design, então os resultados abaixo tratam de **compreensão das telas** (MQ01, MQ02, MU06) e de **representação do protótipo**. Não servem para avaliar eficiência (MU04, MU05, MU08, MU10) nem para dizer se a meta de um analista foi atingida. Os comentários registrados não trazem tempos, grau de sucesso por tarefa, SEQ nem SUS. Se esses dados foram coletados, entram na tabela de tarefas abaixo.
+
+#### Registro das falas
+
+| Fala | Tela / elemento | O que a participante disse (transcrição) | Leitura da equipe | Problema |
+|---|---|---|---|---|
+| U01-F01 | D03, título e trilha “D03 Resultado final” | “Primeira dúvida que fiquei é se o dash é *near real time* ou se é uma fotografia. Toda hora que você vai abrir, vai ser um novo dash? Porque se for isso, o título tá errado.” | O nome “Resultado final” vem do pipeline (é a saída do último estágio). Para quem lê a tela, ele sugere um relatório fechado, que contradiz o estado “Coleta ativa · último dado 20:47” | PU01 |
+| U01-F02 | D03, título | “Tá escrito resultado final. Toda hora vai ficar abrindo e carregando uma nova tela?” | O título também faz supor um modelo de navegação errado, em que cada consulta geraria uma tela nova | PU01 |
+| U01-F03 | D03, indicadores do topo (⑤) | “O primeiro retângulo tá escrito ataque e na sequência tá escrito benigno. É essa informação que vocês querem? Talvez não deveria ser o benigno na frente e da quantidade de benignos teve 1.4 que foram ataques? Tipo o primeiro retângulo ser volumetria total e o segundo retângulo ser a quantidade de ataques que teve.” | A ordem atual (Ataques → Benignos → Pendentes → Alertas do período) põe a parte antes do todo. A participante procura a proporção de ataques, e hoje ela só aparece na legenda do último indicador (“≈ 1/3 classificado como ataque”) | PU02 |
+| U01-F04 | D03, título | “Título está errado porque aí não é resultado final, nunca acaba (dado que é *near real time*).” | Confirma F01/F02: o problema é o nome da tela, não o conteúdo | PU01 |
+| U01-F05 | D03, painel “Origens mais alertadas” (⑥) | “Eu não consegui entender o que significa a informação que está do ladinho, que é origens mais alertadas, aí tá 10.0.4/24. Aquilo ali não significou nada pra mim.” | Um analista reconhece a notação CIDR, mas o painel só mostra o endereço e “maioria dos ataques”, sem nome do segmento e sem quantidade. Em uma participante *proxy*, o efeito é maior | PU03 |
+| U01-F06 | Detalhe do alerta (F01.2 ①) e coluna “Quem decidiu” de D03 | “Tem um retângulo escrito alerta e depois do lado está quem decidiu… quem decidiu o quê?” | O signo “quem decidiu” (Entrega 09) não diz o que foi decidido. Ao lado do *badge* “ataque”, ele pode ser lido como o veredito do analista, e não como a classificação do modelo | PU04 |
+| U01-F07 | Detalhe do alerta (F01.2 ③) e coluna “Incerteza” | “Tá aparecendo como um ataque, mas a incerteza é baixa… se é um ataque, o grau de incerteza não deveria ser alto?” | A participante leu “incerteza” como risco ou gravidade do alerta, e não como a dúvida do modelo sobre a classificação. Os dois signos juntos (“ataque” + “incerteza baixa”) pareceram contraditórios | PU05 |
+| U01-F08 | *Badge* de classificação | “Ou então a tag deveria ser ataque mesmo? Ou será possibilidade de ataque?” | O rótulo “ataque” é lido como fato confirmado. Na interface, ele é a hipótese do modelo até o analista registrar o veredito | PU05 |
+| U01-F09 | D04, campo “Decisão” (F01.3 ①) | “Tá muito estranho o campo decisão no F01… Nenhuma ação vem marcada por padrão… Aqui Thiago já escolheu ataque… Não entendi o que vocês quiseram dizer aqui.” | A frase é uma anotação de especificação do wireframe que ficou dentro da tela. Ela diz que nada vem marcado e, na mesma tela, mostra “ataque” marcado | PU06 |
+| U01-F10 | Campo de busca da barra superior | “O que a busca teria de função dentro dessa tela? Que a princípio eu entendi que são todos os campos preenchidos, né? É busca o quê? Busca cliente? Não entendi a função da busca.” | A busca vem do padrão da barra do Grafana (que busca dashboards), mas não foi projetada nem explicada. Ela também compete com a restrição (“+ Adicionar critério”), que é como se busca alertas | PU08 |
+| U01-F11 | D05, legenda sob a tabela de métricas (F02.1 ④) | “O que está na lupa ali em cada métrica abre uma explicação de uma frase. Isso deveria estar no protótipo ou dentro do protótipo vocês deveriam estar mostrando que vocês estão clicando e só abrir a explicação? Achei estranho ter esse tipo de subtítulo.” | O comportamento do ⓘ foi descrito em texto, em vez de ser prototipado como interação | PU07 |
+| U01-F12 | Busca (F02) | “Ficou bem legal, só achei que a busca não foi explorada ali, né? Não sei o que vocês quiseram explorar ali com ela.” | Mesmo problema de F10, também visto em F02 | PU08 |
+| U01-F13 | D03, indicadores do topo | “Os *big numbers* aí eu entendi que o objetivo de vocês é colocar os ataques, mas eu não sei se eu colocaria total e depois ataques, até para entender a porcentagem do quanto tá sendo atacado.” | A participante entendeu a intenção (destacar ataques), mas para ler a proporção ela quer partir do total | PU02 |
+| U01-F14 | Geral | “O restante tá bem legal.” | Nenhuma objeção ao fluxo de registro e encaminhamento (fora a anotação de F09) nem ao fluxo de troca em D05 | — |
+
+> Em U01-F03, a participante cita “1.4”. O indicador do protótipo mostra **1,6 mil** ataques e **2,8 mil** benignos em **4.350** alertas. A fala foi mantida como dita.
+
+#### Tarefas
 
 | Tarefa | Grau de sucesso | Erros | Tipos de erro/dificuldade | Ajudas | Tempo | Satisfação | Evidência/observação |
 |---|---|---:|---|---:|---|---|---|
-| UT01 | {{total/parcial/falha}} | {{n}} | {{códigos EI/EN/ER/EG/ET}} | {{n}} | {{mm:ss}} (MU04) | SEQ {{1–7}} | {{fala/comportamento — MQ01}} |
-| UT02 | {{total/parcial/falha}} | {{n}} (críticos: {{n}}) | {{...}} | {{n}} | A-1 {{mm:ss}} · A-2 {{mm:ss}} · A-3 {{mm:ss}} (MU05); retomada {{ss}} s (MU10) | SEQ {{1–7}} | Vereditos A-1/A-2/A-3: {{...}} × gabarito; retomada: {{disse período/origem/suspensão? sim/não}}; encaminhamento e passagem: {{...}} |
-| UT03 | {{a/b/c certos}} | {{n}} | {{...}} | {{n}} | {{mm:ss}} | SEQ {{1–7}} | (c) levantou a hipótese da troca sem indução? {{sim/não}} |
-| UT04 | {{total/parcial/falha}} | {{n}} | {{...}} | {{n}} | {{mm:ss}} | SEQ {{1–7}} | {{...}} |
+| UT01 | {{não registrado}} | {{n}} | EI (indício) | {{n}} | {{não registrado}} | SEQ {{—}} | Entendeu que o painel destaca os ataques (F13), mas não conseguiu ler a proporção nem saber se os dados são atuais (F01, F03). Indício contrário a MQ01 |
+| UT02 | {{não registrado}} | {{n}} | EI (indício) | {{n}} | {{não registrado}} | SEQ {{—}} | “ataque” + “incerteza baixa” lidos como contradição (F07, F08). No gabarito, A-1 é justamente esse caso, o que pode provocar veredito incoerente. Indício contrário a MQ02 |
+| UT03 | (a) indício de erro | — | EI | {{n}} | {{não registrado}} | SEQ {{—}} | Não identificou o que “quem decidiu” significa (F06). Indício contrário a MU06 no item (a) |
+| UT04 | {{não aplicada / não registrado}} | — | — | — | — | — | Sem comentário sobre o estado “sem dados” |
 
-**SUS:** {{0–100}}  
+**SUS:** {{não registrado}}  
 **Link da gravação (se autorizado):** {{link restrito}}  
-**Resposta pós-teste:** {{...}}
+**Resposta pós-teste:** avaliação geral positiva (“Ficou bem legal”, “O restante tá bem legal”). As dúvidas se concentraram em nomenclatura (título, “quem decidiu”, “incerteza”, rótulo “ataque”), na ordem dos indicadores e em elementos do protótipo sem função definida (busca, anotações).
 
 ### U02 — {{perfil resumido: P02, experiência, proxy sim/não}}
+
+> **Sessão ainda não realizada.**
 
 **Moderadora:** Marcela Nalesso · **Observador:** Lucas Kerr do Amaral · **Data:** {{dd/mm/aaaa}}
 
@@ -265,7 +267,7 @@ As tarefas derivam de T01/T02 (Entrega 05), dos cenários CI01/CI02 e dos objeti
 | UT03 (a, b) | {{a/b certos}} | {{n}} | {{...}} | {{n}} | {{mm:ss}} | SEQ {{1–7}} | {{...}} |
 | UT05 | {{total/parcial/falha}} | {{n}} (críticos: {{n}}) | {{...}} | {{n}} | {{mm:ss}} (MU08) | SEQ {{1–7}} | Decisões (v8 / reprovado) e motivos citados (MU07): {{...}} |
 | UT06 | {{total/parcial/falha}} | {{n}} | {{...}} | {{n}} | {{mm:ss}} | SEQ {{1–7}} | Indicou registro e aviso à equipe? {{sim/não}}; receio manifestado? {{...}} |
-| UT07 | {{total/falha}} | — | {{...}} | {{n}} | {{mm:ss}} | — | Conclusão e base reproduzidas: {{...}} |
+| UT07 | {{total/falha}} | — | {{...}} | {{n}} | {{mm:ss}} | — | Conclusão e base reproduzidas: {{...}}. Se U01 não produziu registro em UT02, usar o registro-padrão e anotar como limitação |
 
 **SUS:** {{0–100}}  
 **Link da gravação (se autorizado):** {{link restrito}}  
@@ -275,15 +277,15 @@ As tarefas derivam de T01/T02 (Entrega 05), dos cenários CI01/CI02 e dos objeti
 
 ## D. Consolidação por tarefa
 
-> **A preencher após as sessões.** Resultados como “x de n”, com n = 1 por perfil (UT03 e UT04 têm n = 2).
+> Com U01 *proxy* e sem medidas quantitativas, as colunas abaixo trazem só **indícios qualitativos**. Os valores “x de n” ficam para depois da sessão de U02 (UT03 e UT04 têm n = 2).
 
 | Tarefa | Taxa de sucesso | Tempo típico | Erros recorrentes | Satisfação | Meta atendida? | Problemas prioritários |
 |---|---:|---|---|---|---|---|
-| UT01 | {{x de 1}} | {{mm:ss}} | {{...}} | SEQ {{...}} | MU04, MQ01 (QA04): {{sim/não — indicativo}} | {{PU..}} |
-| UT02 | {{x de 1}} | mediana por alerta {{mm:ss}}; retomada {{ss}} s | {{...}} | SEQ {{...}} | MU01, MU02, MU03, MU05, MU10, MQ02, MQ03 (QA01–03, QA05, QA06, QA09): {{...}} | {{...}} |
-| UT03 | {{x de 2}} | {{...}} | {{...}} | SEQ {{...}} | MU06, MQ02, MQ04 (QA06): {{...}} | {{...}} |
+| UT01 | {{x de 1}} | {{mm:ss}} | EI: título e ordem dos indicadores atrapalham a leitura do panorama (U01) | SEQ {{...}} | MU04 não medida; MQ01 (QA04): **indício contrário** (U01) | PU01, PU02, PU03 |
+| UT02 | {{x de 1}} | {{...}} | EI: “ataque” + “incerteza baixa” lidos como contradição (U01) | SEQ {{...}} | MU01–MU03, MU05, MU10 não medidas; MQ02 (QA06): **indício contrário** (U01) | PU05, PU06 |
+| UT03 | {{x de 2}} | {{...}} | EI: “quem decidiu” sem objeto (U01) | SEQ {{...}} | MU06 (QA06), item (a): **indício contrário** (U01) | PU04 |
 | UT04 | {{x de 2}} | {{...}} | {{...}} | SEQ {{...}} | MQ05 (QA12): {{...}} | {{...}} |
-| UT05 | {{x de 1}} | {{mm:ss}} | {{...}} | SEQ {{...}} | MU07, MU08, MQ06 (QA07, QA08): {{...}} | {{...}} |
+| UT05 | {{x de 1}} | {{mm:ss}} | Nenhum comentário de U01 sobre a decisão em D05, só sobre a representação do ⓘ | SEQ {{...}} | MU07, MU08, MQ06 (QA07, QA08): {{...}} | PU07 |
 | UT06 | {{x de 1}} | {{...}} | {{...}} | SEQ {{...}} | MQ07 (QA13): {{...}} | {{...}} |
 | UT07 | {{x de 1}} | {{...}} | {{...}} | — | MQ08 (QA14): {{...}} | {{...}} |
 
@@ -291,69 +293,78 @@ As tarefas derivam de T01/T02 (Entrega 05), dos cenários CI01/CI02 e dos objeti
 
 | Meta (pergunta) | Limite (Entrega 08) | Como será calculada com os dados deste teste | Resultado |
 |---|---|---|---|
-| MU01 (QA01) | conclui sem ajuda (1 de 1) | U01 registra veredito nos três alertas de UT02 sem nenhuma ajuda? (x de 1) | {{...}} |
-| MU02 (QA02) | ≥ 80% dos vereditos coerentes | Vereditos de U01 iguais ao gabarito ÷ 3 | {{x de 3}} |
-| MU03 (QA03) | 0 erros críticos | U01 sem erro crítico em UT02? (x de 1) | {{...}} |
-| MU04 (QA04) | mediana ≤ 30 s | Tempo de U01 em UT01, se a resposta estiver correta (resposta incorreta é relatada à parte) | {{...}} |
-| MU05 (QA05) | mediana ≤ 3 min por alerta | Mediana dos três tempos por alerta de U01 (interrupção descontada) | {{...}} |
-| MU06 (QA06) | ≥ 90% de respostas corretas | Acertos em UT03 (a) e (b) de U01 e U02 ÷ 4 | {{x de 4}} |
+| MU01 (QA01) | conclui sem ajuda (1 de 1) | U01 registra veredito nos três alertas de UT02 sem nenhuma ajuda? (x de 1) | não medida (U01 *proxy*, sem registro por tarefa) |
+| MU02 (QA02) | ≥ 80% dos vereditos coerentes | Vereditos de U01 iguais ao gabarito ÷ 3 | não medida; risco apontado por PU05 |
+| MU03 (QA03) | 0 erros críticos | U01 sem erro crítico em UT02? (x de 1) | não medida; risco apontado por PU05 |
+| MU04 (QA04) | mediana ≤ 30 s | Tempo de U01 em UT01, se a resposta estiver correta (resposta incorreta é relatada à parte) | não medida |
+| MU05 (QA05) | mediana ≤ 3 min por alerta | Mediana dos três tempos por alerta de U01 (interrupção descontada) | não medida |
+| MU06 (QA06) | ≥ 90% de respostas corretas | Acertos em UT03 (a) e (b) de U01 e U02 ÷ 4 | {{x de 4}}; indício de erro em (a) por U01 |
 | MU07 (QA07) | decisão correta com motivo | Decisões de U02 em UT05 (v8 e candidato reprovado) corretas **e** com cenário + métrica citados ÷ 2 | {{x de 2}} |
 | MU08 (QA08) | mediana ≤ 5 min | Tempo de U02 em UT05 | {{...}} |
-| MU10 (QA09) | mediana ≤ 20 s | Tempo de retomada de U01 em UT02 | {{...}} |
+| MU10 (QA09) | mediana ≤ 20 s | Tempo de retomada de U01 em UT02 | não medida |
 | MU11 (QA10) | mediana SEQ ≥ 5,5 | Mediana do SEQ de cada participante sobre suas tarefas, e SEQ por tarefa | {{...}} |
-| MU12 (QA11) | média SUS ≥ 68 | SUS de U01 e de U02 (pontuação padrão 0–100), relatados separadamente | {{...}} |
-| MQ01–MQ08 (QA04, QA06, QA07, QA09, QA12–QA14) | evidência qualitativa da Entrega 08 | Para cada meta, se a evidência desejada foi observada e as falas que a sustentam ou contradizem (MQ01: UT01; MQ02: UT02/UT03; MQ03: UT02; MQ04: UT03; MQ05: UT04; MQ06: UT05; MQ07: UT06; MQ08: UT07) | {{...}} |
+| MU12 (QA11) | média SUS ≥ 68 | SUS de U01 e de U02 (pontuação padrão 0–100), relatados separadamente | U01: {{não registrado}}; U02: {{...}} |
+| MQ01–MQ08 (QA04, QA06, QA07, QA09, QA12–QA14) | evidência qualitativa da Entrega 08 | Para cada meta, se a evidência desejada foi observada e as falas que a sustentam ou contradizem (MQ01: UT01; MQ02: UT02/UT03; MQ03: UT02; MQ04: UT03; MQ05: UT04; MQ06: UT05; MQ07: UT06; MQ08: UT07) | **MQ01:** contrária (U01-F01, F03, F13). **MQ02:** contrária (U01-F06, F07, F08). Demais: {{U02}} |
 
 ## E. Achados e recomendações
 
-> **A preencher após as sessões.** Cada achado (AU) reúne um ou mais problemas de usabilidade observados (PU01, PU02…) — ver seção B, passo 7.
+Severidade na escala 0–4 da Entrega 13. Como U01 é *proxy* e foi a única sessão, a severidade pesa o **impacto previsto nas tarefas do analista**, e não a frequência.
 
 | ID | Achado | Evidência (quant. + qual.) | Impacto | Recomendação | Artefatos a revisar |
 |---|---|---|---|---|---|
-| AU01 | {{...}} (PU{{..}}) | {{x de n + fala/comportamento}} | {{severidade 0–4; meta e QA afetadas}} | {{...}} | {{MoLIC/Figma/signos/HTA...}} |
+| AU01 | O título “Resultado final” passa a ideia de relatório fechado num painel contínuo (PU01) | 1 de 1; U01-F01, F02, F04 (três falas sobre o mesmo ponto) | **2** — a pessoa duvida se os dados são atuais antes de ler qualquer número; MQ01 (QA04) | Renomear D03 pelo que o usuário faz, por exemplo “Alertas em tempo real” (no título, na trilha e nas telas derivadas F01.2–F01.4). Ao lado do estado da coleta, mostrar o ritmo de atualização (“atualização automática a cada 30 s”), como D05 já faz, para que “congelado desde 20:47” leia como pausa de uma tela viva. Manter “resultado final” só como termo técnico do pipeline | Figma F01.1–F01.4 e trilhas; Entrega 09 (signos de D03); Entrega 10 (nome da cena); Entrega 11 (tabela de telas) |
+| AU02 | Os indicadores começam pela parte (ataques) e não pelo todo, então a proporção de ataques não aparece onde se procura (PU02) | 1 de 1; U01-F03, F13 | **2** — UT01 depende de ler “o que está fora do padrão”; MQ01, MU04 | Reordenar: **Alertas do período (4.350)** → **Ataques (1,6 mil · ≈ 37% do total · ≈ 4× as 2 h anteriores)** → Benignos → Pendentes. A porcentagem sai da legenda do total e vai para o indicador de ataques. O vermelho continua só no indicador de ataques (guia de estilo), que segue como o mais visível pela cor, embora em segundo lugar | Figma F01.1 (⑤); Entrega 11 (justificativa de ⑤); gabarito de UT01 (sem mudança no critério) |
+| AU03 | Origem mostrada só em notação de rede (10.0.4.0/24), sem nome nem quantidade (PU03) | 1 de 1 (*proxy*); U01-F05 | **1** — um analista lê CIDR; o risco cai com o perfil-alvo, mas o painel não diz *quanto* é “maioria” | Mostrar nome do segmento e quantidade ao lado do endereço (“10.0.4.0/24 · ‹rede do atendimento› · N ataques, X% do período”) e explicar em uma frase no ⓘ o que é um segmento. Título: “Segmentos de origem com mais alertas” | Figma F01.1 (⑥); Entrega 09 (signo *origem*) |
+| AU04 | “Quem decidiu” não diz o que foi decidido e pode ser confundido com o veredito do analista (PU04) | 1 de 1; U01-F06 | **2** — é a pergunta UT03 (a); MU06 (QA06) | Trocar por **“classificado por: modelo supervisionado (SVM v7)”** no detalhe e **“Classificado por”** na coluna de D03. Reservar “veredito de ‹analista›” para o que é registrado em D04. A distinção “classificação do modelo × veredito do analista” passa a estar no próprio rótulo | Figma F01.1 (⑧), F01.2 (①); Entrega 09 (signo *quem decidiu*); Entrega 11 (terminologia) |
+| AU05 | “ataque” + “incerteza baixa” é lido como contradição: “incerteza” é entendida como risco do alerta, e “ataque” como fato confirmado (PU05) | 1 de 1; U01-F07, F08 | **3** — afeta como se interpreta cada linha da tabela e o caso A-1 do gabarito; pode levar a veredito incoerente (MU02) e ao erro crítico de A-2 (MU03); MQ02 | (1) Mostrar no *badge* que é hipótese do modelo: “**classificado como ataque**” (na tabela, “ataque” com o cabeçalho “Classificação do modelo”) até o veredito ser registrado. (2) Inverter a polaridade do signo: **“Confiança da classificação: alta / média / baixa ⚠ (perto de mudar)”**, com o ⓘ explicando que se trata da firmeza do modelo, não da gravidade do ataque. (3) Ajustar o aviso de F01.3A (“2 alertas com confiança baixa”) e a ordenação (“confiança baixa primeiro”). Reconferir o contraste do *badge* âmbar | Figma F01.1 (⑧), F01.2 (③), F01.3 (②); Entrega 09 (signos *classificação* e *incerteza*); Entrega 11 (terminologia); gabarito de UT02 (linguagem do cartão, sem mudar os vereditos) |
+| AU06 | Notas de especificação dentro das telas: a decisão “sem padrão” aparece já marcada, e o comportamento do ⓘ é descrito em texto em vez de ser prototipado (PU06, PU07) | 1 de 1; U01-F09, F11 | **2** — invalida a observação de UT02 e UT05: a nota responde pelo participante ou o confunde; afeta a prontidão do protótipo (passo 1) | Tirar dos frames usados no teste todo texto dirigido ao avaliador (manter só os marcadores ● n, explicados na Entrega 11). Separar F01.3 em dois estados: **inicial**, sem decisão marcada, e **preenchido**, depois do clique em “ataque”. Prototipar o ⓘ como interação (clique → *overlay* com a frase) em D01–D03 e D05, e apagar a legenda “ⓘ em cada métrica abre…” | Figma F01.3, F02.1 (④) e demais frames com notas; tabela de prontidão (passo 1); Entrega 11 |
+| AU07 | Busca sem função definida na barra superior (PU08) | 1 de 1; U01-F10, F12 (F01 e F02) | **1** — não bloqueia tarefa, mas gera dúvida e compete com a restrição | Decidir o escopo. **(a)** Se for a busca nativa do Grafana (dashboards), rotular “Buscar dashboards” ou ocultá-la no protótipo. **(b)** Se a equipe quiser explorá-la, defini-la como busca de investigação (“Buscar IP, alerta ou caso encaminhado…”) que cria um critério de restrição, para não ser um segundo caminho paralelo ao “+ Adicionar critério” | Figma (barra superior de F01 e F02); Entrega 10 (MoLIC: se (b), nova fala de acesso à restrição); Entrega 11 |
+
+**Ordem de correção sugerida:** AU05 → AU06 (as duas comprometem o próximo teste, de U02, e qualquer nova sessão com perfil P01) → AU04 → AU01 → AU02 → AU03 → AU07.
 
 ## F. Comparação com a avaliação heurística
 
-> **A preencher após as sessões**, cruzando os problemas consolidados da Entrega 13 com os PU deste teste.
-
 | Problema | Detectado na heurística? | Detectado por usuários? | O que aprendemos |
 |---|---|---|---|
-| {{...}} | {{sim/não}} | {{sim/não}} | {{...}} |
+| PU05 — “ataque” + “incerteza” lidos como contradição | Parcialmente: HC04 (termos do pipeline sem tradução, “margem”) | sim (U01) | A correção de HC04 trocou “margem” por “incerteza”, mas a palavra nova tem polaridade negativa e, ao lado de “ataque”, é lida como risco. Traduzir um termo não basta; é preciso testar a leitura junto com o signo vizinho |
+| PU04 — “quem decidiu” sem objeto | não (o signo foi criado depois da Entrega 13, para resolver I03) | sim (U01) | Signo novo, introduzido pela correção, que ainda não tinha passado por inspeção. Correções da heurística também precisam ser avaliadas |
+| PU01 — título “Resultado final” | Parcialmente: HC06 (nomes de dashboards em formatos diferentes) e HC07 (atualização diferente por dashboard) | sim (U01) | A heurística viu inconsistência entre nomes e intervalos, mas não percebeu que o nome em si contradiz a natureza contínua da tela. Os avaliadores conheciam o pipeline e liam “final” como “último estágio” |
+| PU02 — ordem dos indicadores | não (HC07 tratou de totais que não se encaixam, não da ordem) | sim (U01) | A hierarquia parte → todo só aparece para quem tenta ler a proporção, o que a inspeção por heurística não simulou |
+| PU03 — origem em CIDR sem contexto | Parcialmente: HC09 (origem → destino truncados), HC04 | sim (U01, *proxy*) | Depende do perfil. Fica como risco baixo até ser visto com participante P01 |
+| PU06, PU07 — notas de especificação nas telas | não (a heurística avaliou o Grafana existente, não o Figma) | sim (U01) | Problema do **artefato de teste**, não da interface. Só aparece quando alguém de fora usa o protótipo; o piloto (passo 4) deve verificá-lo |
+| PU08 — busca sem função | não | sim (U01) | Elemento herdado do padrão Grafana sem decisão de projeto. O que entra na tela sem tarefa associada vira ruído |
+| HC12 — falta de registro de veredito (corrigido com D04) | sim (severidade 4) | U01 não apontou problema no fluxo de registro, só na anotação de F01.3 | Indício fraco (*proxy*, n = 1) de que a correção é compreensível |
+| HC01, HC02, HC08 — estados vazios/previstos vistos como erro | sim | não comentado por U01 | Sem evidência nova; UT04 com U02 deve verificar |
 
 ## G. Conclusão
 
-A conclusão deve responder:
+1. **Metas atingidas.** Nenhuma meta quantitativa pôde ser verificada: a única sessão realizada foi com uma participante *proxy* (designer) e sem medidas por tarefa. Nas metas qualitativas, há **indícios contrários** a MQ01 (ler o panorama) e MQ02 (explicar o alerta e sua incerteza), e a MU06 no item “quem decidiu”.
+2. **Problemas recorrentes.** Concentram-se em **nomenclatura de D03 e do detalhe do alerta**: título (três falas), “quem decidiu”, “incerteza” e o rótulo “ataque” (AU01, AU04, AU05). Depois vêm a **hierarquia dos indicadores** (duas falas, AU02) e **elementos do protótipo sem função ou com notas para o avaliador**, vistos em F01 e F02 (AU06, AU07).
+3. **O que surpreendeu a equipe.** Dois signos criados para corrigir problemas da Entrega 13, “incerteza” e “quem decidiu”, causaram as principais dúvidas. Além disso, o nome “Resultado final”, natural para quem conhece o pipeline, foi o primeiro ponto notado por alguém de fora.
+4. **Mudanças prioritárias.** AU05 (polaridade de “incerteza” e rótulo do modelo) e AU06 (retirar as notas de especificação), **antes** da sessão de U02. Depois, AU04, AU01 e AU02.
+5. **Limitações.** As já previstas (abaixo) e mais uma, observada:
 
-1. Quais metas de usabilidade foram atingidas?
-2. Quais problemas foram recorrentes e com quais perfis/tarefas?
-3. O que surpreendeu a equipe?
-4. Quais mudanças são prioritárias?
-5. Que limitações do teste impedem generalizações amplas?
-
-> **A preencher após as sessões** (itens 1–4). Limitações já conhecidas antes da coleta, que a conclusão deverá retomar:
->
-> - **Amostra mínima:** um participante por perfil (2 no total, igual ao número de integrantes). As metas da Entrega 08 foram ajustadas para um participante por perfil e servem como referência indicativa: um único desempenho não representa o perfil.
-> - **Possível participante *proxy*:** um estudante sem prática em SOC ou em administração de plataforma não reproduz a pressão do plantão nem a responsabilidade pela produção.
+> - **Sem medidas quantitativas em U01** (tempo, sucesso, SEQ, SUS): as conclusões sobre metas são só qualitativas.
+> - **Amostra mínima:** um participante por perfil (2 no total, igual ao número de integrantes). As metas da Entrega 08 servem como referência indicativa: um único desempenho não representa o perfil.
 > - **Simulação:** dados de laboratório congelados e ações sem efeito real; o teste não mede o efeito da latência real nem a confiança que surge quando a decisão tem consequência.
-> - **Contexto:** sessão remota e agendada, sem o ruído, a iluminação e as interrupções espontâneas do SOC; a interrupção de UT02 é provocada e única.
-> - **Sem *think aloud* contínuo:** preserva os tempos de MU04, MU05, MU08 e MU10, mas parte do raciocínio só é obtida na retrospectiva após a tarefa, sujeita a racionalização posterior.
+> - **Contexto:** sessão remota e agendada, sem o ruído, a iluminação e as interrupções espontâneas do SOC.
 > - **MQ08 com um leitor só:** a legibilidade do registro é julgada por U02, que tem o perfil de administradora e não de analista do turno seguinte.
 > - **Escopo:** o teste avalia a interação; não diz nada sobre a acurácia do pipeline do TCC.
 
-{{conclusão a preencher após as sessões}}
+{{complementar após a sessão de U02}}
 
 ## Checklist
 
-- [ ] Número de participantes finais atende ao enunciado.
-- [ ] Participantes são representativos do público e não são membros da equipe.
-- [ ] Se foram usados participantes proxy, a justificativa e a limitação estão explícitas.
-- [ ] O teste avalia a interação; não confunde usabilidade do protótipo com desempenho técnico do TCC.
-- [ ] Tarefas administrativas/analíticas usadas no teste são rastreáveis a objetivos e cenários.
-- [ ] Há consentimento e anonimização.
+- [ ] Número de participantes finais atende ao enunciado. *(U01 realizado; U02 pendente)*
+- [ ] Participantes são representativos do público e não são membros da equipe. *(U01 não é da equipe, mas é proxy)*
+- [x] Se foram usados participantes proxy, a justificativa e a limitação estão explícitas.
+- [x] O teste avalia a interação; não confunde usabilidade do protótipo com desempenho técnico do TCC.
+- [x] Tarefas administrativas/analíticas usadas no teste são rastreáveis a objetivos e cenários.
+- [ ] Há consentimento e anonimização. *(anonimização aplicada a U01; anexar registro do aceite)*
 - [ ] Foi realizado teste piloto.
-- [ ] Tarefas têm critérios de sucesso definidos antes do teste.
+- [x] Tarefas têm critérios de sucesso definidos antes do teste.
 - [ ] Moderadores não ensinaram o caminho durante a tarefa.
-- [ ] Resultados estão separados por usuário e por tarefa.
-- [ ] Foram registrados sucesso, erros, ajudas, tempo e satisfação quando aplicáveis.
-- [ ] Conclusão combina evidência quantitativa e qualitativa.
-- [ ] Achados geram recomendações e atualização da rastreabilidade.
+- [x] Resultados estão separados por usuário e por tarefa.
+- [ ] Foram registrados sucesso, erros, ajudas, tempo e satisfação quando aplicáveis. *(não em U01)*
+- [ ] Conclusão combina evidência quantitativa e qualitativa. *(só qualitativa até U02)*
+- [ ] Achados geram recomendações e atualização da rastreabilidade. *(recomendações feitas; rastreabilidade pendente)*
