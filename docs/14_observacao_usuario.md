@@ -18,6 +18,8 @@ O teste avalia a **interação com o protótipo**. Não é necessário que o par
 
 Tarefas podem envolver, por exemplo, interpretar um dashboard, configurar uma análise, encontrar uma execução no histórico usando filtros, comparar resultados, gerar relatório, revisar alerta ou administrar permissões.
 
+### **Justificativa de não ter gravação dos participantes: Ressaltamos que a demonstração via gravação de tela não necessária de ser incluída nesta entrega, conforme alinhamento prévio e autorização do professor.**
+
 ## A. Fluxograma do processo — equipe
 
 ![Fluxograma do processo de avaliação por observação — preparação, coleta de dados, interpretação e consolidação, relato e recomendações](../assets/14_testes/fluxograma_avaliacao.svg)
