@@ -1,0 +1,227 @@
+<svg xmlns='http://www.w3.org/2000/svg' width='3801' height='695' viewBox='0 0 3801 695'>
+<title>CTT T01 — Decidir sobre a configuração do IDS (Vanessa, P02) — autora: Marcela</title>
+<rect width='100%' height='100%' fill='white'/>
+<text x='1900' y='40' font-family='Inter, Arial, Helvetica, sans-serif' font-size='20' font-weight='bold' text-anchor='middle' fill='#111'>CTT T01 — Decidir sobre a configuração do IDS (Vanessa, P02) — autora: Marcela</text>
+<line x1='1900' y1='182' x2='324' y2='263' stroke='#888' stroke-width='1'/>
+<line x1='1900' y1='182' x2='916' y2='263' stroke='#888' stroke-width='1'/>
+<line x1='1900' y1='182' x2='1506' y2='263' stroke='#888' stroke-width='1'/>
+<line x1='1900' y1='182' x2='2098' y2='263' stroke='#888' stroke-width='1'/>
+<line x1='1900' y1='182' x2='2787' y2='263' stroke='#888' stroke-width='1'/>
+<line x1='1900' y1='182' x2='3476' y2='263' stroke='#888' stroke-width='1'/>
+<line x1='358' y1='285' x2='882' y2='285' stroke='#d6006f' stroke-width='1.2'/>
+<rect x='598' y='272' width='44' height='24' fill='white'/>
+<text x='620' y='291' font-family='Inter, Arial, Helvetica, sans-serif' font-size='17' font-weight='bold' text-anchor='middle' fill='#d6006f'>&gt;&gt;</text>
+<line x1='950' y1='285' x2='1472' y2='285' stroke='#d6006f' stroke-width='1.2'/>
+<rect x='1189' y='272' width='44' height='24' fill='white'/>
+<text x='1211' y='291' font-family='Inter, Arial, Helvetica, sans-serif' font-size='17' font-weight='bold' text-anchor='middle' fill='#d6006f'>&gt;&gt;</text>
+<line x1='1540' y1='285' x2='2064' y2='285' stroke='#d6006f' stroke-width='1.2'/>
+<rect x='1780' y='272' width='44' height='24' fill='white'/>
+<text x='1802' y='291' font-family='Inter, Arial, Helvetica, sans-serif' font-size='17' font-weight='bold' text-anchor='middle' fill='#d6006f'>&gt;&gt;</text>
+<line x1='2132' y1='285' x2='2753' y2='285' stroke='#d6006f' stroke-width='1.2'/>
+<rect x='2420' y='272' width='44' height='24' fill='white'/>
+<text x='2442' y='291' font-family='Inter, Arial, Helvetica, sans-serif' font-size='17' font-weight='bold' text-anchor='middle' fill='#d6006f'>&gt;&gt;</text>
+<line x1='2821' y1='285' x2='3442' y2='285' stroke='#d6006f' stroke-width='1.2'/>
+<rect x='3110' y='272' width='44' height='24' fill='white'/>
+<text x='3132' y='291' font-family='Inter, Arial, Helvetica, sans-serif' font-size='17' font-weight='bold' text-anchor='middle' fill='#d6006f'>&gt;&gt;</text>
+<line x1='324' y1='331' x2='128' y2='428' stroke='#888' stroke-width='1'/>
+<line x1='324' y1='331' x2='324' y2='428' stroke='#888' stroke-width='1'/>
+<line x1='324' y1='331' x2='522' y2='428' stroke='#888' stroke-width='1'/>
+<line x1='162' y1='450' x2='290' y2='450' stroke='#d6006f' stroke-width='1.2'/>
+<rect x='204' y='437' width='44' height='24' fill='white'/>
+<text x='226' y='456' font-family='Inter, Arial, Helvetica, sans-serif' font-size='17' font-weight='bold' text-anchor='middle' fill='#d6006f'>|||</text>
+<line x1='358' y1='450' x2='488' y2='450' stroke='#d6006f' stroke-width='1.2'/>
+<rect x='401' y='437' width='44' height='24' fill='white'/>
+<text x='423' y='456' font-family='Inter, Arial, Helvetica, sans-serif' font-size='17' font-weight='bold' text-anchor='middle' fill='#d6006f'>&gt;&gt;</text>
+<line x1='916' y1='331' x2='718' y2='428' stroke='#888' stroke-width='1'/>
+<line x1='916' y1='331' x2='916' y2='428' stroke='#888' stroke-width='1'/>
+<line x1='916' y1='331' x2='1112' y2='428' stroke='#888' stroke-width='1'/>
+<line x1='752' y1='450' x2='882' y2='450' stroke='#d6006f' stroke-width='1.2'/>
+<rect x='795' y='437' width='44' height='24' fill='white'/>
+<text x='817' y='456' font-family='Inter, Arial, Helvetica, sans-serif' font-size='17' font-weight='bold' text-anchor='middle' fill='#d6006f'>&gt;&gt;</text>
+<line x1='950' y1='450' x2='1078' y2='450' stroke='#d6006f' stroke-width='1.2'/>
+<rect x='992' y='437' width='44' height='24' fill='white'/>
+<text x='1014' y='456' font-family='Inter, Arial, Helvetica, sans-serif' font-size='17' font-weight='bold' text-anchor='middle' fill='#d6006f'>&gt;&gt;</text>
+<line x1='1506' y1='331' x2='1310' y2='428' stroke='#888' stroke-width='1'/>
+<line x1='1506' y1='331' x2='1506' y2='428' stroke='#888' stroke-width='1'/>
+<line x1='1506' y1='331' x2='1704' y2='428' stroke='#888' stroke-width='1'/>
+<line x1='1344' y1='450' x2='1472' y2='450' stroke='#d6006f' stroke-width='1.2'/>
+<rect x='1386' y='437' width='44' height='24' fill='white'/>
+<text x='1408' y='456' font-family='Inter, Arial, Helvetica, sans-serif' font-size='17' font-weight='bold' text-anchor='middle' fill='#d6006f'>|||</text>
+<line x1='1540' y1='450' x2='1670' y2='450' stroke='#d6006f' stroke-width='1.2'/>
+<rect x='1583' y='437' width='44' height='24' fill='white'/>
+<text x='1605' y='456' font-family='Inter, Arial, Helvetica, sans-serif' font-size='17' font-weight='bold' text-anchor='middle' fill='#d6006f'>|||</text>
+<line x1='2098' y1='331' x2='1900' y2='428' stroke='#888' stroke-width='1'/>
+<line x1='2098' y1='331' x2='2098' y2='428' stroke='#888' stroke-width='1'/>
+<line x1='2098' y1='331' x2='2294' y2='428' stroke='#888' stroke-width='1'/>
+<line x1='1934' y1='450' x2='2064' y2='450' stroke='#d6006f' stroke-width='1.2'/>
+<rect x='1977' y='437' width='44' height='24' fill='white'/>
+<text x='1999' y='456' font-family='Inter, Arial, Helvetica, sans-serif' font-size='17' font-weight='bold' text-anchor='middle' fill='#d6006f'>&gt;&gt;</text>
+<line x1='2132' y1='450' x2='2260' y2='450' stroke='#d6006f' stroke-width='1.2'/>
+<rect x='2174' y='437' width='44' height='24' fill='white'/>
+<text x='2196' y='456' font-family='Inter, Arial, Helvetica, sans-serif' font-size='17' font-weight='bold' text-anchor='middle' fill='#d6006f'>&gt;&gt;</text>
+<line x1='2787' y1='331' x2='2492' y2='428' stroke='#888' stroke-width='1'/>
+<line x1='2787' y1='331' x2='2688' y2='428' stroke='#888' stroke-width='1'/>
+<line x1='2787' y1='331' x2='2886' y2='428' stroke='#888' stroke-width='1'/>
+<line x1='2787' y1='331' x2='3082' y2='428' stroke='#888' stroke-width='1'/>
+<line x1='2526' y1='450' x2='2654' y2='450' stroke='#d6006f' stroke-width='1.2'/>
+<rect x='2568' y='437' width='44' height='24' fill='white'/>
+<text x='2590' y='456' font-family='Inter, Arial, Helvetica, sans-serif' font-size='17' font-weight='bold' text-anchor='middle' fill='#d6006f'>[]</text>
+<line x1='2722' y1='450' x2='2852' y2='450' stroke='#d6006f' stroke-width='1.2'/>
+<rect x='2765' y='437' width='44' height='24' fill='white'/>
+<text x='2787' y='456' font-family='Inter, Arial, Helvetica, sans-serif' font-size='17' font-weight='bold' text-anchor='middle' fill='#d6006f'>[]</text>
+<line x1='2920' y1='450' x2='3048' y2='450' stroke='#d6006f' stroke-width='1.2'/>
+<rect x='2962' y='437' width='44' height='24' fill='white'/>
+<text x='2984' y='456' font-family='Inter, Arial, Helvetica, sans-serif' font-size='17' font-weight='bold' text-anchor='middle' fill='#d6006f'>[]</text>
+<line x1='3476' y1='331' x2='3280' y2='428' stroke='#888' stroke-width='1'/>
+<line x1='3476' y1='331' x2='3476' y2='428' stroke='#888' stroke-width='1'/>
+<line x1='3476' y1='331' x2='3674' y2='428' stroke='#888' stroke-width='1'/>
+<line x1='3314' y1='450' x2='3442' y2='450' stroke='#d6006f' stroke-width='1.2'/>
+<rect x='3356' y='437' width='44' height='24' fill='white'/>
+<text x='3378' y='456' font-family='Inter, Arial, Helvetica, sans-serif' font-size='17' font-weight='bold' text-anchor='middle' fill='#d6006f'>&gt;&gt;</text>
+<line x1='3510' y1='450' x2='3640' y2='450' stroke='#d6006f' stroke-width='1.2'/>
+<rect x='3553' y='437' width='44' height='24' fill='white'/>
+<text x='3575' y='456' font-family='Inter, Arial, Helvetica, sans-serif' font-size='17' font-weight='bold' text-anchor='middle' fill='#d6006f'>&gt;&gt;</text>
+<path d='M1874.5,134 a11,11 0 0,1 2,-21 a14,14 0 0,1 24,-8 a12,12 0 0,1 21,8 a10,10 0 0,1 -1,21 Z' fill='white' stroke='#111' stroke-width='2'/>
+<text x='1900' y='158' font-family='Inter, Arial, Helvetica, sans-serif' font-size='12' font-weight='normal' text-anchor='middle' fill='#111'>Decidir sobre a</text>
+<text x='1900' y='174' font-family='Inter, Arial, Helvetica, sans-serif' font-size='12' font-weight='normal' text-anchor='middle' fill='#111'>configuração do IDS</text>
+<path d='M298.5,299 a11,11 0 0,1 2,-21 a14,14 0 0,1 24,-8 a12,12 0 0,1 21,8 a10,10 0 0,1 -1,21 Z' fill='white' stroke='#111' stroke-width='2'/>
+<text x='324' y='323' font-family='Inter, Arial, Helvetica, sans-serif' font-size='12' font-weight='normal' text-anchor='middle' fill='#111'>Receber a demanda</text>
+<circle cx='127.5' cy='440' r='8' fill='white' stroke='#111' stroke-width='2' stroke-dasharray='5 3'/>
+<path d='M112.5,466 a15,15 0 0,1 30,0 Z' fill='white' stroke='#111' stroke-width='2' stroke-dasharray='5 3'/>
+<text x='128' y='488' font-family='Inter, Arial, Helvetica, sans-serif' font-size='12' font-weight='normal' text-anchor='middle' fill='#111'>Abrir chamado sobre o</text>
+<text x='128' y='504' font-family='Inter, Arial, Helvetica, sans-serif' font-size='12' font-weight='normal' text-anchor='middle' fill='#111'>IDS [ator: Thiago]</text>
+<rect x='306.5' y='432' width='36' height='26' rx='2' fill='white' stroke='#111' stroke-width='2'/>
+<line x1='324.5' y1='458' x2='324.5' y2='464' stroke='#111' stroke-width='2'/>
+<line x1='314.5' y1='465' x2='334.5' y2='465' stroke='#111' stroke-width='2'/>
+<circle cx='324.5' cy='445' r='5' fill='none' stroke='#111' stroke-width='2' stroke-dasharray='3 1.5'/>
+<text x='324' y='488' font-family='Inter, Arial, Helvetica, sans-serif' font-size='12' font-weight='normal' text-anchor='middle' fill='#111'>Enviar relatório diário</text>
+<text x='324' y='504' font-family='Inter, Arial, Helvetica, sans-serif' font-size='12' font-weight='normal' text-anchor='middle' fill='#111'>de alertas</text>
+<circle cx='521.5' cy='440' r='8' fill='white' stroke='#111' stroke-width='2'/>
+<path d='M506.5,466 a15,15 0 0,1 30,0 Z' fill='white' stroke='#111' stroke-width='2'/>
+<text x='522' y='488' font-family='Inter, Arial, Helvetica, sans-serif' font-size='12' font-weight='normal' text-anchor='middle' fill='#111'>Ler o chamado e o</text>
+<text x='522' y='504' font-family='Inter, Arial, Helvetica, sans-serif' font-size='12' font-weight='normal' text-anchor='middle' fill='#111'>relatório</text>
+<path d='M889.5,299 a11,11 0 0,1 2,-21 a14,14 0 0,1 24,-8 a12,12 0 0,1 21,8 a10,10 0 0,1 -1,21 Z' fill='white' stroke='#111' stroke-width='2'/>
+<text x='916' y='323' font-family='Inter, Arial, Helvetica, sans-serif' font-size='12' font-weight='normal' text-anchor='middle' fill='#111'>Confirmar o desvio</text>
+<rect x='688.5' y='434' width='30' height='22' rx='2' fill='white' stroke='#111' stroke-width='2'/>
+<line x1='703.5' y1='456' x2='703.5' y2='463' stroke='#111' stroke-width='2'/>
+<line x1='695.5' y1='464' x2='711.5' y2='464' stroke='#111' stroke-width='2'/>
+<circle cx='733.5' cy='442' r='6' fill='white' stroke='#111' stroke-width='2'/>
+<path d='M722.5,464 a11,11 0 0,1 22,0 Z' fill='white' stroke='#111' stroke-width='2'/>
+<text x='718' y='488' font-family='Inter, Arial, Helvetica, sans-serif' font-size='12' font-weight='normal' text-anchor='middle' fill='#111'>Consultar alertas por</text>
+<text x='718' y='504' font-family='Inter, Arial, Helvetica, sans-serif' font-size='12' font-weight='normal' text-anchor='middle' fill='#111'>dia</text>
+<rect x='897.5' y='432' width='36' height='26' rx='2' fill='white' stroke='#111' stroke-width='2'/>
+<line x1='915.5' y1='458' x2='915.5' y2='464' stroke='#111' stroke-width='2'/>
+<line x1='905.5' y1='465' x2='925.5' y2='465' stroke='#111' stroke-width='2'/>
+<circle cx='915.5' cy='445' r='5' fill='none' stroke='#111' stroke-width='2' stroke-dasharray='3 1.5'/>
+<text x='916' y='488' font-family='Inter, Arial, Helvetica, sans-serif' font-size='12' font-weight='normal' text-anchor='middle' fill='#111'>Exibir série com a linha</text>
+<text x='916' y='504' font-family='Inter, Arial, Helvetica, sans-serif' font-size='12' font-weight='normal' text-anchor='middle' fill='#111'>de base</text>
+<circle cx='1112.5' cy='440' r='8' fill='white' stroke='#111' stroke-width='2'/>
+<path d='M1097.5,466 a15,15 0 0,1 30,0 Z' fill='white' stroke='#111' stroke-width='2'/>
+<text x='1112' y='488' font-family='Inter, Arial, Helvetica, sans-serif' font-size='12' font-weight='normal' text-anchor='middle' fill='#111'>Julgar se há desvio</text>
+<path d='M1480.5,299 a11,11 0 0,1 2,-21 a14,14 0 0,1 24,-8 a12,12 0 0,1 21,8 a10,10 0 0,1 -1,21 Z' fill='white' stroke='#111' stroke-width='2'/>
+<text x='1506' y='323' font-family='Inter, Arial, Helvetica, sans-serif' font-size='12' font-weight='normal' text-anchor='middle' fill='#111'>Revisar o pipeline</text>
+<rect x='1279.5' y='434' width='30' height='22' rx='2' fill='white' stroke='#111' stroke-width='2'/>
+<line x1='1294.5' y1='456' x2='1294.5' y2='463' stroke='#111' stroke-width='2'/>
+<line x1='1286.5' y1='464' x2='1302.5' y2='464' stroke='#111' stroke-width='2'/>
+<circle cx='1324.5' cy='442' r='6' fill='white' stroke='#111' stroke-width='2'/>
+<path d='M1313.5,464 a11,11 0 0,1 22,0 Z' fill='white' stroke='#111' stroke-width='2'/>
+<text x='1310' y='488' font-family='Inter, Arial, Helvetica, sans-serif' font-size='12' font-weight='normal' text-anchor='middle' fill='#111'>Verificar desempenho do</text>
+<text x='1310' y='504' font-family='Inter, Arial, Helvetica, sans-serif' font-size='12' font-weight='normal' text-anchor='middle' fill='#111'>modelo ativo</text>
+<rect x='1476.5' y='434' width='30' height='22' rx='2' fill='white' stroke='#111' stroke-width='2'/>
+<line x1='1491.5' y1='456' x2='1491.5' y2='463' stroke='#111' stroke-width='2'/>
+<line x1='1483.5' y1='464' x2='1499.5' y2='464' stroke='#111' stroke-width='2'/>
+<circle cx='1521.5' cy='442' r='6' fill='white' stroke='#111' stroke-width='2'/>
+<path d='M1510.5,464 a11,11 0 0,1 22,0 Z' fill='white' stroke='#111' stroke-width='2'/>
+<text x='1506' y='488' font-family='Inter, Arial, Helvetica, sans-serif' font-size='12' font-weight='normal' text-anchor='middle' fill='#111'>Verificar carga do</text>
+<text x='1506' y='504' font-family='Inter, Arial, Helvetica, sans-serif' font-size='12' font-weight='normal' text-anchor='middle' fill='#111'>embarcado</text>
+<rect x='1673.5' y='434' width='30' height='22' rx='2' fill='white' stroke='#111' stroke-width='2'/>
+<line x1='1688.5' y1='456' x2='1688.5' y2='463' stroke='#111' stroke-width='2'/>
+<line x1='1680.5' y1='464' x2='1696.5' y2='464' stroke='#111' stroke-width='2'/>
+<circle cx='1718.5' cy='442' r='6' fill='white' stroke='#111' stroke-width='2'/>
+<path d='M1707.5,464 a11,11 0 0,1 22,0 Z' fill='white' stroke='#111' stroke-width='2'/>
+<text x='1704' y='488' font-family='Inter, Arial, Helvetica, sans-serif' font-size='12' font-weight='normal' text-anchor='middle' fill='#111'>Consultar histórico de</text>
+<text x='1704' y='504' font-family='Inter, Arial, Helvetica, sans-serif' font-size='12' font-weight='normal' text-anchor='middle' fill='#111'>mudanças</text>
+<path d='M2071.5,299 a11,11 0 0,1 2,-21 a14,14 0 0,1 24,-8 a12,12 0 0,1 21,8 a10,10 0 0,1 -1,21 Z' fill='white' stroke='#111' stroke-width='2'/>
+<text x='2098' y='323' font-family='Inter, Arial, Helvetica, sans-serif' font-size='12' font-weight='normal' text-anchor='middle' fill='#111'>Avaliar o impacto</text>
+<rect x='1870.5' y='434' width='30' height='22' rx='2' fill='white' stroke='#111' stroke-width='2'/>
+<line x1='1885.5' y1='456' x2='1885.5' y2='463' stroke='#111' stroke-width='2'/>
+<line x1='1877.5' y1='464' x2='1893.5' y2='464' stroke='#111' stroke-width='2'/>
+<circle cx='1915.5' cy='442' r='6' fill='white' stroke='#111' stroke-width='2'/>
+<path d='M1904.5,464 a11,11 0 0,1 22,0 Z' fill='white' stroke='#111' stroke-width='2'/>
+<text x='1900' y='488' font-family='Inter, Arial, Helvetica, sans-serif' font-size='12' font-weight='normal' text-anchor='middle' fill='#111'>Selecionar a alternativa</text>
+<text x='1900' y='504' font-family='Inter, Arial, Helvetica, sans-serif' font-size='12' font-weight='normal' text-anchor='middle' fill='#111'>a comparar</text>
+<rect x='2079.5' y='432' width='36' height='26' rx='2' fill='white' stroke='#111' stroke-width='2'/>
+<line x1='2097.5' y1='458' x2='2097.5' y2='464' stroke='#111' stroke-width='2'/>
+<line x1='2087.5' y1='465' x2='2107.5' y2='465' stroke='#111' stroke-width='2'/>
+<circle cx='2097.5' cy='445' r='5' fill='none' stroke='#111' stroke-width='2' stroke-dasharray='3 1.5'/>
+<text x='2098' y='488' font-family='Inter, Arial, Helvetica, sans-serif' font-size='12' font-weight='normal' text-anchor='middle' fill='#111'>Calcular a comparação</text>
+<circle cx='2294.5' cy='440' r='8' fill='white' stroke='#111' stroke-width='2'/>
+<path d='M2279.5,466 a15,15 0 0,1 30,0 Z' fill='white' stroke='#111' stroke-width='2'/>
+<text x='2294' y='488' font-family='Inter, Arial, Helvetica, sans-serif' font-size='12' font-weight='normal' text-anchor='middle' fill='#111'>Avaliar efeito sobre</text>
+<text x='2294' y='504' font-family='Inter, Arial, Helvetica, sans-serif' font-size='12' font-weight='normal' text-anchor='middle' fill='#111'>analistas e operação</text>
+<path d='M2761.0,299 a11,11 0 0,1 2,-21 a14,14 0 0,1 24,-8 a12,12 0 0,1 21,8 a10,10 0 0,1 -1,21 Z' fill='white' stroke='#111' stroke-width='2'/>
+<text x='2787' y='323' font-family='Inter, Arial, Helvetica, sans-serif' font-size='12' font-weight='normal' text-anchor='middle' fill='#111'>Decidir a ação</text>
+<rect x='2461.5' y='434' width='30' height='22' rx='2' fill='white' stroke='#111' stroke-width='2'/>
+<line x1='2476.5' y1='456' x2='2476.5' y2='463' stroke='#111' stroke-width='2'/>
+<line x1='2468.5' y1='464' x2='2484.5' y2='464' stroke='#111' stroke-width='2'/>
+<circle cx='2506.5' cy='442' r='6' fill='white' stroke='#111' stroke-width='2'/>
+<path d='M2495.5,464 a11,11 0 0,1 22,0 Z' fill='white' stroke='#111' stroke-width='2'/>
+<text x='2492' y='488' font-family='Inter, Arial, Helvetica, sans-serif' font-size='12' font-weight='normal' text-anchor='middle' fill='#111'>Manter a configuração</text>
+<rect x='2658.5' y='434' width='30' height='22' rx='2' fill='white' stroke='#111' stroke-width='2'/>
+<line x1='2673.5' y1='456' x2='2673.5' y2='463' stroke='#111' stroke-width='2'/>
+<line x1='2665.5' y1='464' x2='2681.5' y2='464' stroke='#111' stroke-width='2'/>
+<circle cx='2703.5' cy='442' r='6' fill='white' stroke='#111' stroke-width='2'/>
+<path d='M2692.5,464 a11,11 0 0,1 22,0 Z' fill='white' stroke='#111' stroke-width='2'/>
+<text x='2688' y='488' font-family='Inter, Arial, Helvetica, sans-serif' font-size='12' font-weight='normal' text-anchor='middle' fill='#111'>Ajustar parâmetros</text>
+<rect x='2855.5' y='434' width='30' height='22' rx='2' fill='white' stroke='#111' stroke-width='2'/>
+<line x1='2870.5' y1='456' x2='2870.5' y2='463' stroke='#111' stroke-width='2'/>
+<line x1='2862.5' y1='464' x2='2878.5' y2='464' stroke='#111' stroke-width='2'/>
+<circle cx='2900.5' cy='442' r='6' fill='white' stroke='#111' stroke-width='2'/>
+<path d='M2889.5,464 a11,11 0 0,1 22,0 Z' fill='white' stroke='#111' stroke-width='2'/>
+<text x='2886' y='488' font-family='Inter, Arial, Helvetica, sans-serif' font-size='12' font-weight='normal' text-anchor='middle' fill='#111'>Trocar o modelo ativo</text>
+<rect x='3052.5' y='434' width='30' height='22' rx='2' fill='white' stroke='#111' stroke-width='2'/>
+<line x1='3067.5' y1='456' x2='3067.5' y2='463' stroke='#111' stroke-width='2'/>
+<line x1='3059.5' y1='464' x2='3075.5' y2='464' stroke='#111' stroke-width='2'/>
+<circle cx='3097.5' cy='442' r='6' fill='white' stroke='#111' stroke-width='2'/>
+<path d='M3086.5,464 a11,11 0 0,1 22,0 Z' fill='white' stroke='#111' stroke-width='2'/>
+<text x='3082' y='488' font-family='Inter, Arial, Helvetica, sans-serif' font-size='12' font-weight='normal' text-anchor='middle' fill='#111'>Reverter a alteração</text>
+<path d='M3450.5,299 a11,11 0 0,1 2,-21 a14,14 0 0,1 24,-8 a12,12 0 0,1 21,8 a10,10 0 0,1 -1,21 Z' fill='white' stroke='#111' stroke-width='2'/>
+<text x='3476' y='323' font-family='Inter, Arial, Helvetica, sans-serif' font-size='12' font-weight='normal' text-anchor='middle' fill='#111'>Concluir e acompanhar</text>
+<rect x='3249.5' y='434' width='30' height='22' rx='2' fill='white' stroke='#111' stroke-width='2'/>
+<line x1='3264.5' y1='456' x2='3264.5' y2='463' stroke='#111' stroke-width='2'/>
+<line x1='3256.5' y1='464' x2='3272.5' y2='464' stroke='#111' stroke-width='2'/>
+<circle cx='3294.5' cy='442' r='6' fill='white' stroke='#111' stroke-width='2'/>
+<path d='M3283.5,464 a11,11 0 0,1 22,0 Z' fill='white' stroke='#111' stroke-width='2'/>
+<text x='3280' y='488' font-family='Inter, Arial, Helvetica, sans-serif' font-size='12' font-weight='normal' text-anchor='middle' fill='#111'>Registrar a decisão</text>
+<rect x='3458.5' y='432' width='36' height='26' rx='2' fill='white' stroke='#111' stroke-width='2'/>
+<line x1='3476.5' y1='458' x2='3476.5' y2='464' stroke='#111' stroke-width='2'/>
+<line x1='3466.5' y1='465' x2='3486.5' y2='465' stroke='#111' stroke-width='2'/>
+<circle cx='3476.5' cy='445' r='5' fill='none' stroke='#111' stroke-width='2' stroke-dasharray='3 1.5'/>
+<text x='3476' y='488' font-family='Inter, Arial, Helvetica, sans-serif' font-size='12' font-weight='normal' text-anchor='middle' fill='#111'>Notificar os analistas</text>
+<rect x='3643.5' y='434' width='30' height='22' rx='2' fill='white' stroke='#111' stroke-width='2'/>
+<line x1='3658.5' y1='456' x2='3658.5' y2='463' stroke='#111' stroke-width='2'/>
+<line x1='3650.5' y1='464' x2='3666.5' y2='464' stroke='#111' stroke-width='2'/>
+<circle cx='3688.5' cy='442' r='6' fill='white' stroke='#111' stroke-width='2'/>
+<path d='M3677.5,464 a11,11 0 0,1 22,0 Z' fill='white' stroke='#111' stroke-width='2'/>
+<text x='3674' y='488' font-family='Inter, Arial, Helvetica, sans-serif' font-size='12' font-weight='normal' text-anchor='middle' fill='#111'>Conferir indicadores no</text>
+<text x='3674' y='504' font-family='Inter, Arial, Helvetica, sans-serif' font-size='12' font-weight='normal' text-anchor='middle' fill='#111'>período seguinte</text>
+<path d='M44,574 a11,11 0 0,1 2,-21 a14,14 0 0,1 24,-8 a12,12 0 0,1 21,8 a10,10 0 0,1 -1,21 Z' fill='white' stroke='#111' stroke-width='2'/>
+<text x='112' y='565' font-family='Inter, Arial, Helvetica, sans-serif' font-size='14' fill='#333'>Tarefa abstrata</text>
+<circle cx='330' cy='550' r='8' fill='white' stroke='#111' stroke-width='2'/>
+<path d='M315,576 a15,15 0 0,1 30,0 Z' fill='white' stroke='#111' stroke-width='2'/>
+<text x='372' y='565' font-family='Inter, Arial, Helvetica, sans-serif' font-size='14' fill='#333'>Tarefa de usuário</text>
+<rect x='560' y='544' width='30' height='22' rx='2' fill='white' stroke='#111' stroke-width='2'/>
+<line x1='575' y1='566' x2='575' y2='573' stroke='#111' stroke-width='2'/>
+<line x1='567' y1='574' x2='583' y2='574' stroke='#111' stroke-width='2'/>
+<circle cx='605' cy='552' r='6' fill='white' stroke='#111' stroke-width='2'/>
+<path d='M594,574 a11,11 0 0,1 22,0 Z' fill='white' stroke='#111' stroke-width='2'/>
+<text x='632' y='565' font-family='Inter, Arial, Helvetica, sans-serif' font-size='14' fill='#333'>Tarefa de interação</text>
+<rect x='832' y='542' width='36' height='26' rx='2' fill='white' stroke='#111' stroke-width='2'/>
+<line x1='850' y1='568' x2='850' y2='574' stroke='#111' stroke-width='2'/>
+<line x1='840' y1='575' x2='860' y2='575' stroke='#111' stroke-width='2'/>
+<circle cx='850' cy='555' r='5' fill='none' stroke='#111' stroke-width='2' stroke-dasharray='3 1.5'/>
+<text x='892' y='565' font-family='Inter, Arial, Helvetica, sans-serif' font-size='14' fill='#333'>Tarefa de aplicação (sistema)</text>
+<text x='40' y='615' font-family='Inter, Arial, Helvetica, sans-serif' font-size='14' fill='#333'>Operadores:  &gt;&gt;  habilitação   ·   []  escolha exclusiva   ·   |||  concorrência (qualquer ordem ou intercaladas).  Prioridade: [] e ||| ligam antes de &gt;&gt;.</text>
+<text x='40' y='635' font-family='Inter, Arial, Helvetica, sans-serif' font-size='14' fill='#333'>Contorno tracejado: ação de outro ator (Thiago), fora da interação de Vanessa, que motiva a tarefa.</text>
+<text x='40' y='655' font-family='Inter, Arial, Helvetica, sans-serif' font-size='14' fill='#333'>“Concluir e acompanhar” vale para as quatro alternativas, inclusive “manter”: registra-se a decisão e conferem-se os indicadores mesmo sem alteração.</text>
+</svg>

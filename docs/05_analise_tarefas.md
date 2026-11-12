@@ -1,40 +1,44 @@
 # Entrega 5 — Análise de tarefas: HTA, GOMS e CTT
 
-**Data:** 13/09/2026     
-**Status:** `🟩 concluída`     
-**Responsabilidade:** cada integrante modela pelo menos 1 HTA, 1 GOMS e 1 CTT. As três técnicas podem abordar a mesma funcionalidade ou funcionalidades distintas, conforme a orientação da disciplina.
+**Data:** 13/09/2026 · **Revisada em:** 12/11/2026     
+**Status:** `🟩 concluída (revisada após feedback)`     
+**Responsabilidade:** cada integrante modela pelo menos 1 HTA, 1 GOMS e 1 CTT.
+
+> **Revisão de 12/11/2026, a partir do [feedback da Entrega 05](../feedbaks/Feedback_Professor_Entrega05_Equipe21.md).** Mudanças em relação à versão de 13/09/2026:
+>
+> 1. **IDs padronizados.** **T01** é a tarefa de Vanessa e **T02** a de Thiago, e as três técnicas de cada tarefa usam o mesmo ID. Os arquivos agora são `hta_t01.svg`, `ctt_t01.svg`, `hta_t02.svg` e `ctt_t02.svg`. Os diagramas da versão anterior, exportados do Figma, foram para [`assets/05_tarefas/versao_inicial/`](../assets/05_tarefas/versao_inicial/). Os *placeholders* `hta_t01.svg` (antigo) e `ctt_t03.svg` foram removidos.
+> 2. **HTAs:**
+>    - Cada tarefa zero tem *input* e *feedback* na tabela.
+>    - As folhas não têm mais plano, e todo plano cita apenas filhos que existem.
+>    - Tabela e diagrama usam a mesma notação: `>`, `/` e `+`.
+> 3. **GOMS:**
+>    - Os dois modelos foram reescritos em hierarquia indentada `GOAL 0 → GOAL n → METHOD → SELECTION RULE → operadores`.
+>    - Os operadores são concretos, e cada método termina com uma verificação.
+>    - No de Vanessa, as etapas deixaram de ser tratadas como métodos.
+> 4. **CTTs:**
+>    - Os operadores são `>>` (habilitação), `[]` (escolha) e `|||` (concorrência).
+>    - Os dois modelos ganharam o motivador externo e tarefas de aplicação (sistema).
+>    - Os nós decompostos passaram a ser abstratos.
+> 5. **Escopo:**
+>    - Thiago tem agora a saída “indefinido”.
+>    - O rótulo “Bloquear o host” virou “Confirmar como ataque e encaminhar à infraestrutura”.
+>    - Vanessa tem quatro alternativas harmonizadas nas três técnicas: manter, ajustar parâmetros, trocar o modelo ativo e reverter.
+> 6. **Síntese da equipe e checklist** foram preenchidos.
+>
+> As tarefas partem dos cenários revisados da [Entrega 04](04_cenarios_problema.md).
 
 ## Objetivo da atividade
 
-Modelar tarefas importantes sob perspectivas complementares: decomposição hierárquica (HTA), estrutura de metas/métodos/operações (GOMS) e relações temporais entre tarefas (CTT). O diagrama deve ser acompanhado de interpretação textual.
-
-## Para projetos cujo TCC não previa interface
-
-Modele **tarefas humanas relacionadas ao uso da contribuição técnica**, e não a implementação interna do algoritmo. Exemplos de boas tarefas para análise:
-
-- investigar uma consulta de baixo desempenho;
-- configurar uma análise e selecionar parâmetros;
-- submeter um dataset e verificar sua validade;
-- acompanhar uma execução demorada;
-- comparar dois resultados/modelos;
-- interpretar uma recomendação e decidir se a aceita;
-- localizar uma execução anterior usando busca/filtros;
-- gerar e compartilhar um relatório;
-- administrar papéis/permissões quando isso for parte do trabalho real;
-- revisar um alerta e registrar uma decisão.
-
-Um CRUD pode gerar tarefas relevantes, mas “cadastrar usuário” só merece modelagem se tiver significado no domínio (papéis, validações, riscos, permissões, dependências).
+Modelar tarefas importantes sob perspectivas complementares: decomposição hierárquica (HTA), estrutura de metas/métodos/operadores (GOMS) e relações temporais entre tarefas (CTT). Como o TCC não previa interface, as tarefas descrevem **o que a pessoa faz com os resultados do IDS**, e não o funcionamento interno do algoritmo.
 
 ## Seleção das tarefas
 
-| ID | Tarefa | Persona/cenário de origem | Frequência/criticidade | Autor responsável |
-|---|---|---|---|---|
-| T01 | Decidir se a configuração atual do IDS deve ser mantida, ajustada ou revertida | Vanessa / Cenário 02 | Alta | Marcela Nalesso |
-| T02 | Reconhecer a anomalia como um ataque ou falso positivo | Thiago / Cenário 01 | Alta frequência e alta criticidade | Lucas Kerr do Amaral |
+| ID | Tarefa | Persona/cenário de origem | Frequência / criticidade (estimativa da equipe) | Autor responsável | Arquivos |
+|---|---|---|---|---|---|
+| T01 | Decidir se a configuração atual do IDS deve ser mantida, ajustada ou revertida | Vanessa (P02) / C02 | Frequência: baixa, ocorre a cada alteração ou suspeita (H05). Criticidade: alta, porque afeta tudo o que os analistas veem (H27) | Marcela Nalesso | [`hta_t01.svg`](../assets/05_tarefas/hta_t01.svg), [`ctt_t01.svg`](../assets/05_tarefas/ctt_t01.svg) |
+| T02 | Reconhecer a anomalia como um ataque ou falso positivo | Thiago (P01) / C01 | Frequência: alta, várias vezes por turno (H11). Criticidade: alta, porque o erro custa nos dois sentidos (H12) | Lucas Kerr do Amaral | [`hta_t02.svg`](../assets/05_tarefas/hta_t02.svg), [`ctt_t02.svg`](../assets/05_tarefas/ctt_t02.svg) |
 
-
-
-> Priorize tarefas necessárias para que o usuário alcance objetivos centrais. Não desperdice a modelagem em ações triviais isoladas, como “clicar em login”, se o objetivo relevante é maior. Da mesma forma, não modele o funcionamento interno do algoritmo como se fosse uma tarefa humana.
+> Frequência e criticidade são medidas diferentes e, aqui, ambas são **estimativas da equipe**. Nenhuma foi verificada (H11, H12 e H05 seguem abertas na matriz de rastreabilidade).
 
 ---
 
@@ -44,253 +48,440 @@ Um CRUD pode gerar tarefas relevantes, mas “cadastrar usuário” só merece m
 
 ### Descrição da tarefa
 
-Thiago, analista de SOC nível 2 em plantão noturno, inicia a tarefa quando o IDS sinaliza uma sequência de conexões suspeitas a partir de um mesmo segmento de rede (cenário C01). O objetivo é julgar se aquelas conexões correspondem a um ataque real ou a um falso positivo do classificador. Para isso, ele localiza o momento em que a anomalia ocorreu, refina a janela de tempo, interpreta a classificação do estágio 2 e consulta os hosts envolvidos. A tarefa se conclui quando Thiago decide a ação sobre o incidente: encaminhar o bloqueio do host reportado ou reportar o alerta como falso positivo.
+Thiago, analista de SOC nível 2 em plantão noturno, inicia a tarefa quando o IDS sinaliza uma sequência de conexões suspeitas a partir de um mesmo segmento (cenário C01). Ele situa a anomalia no tempo, interpreta a classificação junto com o histórico dos hosts e decide o veredito: ataque (encaminhado à infraestrutura), falso positivo ou indefinido. Depois registra o caso para quem continua. A contenção é executada pela infraestrutura, fora da tarefa de Thiago.
 
 ### Diagrama
 
-![HTA T02](../assets/05_tarefas/hta_thiago.svg)
+![HTA T02](../assets/05_tarefas/hta_t02.svg)
 
 ### Decomposição e planos
 
-| ID | Objetivo/operação | Plano/ordem | Problema ou decisão de design observada |
+| ID | Objetivo/operação | Plano | *Input* / *feedback* (tarefa 0) · ação e problema/recomendação (subtarefas) |
 |---|---|---|---|
-| 0 | Reconhecer a anomalia como um ataque ou falso positivo | 1 > 2 > 3 | A decisão final depende de contexto temporal e da classificação do modelo; nenhuma etapa pode ser pulada sem prejudicar o julgamento. |
-| 1 | Verificar o momento em que a anomalia ocorreu | 1.1 + 1.2 | Thiago precisa situar a anomalia no tempo antes de interpretá-la; a interface deve destacar picos e permitir ir direto ao período relevante. |
-| 1.1 | Verificar a ocorrência de alertas | 1 | O volume bruto de alertas é o primeiro sinal, mas misturado ao restante do tráfego não indica onde olhar (C01). |
-| 1.2 | Selecionar as janelas de tempo para aumentar a resolução da análise | 1 | O refinamento da janela reduz o ruído; o filtro de período deve ser direto e manter o contexto do pico selecionado. |
-| 2 | Observar o resultado do estágio 2 para a classificação da anomalia | 2.1 + 2.2 | A classificação só é útil se Thiago entender o critério; termos de ML precisam de explicação na própria tela (RC03). |
-| 2.1 | Observar a classificação da janela selecionada | 2 | A classificação deve ser apresentada já filtrada pela janela escolhida em 1.2, sem que Thiago precise refazer o filtro. |
-| 2.2 | Consultar os hosts reportados | 2 | Saber quais origens/destinos foram alertados permite confrontar o modelo com o que Thiago conhece do ambiente. |
-| 3 | Avaliar qual deve ser a ação sobre o incidente | 3.1 / 3.2 | Ponto de decisão: as saídas são alternativas exclusivas e precisam ser registradas com sua justificativa. |
-| 3.1 | Bloquear o host reportado | 3 | O bloqueio é executado pela equipe de infraestrutura; na interface, a ação corresponde a confirmar o incidente e encaminhar a solicitação. |
-| 3.2 | Reportar o alerta como falso positivo | 3 | O registro de falsos positivos é o sinal que alimenta a reavaliação do classificador por Vanessa (coordenação C01 ↔ C02). |
+| 0 | Reconhecer a anomalia como um ataque ou falso positivo | 1 > 2 > 3 > 4 | ***Input:*** o IDS sinaliza conexões suspeitas a partir de um mesmo segmento enquanto Thiago escreve outra análise; a operação cobra uma resposta sobre a lentidão do portal. ***Feedback:*** Thiago vê o veredito e a justificativa gravados no caso. Se encaminhou, vê o número do chamado aceito pela infraestrutura. A nota de passagem lista o que foi verificado e o que falta. Se o veredito for 3.3, esta execução termina com o caso aberto; retomar a investigação é uma nova execução da tarefa |
+| 1 | Situar a anomalia no tempo | 1.1 > 1.2 | Só é possível escolher a janela depois de perceber onde está o pico. **Recomendação:** destacar picos e permitir ir direto ao período |
+| 1.1 | Perceber o pico de alertas sinalizados | — | **Problema (C01):** misturado ao restante do tráfego, o volume de alertas não indica onde olhar |
+| 1.2 | Selecionar a janela de tempo do pico | — | **Recomendação:** a seleção deve manter o pico em contexto e mostrar o período escolhido |
+| 2 | Interpretar a classificação da janela | 2.1 + 2.2 | As duas consultas podem ser feitas em qualquer ordem; em C01, Thiago alterna entre elas. O julgamento (3) depende das duas |
+| 2.1 | Ler a classificação e a incerteza dos alertas | — | **Problema (C01):** a classificação não diz o critério. **Recomendação:** apresentar classificação, incerteza e critério separados (RC03) |
+| 2.2 | Consultar os hosts envolvidos e o histórico deles | — | **Problema (C01):** o histórico não está no console e exige *script* próprio (H13). **Recomendação:** histórico e comportamento habitual junto do alerta |
+| 3 | Decidir o veredito | 3.1 / 3.2 / 3.3 | Alternativas exclusivas. A escolha depende de 2 (ver regra de seleção do GOMS) |
+| 3.1 | Confirmar como ataque e encaminhar à infraestrutura | — | Thiago **pede** a contenção; quem bloqueia é a infraestrutura. **Recomendação:** confirmação do encaminhamento visível a Thiago |
+| 3.2 | Descartar como falso positivo | — | O descarte com justificativa é o dado que Vanessa precisa contar em C02 |
+| 3.3 | Marcar como indefinido e manter em investigação | — | Saída que de fato ocorre em C01. **Recomendação:** o indefinido não pode ser forçado a virar binário |
+| 4 | Registrar o caso para quem vem depois | 4.1 > 4.2 | A nota de passagem resume o registro, por isso o registro vem antes |
+| 4.1 | Registrar o veredito e a justificativa | — | **Problema (C01):** os critérios ficam nos *scripts* e na memória |
+| 4.2 | Escrever a nota de passagem de plantão | — | **Problema (C01):** a nota sai incompleta e torna Thiago um gargalo |
 
-**Legenda dos planos:** `>` sequência; `+` ambas as subtarefas são executadas; `/` escolha entre alternativas.
+**Legenda dos planos:** `>` sequência · `/` escolha entre alternativas · `+` em qualquer ordem ou em paralelo.
 
 **Verificação do HTA:**
 
-- O objetivo 0 representa uma meta do usuário? Sim. Thiago precisa julgar se a anomalia sinalizada é um ataque real ou um falso positivo, que é o recorte do fluxo de investigação.
-- As subtarefas são necessárias e suficientes? Em grande parte. Elas cobrem localização temporal, interpretação da classificação e decisão. A terceira saída prevista no cenário C01 — marcar como indefinido e seguir investigando — e o registro da decisão para o próximo turno ainda não aparecem no diagrama.
-- Os **planos** indicam ordem, alternativa, repetição ou condição? Sim. Há sequência no nível principal (1 > 2 > 3), execução conjunta em 1 e 2 e escolha explícita em 3.
-- A decomposição parou em nível útil para projeto de interação? Sim. As folhas correspondem a ações sobre a interface (filtrar janela, consultar hosts, reportar alerta) sem descer ao nível de cliques.
+- **O objetivo 0 representa uma meta do usuário?** Sim. Thiago precisa julgar se a anomalia é um ataque real, um falso positivo ou se ainda não dá para dizer.
+- **As subtarefas são necessárias e suficientes?** Sim, dentro do recorte. Cobrem localização temporal, interpretação, veredito com as três saídas de C01 e registro para o próximo turno. A retomada da análise interrompida fica como *input* e não como subtarefa, porque pertence a outra tarefa.
+- **Os planos indicam ordem, alternativa, repetição ou condição?** Sim:
+  - sequência em 0, 1 e 4;
+  - ordem livre em 2;
+  - escolha em 3;
+  - condição de término descrita no *feedback* da tarefa 0.
+- **A decomposição parou em nível útil para o projeto de interação?** Sim. As folhas correspondem a decisões e consultas que a interface precisa apoiar, sem descer a cliques.
 
 ---
 
-## GOMS — T02: Reconhecer a natureza do alerta
+## GOMS — T02: Reconhecer a anomalia como um ataque ou falso positivo
 
 **Autor(a):** Lucas Kerr do Amaral — 22.123.032-9
 
-### Goal
+**Hipóteses de interação usadas na modelagem.** São suposições para descrever operadores. **Não** são capacidades já implementadas:
 
-`G0: reconhecer a natureza do alerta (ataque ou falso positivo)`
+- painel com a série temporal de alertas;
+- seletor de período;
+- lista de alertas com classificação e incerteza;
+- consulta ao histórico de um host, no próprio painel ou por *script* (prática atual de C01);
+- campo de justificativa no caso;
+- ação “encaminhar” que gera um chamado para a infraestrutura;
+- campo de nota de passagem.
 
-A meta principal se divide nas mesmas três submetas do CTT T02, executadas em sequência (`G1 >> G2 >> G3`). G1 e G2 têm um único método; a escolha entre métodos aparece em G3, que é o ponto de decisão de Thiago.
+```
+GOAL 0: Reconhecer a anomalia como ataque ou falso positivo
+  GOAL 1: Situar a anomalia no tempo
+    METHOD 1.A: localizar o pico na série temporal          (método único)
+      PERCEIVE  o aumento de alertas no painel
+      LOCATE    o pico na série temporal
+      SELECT    o início do pico na série
+      SELECT    o fim do pico na série
+      VERIFY    o período exibido corresponde ao pico e a lista mostra só os alertas dessa janela
 
-### Métodos, operadores e regras de seleção
+  GOAL 2: Interpretar a classificação da janela
+    GOAL 2.1: Ler a classificação e a incerteza
+      METHOD 2.1.A:                                          (método único)
+        SELECT    o primeiro alerta da lista
+        READ      a classificação, a incerteza e o critério informados
+        RECALL    o que é habitual para aquele serviço e horário
+        VERIFY    leu a classificação de todos os alertas do mesmo padrão
+    GOAL 2.2: Consultar o histórico dos hosts
+      METHOD 2.2.A: consultar o histórico no painel
+        SELECT    o host de origem do alerta
+        SELECT    “histórico de comunicação”
+        READ      com quem o host falou nos últimos 7 dias e em que volume
+        VERIFY    o histórico exibido é do host selecionado e cobre o período pedido
+      METHOD 2.2.B: consultar o histórico por script próprio
+        TYPE      o comando do script com o IP do host e o período
+        WAIT      a saída do script
+        READ      as contagens por destino e por dia
+        VERIFY    o script retornou dados do período inteiro, sem erro
+      SELECTION RULE 2.2:
+        IF o painel tem histórico do host para o período    THEN use METHOD 2.2.A
+        IF o histórico não está disponível ou está incompleto THEN use METHOD 2.2.B
 
-**G1: verificar a janela da ocorrência da anomalia**
+  GOAL 3: Decidir o veredito
+    METHOD 3.A: confirmar como ataque e encaminhar
+      DECIDE    que o padrão corresponde a um ataque
+      SELECT    os alertas do padrão
+      SELECT    “confirmar como ataque”
+      TYPE      a justificativa
+      SELECT    “encaminhar à infraestrutura”
+      VERIFY    o chamado foi criado com número e aparece como recebido pela infraestrutura
+    METHOD 3.B: descartar como falso positivo
+      DECIDE    que o tráfego corresponde a um comportamento legítimo conhecido
+      SELECT    os alertas do padrão
+      SELECT    “falso positivo”
+      TYPE      a justificativa do descarte
+      VERIFY    os alertas aparecem como descartados, com a justificativa
+    METHOD 3.C: marcar como indefinido
+      DECIDE    que a informação disponível não basta
+      SELECT    os alertas do padrão
+      SELECT    “indefinido”
+      TYPE      o que já foi verificado e o que falta verificar
+      VERIFY    o caso aparece como aberto, com a anotação
+    SELECTION RULE 3:
+      IF classificação, histórico e contexto apontam para um ataque         THEN use METHOD 3.A
+      IF o tráfego corresponde a um comportamento legítimo conhecido do ativo THEN use METHOD 3.B
+      IF as evidências são contraditórias ou insuficientes (caso de C01)      THEN use METHOD 3.C
 
-- **Method M1.1:** localizar e refinar a janela da anomalia
-  - Operators:
-    - Perceber o volume de alertas reportados no painel
-    - Identificar o pico na série temporal
-    - Selecionar a janela de tempo do pico
-    - Aumentar a resolução da janela de análise
+  GOAL 4: Registrar o caso para quem vem depois
+    METHOD 4.A:                                              (método único)
+      SELECT    “nota de passagem”
+      TYPE      os hosts, o veredito, o que foi verificado e o que falta
+      SELECT    o destinatário (próximo turno)
+      SELECT    “salvar”
+      VERIFY    a nota aparece na fila do próximo turno, ligada ao caso
+```
 
-**G2: verificar resultados da classificação do estágio 2**
+**Leitura do modelo:**
 
-- **Method M2.1:** interpretar a classificação da janela refinada
-  - Operators:
-    - Revisar a classificação da janela refinada
-    - Ler a categoria prevista e a confiança atribuídas pelo modelo
-    - Consultar quais hosts foram alertados
-    - Confrontar os hosts alertados com o que conhece do ambiente
-    - Decidir se a classificação corresponde a um ataque
-
-**G3: avaliar ação sobre o incidente**
-
-- **Method M3.1:** bloquear o host reportado
-  - Operators:
-    - Selecionar o host reportado
-    - Confirmar o alerta como incidente
-    - Encaminhar a solicitação de bloqueio à equipe de infraestrutura
-    - Registrar a decisão e o que a fundamentou
-- **Method M3.2:** reportar o alerta como falso positivo
-  - Operators:
-    - Selecionar o alerta
-    - Marcar o alerta como falso positivo
-    - Registrar a justificativa do descarte
-- **Selection Rule SR1:** usar M3.1 quando a classificação do estágio 2 e o contexto dos hosts confirmam um ataque; usar M3.2 quando o tráfego alertado corresponde a um comportamento legítimo conhecido do ambiente (por exemplo, um pico de acessos ao portal).
-
-M3.1 e M3.2 são alternativas exclusivas para a mesma submeta, equivalentes à escolha entre “Bloquear o host reportado” e “Reportar o alerta como falso positivo” no CTT e ao plano `3.1 / 3.2` no HTA. O bloqueio em si é executado pela equipe de infraestrutura, fora da interface; o operador de Thiago é o encaminhamento. Os falsos positivos registrados por M3.2 são o sinal que leva Vanessa a reavaliar o classificador (coordenação C01 ↔ C02).
-
-> Não chame qualquer passo de “método”. Em GOMS, métodos são sequências alternativas capazes de atingir uma meta; regras de seleção explicam quando escolher entre eles.
+- **G1, G2 e G4 têm um único método.** Não foram inventadas alternativas para elas.
+- **G2.2 tem duas formas reais de execução**, que vêm da prática descrita em C01: o painel ou o *script* próprio.
+- **G3 concentra a decisão.** Os três métodos são alternativas exclusivas, equivalentes ao plano `3.1 / 3.2 / 3.3` do HTA e à escolha `[]` do CTT.
+- **3.A encaminha, não bloqueia.** O método se chama “confirmar como ataque e encaminhar” porque o operador de Thiago é o encaminhamento; o bloqueio é da infraestrutura.
+- **3.B e 3.C geram o registro que Vanessa precisa contar** para avaliar o modelo (coordenação C01 ↔ C02).
 
 ---
 
-## CTT — T02: Reconhecer a natureza do alerta
+## CTT — T02: Reconhecer a anomalia como um ataque ou falso positivo
 
 **Autor(a):** Lucas Kerr do Amaral — 22.123.032-9
 
 ### Descrição
 
-Modelagem da mesma tarefa do HTA T02 sob a perspectiva das relações temporais. A tarefa abstrata raiz, “Reconhecer a natureza do alerta”, se divide em três subtarefas abstratas executadas em sequência: verificar a janela da ocorrência da anomalia, verificar os resultados da classificação do estágio 2 e avaliar a ação sobre o incidente. Cada uma é decomposta em tarefas folha de usuário ou de interação, terminando em uma escolha entre bloquear o host reportado ou reportá-lo como falso positivo.
+Mesma tarefa do HTA T02, vista pelas relações temporais. A raiz abstrata se divide em cinco subtarefas abstratas, ligadas por habilitação (`>>`):
+
+1. receber o alerta;
+2. situar a anomalia no tempo;
+3. interpretar a classificação;
+4. decidir o veredito;
+5. registrar o caso.
+
+O **motivador externo** está explícito: a tarefa de aplicação “Emitir alerta de conexões suspeitas” leva Thiago a interromper a análise em andamento, uma tarefa de usuário.
 
 ### Diagrama
 
-![CTT T02](../assets/05_tarefas/ctt_thiago.svg)
+![CTT T02](../assets/05_tarefas/ctt_t02.svg)
 
 ### Legenda e relações temporais usadas
 
-| Operador/relação | Significado no diagrama | Exemplo no modelo |
+| Operador | Significado | Onde aparece no modelo |
 |---|---|---|
-| `>>` | Habilitação (sequência): a tarefa da direita só começa quando a da esquerda termina | Verificar a janela da ocorrência da anomalia `>>` Verificar resultados da classificação do estágio 2 `>>` Avaliar ação sobre o incidente |
-| `>>` | Habilitação entre folhas | Verificar os alertas reportados `>>` Aumentar a resolução da janela de análise; Revisar a classificação da janela refinada `>>` Consultar quais hosts foram alertados |
-| `\|\|` | Alternativa entre as duas ações finais (no HTA, plano `3.1 / 3.2`) | Bloquear o host reportado `\|\|` Reportar o alerta como falso positivo |
+| `>>` | Habilitação: a tarefa da direita só começa quando a da esquerda termina | Entre as cinco subtarefas da raiz; Emitir alerta `>>` Interromper a análise; Perceber o pico `>>` Selecionar a janela `>>` Exibir os alertas da janela; Confirmar e pedir a contenção `>>` Abrir chamado; Escrever veredito `>>` Gravar o registro `>>` Escrever a nota de passagem |
+| `\|\|\|` | Concorrência: as tarefas podem ocorrer em qualquer ordem ou intercaladas | Examinar classificação e incerteza `\|\|\|` Consultar o histórico dos hosts |
+| `[]` | Escolha exclusiva | Confirmar ataque e encaminhar `[]` Descartar como falso positivo `[]` Marcar como indefinido |
+
+Prioridade: `[]` e `|||` ligam antes de `>>`. Assim, `Examinar ||| Consultar >> Confrontar` significa que as duas consultas, em qualquer ordem, habilitam o confronto com o que Thiago conhece do ambiente.
 
 **Tipos de tarefa:**
 
-| Tipo | Ícone | Tarefas |
-|---|---|---|
-| Abstrata | nuvem | Reconhecer a natureza do alerta; Verificar a janela da ocorrência da anomalia; Verificar resultados da classificação do estágio 2; Avaliar ação sobre o incidente |
-| Usuário | pessoa | Verificar os alertas reportados |
-| Interação | monitor + pessoa | Aumentar a resolução da janela de análise; Revisar a classificação da janela refinada; Consultar quais hosts foram alertados; Bloquear o host reportado; Reportar o alerta como falso positivo |
+| Tipo | Tarefas |
+|---|---|
+| Abstrata | A raiz e as cinco subtarefas decompostas: receber o alerta, situar a anomalia no tempo, interpretar a classificação, decidir o veredito e registrar o caso; além de “Confirmar ataque e encaminhar” |
+| Usuário | Interromper a análise em andamento; Perceber o pico de alertas; Confrontar com o que conhece do ambiente |
+| Interação | Selecionar a janela do pico; Examinar classificação e incerteza; Consultar o histórico dos hosts; Confirmar e pedir a contenção; Descartar como falso positivo; Marcar como indefinido; Escrever veredito e justificativa; Escrever a nota de passagem de plantão |
+| Aplicação (sistema) | Emitir alerta de conexões suspeitas; Exibir os alertas da janela; Abrir chamado para a infraestrutura; Gravar o registro no caso |
 
-A relação predominante é de habilitação: Thiago só consegue interpretar a classificação depois de refinar a janela de tempo, e só decide a ação depois de saber quais hosts foram alertados. A primeira folha é uma tarefa de usuário porque consiste em perceber o volume de alertas no painel, sem operar a interface; as demais exigem manipulação (filtrar, consultar, registrar) e são de interação. A decisão final é uma escolha exclusiva entre confirmar o incidente — encaminhando o bloqueio à infraestrutura — e reportar falso positivo.
+A ação humana e o processamento do sistema estão separados em três pontos:
+
+- Thiago seleciona a janela `>>` o sistema exibe os alertas dela.
+- Thiago confirma o ataque `>>` o sistema abre o chamado.
+- Thiago escreve o veredito `>>` o sistema grava o registro.
+
+A contenção não aparece como tarefa: é feita pela infraestrutura, fora da interação de Thiago. O ramo “Confirmar ataque e encaminhar” termina na abertura do chamado.
 
 ---
 
 ## HTA — T01: Decidir se a configuração atual do IDS deve ser mantida, ajustada ou revertida
 
-**Autor(a):** Marcela Nalesso - 22.222.011-3   
+**Autor(a):** Marcela Nalesso - 22.222.011-3
 
 ### Descrição da tarefa
 
-Vanessa, como administradora responsável pela operação do IDS e pela estabilidade da infraestrutura, inicia a tarefa quando observa aumento de alertas, ruído operacional e comportamento anômalo na rede. O objetivo é confirmar se o cenário exige manter a configuração atual, ajustar parâmetros do pipeline ou reverter uma alteração recente. A tarefa se conclui quando a decisão é tomada com base em diagnóstico, avaliação de impacto e validação do efeito sobre a operação da rede.
+Vanessa, administradora responsável pelo IDS, inicia a tarefa quando recebe o relatório diário com alertas acima da média e o chamado de Thiago perguntando se o modelo mudou (cenário C02). Ela confirma o desvio, revisa o estado do pipeline, avalia o impacto de uma possível mudança e decide entre quatro alternativas: manter, ajustar parâmetros, trocar o modelo ativo ou reverter a alteração recente. Depois registra a decisão, informa os analistas e confere os indicadores no período seguinte.
 
 ### Diagrama
 
-![HTA T01](../assets/05_tarefas/hta_t02.svg)
+![HTA T01](../assets/05_tarefas/hta_t01.svg)
 
 ### Decomposição e planos
 
-| ID | Objetivo/operação | Plano/ordem | Problema ou decisão de design observada |
+| ID | Objetivo/operação | Plano | *Input* / *feedback* (tarefa 0) · ação e problema/recomendação (subtarefas) |
 |---|---|---|---|
-| 0 | Decidir se a configuração atual do IDS deve ser mantida, ajustada ou revertida | 1 > 2 > 3 > 4 > 5 | Vanessa precisa diagnosticar, avaliar risco e validar a decisão antes de agir. |
-| 1 | Identificar que a operação do IDS está fora do comportamento esperado | 1.1 > 1.2 | O desvio deve ser confirmado antes de qualquer ajuste. |
-| 1.1 | Verificar aumento de alertas e ruído operacional | 1 | O sinal inicial é relevante, mas não é suficiente para justificar uma mudança. |
-| 1.2 | Comparar o comportamento atual com a linha de base da rede | 1 | A comparação evita decisões baseadas em anomalias isoladas ou temporárias. |
-| 2 | Revisar o estado atual do pipeline | 2.1 || 2.2 || 2.3 | A causa do problema pode estar no algoritmo, na infraestrutura ou no comportamento recente do ambiente. |
-| 2.1 | Verificar desempenho do algoritmo ativo | 2 | O algoritmo pode estar gerando falsos positivos ou classificações inadequadas. |
-| 2.2 | Verificar carga e estabilidade da infraestrutura | 2 | A infraestrutura pode estar degradada mesmo quando o algoritmo está funcional. |
-| 2.3 | Consultar o histórico recente do tráfego e dos alertas | 2 | O histórico ajuda a distinguir variação legítima de comportamento de falha operacional. |
-| 3 | Avaliar impacto de uma possível mudança | 3.1 || 3.2 || 3.3 | A decisão precisa considerar risco, reversibilidade e efeito sobre a operação. |
-| 3.1 | Comparar o modelo atual e o modelo candidato | 3 | A análise entre alternativas reduz a chance de ajustar o sistema pela causa errada. |
-| 3.2 | Avaliar o efeito da mudança sobre analistas e operação da rede | 3 | As mudanças impactam diretamente o trabalho de investigação e a estabilidade do trânsito. |
-| 4 | Decidir a ação de configuração | 4.1 [] 4.2 [] 4.3 [] 4.4 | A alternativa escolhida depende do diagnóstico e do risco estimado. |
-| 4.1 | Manter a configuração atual | 4 | Manter é apropriado quando o comportamento está estável e aceitável. |
-| 4.2 | Ajustar parâmetros do pipeline ou classificador ativo | 4 | O ajuste é adequado quando o problema é de calibração e não de falha estrutural. A troca é relevante quando a qualidade de detecção do modelo atual é insuficiente.  |
-| 4.3 | Reverter a alteração e reavaliar | 4 | A reversão é preferível quando a alteração piorou o ambiente ou aumentou ruído. |
-| 5 | Validar a decisão após a mudança | 5.1 > 5.2 > 5.3 > 5.4 | A validação confirma se a ação teve o efeito desejado e se a equipe foi informada. |
-| 5.1 | Registrar o que mudou, quando e por quê | 5 | O registro cria rastreabilidade e suporte para análise posterior. |
-| 5.2 | Monitorar o resultado após a alteração | 5 | A confirmação do efeito é essencial para saber se a decisão foi correta. |
+| 0 | Decidir se a configuração atual do IDS deve ser mantida, ajustada ou revertida | 1 > 2 > 3 > 4 > 5 | ***Input:*** relatório diário com alertas cerca de três vezes acima da média e chamado de Thiago perguntando se o modelo ou os parâmetros mudaram, depois de uma alteração feita por Vanessa na sexta. ***Feedback:*** a decisão está no histórico de mudanças, com motivo e estado anterior. A configuração em vigor é a pretendida, seja a mesma, a ajustada, a trocada ou a revertida. Os analistas confirmaram o recebimento do aviso. No período seguinte, alertas e carga estão dentro da faixa que Vanessa definiu |
+| 1 | Confirmar que a operação está fora do esperado | 1.1 > 1.2 | O sinal precisa ser lido antes de ser comparado |
+| 1.1 | Verificar o aumento de alertas e o chamado recebido | — | **Problema (C02):** o sinal chega por dois canais separados (relatório e chamado) |
+| 1.2 | Comparar com a linha de base anterior à mudança | — | **Problema (C02):** a linha de base precisa ser montada à mão, com *script* e planilha. **Recomendação:** antes/depois da alteração visível |
+| 2 | Revisar o estado atual do pipeline | 2.1 + 2.2 + 2.3 | As três verificações são independentes e podem ser feitas em qualquer ordem |
+| 2.1 | Verificar o desempenho do modelo ativo | — | **Problema (C02):** a única referência é o conjunto de teste do treinamento, e não há contagem de vereditos dos analistas |
+| 2.2 | Verificar carga e estabilidade do embarcado | — | Em C02, mostra o ganho que a alteração trouxe |
+| 2.3 | Consultar o histórico de mudanças e do tráfego | — | **Problema (C02):** mudanças ficam numa planilha `[H]`; eventos externos, como a nova versão do portal, chegam por conversa |
+| 3 | Avaliar o impacto de uma possível mudança | 3.1 > 3.2 | O efeito sobre pessoas só pode ser estimado depois de saber o que muda tecnicamente |
+| 3.1 | Comparar a configuração atual com a alternativa | — | A alternativa pode ser a configuração anterior ou um modelo candidato |
+| 3.2 | Avaliar o efeito sobre analistas e operação | — | **Recomendação:** mostrar o efeito previsto antes de confirmar (F03, R02) |
+| 4 | Decidir a ação de configuração | 4.1 / 4.2 / 4.3 / 4.4 | Alternativas exclusivas (ver regra de seleção do GOMS) |
+| 4.1 | Manter a configuração atual | — | “Manter” também é decisão e também precisa ser registrada e comunicada |
+| 4.2 | Ajustar parâmetros do pipeline | — | Por exemplo, corrigir o valor da janela de agregação do estágio 1 |
+| 4.3 | Trocar o modelo ativo | — | Promover um modelo candidato |
+| 4.4 | Reverter a alteração recente | — | Voltar à configuração anterior registrada |
+| 5 | Concluir e acompanhar a decisão | 5.1 > 5.2 | Vale para as quatro alternativas, inclusive 4.1 |
+| 5.1 | Registrar a decisão e informar os analistas | — | **Problema (C02):** os analistas não sabiam da alteração de sexta (R03) |
+| 5.2 | Conferir os indicadores no período seguinte | — | Fecha a tarefa: compara alertas e carga com a faixa esperada |
+
+**Legenda dos planos:** `>` sequência · `/` escolha entre alternativas · `+` em qualquer ordem ou em paralelo.
 
 **Verificação do HTA:**
 
-- O objetivo 0 representa uma meta do usuário? Sim. Vanessa precisa decidir de forma fundamentada se deve manter, ajustar ou reverter a configuração do IDS.
-- As subtarefas são necessárias e suficientes? Sim. Elas cobrem diagnóstico, revisão do pipeline, avaliação de impacto, tomada de decisão e validação final.
-- Os **planos** indicam ordem, alternativa, repetição ou condição? Sim. Há sequência principal, paralelismo nas verificações e escolha explícita entre alternativas de ação.
-- A decomposição parou em nível útil para projeto de interação? Sim. A estrutura chega ao nível de decisão e validação operacional, que é útil para definir requisitos de interface e informação.
+- **O objetivo 0 representa uma meta do usuário?** Sim. Vanessa precisa decidir, com fundamento, o destino de uma alteração que pode ter piorado a detecção.
+- **As subtarefas são necessárias e suficientes?** Sim. Cobrem leitura do sinal, diagnóstico, avaliação de impacto, decisão e acompanhamento. A etapa final vale também para “manter”.
+- **Os planos indicam ordem, alternativa, repetição ou condição?** Sim:
+  - sequência em 0, 1, 3 e 5;
+  - ordem livre em 2;
+  - escolha em 4.
+
+  Todo plano cita apenas filhos existentes, e a tabela e o diagrama usam a mesma notação.
+- **A decomposição parou em nível útil?** Sim. As folhas são decisões e consultas que a área de troca de modelo precisa apoiar.
 
 ---
 
-## GOMS — T02: Decidir se a configuração atual do IDS deve ser mantida, ajustada ou revertida
+## GOMS — T01: Decidir se a configuração atual do IDS deve ser mantida, ajustada ou revertida
 
-**Autor(a):** Marcela Nalesso - 22.222.011-3   
+**Autor(a):** Marcela Nalesso - 22.222.011-3
 
-### Goal
+**Hipóteses de interação usadas na modelagem.** São suposições, **não** capacidades implementadas:
 
-`G0: decidir se a configuração atual do IDS deve ser mantida, ajustada ou revertida`
+- caixa de entrada com o relatório diário e os chamados;
+- histórico de mudanças do pipeline;
+- série de alertas por dia com marcação da data da alteração;
+- painel de carga do embarcado;
+- tela de comparação entre a configuração atual e uma alternativa;
+- comandos “manter”, “ajustar”, “trocar modelo” e “reverter”;
+- aviso aos analistas.
 
-### Métodos, operadores e regras de seleção
+Na prática atual (C02), parte disso é feita com planilha e *script*.
 
-- **Method M1:** Diagnosticar que a operação saiu do esperado
-  - **Selection Rule SR1:** usar M1 quando houver aumento de alertas, ruído operacional e sinais de que o sistema saiu do comportamento esperado
-  - Operators:
-    - M1.1: Verificar aumento de alertas e ruído operacional
-    - M1.2: Comparar o comportamento atual com o comportamento normal da rede
-    - M1.3: Verificar se a causa é do ambiente, do pipeline ou do classificador
-- **Method M2:** Revisar o estado atual do pipeline
-  - **Selection Rule SR2:** usar M2 quando a causa do desvio ainda não está clara e a pessoa precisa verificar a saúde do pipeline antes de agir
-  - Operators:
-    - M2.1: Revisar desempenho do algoritmo ativo
-    - M2.2: Revisar carga e estabilidade da infraestrutura
-    - M2.3: Comparar histórico recente do tráfego com o estado atual
-- **Method M3:** Avaliar impacto da mudança antes de agir
-  - **Selection Rule SR3:** usar M3 quando já existe uma possível mudança de parâmetro ou classificador e é necessário estimar impacto antes de aplicar alteração
-  - Operators:
-    - M3.1: Comparar modelo atual e modelo candidato
-    - M3.2: Avaliar efeito sobre analistas e operação da rede
-    - M3.3: Verificar se a troca ou ajuste pode ser revertida sem impacto grande
-- **Method M4:** Decidir a ação de configuração
-  - **Selection Rule SR4:** usar M4 quando o diagnóstico já foi concluído e a decisão de ação precisa ser tomada
-  - Operators:
-    - M4.1: Manter a configuração atual
-    - M4.2: Ajustar parâmetros do pipeline
-    - M4.3: Trocar o classificador ativo
-    - M4.4: Reverter a alteração e reavaliar
-- **Method M5:** Validar e documentar a decisão após a mudança
-  - **Selection Rule SR5:** usar M5 quando a alteração foi aplicada e é necessário registrar e acompanhar o efeito para confirmar se a decisão foi correta
-  - Operators:
-    - M5.1: Registrar a alteração no histórico de configuração
-    - M5.2: Registrar motivo, estado anterior e impacto esperado
-    - M5.3: Informar os analistas que o comportamento do IDS mudou
-    - M5.4: Monitorar o resultado após a alteração
+```
+GOAL 0: Decidir se a configuração atual do IDS deve ser mantida, ajustada ou revertida
+  GOAL 1: Confirmar que a operação está fora do esperado
+    METHOD 1.A:                                              (método único)
+      READ      o relatório diário: total de alertas da madrugada
+      READ      o chamado de Thiago
+      SELECT    a série de alertas por dia
+      SELECT    o período: 7 dias antes e depois da última alteração
+      COMPARE   a média antes e depois da alteração
+      VERIFY    o desvio persiste por mais de um dia e não é um pico isolado
 
+  GOAL 2: Localizar a causa provável
+    METHOD 2.A: começar pela configuração
+      SELECT    o histórico de mudanças do pipeline
+      READ      data, parâmetro e valor anterior da última alteração
+      COMPARE   o início do desvio com a data da alteração
+      SELECT    o painel de carga do embarcado
+      READ      a carga antes e depois da alteração
+      VERIFY    sabe se o desvio começou depois da alteração e o que ela mudou na carga
+    METHOD 2.B: começar pelo tráfego
+      SELECT    a série de alertas por segmento
+      COMPARE   os segmentos entre si
+      RECALL    eventos conhecidos no período (nova versão de sistema, campanha, manutenção)
+      VERIFY    sabe se o desvio é geral ou concentrado em um segmento
+    SELECTION RULE 2:
+      IF há alteração registrada no pipeline nos últimos dias   THEN use METHOD 2.A
+      IF não há alteração registrada no período                 THEN use METHOD 2.B
+      (Se 2.A não explicar o desvio, Vanessa ainda executa 2.B. Em C02 ela precisa dos dois.)
 
-> Não chame qualquer passo de “método”. Em GOMS, métodos são sequências alternativas capazes de atingir uma meta; regras de seleção explicam quando escolher entre eles.
+  GOAL 3: Avaliar o impacto da alternativa
+    METHOD 3.A: comparar com a configuração anterior
+      SELECT    “comparar com a versão anterior”
+      READ      alertas, alertas confirmados e carga nas duas versões
+      ESTIMATE  o efeito sobre o volume de trabalho dos analistas
+      VERIFY    a comparação usa o mesmo período e o mesmo tráfego nas duas versões
+    METHOD 3.B: comparar com um modelo candidato
+      SELECT    o modelo candidato
+      SELECT    “comparar com o modelo ativo”
+      READ      o desempenho por cenário e a carga prevista
+      ESTIMATE  o efeito sobre o volume de trabalho dos analistas
+      VERIFY    o candidato foi avaliado em dados recentes, e não só no conjunto de teste
+    SELECTION RULE 3:
+      IF a alternativa considerada é voltar à configuração anterior THEN use METHOD 3.A
+      IF a alternativa considerada é um modelo novo                 THEN use METHOD 3.B
+
+  GOAL 4: Decidir a ação de configuração
+    METHOD 4.A: manter
+      SELECT    “manter configuração”
+      TYPE      o motivo
+      VERIFY    a configuração ativa é a mesma de antes e a decisão foi registrada
+    METHOD 4.B: ajustar parâmetros
+      SELECT    o parâmetro a ajustar
+      TYPE      o novo valor
+      READ      o efeito previsto
+      SELECT    “confirmar ajuste”
+      VERIFY    o parâmetro ativo exibe o novo valor
+    METHOD 4.C: trocar o modelo ativo
+      SELECT    o modelo candidato
+      READ      o efeito previsto
+      SELECT    “promover”
+      VERIFY    o modelo ativo exibido é o candidato, com a data de agora
+    METHOD 4.D: reverter a alteração recente
+      SELECT    a alteração no histórico
+      SELECT    “reverter”
+      VERIFY    a configuração ativa é a anterior à alteração
+    SELECTION RULE 4:
+      IF o desvio não se deve à alteração, ou o ganho compensa o custo   THEN use METHOD 4.A
+      IF a alteração foi útil, mas o valor do parâmetro está exagerado   THEN use METHOD 4.B
+      IF o modelo ativo é insuficiente e há candidato avaliado melhor     THEN use METHOD 4.C
+      IF a alteração piorou a detecção e não há ajuste seguro conhecido   THEN use METHOD 4.D
+
+  GOAL 5: Concluir e acompanhar a decisão
+    METHOD 5.A:                                              (método único)
+      TYPE      no histórico: decisão, motivo e estado anterior
+      SELECT    “avisar analistas”
+      TYPE      o que muda para quem investiga (ou que nada muda)
+      VERIFY    o aviso aparece como lido pelos analistas do turno
+      (no período seguinte)
+      SELECT    a série de alertas e a carga desde a decisão
+      VERIFY    alertas e carga estão dentro da faixa esperada
+```
+
+**Leitura do modelo:**
+
+- **As etapas viraram metas.** As cinco “etapas” da versão anterior (diagnosticar, revisar, avaliar, decidir, validar) são submetas sequenciais de GOAL 0, e não métodos alternativos.
+- **Métodos alternativos aparecem só onde existem formas diferentes de chegar à mesma meta:**
+  - **G2:** começar pela configuração ou pelo tráfego;
+  - **G3:** comparar com a versão anterior ou com um candidato;
+  - **G4:** as quatro ações.
+- **Cada alternativa de G4 tem condição de uso e verificação própria.** Elas deixaram de ser uma lista de operadores do mesmo método.
+- **G5 vale também para “manter”.** Nesse caso, o aviso diz que nada muda.
 
 ---
 
-## CTT — T03: Decidir se a configuração atual do IDS deve ser mantida, ajustada ou revertida
+## CTT — T01: Decidir se a configuração atual do IDS deve ser mantida, ajustada ou revertida
 
-**Autor(a):** Marcela Nalesso - 22.222.011-3   
+**Autor(a):** Marcela Nalesso - 22.222.011-3
 
 ### Descrição
 
-Vanessa identifica um desvio no comportamento do IDS, revisa o estado do pipeline, compara alternativas de configuração e decide se a operação deve ser mantida, ajustada ou revertida. A tarefa termina quando a decisão é validada, registrada e comunicada para que a equipe entenda a alternativa adotada e monitorize os efeitos da mudança.
+A raiz abstrata “Decidir sobre a configuração do IDS” se divide em seis subtarefas abstratas, ligadas por habilitação:
+
+1. receber a demanda;
+2. confirmar o desvio;
+3. revisar o pipeline;
+4. avaliar o impacto;
+5. decidir a ação;
+6. concluir e acompanhar.
+
+O **motivador externo** está explícito em “Receber a demanda”:
+
+- o chamado aberto por Thiago (contorno tracejado), que é ação de outro ator, fora da interação de Vanessa;
+- o relatório diário enviado pelo sistema.
+
+Chamado e relatório chegam em qualquer ordem e habilitam a leitura de Vanessa.
 
 ### Diagrama
 
-![CTT T03](../assets/05_tarefas/goms_ctt_t02.svg)
+![CTT T01](../assets/05_tarefas/ctt_t01.svg)
 
 ### Legenda e relações temporais usadas
 
-| Operador/relação | Significado no diagrama | Exemplo no modelo |
+| Operador | Significado | Onde aparece no modelo |
 |---|---|---|
-| `>>` | Sequência | `M1 >> M2 >> M3 >> M4 >> M5` |
-| `||` | Concorrência/paralelismo | `M2.1 || M2.2 || M2.3` |
-| `[]` | Escolha entre alternativas | `M4.1 [] M4.2 [] M4.3 [] M4.4` |
-| `>` | Habilitação | a etapa de validação é habilitada somente após a decisão de ação |
-| `*` | Repetição | pode ocorrer em ciclos de ajuste e reavaliação |
+| `>>` | Habilitação | Entre as seis subtarefas da raiz; Consultar alertas por dia `>>` Exibir série com a linha de base `>>` Julgar se há desvio; Selecionar a alternativa `>>` Calcular a comparação `>>` Avaliar efeito; Registrar a decisão `>>` Notificar os analistas `>>` Conferir indicadores |
+| `\|\|\|` | Concorrência | Abrir chamado [Thiago] `\|\|\|` Enviar relatório diário; Verificar desempenho do modelo `\|\|\|` Verificar carga do embarcado `\|\|\|` Consultar histórico de mudanças |
+| `[]` | Escolha exclusiva | Manter a configuração `[]` Ajustar parâmetros `[]` Trocar o modelo ativo `[]` Reverter a alteração |
 
-Os métodos M1 a M5 representam uma sequência principal de execução: primeiro Vanessa diagnostica a anomalia, depois revisa o pipeline, em seguida avalia a mudança, toma a decisão e, por fim, valida o efeito da decisão. O tipo de tarefa varia conforme a etapa: M1 é uma tarefa abstrata e de usuário, M2 envolve interação com o sistema e revisão de dados operacionais, M3 é de interação e avaliação, M4 combina abstração, decisão do usuário e interação com informações do ambiente, e M5 combina interação, usuário e sistema para registrar e monitorar a ação. A relação principal é sequencial, com paralelismo na revisão do pipeline e escolha explícita entre manter, ajustar, trocar ou reverter a configuração.
+Prioridade: `[]` e `|||` ligam antes de `>>`.
+
+**Tipos de tarefa:**
+
+| Tipo | Tarefas |
+|---|---|
+| Abstrata | A raiz e as seis subtarefas decompostas |
+| Usuário | Ler o chamado e o relatório; Julgar se há desvio; Avaliar efeito sobre analistas e operação. Também “Abrir chamado sobre o IDS”, tracejada porque o ator é Thiago |
+| Interação | Consultar alertas por dia; Verificar desempenho do modelo ativo; Verificar carga do embarcado; Consultar histórico de mudanças; Selecionar a alternativa a comparar; Manter a configuração; Ajustar parâmetros; Trocar o modelo ativo; Reverter a alteração; Registrar a decisão; Conferir indicadores no período seguinte |
+| Aplicação (sistema) | Enviar relatório diário de alertas; Exibir série com a linha de base; Calcular a comparação; Notificar os analistas |
+
+**Encerramento coerente com a alternativa adotada.** “Concluir e acompanhar” vem depois da escolha (`[]`) e vale para qualquer um dos quatro ramos. Se Vanessa **mantém**, ela registra a decisão, os analistas são avisados de que nada muda e ela confere os indicadores no período seguinte. Não há uma etapa de “validar a mudança” que só faria sentido se algo tivesse sido alterado.
 
 ---
 
 ## Síntese da equipe
 
-Quais problemas de interação, oportunidades e requisitos apareceram a partir das modelagens? Quais tarefas irão para o protótipo e para o teste de usabilidade?
+**Decisões que exigem apoio da interface**
+
+| Decisão | Quem | Informação necessária | Alternativas | Retorno esperado | Risco de interpretação |
+|---|---|---|---|---|---|
+| Veredito sobre um padrão de alertas | Thiago (T02, G3) | Classificação, incerteza e critério, separados; histórico do host e comportamento habitual; janela do pico | Ataque e encaminhar / falso positivo / indefinido | Veredito gravado; número do chamado aceito; caso aberto, se indefinido | Ler confiança alta como certeza; forçar um veredito binário quando a informação não basta |
+| Destino de uma alteração do pipeline | Vanessa (T01, G4) | Antes/depois da alteração; vereditos dos analistas contáveis; carga do embarcado; efeito previsto | Manter / ajustar / trocar o modelo / reverter | Configuração ativa visível com data; aviso lido pelos analistas; indicadores no período seguinte | Atribuir à alteração um efeito que veio do tráfego (nova versão do portal em C02); usar o conjunto de teste como referência de produção |
+
+**Problemas de interação que apareceram nas modelagens**
+
+- **Contexto disperso.** Em T02, G2.2 tem um método por *script* porque o histórico do host não está onde está o alerta (H13).
+- **Sem referência de comparação.** Em T01, G1 e G3 dependem de uma linha de base que hoje é montada à mão.
+- **Os vereditos de Thiago são a matéria-prima de Vanessa.** 3.B e 3.C de T02 produzem o registro que G3 de T01 precisa contar. Sem esse registro, Vanessa decide às cegas.
+- **A alteração não chega a quem investiga.** O GOAL 5 de T01 (avisar os analistas) e a pergunta de Thiago em C01 são as duas pontas do mesmo problema (R03).
+
+**O que segue para a prototipação (Entrega 06) e para a avaliação (Entregas 12–14)**
+
+- **De T02:**
+  - seleção da janela com o resultado atualizado;
+  - classificação, incerteza e critério separados;
+  - registro do veredito com as três saídas;
+  - confirmação do encaminhamento;
+  - nota de passagem.
+- **De T01:**
+  - indicação da configuração e do modelo ativos, com data;
+  - comparação entre a versão atual e a alternativa;
+  - efeito previsto antes de confirmar;
+  - registro da decisão, inclusive “manter”;
+  - aviso aos analistas.
+- **Ponto de contato entre as duas tarefas:** saber qual modelo está ativo e desde quando (R03).
+
+**O que continua hipótese:** a ordem real das consultas, os critérios para distinguir falso positivo de incidente, como uma alteração chega hoje aos analistas e onde Vanessa registra mudanças (H13, H27, H30, H31). Essas questões devem ser verificadas com usuários antes de virarem regra de seleção definitiva.
 
 ## Checklist
 
-- [ ] Cada integrante produziu ao menos 1 HTA, 1 GOMS e 1 CTT.
-- [ ] Cada artefato identifica autor e tarefa.
-- [ ] Diagramas são legíveis e possuem fonte editável quando possível.
-- [ ] HTA contém planos, não apenas árvore de tópicos.
-- [ ] GOMS distingue Goals, Operators, Methods e Selection Rules.
-- [ ] CTT usa operadores temporais e tipos de tarefa coerentes.
-- [ ] Há texto explicando cada diagrama.
-- [ ] Tarefas estão ligadas a cenários/personas na rastreabilidade.
-- [ ] Em TCC técnico, as tarefas descrevem o que a pessoa faz com a contribuição/resultados, não passos internos do código.
-- [ ] CRUDs, relatórios, filtros e atividades administrativas foram escolhidos por relevância ao objetivo do usuário.
+- [x] Cada integrante produziu ao menos 1 HTA, 1 GOMS e 1 CTT.
+- [x] Cada artefato identifica autor e tarefa, com o mesmo ID nas três técnicas.
+- [x] Diagramas são legíveis e possuem fonte editável (SVG com texto).
+- [x] HTA contém planos, não apenas árvore de tópicos, e os planos citam somente filhos existentes.
+- [x] HTA registra *input* e *feedback* da tarefa zero.
+- [x] GOMS distingue Goals, Methods, Selection Rules e Operators, com hierarquia indentada e verificação ao fim de cada método.
+- [x] CTT usa operadores temporais (`>>`, `[]`, `|||`) e tipos de tarefa coerentes, com motivador externo e tarefa de sistema.
+- [x] Há texto explicando cada diagrama.
+- [x] Tarefas estão ligadas a cenários/personas na rastreabilidade.
+- [x] Em TCC técnico, as tarefas descrevem o que a pessoa faz com a contribuição/resultados, não passos internos do código.
+- [x] CRUDs, relatórios, filtros e atividades administrativas foram escolhidos por relevância ao objetivo do usuário.
