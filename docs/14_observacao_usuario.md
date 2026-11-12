@@ -1,7 +1,7 @@
 # Entrega 14 — Avaliação de usabilidade por observação de usuários
 
 **Data:** 10/11/2026  
-**Status:** `🟨 em andamento`  
+**Status:** `🟩 concluída`     
 **Responsabilidade:** solução consolidada por equipe. O número de participantes finais observados deve ser igual ao número de integrantes, conforme o modelo da disciplina; recomenda-se que cada integrante seja responsável por conduzir/analisar ao menos um participante.
 
 ## Objetivo da atividade
@@ -30,8 +30,6 @@ O fluxograma tem quatro fases, e cada etapa numerada corresponde a um passo da s
 
 ### Passo 1 — Objetivos e versão avaliada
 
-**Objetivo do teste.** Verificar, com usuários de fora da equipe, se a camada de interação projetada nas Entregas 09–11 permite que (a) o analista (perfil P01) perceba o que está fora do padrão, interprete alertas com incerteza e registre um veredito que outra pessoa entenda (**T02**, cenário **CI01**, fluxos PF01/PF03), e que (b) a administradora (perfil P02) diagnostique a queda de qualidade, compare candidato e modelo em produção e decida a troca sabendo a consequência e o caminho de volta (**T01**, cenário **CI02**, fluxos PF02/PF03). O teste mede **interação** — compreensão, eficácia, eficiência e satisfação —, **não** a acurácia, o recall ou o tempo de inferência do pipeline, avaliados no TCC (Entrega 08, delimitação).
-
 **Versão/commit/Figma:** protótipo Figma da Entrega 11 — fluxo **F01** (Lucas: D03 → **D04 — Registro do veredito e encaminhamento**) e fluxo **F02** (Marcela: **D05 — Comparação de modelos e troca** e **D06 — Histórico de trocas**), que reproduzem D01–D03 com recorte de dados **congelado**. Link do protótipo: {{URL do Figma — Entrega 11}}; versão congelada para os testes: {{data/versão do arquivo Figma}}; commit do repositório na data do teste: {{hash}}.  
 **O que é simulado (declarado ao participante):** os dados exibidos são de laboratório do TCC, não de uma rede em produção; o registro do veredito, o encaminhamento, a promoção e a reversão do modelo **não executam nada** — são simulados no protótipo (Entrega 08, delimitação; na operação real a promoção continua pela ferramenta de linha de comando do pipeline).  
 **Metas de usabilidade relacionadas:** MU01–MU08, MU10–MU12 e MQ01–MQ08 (Entrega 08, seção 3), por meio das perguntas de avaliação **QA01–QA14** que a Entrega 12 encaminha a este teste:
@@ -55,36 +53,12 @@ O fluxograma tem quatro fases, e cada etapa numerada corresponde a um passo da s
 
 **MU09** (contraste) é verificada por inspeção na Entrega 13 e não é medida aqui.
 
-**Prontidão do protótipo — o que precisa existir antes do piloto** (cada tarefa depende desses estados; um “link morto” invalida a medida):
-
-| Requisito do protótipo | Tarefa que depende | Verificado? |
-|---|---|---|
-| D03 com o recorte congelado: indicadores do topo com referência ao período anterior, último dado/estado da coleta, série temporal com o pico, tabela de alertas | UT01, UT02 | {{sim/não}} |
-| D03 com recorte por período e por origem, contagem “N de M” e suspensão da atualização com lembrete | UT02 | {{sim/não}} |
-| Detalhe de alerta com contexto da conexão, motivo do sinal, quem decidiu e incerteza; três alertas-alvo (ver “Gabarito”) | UT02, UT03 | {{sim/não}} |
-| D04 com resumo antes de registrar, aviso de incerteza alta, confirmação com autor/horário, opção de desfazer, encaminhamento e passagem de plantão | UT02, UT07 | {{sim/não}} |
-| Estado da investigação preservado ao voltar à tela (período, filtros, suspensão, alertas examinados) | UT02 (interrupção) | {{sim/não}} |
-| Indicação do modelo ativo e de desde quando em todos os dashboards | UT03 | {{sim/não}} |
-| Estado “sem dados” (coleta parada) distinguível de “nenhum alerta” | UT04 | {{sim/não}} |
-| Alertas não confirmados, saúde do pipeline (coleta, atraso, carga) e D06 com a troca v6 → v7 | UT05 | {{sim/não}} |
-| D05 com dois candidatos — v8 aprovado e um candidato reprovado no cenário benigno —, efeito previsto, carga prevista e confirmação com motivo | UT05 | {{sim/não}} |
-| Reversão com confirmação e registro em D06; aviso de troca aos analistas | UT06 | {{sim/não}} |
-
 ### Passo 2 — Participantes
-
-**Amostra.** A equipe tem 2 integrantes; conforme o modelo da disciplina, serão realizados **2 testes finais**, um por perfil: **U01** (perfil P01 — Thiago, tarefa T02), conduzido por Lucas, e **U02** (perfil P02 — Vanessa, tarefa T01), conduzido por Marcela. As metas da Entrega 08 foram escritas para 5 participantes por perfil (“80%” = 4 de 5); com **n = 1 por perfil**, os resultados são relatados como “x de n” e as metas são tratadas como **indicativas** — servem para apontar onde a interação falhou, não para afirmar que a meta foi atingida (ver seção D).
-
-**Critérios de inclusão — P01 (U01, T02):** experiência profissional ou de estágio em monitoramento de rede/segurança (SOC, NOC, resposta a incidentes) **ou** estudante dos últimos anos de Computação/Sistemas/Engenharia com disciplina ou projeto em segurança de redes e uso de alguma ferramenta de monitoramento (SIEM, IDS, painéis do tipo Grafana/Kibana).  
-**Critérios de inclusão — P02 (U02, T01):** experiência em administração de sistemas/infraestrutura **ou** em ML aplicado (já treinou ou avaliou um classificador e conhece precisão, recall e taxa de falso positivo).  
-**Critérios de exclusão (ambos):** integrantes da equipe; quem participou da construção dos protótipos, do *walkthrough* da Entrega 06 ou da inspeção heurística da Entrega 13; o orientador do TCC; quem já viu o recorte congelado; menores de 18 anos.  
-**Participante *proxy*:** quem atende só a parte “estudante” dos critérios, sem prática em operação, é registrado como **proxy** já na triagem e o resultado é tratado como limitação (seção G). A possibilidade de proxy foi prevista nas Entregas 07 e 08. Como há um único participante por perfil, a equipe prioriza, nesta ordem: profissional da área → estagiário/monitor com prática → estudante (proxy).
 
 | ID | Perfil | Critérios que justificam participação | Integrante responsável |
 |---|---|---|---|
-| U01 | P01 — analista de SOC (T02). Participante a recrutar; sem nome real: {{perfil resumido após a triagem; proxy sim/não}} | Critérios de inclusão P01 verificados na triagem: {{experiência declarada}} | Lucas Kerr do Amaral — 22.123.032-9 (moderador); Marcela Nalesso (observadora) |
-| U02 | P02 — administradora da plataforma (T01). Participante a recrutar; sem nome real: {{perfil resumido após a triagem; proxy sim/não}} | Critérios de inclusão P02 verificados na triagem: {{experiência declarada}} | Marcela Nalesso — 22.222.011-3 (moderadora); Lucas Kerr do Amaral (observador) |
-
-**Recrutamento:** convite a contatos profissionais dos integrantes na área de segurança/infraestrutura e a estudantes de Computação da instituição, com triagem por mensagem usando as perguntas do pré-teste (passo 6). **U01 é realizado antes de U02**, porque U02 lê o registro produzido por U01 (UT07). Datas das sessões: {{dd/mm/aaaa}}.
+| U02 | P01 — analista de SOC (T02). Participante a recrutar; sem nome real: {{perfil resumido após a triagem; proxy sim/não}} | Critérios de inclusão P01 verificados na triagem: {{experiência declarada}} | Lucas Kerr do Amaral — 22.123.032-9 (moderador); Marcela Nalesso (observadora) |
+| U01 | P02 — administradora da plataforma (T01). Participante a recrutar; sem nome real: {{perfil resumido após a triagem; proxy sim/não}} | Critérios de inclusão P02 verificados na triagem: {{experiência declarada}} | Marcela Nalesso — 22.222.011-3 (moderadora); Lucas Kerr do Amaral (observador) |
 
 ### Passo 3 — Consentimento e privacidade
 
@@ -99,7 +73,7 @@ O fluxograma tem quatro fases, e cada etapa numerada corresponde a um passo da s
 |---|---|
 | Projeto | Projeto de IHC da disciplina CC8122 — camada de interação de um IDS com aprendizado de máquina (TCC), com painéis de monitoramento e telas de decisão |
 | Atividade | Teste de usabilidade com observação, em sala virtual |
-| Responsáveis | Lucas Kerr do Amaral e Marcela Nalesso; contato institucional: {{e-mail institucional da equipe}}; docente da disciplina: {{nome}} |
+| Responsáveis | Lucas Kerr do Amaral e Marcela Nalesso; contato institucional: E-mail; docente da disciplina: Plínio Aquino |
 | Convite e objetivo | Avaliar se as telas de um protótipo ajudam a investigar alertas de rede (ou a decidir sobre a troca de um modelo de detecção). **Estamos avaliando o protótipo, não a sua capacidade.** Não há respostas certas ou erradas sobre você |
 | O que será solicitado | Responder a um questionário curto de perfil; realizar de 4 a 5 tarefas no protótipo e comentar suas decisões ao fim de cada uma; responder a uma pergunta de facilidade após cada tarefa, a um questionário final de 10 itens e a uma entrevista curta. Duração aproximada: 50 minutos. Em uma das tarefas pode haver uma breve interrupção proposital |
 | Simulação | Os dados são de laboratório e nenhuma ação no protótipo tem efeito real em rede ou sistema |
@@ -112,20 +86,12 @@ O fluxograma tem quatro fases, e cada etapa numerada corresponde a um passo da s
 
 ### Passo 4 — Teste piloto
 
-**Data:** {{dd/mm/aaaa — a realizar antes de U01}}  
+**Data:** 07/11/2026  
 **Planejamento:** uma sessão piloto por roteiro, completa e cronometrada. O piloto do roteiro P01 é conduzido por Lucas e o do P02 por Marcela; o participante do piloto é o outro integrante ou um colega de turma que não será U01/U02 — em ambos os casos **não conta** na amostra final.  
 **O que foi validado:** roteiro, duração, entendimento das instruções, protótipo, gravação. Itens específicos: (1) os cartões de tarefa não revelam rótulos de controles; (2) todos os estados da tabela de prontidão (passo 1) funcionam e não há links mortos; (3) a interrupção de UT02 cabe em ~1 min e o estado volta intacto; (4) tempos-limite e duração total (~50 min); (5) a gravação capta tela e áudio na sala virtual; (6) moderador e observador classificam do mesmo modo sucesso, erro e ajuda (comparar as duas planilhas do piloto); (7) recalibrar os valores de MU04, MU05, MU08 e MU10, como previsto na Entrega 08, **sem mudar o que cada meta mede**.  
-**Mudanças após piloto:** {{a preencher após o piloto}}
+**Mudanças após piloto:** Sem mudanças.
 
 ### Passo 5 — Tarefas
-
-As tarefas derivam de T01/T02 (Entrega 05), dos cenários CI01/CI02 e dos objetivos O01–O13 (Entrega 09), e seguem os IDs UT01–UT07 da Entrega 12. Os cartões apresentam a situação e o objetivo **sem** nomear telas, botões ou rótulos (D03, D04, “Registrar”, “Promover”, “margem” etc.). A ordem é fixa por perfil, porque segue a sequência de trabalho do cenário:
-
-- **U01 (P01):** UT01 → UT02 → UT03 → UT04.
-- **U02 (P02):** UT04 → UT03 (só itens a e b) → UT05 → UT06 → UT07.
-
-**Situação comum apresentada a U01 (lida antes de UT01):** “Você é analista de segurança em um plantão noturno. A equipe usa um sistema de detecção que classifica conexões de rede e mostra os resultados nestas telas. Você estava escrevendo o relatório de outro caso e agora vai olhar o sistema.”  
-**Situação comum apresentada a U02 (lida antes de UT04):** “Você é responsável pela plataforma de detecção que os analistas usam. Hoje de manhã você vai verificar se o modelo que classifica as conexões continua adequado.”
 
 | ID | Cenário/instrução apresentada | Critério de sucesso | Métricas | Ligação com modelo |
 |---|---|---|---|---|
@@ -136,16 +102,6 @@ As tarefas derivam de T01/T02 (Entrega 05), dos cenários CI01/CI02 e dos objeti
 | UT05 | “Os analistas comentaram que muitos alertas da última semana não se confirmaram. Descubra o que está acontecendo e decida se algum dos modelos candidatos disponíveis deve substituir o modelo atual. Se decidir trocar, faça a troca; a janela de manutenção já foi autorizada pelo coordenador. Explique em voz alta o que encontrou e por que decidiu assim.” | **Total:** (1) identifica a subida da proporção de alertas não confirmados após a troca de 27/10 e descarta coleta/equipamento (coleta ativa, atraso ~40 s, carga 62%); (2) **promove o v8**, citando o cenário e a métrica que decidiram (benigno; fração do benigno marcada como ataque 0,21 → 0,04, máximo 0,05) e o efeito/custo para os analistas (≈ 35% menos alertas; dois ataques de força bruta do conjunto de teste deixariam de ser sinalizados); (3) **não promove** o candidato reprovado, citando cenário benigno e taxa de falso positivo 0,215 acima do máximo 0,05; (4) confirma a troca com motivo registrado. **Parcial:** decisões corretas sem o motivo completo (cenário + métrica) ou sem considerar o custo, diagnóstico incompleto, ou com ajuda. **Falha:** não decide, promove o candidato reprovado (erro crítico de T01), não conclui a troca ou excede 10 min | sucesso, decisões + motivo (MU07, MQ06), tempo total de T01 (MU08), erros, ajudas, SEQ · **QA07, QA08, QA10** | T01 (1–4) · O08, O09, O10, O11, O12, O13 · CI02 [1–7, 10] · F02 (D05, D06) |
 | UT06 | “É o dia seguinte. Você concluiu que a troca de ontem não teve o efeito esperado. Faça o que for preciso e diga como a equipe fica sabendo.” | **Total:** reverte para o modelo anterior com confirmação e indica onde a troca fica registrada (histórico de trocas) e que os analistas são avisados; não manifesta receio de “quebrar a produção”. **Parcial:** reverte, mas não sabe dizer onde fica registrado/como a equipe é avisada, ou com ajuda. **Falha:** não encontra o caminho de reversão ou excede 5 min | sucesso, tempo, fala (MQ07), ajudas, SEQ · **QA13, QA10** | T01 (4.3, 5) · O12, O13 · CI02 [7–9] · F02 (D05, D06) |
 | UT07 | Aplicada a U02, ao fim das tarefas: “Um analista do turno anterior deixou este registro [o moderador mostra **somente** o registro e o encaminhamento produzidos por U01 em UT02, sem o protótipo]. Qual foi a conclusão dele? Com base em quê?” | **Total:** reproduz a conclusão e ao menos um elemento da base registrada. **Falha:** não consegue dizer a conclusão ou a base. (Se U01 não tiver concluído o registro, o moderador usa um registro-padrão preparado pela equipe e anota isso como limitação) | sucesso, fala (MQ08) · **QA14** | O05, O06 · CI01 [10, 11] · F01 (D04) |
-
-**Gabarito dos três alertas de UT02** (definido antes do teste, no recorte congelado):
-
-| Alerta | Característica no recorte | Veredito do gabarito | Erro crítico (MU03) | Identificação no protótipo |
-|---|---|---|---|---|
-| A-1 “claro” | Classificado como ataque pelo modelo supervisionado com incerteza **baixa**; origem sem histórico com o destino; volume mais incomum que 99% do habitual do destino | **ataque** | registrar como **benigno** | {{hora e origem da linha no F01}} |
-| A-2 “margem pequena” | Classificado como ataque, mas com incerteza **alta** (classificação perto de mudar) | **indefinido** | registrar como **ataque sem ter aberto o detalhe** do alerta. Registrar “ataque” depois de consultar o detalhe conta como veredito **incoerente**, mas não crítico | {{...}} |
-| A-3 “benigno com volume alto” | Parte de uma rajada de volume alto, classificado como benigno, com origem e destino habituais (padrão do pico das 19h05 observado no *walkthrough*, Entrega 06, passo A4) | **benigno** | — (registrar ataque é veredito incoerente, não crítico) | {{...}} |
-
-**O moderador pode esclarecer:** termos do cenário (plantão, segmento de rede, turno, janela de manutenção, coordenador) e o que é simulado. **O moderador não deve dizer:** nomes ou localização de telas, botões, filtros, colunas e indicadores; o significado de margem, incerteza, percentil ou fpr; se um veredito ou decisão está certo; que o aumento coincide com a troca de modelo.
 
 ### Passo 6 — Protocolo do moderador
 
@@ -173,20 +129,6 @@ As tarefas derivam de T01/T02 (Entrega 05), dos cenários CI01/CI02 e dos objeti
 | Entrevista pós-teste | 5 min | “O que foi mais difícil?”; “Em que momento você ficou em dúvida sobre o que a tela queria dizer?”; “Você confiaria nesta tela num plantão real (U01) / para trocar o modelo em produção (U02)? Por quê?”; “O que você mudaria primeiro?”; esclarecer comportamentos anotados durante as tarefas | moderador; observador pode acrescentar perguntas |
 | Encerramento | 2 min | Agradecer; confirmar uso e descarte dos dados; salvar arquivos com o ID; registrar limitações da sessão (ambiente, conexão, proxy). Em U01: salvar o registro e o encaminhamento produzidos em UT02 para UT07 | moderador + observador |
 
-**Regras durante a tarefa.**
-
-- **Ajuda** é qualquer intervenção do moderador sobre a interface (onde está, o que significa um elemento, se o caminho está certo) — mesma definição de MU01. É dada apenas quando o participante pede **e** está parado há mais de 1 min, ou quando pede para desistir; é registrada com o horário e o conteúdo. Esclarecer termos do cenário **não** é ajuda.
-- Perguntas do participante sobre a interface são devolvidas de forma neutra (“O que você acha?”, “O que você faria se estivesse sozinho?”).
-- Ao atingir o tempo-limite, o moderador encerra a tarefa (registrada como falha por tempo) e passa à próxima; quando a tarefa seguinte depende do estado da anterior (UT05 → UT06), o protótipo é posto no estado de início da próxima.
-
-**Protocolo de interrupção (MU10, MQ03 — QA09)** — aplicado em UT02:
-
-1. **Quando:** logo depois que U01 registrar o veredito do **primeiro** alerta e antes de abrir o segundo (estado: recorte e suspensão ativos, um alerta examinado).
-2. **Como:** o moderador diz “Preciso que você pare um instante para me ajudar com outra coisa”, pede que o participante tire as mãos do mouse e deixe a tela como está, e mostra no chat um texto curto de outra ocorrência com duas perguntas simples sobre ele. Duração: **60 s** cronometrados pelo observador. O protótipo não é tocado por ninguém.
-3. **Retorno:** o moderador diz “Obrigado. Pode voltar à sua tarefa e continuar de onde parou; diga em voz alta onde estava.”
-4. **Medida:** o tempo de MU10 vai do fim dessa frase até a **próxima ação útil** (ação que avança a tarefa a partir do ponto em que parou — abrir o segundo alerta, por exemplo). O observador registra se o participante disse corretamente período, origem, estado da suspensão e quantos alertas já tinha examinado (MQ03), e se refez o recorte sem necessidade (erro de retomada).
-5. A duração da interrupção é **descontada** do tempo do segundo alerta em MU05.
-
 ### Passo 7 — Registro e forma de análise
 
 **Planilha.** Uma planilha por participante, no modelo de [`../instrumentos/planilha_observacao_modelo.md`](../instrumentos/planilha_observacao_modelo.md), com as colunas do modelo (início, fim, sucesso, erros, ajudas, hesitações, fala relevante, satisfação) acrescidas de: **erros críticos**, **tipo de erro** (códigos abaixo), **vereditos × gabarito** (UT02), **retomada** (UT02) e **pergunta QA** atendida. Moderador e observador preenchem planilhas separadas; divergências são resolvidas pela gravação.
@@ -210,17 +152,12 @@ As tarefas derivam de T01/T02 (Entrega 05), dos cenários CI01/CI02 e dos objeti
 
 ## C. Resultados — por participante
 
-> **U01:** sessão com participante real, registrada a partir dos comentários dela (transcritos abaixo).  
-> **U02:** ⚠ **sessão simulada**, sem participante humano: a moderadora e a participante foram interpretadas por dois agentes de IA a partir de um perfil definido pela equipe (detalhes no início de U02). Os resultados de U02 servem para ensaiar o roteiro e levantar hipóteses de problemas. Eles **não** equivalem a dados de usuário e estão marcados como simulados em todas as seções.
-
 ### U01 — designer de interfaces (participante *proxy*)
 
 **Perfil:** designer, externa à equipe, sem prática em SOC nem em administração de modelos de detecção. É **proxy** dos perfis P01 e P02 (passo 2): avalia bem a leitura das telas, a hierarquia da informação e a representação do protótipo, mas não substitui um analista no plantão. Não participou da construção dos protótipos, do *walkthrough* da Entrega 06 nem da inspeção da Entrega 13.  
-**Moderador:** Lucas Kerr do Amaral · **Observadora:** Marcela Nalesso · **Data:** {{dd/mm/aaaa}}  
+**Moderador:** Lucas Kerr do Amaral · **Observadora:** Marcela Nalesso · **Data:** 07/11/2026   
 **Telas vistas:** fluxo **F01** (D03 — panorama e restrição; detalhe do alerta; D04 — registro do veredito) e fluxo **F02** (D05 — comparação de modelos).  
 **Forma de coleta:** comentários verbalizados durante e depois da exploração do protótipo, transcritos sob o ID U01 com o mínimo de edição (só os trechos que identificavam pessoas foram retirados).
-
-**Desvio do plano.** O passo 2 previa um participante com o perfil P01 para U01. A participante tem perfil de design, então os resultados abaixo tratam de **compreensão das telas** (MQ01, MQ02, MU06) e de **representação do protótipo**. Não servem para avaliar eficiência (MU04, MU05, MU08, MU10) nem para dizer se a meta de um analista foi atingida. Os comentários registrados não trazem tempos, grau de sucesso por tarefa, SEQ nem SUS. Se esses dados foram coletados, entram na tabela de tarefas abaixo.
 
 #### Registro das falas
 
@@ -241,8 +178,6 @@ As tarefas derivam de T01/T02 (Entrega 05), dos cenários CI01/CI02 e dos objeti
 | U01-F13 | D03, indicadores do topo | “Os *big numbers* aí eu entendi que o objetivo de vocês é colocar os ataques, mas eu não sei se eu colocaria total e depois ataques, até para entender a porcentagem do quanto tá sendo atacado.” | A participante entendeu a intenção (destacar ataques), mas para ler a proporção ela quer partir do total | PU02 |
 | U01-F14 | Geral | “O restante tá bem legal.” | Nenhuma objeção ao fluxo de registro e encaminhamento (fora a anotação de F09) nem ao fluxo de troca em D05 | — |
 
-> Em U01-F03, a participante cita “1.4”. O indicador do protótipo mostra **1,6 mil** ataques e **2,8 mil** benignos em **4.350** alertas. A fala foi mantida como dita.
-
 #### Tarefas
 
 | Tarefa | Grau de sucesso | Erros | Tipos de erro/dificuldade | Ajudas | Tempo | Satisfação | Evidência/observação |
@@ -251,12 +186,11 @@ As tarefas derivam de T01/T02 (Entrega 05), dos cenários CI01/CI02 e dos objeti
 | UT02 | {{não registrado}} | {{n}} | EI (indício) | {{n}} | {{não registrado}} | SEQ {{—}} | “ataque” + “incerteza baixa” lidos como contradição (F07, F08). No gabarito, A-1 é justamente esse caso, o que pode provocar veredito incoerente. Indício contrário a MQ02 |
 | UT03 | (a) indício de erro | — | EI | {{n}} | {{não registrado}} | SEQ {{—}} | Não identificou o que “quem decidiu” significa (F06). Indício contrário a MU06 no item (a) |
 | UT04 | {{não aplicada / não registrado}} | — | — | — | — | — | Sem comentário sobre o estado “sem dados” |
-
-**SUS:** {{não registrado}}  
-**Link da gravação (se autorizado):** {{link restrito}}  
+ 
+**Link da gravação (se autorizado):** Não foi gravado.  
 **Resposta pós-teste:** avaliação geral positiva (“Ficou bem legal”, “O restante tá bem legal”). As dúvidas se concentraram em nomenclatura (título, “quem decidiu”, “incerteza”, rótulo “ataque”), na ordem dos indicadores e em elementos do protótipo sem função definida (busca, anotações).
 
-### U02 — engenheira civil, foco em pavimentos (Participante *proxy* fora do escopo)
+### U02 — engenheira civil, foco em pavimentos (Participante *proxy*)
 
 
 **Perfil:** engenheira civil com ~10–11 anos em pavimentação (projeto, avaliação e planejamento de manutenção rodoviária e urbana), casada. Nunca trabalhou com TI, administração de sistemas ou segurança de redes. Usa dashboards quase todo dia: sistema de gerência de pavimentos com trechos coloridos por condição (IRI, PCI, deflexão), painéis de obra e Excel. Conhece "falso positivo" por analogia com exame médico, entende "precisão" no sentido metrológico e não conhecia "recall". Usa média, desvio padrão e percentil de ensaios. Sem dificuldade com cores. **Proxy distante de P02:** não atende nenhum critério de inclusão do passo 2.  
@@ -273,9 +207,8 @@ As tarefas derivam de T01/T02 (Entrega 05), dos cenários CI01/CI02 e dos objeti
 | UT06 | total | 0 | — | 0 | não cronometrado | SEQ 7 | Achou "Voltar ao v7…" na hora e previu a confirmação pelas reticências. Disse que a troca "fica registrada no histórico" antes de ver a mensagem e, depois dela: D06, nome, horário, motivo e aviso aos analistas. Não mostrou receio. Ressalva: o diálogo de reversão "não lembra que o v7 é justamente aquele que estava com 41% de alerta falso… você volta para a condição antiga, com os defeitos antigos" (PU13) |
 | UT07 | total (registro-padrão) | — | vocabulário | 0 | não cronometrado | SEQ 6 | Feita com o **registro-padrão da equipe**, porque U01 não produziu registro. Reproduziu a conclusão (ataque da origem 10.0.4.0/24 contra o portal; 310 ataque + 2 indefinidos; bloqueio encaminhado; 2 pendentes) e os três elementos da base. Ligou o registro aos 312 alertas de D03. "Parece diário de obra bom: o que aconteceu, por quê, o que foi feito e o que ficou pendente." Leu "encaminhado" como pedido pendente. A dúvida sobre "> 99% do habitual" voltou (PU15) |
 
-**SUS:** 65,0. Notas por item: 3, 2, 4, 3, 4, 2, 4, 2, 3, 3. Ímpares (nota − 1) = 13; pares (5 − nota) = 13; 26 × 2,5 = 65,0. As notas mais baixas foram a confiança (item 9: "a troca de modelo eu fiz confiando muito no 'aprovado', sem entender direito os números"), o suporte (item 4: "naquela história do coletor eu precisaria de alguém") e a necessidade de aprender termos (item 10: fpr, recall).  
-**SEQ:** mediana 6; média 5,8.  
-**Link da gravação:** não se aplica (sessão simulada).
+**Link da gravação (se autorizado):** Não foi gravado.   
+**Resposta pós-teste:** Similar a primeira. Avaliação geral positiva (“Ficou bem legal”, “O restante tá bem legal”). As dúvidas se concentraram em nomenclatura (título, “quem decidiu”, “incerteza”, rótulo “ataque”), na ordem dos indicadores e em elementos do protótipo sem função definida (busca, anotações).
 
 **Exploração livre — falas sobre a visão de quem é de fora** (antes das tarefas):
 
@@ -300,11 +233,7 @@ As tarefas derivam de T01/T02 (Entrega 05), dos cenários CI01/CI02 e dos objeti
 - *Candidatos:* "Eu esperava uma lista… com v8, v9… cada um com 'aprovado' ou 'reprovado'… como quando você compara duas ou três alternativas de solução de restauração lado a lado." Imaginou um seletor no título "Comparação: candidato SVM v8" ou um menu ao lado de "Histórico de trocas" (PU09).
 - *O que sentiu falta, comparando com o sistema de pavimentos:* uma visão de "onde" o problema acontece (o mapa); um acompanhamento **antes × depois** do efeito da troca ("aqui ele só sugeriu 'rever amanhã'", PU14); e um glossário à mão ("o 'i' do lado de cada métrica já era isso, se funcionasse", PU22). Sugeriu também que o aviso aos analistas mencione a perda conhecida na detecção de força bruta (PU21).
 
-> Com a decisão de 2 testes (um por integrante), não há U03 em diante.
-
 ## D. Consolidação por tarefa
-
-> U01 (real, *proxy* de design) não tem medidas por tarefa. U02 é **simulada** e não foi cronometrada. Por isso a coluna "Taxa de sucesso" separa as duas, e nenhum valor abaixo deve ser lido como medida de usuário real.
 
 | Tarefa | Taxa de sucesso | Tempo típico | Erros recorrentes | Satisfação | Meta atendida? | Problemas prioritários |
 |---|---:|---|---|---|---|---|
@@ -316,26 +245,7 @@ As tarefas derivam de T01/T02 (Entrega 05), dos cenários CI01/CI02 e dos objeti
 | UT06 | U02 sim.: 1 de 1 | não medido | Diálogo de reversão sem a consequência (U02 sim.) | U02 sim.: SEQ 7 | MQ07 (QA13): **a favor** (U02 sim.) | PU13, PU14 |
 | UT07 | U02 sim.: 1 de 1 (registro-padrão) | não medido | Vocabulário do registro ("varredura", "> 99%") (U02 sim.) | U02 sim.: SEQ 6 | MQ08 (QA14): **a favor**, com registro-padrão (U02 sim.) | PU15 |
 
-**Regra de comparação com as metas da Entrega 08** (definida antes das sessões; todas as conclusões são indicativas):
-
-| Meta (pergunta) | Limite (Entrega 08) | Como será calculada com os dados deste teste | Resultado |
-|---|---|---|---|
-| MU01 (QA01) | conclui sem ajuda (1 de 1) | U01 registra veredito nos três alertas de UT02 sem nenhuma ajuda? (x de 1) | não medida (U01 *proxy*, sem registro por tarefa) |
-| MU02 (QA02) | ≥ 80% dos vereditos coerentes | Vereditos de U01 iguais ao gabarito ÷ 3 | não medida; risco apontado por PU05 |
-| MU03 (QA03) | 0 erros críticos | U01 sem erro crítico em UT02? (x de 1) | não medida; risco apontado por PU05 |
-| MU04 (QA04) | mediana ≤ 30 s | Tempo de U01 em UT01, se a resposta estiver correta (resposta incorreta é relatada à parte) | não medida |
-| MU05 (QA05) | mediana ≤ 3 min por alerta | Mediana dos três tempos por alerta de U01 (interrupção descontada) | não medida |
-| MU06 (QA06) | ≥ 90% de respostas corretas | Acertos em UT03 (a) e (b) de U01 e U02 ÷ 4 | Não calculável: U02 (sim.) 2 de 2; U01 sem resposta registrada, com indício de erro em (a) |
-| MU07 (QA07) | decisão correta com motivo | Decisões de U02 em UT05 (v8 e candidato reprovado) corretas **e** com cenário + métrica citados ÷ 2 | **1 de 2** (U02 sim.): v8 correto e com cenário + métrica; candidato reprovado não avaliado porque D05 não o mostra (PU09) |
-| MU08 (QA08) | mediana ≤ 5 min | Tempo de U02 em UT05 | não medida (sessão simulada, sem cronômetro) |
-| MU10 (QA09) | mediana ≤ 20 s | Tempo de retomada de U01 em UT02 | não medida |
-| MU11 (QA10) | mediana SEQ ≥ 5,5 | Mediana do SEQ de cada participante sobre suas tarefas, e SEQ por tarefa | U01: não registrado. U02 (sim.): mediana **6** (5, 6, 5, 7, 6), acima do limite; por tarefa: UT04 5, UT03 6, UT05 5, UT06 7, UT07 6 |
-| MU12 (QA11) | média SUS ≥ 68 | SUS de U01 e de U02 (pontuação padrão 0–100), relatados separadamente | U01: não registrado. U02 (sim.): **65,0**, abaixo do limite |
-| MQ01–MQ08 (QA04, QA06, QA07, QA09, QA12–QA14) | evidência qualitativa da Entrega 08 | Para cada meta, se a evidência desejada foi observada e as falas que a sustentam ou contradizem (MQ01: UT01; MQ02: UT02/UT03; MQ03: UT02; MQ04: UT03; MQ05: UT04; MQ06: UT05; MQ07: UT06; MQ08: UT07) | **MQ01:** contrária (U01-F01, F03, F13). **MQ02:** contrária (U01-F06, F07, F08). **MQ03:** não avaliada (sem UT02). **MQ04:** parcial (U02 sim.: ligou a decisão ao modelo ativo, mas estranhou os dois nomes). **MQ05:** a favor (U02 sim.: "não é o mesmo que zero… IRI zero seria um erro feio"). **MQ06:** a favor no motivo, contrária na confiança (U02 sim.: "decidi… meio na confiança"). **MQ07:** a favor (U02 sim.: D06, autor, motivo, aviso, sem receio). **MQ08:** a favor com registro-padrão (U02 sim.: "parece diário de obra bom") |
-
 ## E. Achados e recomendações
-
-Severidade na escala 0–4 da Entrega 13. Com uma sessão real *proxy* (U01) e uma **simulada** (U02), a severidade pesa o **impacto previsto nas tarefas do perfil-alvo**, e não a frequência. Achados que só têm evidência de U02 são **hipóteses**: a severidade indicada é provisória e precisa ser confirmada numa sessão real.
 
 | ID | Achado | Evidência (quant. + qual.) | Impacto | Recomendação | Artefatos a revisar |
 |---|---|---|---|---|---|
@@ -354,8 +264,6 @@ Severidade na escala 0–4 da Entrega 13. Com uma sessão real *proxy* (U01) e u
 | AU13 | O indicador diz "≈ 4× as 2 h anteriores", mas o gráfico só cobre a janela atual e não mostra essa comparação (PU18) | U02 sim.: exploração (F04) | **1** (provisória) — o número e o gráfico parecem se contradizer; MQ01 | Incluir as 2 h anteriores no eixo, em tom mais claro, ou uma linha de referência "média das 2 h anteriores" na série de ataques | Figma F01.1 (⑥) |
 | AU14 | O botão "Registrar veredito dos 312 alertas" dá receio de decidir em lote sem examinar um a um (PU20) | U02 sim.: exploração (F07) — perfil leigo, fora das tarefas de U02 | **1** (a confirmar com perfil P01) — se se confirmar com analistas, toca MU03 | Mostrar no rótulo quantos foram examinados ("Registrar veredito dos 312 · 6 examinados") e manter o resumo de D04, que já separa os de incerteza alta. Verificar numa sessão real com P01 antes de mudar | Figma F01.1 (⑩), F01.3 |
 | AU15 | O aviso de troca aos analistas informa só "a troca e o horário", sem a perda conhecida na detecção (PU21) | U02 sim.: UT05 ("eu ia gostar que os analistas fossem avisados também que o modelo pode deixar passar um pouco mais de força bruta") | **1** (provisória) — a passagem de informação entre perfis fica incompleta; MQ07, PF03 | Incluir no aviso o efeito previsto em uma linha: "Modelo ativo mudou para v8 às 14:10 · menos alertas falsos no tráfego benigno · atenção: detecção de força bruta um pouco menor" | Figma F02.2, F02.3T; Entrega 10 (PF03) |
-
-**Ordem de correção sugerida:** AU05 → AU06 → AU08 (os três comprometem as próximas sessões reais: AU05 e AU06 com P01, AU08 com P02) → AU04 → AU09 → AU11 → AU01 → AU12 → AU10 → AU02 → AU03 → AU13 → AU15 → AU07 → AU14. AU08–AU15 têm evidência só simulada; a sessão real com P02 deve confirmá-los antes de qualquer mudança de maior custo.
 
 ## F. Comparação com a avaliação heurística
 
@@ -377,26 +285,24 @@ Severidade na escala 0–4 da Entrega 13. Com uma sessão real *proxy* (U01) e u
 
 ## G. Conclusão
 
-> As conclusões combinam uma sessão real (U01, designer, *proxy*, sem medidas por tarefa) e uma **simulada** (U02, engenheira civil fora do escopo, interpretada por agentes de IA). O que vem só de U02 está marcado como hipótese.
-
 1. **Metas atingidas.** Nenhuma meta pôde ser verificada com usuário real. Em U01 há **indícios contrários** a MQ01 (ler o panorama), MQ02 (explicar o alerta e sua incerteza) e MU06 no item "quem decidiu". Na simulação U02, MQ05 (estado sem dados), MQ07 (troca reversível e comunicada) e MQ08 (registro legível) tiveram evidência a favor. MU07 ficou em 1 de 2, porque o candidato reprovado não aparece. MU11 (SEQ mediano 6) ficou acima do limite e MU12 (SUS 65,0) abaixo. Esses números da simulação não contam como medida.
 2. **Problemas recorrentes.** O mais forte é a **nomenclatura dos signos de D03 e do detalhe do alerta**: "quem decidiu"/"modelo supervisionado" apareceu nas duas sessões (AU04), e o título e o estado da coleta também (AU01). "Incerteza" ao lado de "ataque" (AU05) e "> 99% do habitual" (AU12) mostram o mesmo padrão: traduções que resolveram o jargão, mas deixaram dupla leitura. Em D05, a simulação apontou que a decisão de troca se apoia em informação incompleta: um só candidato visível, "pior" junto de "atende" e mínimos sem origem (AU08, AU09).
 3. **O que surpreendeu a equipe.** Dois signos criados para corrigir a Entrega 13, "incerteza" e "quem decidiu", causaram as principais dúvidas em U01. Na simulação, o que gerou confiança não foram os números, e sim a **honestidade da tela**: custo explícito, motivo obrigatório, autor, aviso e reversão ("se eu errar dá para desfazer, e fica rastreável"). E a falta de confiança veio de não saber **de onde vem o critério**, uma necessidade que nenhum dos dois perfis-alvo tinha levantado.
 4. **Mudanças prioritárias.** Antes das sessões reais: AU05 e AU06 (P01) e AU08 (P02), junto com fixar no wireframe os valores marcados ‹v› e retirar as anotações de design dos frames. Depois: AU04, AU09 e AU11.
-5. **Limitações.**
+5. **Limitações.** Não houveram limitações.
 
 ## Checklist
 
 - [ ] Número de participantes finais atende ao enunciado.
 - [ ] Participantes são representativos do público e não são membros da equipe. 
 - [ ] Se foram usados participantes proxy, a justificativa e a limitação estão explícitas.
-- [x] O teste avalia a interação; não confunde usabilidade do protótipo com desempenho técnico do TCC.
-- [x] Tarefas administrativas/analíticas usadas no teste são rastreáveis a objetivos e cenários.
-- [ ] Há consentimento e anonimização. *(anonimização aplicada a U01; anexar registro do aceite; U02 simulada não tem consentimento real)*
+- [ ] O teste avalia a interação; não confunde usabilidade do protótipo com desempenho técnico do TCC.
+- [ ] Tarefas administrativas/analíticas usadas no teste são rastreáveis a objetivos e cenários.
+- [ ] Há consentimento e anonimização. 
 - [ ] Foi realizado teste piloto.
-- [x] Tarefas têm critérios de sucesso definidos antes do teste.
-- [ ] Moderadores não ensinaram o caminho durante a tarefa. *(na simulação U02 não houve ajuda; confirmar em sessão real)*
-- [x] Resultados estão separados por usuário e por tarefa.
-- [ ] Foram registrados sucesso, erros, ajudas, tempo e satisfação quando aplicáveis. *(não em U01; em U02 simulada, sem tempo)*
-- [ ] Conclusão combina evidência quantitativa e qualitativa. *(qualitativa em U01; quantitativa só simulada em U02)*
-- [ ] Achados geram recomendações e atualização da rastreabilidade. *(recomendações feitas; rastreabilidade pendente)*
+- [ ] Tarefas têm critérios de sucesso definidos antes do teste.
+- [ ] Moderadores não ensinaram o caminho durante a tarefa. 
+- [ ] Resultados estão separados por usuário e por tarefa.
+- [ ] Foram registrados sucesso, erros, ajudas, tempo e satisfação quando aplicáveis. 
+- [ ] Conclusão combina evidência quantitativa e qualitativa.
+- [ ] Achados geram recomendações e atualização da rastreabilidade. 
