@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1040" height="760" viewBox="0 0 1040 760" font-family="Arial, Helvetica, sans-serif">
+<defs><marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#374151"/></marker><marker id="ahc" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#b45309"/></marker></defs>
+<rect width="1040" height="760" fill="#ffffff"/>
+<text x="520.0" y="30" text-anchor="middle" font-size="18" font-weight="bold" fill="#111827">Mapa de objetivos individual — Lucas Kerr do Amaral (CI01, papel T)</text>
+<rect x="60" y="56" width="440" height="44" rx="9" fill="#f3f4f6" stroke="#111827" stroke-width="3.2"/>
+<line x1="116" y1="56" x2="116" y2="100" stroke="#111827" stroke-width="1.2"/>
+<text x="88" y="77.0" text-anchor="middle" font-size="13" fill="#111827">T</text>
+<text x="88" y="92.0" text-anchor="middle" font-size="10" fill="#6b7280">final</text>
+<text x="126" y="83.0" font-size="15" fill="#111827" font-weight="bold">decidir se há incidente e encaminhar o caso</text>
+<rect x="60" y="130" width="440" height="44" rx="9" fill="#ffffff" stroke="#111827" stroke-width="1.5"/>
+<line x1="116" y1="130" x2="116" y2="174" stroke="#111827" stroke-width="1.2"/>
+<text x="88" y="151.0" text-anchor="middle" font-size="13" fill="#111827">T</text>
+<text x="88" y="166.0" text-anchor="middle" font-size="10" fill="#6b7280">O01</text>
+<text x="126" y="157.0" font-size="14" fill="#111827">perceber se há algo fora do padrão</text>
+<rect x="60" y="200" width="440" height="44" rx="9" fill="#ffffff" stroke="#111827" stroke-width="1.5"/>
+<line x1="116" y1="200" x2="116" y2="244" stroke="#111827" stroke-width="1.2"/>
+<text x="88" y="221.0" text-anchor="middle" font-size="13" fill="#111827">T</text>
+<text x="88" y="236.0" text-anchor="middle" font-size="10" fill="#6b7280">O02</text>
+<text x="126" y="227.0" font-size="14" fill="#111827">recortar período e origem de interesse</text>
+<rect x="60" y="270" width="440" height="44" rx="9" fill="#ffffff" stroke="#111827" stroke-width="1.5"/>
+<line x1="116" y1="270" x2="116" y2="314" stroke="#111827" stroke-width="1.2"/>
+<text x="88" y="291.0" text-anchor="middle" font-size="13" fill="#111827">T</text>
+<text x="88" y="306.0" text-anchor="middle" font-size="10" fill="#6b7280">O03</text>
+<text x="126" y="297.0" font-size="14" fill="#111827">interpretar o alerta e sua incerteza</text>
+<rect x="60" y="340" width="440" height="56" rx="9" fill="#ffffff" stroke="#111827" stroke-width="1.5"/>
+<line x1="116" y1="340" x2="116" y2="396" stroke="#111827" stroke-width="1.2"/>
+<text x="88" y="367.0" text-anchor="middle" font-size="13" fill="#111827">T</text>
+<text x="88" y="382.0" text-anchor="middle" font-size="10" fill="#6b7280">O05</text>
+<text x="126" y="364.0" font-size="14" fill="#111827">registrar a decisão</text>
+<text x="126" y="382.0" font-size="14" fill="#111827">(ataque / falso positivo / indefinido)</text>
+<rect x="60" y="410" width="440" height="44" rx="9" fill="#ffffff" stroke="#111827" stroke-width="1.5"/>
+<line x1="116" y1="410" x2="116" y2="454" stroke="#111827" stroke-width="1.2"/>
+<text x="88" y="431.0" text-anchor="middle" font-size="13" fill="#111827">T</text>
+<text x="88" y="446.0" text-anchor="middle" font-size="10" fill="#6b7280">O06</text>
+<text x="126" y="437.0" font-size="14" fill="#111827">encaminhar o caso</text>
+<path d="M60 432.0 H32 V152" stroke="#374151" stroke-width="1.6" fill="none"/>
+<path d="M60 152.0 H32" stroke="#374151" stroke-width="1.6" fill="none"/>
+<path d="M60 222.0 H32" stroke="#374151" stroke-width="1.6" fill="none"/>
+<path d="M60 292.0 H32" stroke="#374151" stroke-width="1.6" fill="none"/>
+<path d="M60 368.0 H32" stroke="#374151" stroke-width="1.6" fill="none"/>
+<path d="M32 152 V78.0 H60" stroke="#374151" stroke-width="1.6" fill="none" marker-end="url(#ah)"/>
+<rect x="560" y="130" width="440" height="44" rx="9" fill="#ffffff" stroke="#111827" stroke-width="1.5"/>
+<line x1="616" y1="130" x2="616" y2="174" stroke="#111827" stroke-width="1.2"/>
+<text x="588" y="151.0" text-anchor="middle" font-size="13" fill="#111827">T</text>
+<text x="588" y="166.0" text-anchor="middle" font-size="10" fill="#6b7280">O01</text>
+<text x="626" y="157.0" font-size="14" fill="#111827">localizar quando o pico começou</text>
+<path d="M560 152 H500" stroke="#374151" stroke-width="1.6" fill="none" marker-end="url(#ah)"/>
+<rect x="560" y="200" width="440" height="44" rx="9" fill="#ffffff" stroke="#111827" stroke-width="1.5"/>
+<line x1="616" y1="200" x2="616" y2="244" stroke="#111827" stroke-width="1.2"/>
+<text x="588" y="221.0" text-anchor="middle" font-size="13" fill="#111827">T</text>
+<text x="588" y="236.0" text-anchor="middle" font-size="10" fill="#6b7280">O02</text>
+<text x="626" y="227.0" font-size="14" fill="#111827">congelar os dados</text>
+<path d="M560 222 H500" stroke="#374151" stroke-width="1.6" fill="none" marker-end="url(#ah)"/>
+<rect x="560" y="270" width="440" height="56" rx="9" fill="#ffffff" stroke="#111827" stroke-width="1.5" stroke-dasharray="7 4"/>
+<line x1="616" y1="270" x2="616" y2="326" stroke="#111827" stroke-width="1.2" stroke-dasharray="7 4"/>
+<text x="588" y="297.0" text-anchor="middle" font-size="13" fill="#111827">T</text>
+<text x="588" y="312.0" text-anchor="middle" font-size="10" fill="#6b7280">O04</text>
+<text x="626" y="294.0" font-size="14" fill="#111827">saber qual classificador está ativo</text>
+<text x="626" y="312.0" font-size="14" fill="#111827">e desde quando</text>
+<path d="M560 298.0 H520 V284 H500" stroke="#374151" stroke-width="1.6" fill="none" marker-end="url(#ah)" stroke-dasharray="6 4"/>
+<rect x="560" y="350" width="440" height="44" rx="9" fill="#ffffff" stroke="#111827" stroke-width="1.5" stroke-dasharray="7 4"/>
+<line x1="616" y1="350" x2="616" y2="394" stroke="#111827" stroke-width="1.2" stroke-dasharray="7 4"/>
+<text x="588" y="371.0" text-anchor="middle" font-size="13" fill="#111827">T</text>
+<text x="588" y="386.0" text-anchor="middle" font-size="10" fill="#6b7280">O07</text>
+<text x="626" y="377.0" font-size="14" fill="#111827">retomar investigação interrompida</text>
+<path d="M560 372 H530 V304 H500" stroke="#374151" stroke-width="1.6" fill="none" marker-end="url(#ah)" stroke-dasharray="6 4"/>
+<rect x="560" y="430" width="440" height="44" rx="9" fill="#ffffff" stroke="#111827" stroke-width="1.5" stroke-dasharray="7 4"/>
+<line x1="616" y1="430" x2="616" y2="474" stroke="#111827" stroke-width="1.2" stroke-dasharray="7 4"/>
+<text x="588" y="451.0" text-anchor="middle" font-size="13" fill="#111827">T</text>
+<text x="588" y="466.0" text-anchor="middle" font-size="10" fill="#6b7280">O06</text>
+<text x="626" y="457.0" font-size="14" fill="#111827">passar o plantão</text>
+<path d="M560 452 H500" stroke="#374151" stroke-width="1.6" fill="none" marker-end="url(#ah)" stroke-dasharray="6 4"/>
+<rect x="560" y="505" width="440" height="62" rx="9" fill="#fffbeb" stroke="#b45309" stroke-width="1.3" stroke-dasharray="4 3"/>
+<text x="574" y="527" text-anchor="start" font-size="12.5" fill="#b45309" font-style="italic">fora deste mapa — papel da administradora:</text>
+<text x="574" y="547" text-anchor="start" font-size="12.5" fill="#b45309">as decisões “falso positivo” viram o sinal de que</text>
+<text x="574" y="563" text-anchor="start" font-size="12.5" fill="#b45309">o classificador pode não estar adequado</text>
+<path d="M500 378.0 H512 V536 H560" stroke="#b45309" stroke-width="1.6" fill="none" marker-end="url(#ahc)" stroke-dasharray="6 4"/>
+<rect x="40" y="590" width="960" height="150" fill="#f9fafb" stroke="#6b7280" stroke-width="1.2" stroke-dasharray="2 3"/>
+<text x="52" y="612" text-anchor="start" font-size="14" fill="#111827" font-style="italic">Legenda</text>
+<rect x="52" y="624" width="60" height="22" rx="6" fill="#f3f4f6" stroke="#111827" stroke-width="3.2"/>
+<text x="122" y="640" text-anchor="start" font-size="13" fill="#111827">objetivo final</text>
+<rect x="52" y="654" width="60" height="22" rx="6" fill="#fff" stroke="#111827" stroke-width="1.5"/>
+<text x="122" y="670" text-anchor="start" font-size="13" fill="#111827">objetivo instrumental direto (apoia a meta durante a interação)</text>
+<rect x="52" y="684" width="60" height="22" rx="6" fill="#fff" stroke="#111827" stroke-width="1.5" stroke-dasharray="7 4"/>
+<text x="122" y="700" text-anchor="start" font-size="13" fill="#111827">objetivo instrumental indireto (prepara uma ação futura)</text>
+<path d="M52 726 H112" stroke="#374151" stroke-width="1.6" fill="none" marker-end="url(#ah)"/>
+<text x="122" y="730" text-anchor="start" font-size="13" fill="#111827">instrumenta diretamente</text>
+<path d="M530.0 726 H590.0" stroke="#374151" stroke-width="1.6" fill="none" marker-end="url(#ah)" stroke-dasharray="6 4"/>
+<text x="600.0" y="730" text-anchor="start" font-size="13" fill="#111827">instrumenta indiretamente</text>
+<text x="988" y="612" text-anchor="end" font-size="12.5" fill="#111827">T: analista de SOC (Thiago, P01)</text>
+</svg>
