@@ -1,6 +1,6 @@
 # Entrega 1 — Conhecendo o projeto, o usuário e o problema
 
-**Data:** 13/08/2026  
+**Data:** 13/08/2026  · **Revisada em:** 08/10/2026   
 **Status:** `🟩 concluída`   
 **Responsabilidade:** 1 solução consolidada por equipe
 
